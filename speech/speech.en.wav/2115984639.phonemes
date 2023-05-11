@@ -1,0 +1,22 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=Thanks, Yen.]
+;meta[translation=θˈaŋks jˈɛn]
+;meta[audio-hypothesis=SIL D AE NG G S IY HH AE N AH P]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+θ       |  260|  335|  1.00| -1.00| <- VERIFY! | θ  ~  D  [  260 -  335]
+a       |  335|  435|  1.10|  1.70| ok         | a  ~  AE [  335 -  435]
+ŋ       |  435|  475|  1.00|  2.00| ok         | ŋ  ~  NG [  435 -  475]
+k       |  475|  525|  1.00|  1.70| ok         | k  ~  G  [  475 -  525]
+s       |  525|  595|  1.00|  2.00| ok         | s  ~  S  [  525 -  595]
+------------------------------------------------------------------------
+j       |  595|  655|  1.00|  0.50| ok         | j  ~  IY [  595 -  655]
+;_       |  655|  695|  1.00| -1.00| <- VERIFY! | _  d  HH [  655 -  695]
+ɛ       |  695|  785|  1.10| -1.00| <- VERIFY! | ɛ  ~  AE [  695 -  785]
+n       |  785|  915|  1.00|  2.00| ok         | n  ~  N  [  785 -  915]
+;_       |  915| 1035|  1.00| -1.00| <- VERIFY! | _  d  AH [  915 - 1035]
+;_       | 1035| 1130|  1.00| -1.00| <- VERIFY! | _  d  P  [ 1035 - 1130]

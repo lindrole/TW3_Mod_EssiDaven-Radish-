@@ -1,0 +1,20 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=I love this.]
+;meta[translation=aɪ lˈʌv ðˈɪs]
+;meta[audio-hypothesis=SIL AY L AH V IH S S TH SIL]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+aɪ      |  290|  425|  1.00|  2.00| ok         | aɪ ~  AY [  290 -  425]
+------------------------------------------------------------------------
+l       |  425|  505|  1.00|  2.00| ok         | l  ~  L  [  425 -  505]
+ʌ       |  505|  605|  1.10|  2.00| ok         | ʌ  ~  AH [  505 -  605]
+v       |  605|  655|  1.00|  2.00| ok         | v  ~  V  [  605 -  705]
+------------------------------------------------------------------------
+ð       |  655|  705|  1.00|  0.00| ok         | ð  \  V  [  605 -  705]
+ɪ       |  705|  805|  1.10|  2.00| ok         | ɪ  ~  IH [  705 -  805]
+s       |  805|  965|  1.00|  2.00| ok         | s  ~> S  [  805 -  935] + S  [  935 -  965]
+;_       |  965| 1030|  1.00| -1.00| <- VERIFY! | _  d  TH [  965 - 1030]

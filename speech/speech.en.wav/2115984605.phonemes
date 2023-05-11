@@ -1,0 +1,23 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=Before you leave,]
+;meta[translation=bɪfˌɔː juː lˈiːv]
+;meta[audio-hypothesis=SIL DH IH S OY AH DH IY V +SPN+ P]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+b       |  240|  325|  1.00| -1.00| <- VERIFY! | b  ~  DH [  240 -  325]
+ɪ       |  325|  375|  1.00|  2.00| ok         | ɪ  ~  IH [  325 -  375]
+;_       |  375|  465|  1.00| -1.00| <- VERIFY! | _  d  S  [  375 -  465]
+f       |  465|  695|  1.00| -1.00| <- VERIFY! | f  ~  OY [  465 -  695]
+ɔ       |  695|  795|  1.05|  0.50| ok         | ɔ  ~  AH [  695 -  795]
+------------------------------------------------------------------------
+;j       |  795|  795|  1.00| -1.00| <- VERIFY! | j  i
+;u       |  795|  795|  1.00| -1.00| <- VERIFY! | u  i
+------------------------------------------------------------------------
+l       |  795|  875|  1.00| -1.00| <- VERIFY! | l  ~  DH [  795 -  875]
+i       |  875| 1025|  1.10|  2.00| ok         | i  ~  IY [  875 - 1025]
+v       | 1025| 1135|  1.00|  2.00| ok         | v  ~  V  [ 1025 - 1135]
+;_       | 1195| 1320|  1.00| -1.00| <- VERIFY! | _  d  P  [ 1195 - 1320]
