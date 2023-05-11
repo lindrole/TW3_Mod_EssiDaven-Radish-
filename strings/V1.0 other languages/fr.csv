@@ -1,0 +1,92 @@
+;meta[language=fr]
+; id      |key(hex)|key(str)| text
+;
+; rename this file to mod<YOUR MODNAME>.speech.csv and
+; add all strings for custom voicelines like the example line below.
+;
+; make sure the XXXX is the string id-space of the project and nnn is unique
+; for every line.
+;
+;211XXXXnnn|||example voiceline text
+;
+;meta[language=fr]
+; id      |key(hex)|key(str)| text
+2115994000|00000000||MOD questgroup_essidaven Quests
+2115994001|00000000||Suivre Jaskier
+2115994002|00000000||A présent Geralt connaissait le destin tragique d'Essi, et l'endroit où elle reposait.<br/>
+2115994003|00000000||J'attendais Geralt non loin de Blanchefleur. Nous nous sommes ensuite dirigés vers un endroit spécial...<br/>
+2115994004|00000000||Hommage à Poupée
+2115994005|00000000|dlc_name_essidaven|Prod Quest Caption Essi Daven
+2115994006|00000000|option_dlc_name_essidaven|MOD: Prod Quest Caption Essi Daven
+2115994007|00000000|content_name_dlc_essidaven|MOD: Prod Quest Caption Essi Daven
+; 
+;meta[language=fr]
+; id      |key(hex)|key(str)| text
+2115994100|00000000||Jaskier ?
+2115994101|00000000||Que fais-tu ici ? Si loin de Novigrad.
+2115994102|00000000||Salut Geralt.
+2115994103|00000000||Je suppose que ta présence ici est due à une autre de tes conquêtes.
+2115994104|00000000||Pas vraiment...
+2115994105|00000000||Oui c'est pour une dame,
+2115994106|00000000||mais pas pour ce à quoi tu penses.
+2115994107|00000000||Tu m'intrigues Jaskier.
+2115994108|00000000||Je veux aller dans un endroit spécial pas loin d'ici, où j'aimerais que tu viennes avec moi.
+2115994109|00000000||Je t'en dirai plus quand nous y serons.
+2115994110|00000000||Très bien, je te suis.
+2115994111|00000000||Je te trouve différent de d'habitude, et si tu me demandes de venir avec toi, tu dois avoir une bonne raison.
+2115994112|00000000||Effectivement Geralt.
+2115994113|00000000||Allons-y.
+; 
+;meta[language=fr]
+; id      |key(hex)|key(str)| text
+2115994200|00000000||Tu vois au loin, c'est Wyzima.
+2115994201|00000000||Il y a quelque temps une épidémie de variole y a fait rage.
+; 
+;meta[language=fr]
+; id      |key(hex)|key(str)| text
+2115994300|00000000||Oui, je m'en souviens.
+2115994301|00000000||Désolé mais je ne m'en souviens pas.
+2115994302|00000000||Nous y sommes.. C'est ici.
+2115994303|00000000||Ici quoi ?
+2115994304|00000000||Ici que repose Essi.
+2115994305|00000000||Te souviens-tu de Petit-Oeil ?
+2115994306|00000000||Oui, je m'en souviens. Son souvenir m'est revenu assez vite après mon amnésie.
+2115994307|00000000||Je considérais Poupée comme ma petite soeur.
+2115994308|00000000||Elle courait après la vie, alors que la mort était sur ses talons.
+2115994309|00000000||Elle était à Wyzima au moment de l'épidémie de variole. Et celle-ci l'a emportée.
+2115994310|00000000||Je ne pouvais pas me résoudre à la voir brûler sur les bûchers ardents.
+2115994311|00000000||Alors je l'ai enterrée dans cet endroit paisible, loin de la ville.
+2115994312|00000000||C'est une triste nouvelle que tu m'annonces.
+2115994313|00000000||Je n'ai pas su lui rendre les sentiments qu'elle avait pour moi. Mais il est certain qu'elle m'a touché.
+2115994314|00000000||Elle ne méritait pas ce destin tragique.
+2115994315|00000000||Désolé mais je ne m'en souviens pas. Je suppose que c'est dû à mon amnésie.
+2115994316|00000000||Tu as rencontré Essi il y a quelques années, quand toi et moi sommes allés à Bremervoord.
+2115994317|00000000||Elle avait des sentiments sincères pour toi, même si les choses étaient différentes de ton côté.
+2115994318|00000000||Nous avons fait un petit bout de chemin tous les trois, puis nous nous sommes séparés.
+2115994319|00000000||Elle a gardé, portée comme en talisman porte-bonheur, la perle azur que tu lui avais offerte.
+2115994320|00000000||Je considérais Poupée comme ma petite soeur.
+2115994321|00000000||Elle courait après la vie, alors que la mort était sur ses talons.
+2115994322|00000000||Elle était à Wyzima au moment de l'épidémie de variole. Et celle-ci l'a emportée.
+2115994323|00000000||Je ne pouvais pas me résoudre à la voir brûler sur les bûchers ardents.
+2115994324|00000000||Alors je l'ai enterrée dans cet endroit paisible, loin de la ville.
+2115994325|00000000||C'est une triste nouvelle que tu m'annonces.
+2115994326|00000000||Je regrette de lui avoir dit que sa perle azur lui porterait chance.
+2115994327|00000000||Non Geralt.
+2115994328|00000000||Elle savait que tes mots étaient une once d'abnégation pour qu'elle se sente mieux.
+2115994329|00000000||Et pourtant c'est ta perle azur qui lui a donné le courage d'affronter sa plus grande peur. Parce qu'une partie de toi l'accompagnait.
+2115994330|00000000||Comme son luth, elle l'a gardée avec elle jusqu'à la fin. Et la porte toujours sur son coeur.
+2115994331|00000000||Parfois Essi revient à la vie dans mes rêves, comme si rien ne s'était passé.
+2115994332|00000000||Merci Geralt d'être venu avec moi.
+2115994333|00000000||Je n'ai pas eu le courage de venir seul, et je savais que tu passerais à proximité. C'est pourquoi je t'attendais non loin d'ici.
+2115994334|00000000||Dans ces moments, ensemble nous sommes plus forts, même si nous ne sommes pas moins tristes.
+2115994335|00000000||C'est seul qu'on fait son deuil, car on est seul quand on ressent.
+2115994336|00000000||Je retourne à Novigrad.
+2115994337|00000000||Viens-tu avec moi ?
+2115994338|00000000||Avoir des sentiments n'est pas ma principale force. Néanmoins, je ressens le besoin de me recueillir ici plus longtemps.
+2115994339|00000000||Je comprends.
+2115994340|00000000||Si où elle est, Poupée nous voit. Elle est très certainement heureuse de te savoir ici.
+2115994341|00000000||A bientôt Geralt.
+; 
+;meta[language=fr]
+; id      |key(hex)|key(str)| text
+; 

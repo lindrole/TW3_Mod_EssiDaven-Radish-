@@ -1,0 +1,78 @@
+;meta[language=de]
+; id      |key(hex)|key(str)| text
+;
+; rename this file to mod<YOUR MODNAME>.speech.csv and
+; add all strings for custom voicelines like the example line below.
+;
+; make sure the XXXX is the string id-space of the project and nnn is unique
+; for every line.
+;
+;211XXXXnnn|||example voiceline text
+;
+2115994100|00000000||Rittersporn?
+2115994101|00000000||Was tust du hier? So weit entfernt von Novigrad.
+2115994102|00000000||Hallo Geralt.
+2115994103|00000000||Ich nehme an, deine Anwesenheit ist auf eine weitere deiner Erorberungen zurückzuführen?
+2115994104|00000000||Nicht wirklich...
+2115994105|00000000||Ja, es geht um eine Dame,
+2115994106|00000000||aber nicht auf die Weise, die du wohl erwartest.
+2115994107|00000000||Du machst es spannend, Rittersporn.
+2115994108|00000000||Ich möchte zu einem besonderen Ort nicht weit von hier gehen, und ich würde mich freuen, wenn du mitkommen würdest.
+2115994109|00000000||Ich erzähle dir mehr, wenn wir da sind.
+2115994110|00000000||Na gut, ich komme.
+2115994111|00000000||Du scheinst mir anders als sonst, und wenn du mich bittest mitzukommen, dann hast du wohl einen guten Grund.
+2115994112|00000000||In der Tat, Geralt.
+2115994113|00000000||Lass' uns gehen.
+2115994200|00000000||Siehst du in der Ferne, da ist Wyzima.
+2115994201|00000000||Vor nicht allzu langer Zeit hat dort eine Pocken-Epodemie gewütet.
+2115994300|00000000||Ja, ich erinnere mich.
+2115994301|00000000||Tur mir leid, ich erinnere mich nicht.
+2115994302|00000000||Hier sind wir.. es ist hier.
+2115994303|00000000||Hier ist was?
+2115994304|00000000||Hier, an diesem Ort, ruht Essi.
+2115994305|00000000||Erinnerst du dich an Äuglein?
+2115994306|00000000||Ja, ich erinnere mich. Das Andenken an sie kehrte schnell zurück nach meiner Amnesie.
+2115994307|00000000||Ich sah Püppchen als meine kleine Schwester.
+2115994308|00000000||Sie lief dem Leben hinterher, dieweil der Tod ihr auf den Fersen war.
+2115994309|00000000||Sie war zur Zeit der Pocken-Epidemie in Wyzima. Und da.. nahm das Unheil sie mit.
+2115994310|00000000||Ich konnte mich nicht überwinden, sie auf den Scheiterhaufen brennen zu sehen.
+2115994311|00000000||Also vergrub ich sie an diesem friedlichen Ort, fern von der Stadt.
+2115994312|00000000||Das sind sehr traurige Nachrichten, die du mir bringst.
+2115994313|00000000||Ich war nicht imstande ihre Gefühle für mich zu erwidern. Aber trotzdem - berührte sie etwas in mir.
+2115994314|00000000||Sie hat dieses tragische Schicksal nicht verdient.
+2115994315|00000000||Tut mir leid, ich erinnere mich nicht. Wohl wegen meiner Amnesie.
+2115994316|00000000||Du trafst Essi vor einigen Jahren, als wir beide nach Bremervoord gegangen waren.
+2115994317|00000000||Sie hatte aufrichtige Gefühle für dich, auch wenn es für dich anders war.
+2115994318|00000000||Wir reisten für eine Weile zu dritt, dann trennten sich unsere Wege.
+2115994319|00000000||Als Glücksbringer behielt und trug sie die himmelsblaue Perle, die du ihr gabst.
+2115994320|00000000||Ich sah Püppchen als meine kleine Schwester.
+2115994321|00000000||Sie lief dem Leben hinterher, dieweil der Tod ihr auf den Fersen war.
+2115994322|00000000||Sie war zur Zeit der Pocken-Epidemie in Wyzima. Und da.. nahm das Unheil sie mit.
+2115994323|00000000||Ich konnte mich nicht überwinden, sie auf den Scheiterhaufen brennen zu sehen.
+2115994324|00000000||Also vergrub ich sie an diesem friedlichen Ort, fern von der Stadt.
+2115994325|00000000||Das sind sehr traurige Nachrichten, die du mir bringst.
+2115994326|00000000||Jetzt bedauere ich ihr zu sagen, die himmelsblaue Perle würde ihr Glück bringen.
+2115994327|00000000||Nein Geralt.
+2115994328|00000000||Sie wusste, dass deine Worte ein kleines Opfer waren, damit sie sich besser fühlt.
+2115994329|00000000||Und doch war es deine himmelsblaue Perle, die ihr den Mut gab sich ihrer größten Angst zu stellen. Denn ein Teil von dir begleitete sie.
+2115994330|00000000||Wie ihre Laute behielt sie es bis ans Ende. Und trägt es weiterhin in ihrem Herzen.
+2115994331|00000000||Manchmal kehrt Essi in meinen Träumen zurück ins Leben, als wäre nichts geschehen.
+2115994332|00000000||Danke, dass du mit mir gekommen bist, Geralt.
+2115994333|00000000||Ich hatte nicht den Mut alleine zu gehen, und ich wusste du würdest vorbeikommen. Deswegen habe ich hier in der Nähe auf dich gewartet.
+2115994334|00000000||In solchen Momenten sind wir gemeinsam stärker, auch wenn wir nicht weniger traurig sind.
+2115994335|00000000||Alleine trauern wir, denn wir sind allein wenn wir fühlen.
+2115994336|00000000||Ich gehe zurück nach Novigrad.
+2115994337|00000000||Kommst du mit mir?
+2115994338|00000000||Zu Fühlen ist nicht meine Stärke. Dennoch, ich merke, dass ich mich hier noch ein wenig länger sammmeln muss.
+2115994339|00000000||Ich verstehe.
+2115994340|00000000||Wenn Püppchen dort, wo sie nun ist, uns sehen kann - dann ist sie ganz gewiss glücklich zu wissen, du bist hier.
+2115994341|00000000||Auf Wiedersehen, Geralt.;
+2115994000|00000000||MOD questgroup_essidaven Quests
+2115994001|00000000||Folge Rittersporn.
+2115994002|00000000||Nun wusste Geralt über Essi's Schicksal und Verbleib.<br/>
+2115994003|00000000||Ich wartete auf Geralt nicht weit von Weißgarten. Wir gingen zu einem besonderen Ort...<br/>
+2115994004|00000000||Ein kleiner Tribut an Püppchen
+2115994005|00000000|dlc_name_essidaven|Prod Quest Caption Essi Daven
+2115994006|00000000|option_dlc_name_essidaven|MOD: Prod Quest Caption Essi Daven
+2115994007|00000000|content_name_dlc_essidaven|MOD: Prod Quest Caption Essi Daven
+; 

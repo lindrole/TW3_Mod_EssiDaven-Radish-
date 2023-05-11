@@ -1,0 +1,326 @@
+;meta[language=fr]
+; id      |key(hex)|key(str)| text
+;
+; rename this file to mod<YOUR MODNAME>.speech.csv and
+; add all strings for custom voicelines like the example line below.
+;
+; make sure the XXXX is the string id-space of the project and nnn is unique
+; for every line.
+;
+;211XXXXnnn|||example voiceline text
+;
+2115984000|00000000||Agloval
+2115984001|00000000||Sh'eenaz
+2115984002|00000000||Gaunter de Meuré
+2115984003|00000000||Geralt réussit finalement à venir à bout de Gaunter de Meuré.<br/>J'espère que cette nouvelle apaisera l'esprit d'Essi, là où elle se trouve, même si ça ne la fera pas revenir auprès de nous.<br/>
+2115984004|00000000||Geralt et Essi se connurent à Bremervoord.<br/>Malgré la maladresse et le manque de tact de Geralt, Essi été tombée sous le charme du sorceleur, mais ce n'était pas réciproque.<br/>Geralt, Essi et moi avons fait un bout de chemin ensemble, puis nous sommes séparés.<br/>Quelques années plus tard, Poupée mourrut de la variole.<br/><br/>Les évènements récents m'ont fait ressentir le besoin de me rendre sur la tombe de Poupée.<br/>Je saisis cette occasion pour informer Geralt du destin funeste d'Essi, et lui montrer son lieu de sépulture.<br/>
+2115984005|00000000||Il s'avéra que le destin de Poupée n'était pas le fruit du hasard, mais avait été provoqué par ce diable de Gaunter De Meuré.<br/>
+2115984006|00000000||Essi Daven
+2115984007|00000000||Suite à leur échange à  Novigrad, Sh'eenaz indiqua à Geralt où il pourrait trouver une de ces perles azur dont il avait besoin.<br/>
+2115984008|00000000||Il y a quelques années, Geralt avait été engagé par le duc Agloval pour convaincre sa bien-aimée sirène Sh'eenaz d'avoir une once d'abnégation, et d'abandonner sa queue de sirène pour des jambes humaines.<br/>Après quelques péripéties, et la rencontre de ma chère  Essi Daven, aussi surnommée "Petit-Oeil", ou plus personnellement "Poupée", Sh'eenaz accepta finalement de rejoindre définitivement sur la terre ferme, son bien aimé Agloval.<br/>
+2115984009|00000000||Sh'eenaz and Agloval
+2115984010|00000000||MOD questgroup_sted Quests
+2115984011|00000000||Chercher une perle azur.
+2115984012|00000000||Chercher une perle azur.
+2115984013|00000000||Suivre Jaskier.
+2115984014|00000000||Rapporter la perle azur à Yennefer.
+2115984015|00000000||Se rendre à Skellige pour demander de l'aide à Yennefer.
+2115984016|00000000||Vaincre Gaunter de Meuré.
+2115984017|00000000||Retourner sur la route de Wyzima.
+2115984018|00000000||Se rendre à Novigrad pour y trouver le duc Agloval et sa compagne Sh'eenaz.
+2115984019|00000000||Geralt appris le triste destin d'Essi, et découvrit dans la foulée que ce diable de Gaunter O'Dimm l'avait provoqué.<br/>Un mélange de colère et d'injustice emplit Geralt, qui alla quérir de l'aide auprès de Yennefer.<br/>
+2115984020|00000000||De retour chez Yennefer après avoir trouvé la perle, Geralt eu la surprise d'y voir Ciri.<br/>Ciri lui relata qu'étant enfant au Temple de Melitele, elle avait lu le recueil de poèmes d'Essi, et que cela l'avait emplie d'émotion.<br/>Entretemps Yennefer avait trouvé le moyen d'enchanter la perle pour les aider à vaincre cet être diabolique."<br/>
+2115984021|00000000||Bien que sensiblement jalouse à l'évocation de Poupée par Geralt, Yennefer accepta de l'aider.<br/>Elle lui demanda de trouver une perle bleue azur comme celle que Geralt avait offert à Poupée.<br/>Pour ce faire elle lui conseilla de trouver Agloval, duc de Bremerwoord et sa compagne Sh'eenaz, la sirène aux cheveux couleur céladon, devenue humaine."<br/>
+2115984022|00000000||J'attendais Geralt non loin de Blanchefleur, pour lui montrer un endroit spécial à mes yeux.<br/>
+2115984023|00000000||La perle enchantée par Yennefer eu l'effet escompté, et permis à Geralt et Ciri de venir à bout de Gaunter de Meuré, et ainsi venger Poupée.<br/>
+2115984024|00000000||Sh'eenaz indiqua à Geralt un lieu où il serait susceptible de trouver une de ces perles.<br/>
+2115984025|00000000||Hommage à Poupée
+2115984026|00000000|item_name_sted_misc_sky_blue_pearl|Perle Azur
+2115984027|00000000|item_desc_sted_misc_sky_blue_pearl|Objet nécessaire à la quête pour Essi Daven.
+2115984028|00000000|dlc_name_sted|Hommage à Essi Daven
+2115984029|00000000|option_dlc_name_sted|MOD: Hommage à Essi Daven
+2115984030|00000000|content_name_dlc_sted|MOD: Hommage à Essi Daven
+;
+2115984100|00000000||Très bien, je te suis.
+2115984101|00000000||Je te trouve différent de d'habitude.
+2115984102|00000000||Jaskier ?
+2115984103|00000000||Que fais-tu ici ? Si loin de Novigrad.
+2115984104|00000000||Salut Geralt.
+2115984105|00000000||Je suppose que ta présence ici est due à une autre de tes conquêtes.
+2115984106|00000000||Pas vraiment...
+2115984107|00000000||Oui c'est pour une dame,
+2115984108|00000000||mais pas pour ce à quoi tu penses.
+2115984109|00000000||Tu m'intrigues Jaskier.
+2115984110|00000000||Je voudrais que tu viennes avec moi dans un endroit spécial, non loin d'ici.
+2115984111|00000000||Je t'en dirai plus quand nous y serons.
+2115984112|00000000||Je te trouve différent de d'habitude, et si tu me demandes de venir avec toi, tu dois avoir une bonne raison.
+2115984113|00000000||Effectivement Geralt.
+2115984114|00000000||Très bien, je te suis.
+2115984115|00000000||Allons-y.
+;
+2115984200|00000000||Tu vois au loin, c'est Wyzima.
+2115984201|00000000||Il y a quelque temps une épidémie de variole y a fait rage.
+;
+2115984210|00000000||Non! C'est impossible!
+2115984211|00000000||Une bonne chose de faite.
+2115984212|00000000||Absolument.
+;
+2115984220|00000000||Maintenant Poupée,
+2115984221|00000000||j'espère que tu reposes en paix.
+2115984222|00000000||C'est certain Geralt.
+2115984223|00000000||Elle sait à présent qu'elle comptait également pour toi.
+2115984224|00000000||Je retourne sur ma voie.
+2115984225|00000000||A bientôt.
+2115984226|00000000||A bientôt Ciri.
+;
+2115984230|00000000||J'espère que tu reposes en paix à présent Essi.
+2115984231|00000000||Je vais m'efforcer de puiser dans ma mémoire pour y retrouver mes souvenirs à tes côtés.
+2115984232|00000000||Même si tu ne te souviens pas encore précisément d'elle,
+2115984233|00000000||elle sait ce que tu viens de faire pour elle.
+2115984234|00000000||Je retourne sur ma voie.
+2115984235|00000000||A bientôt.
+2115984236|00000000||A bientôt Ciri.
+;
+2115984300|00000000||Oui, je m'en souviens.
+2115984301|00000000||Désolé mais je ne m'en souviens pas.
+2115984302|00000000||Nous y sommes. C'est ici.
+2115984303|00000000||Ici quoi ?
+2115984304|00000000||Ici que repose Essi.
+2115984305|00000000||Te souviens-tu de Petit-Oeil ?
+2115984306|00000000||Oui, je m'en souviens. Son souvenir m'est revenu assez vite après mon amnésie.
+2115984307|00000000||Je considérais Poupée comme ma petite soeur.
+2115984308|00000000||Elle courait après la vie, alors que la mort était sur ses talons.
+2115984309|00000000||Elle était à Wyzima au moment de l'épidémie de variole. Et celle-ci l'a emportée.
+2115984310|00000000||Je ne pouvais pas me résoudre à voir son corps brûler sur les bûchers ardents.
+2115984311|00000000||Alors je l'ai enterrée dans cet endroit paisible, loin de la ville.
+2115984312|00000000||C'est une triste nouvelle que tu m'annonces.
+2115984313|00000000||Je n'ai pas su lui rendre les sentiments qu'elle avait pour moi. Mais il est certain qu'elle m'a touché.
+2115984314|00000000||Elle ne méritait pas ce destin tragique.
+2115984315|00000000||Désolé mais je ne m'en souviens pas. Je suppose que c'est dû à mon amnésie.
+2115984316|00000000||Tu as rencontré Essi il y a quelques années, quand toi et moi sommes allés à Bremervoord.
+2115984317|00000000||Elle avait des sentiments sincères pour toi, même si les choses étaient différentes de ton côté.
+2115984318|00000000||Nous avons fait un petit bout de chemin tous les trois, puis nous nous sommes séparés.
+2115984319|00000000||Elle a gardé, portée comme en talisman porte-bonheur, la perle azur que tu lui avais offerte.
+2115984320|00000000||Je considérais Poupée comme ma petite soeur.
+2115984321|00000000||Elle courait après la vie, alors que la mort était sur ses talons.
+2115984322|00000000||Elle était à Wyzima au moment de l'épidémie de variole. Et celle-ci l'a emportée.
+2115984323|00000000||Je ne pouvais pas me résoudre à voir son corps brûler sur les bûchers ardents.
+2115984324|00000000||Alors je l'ai enterrée dans cet endroit paisible, loin de la ville.
+2115984325|00000000||C'est une triste nouvelle que tu m'annonces.
+2115984326|00000000||Je regrette de lui avoir dit que sa perle azur lui porterait chance.
+2115984327|00000000||Non Geralt.
+2115984328|00000000||Elle savait que tes mots étaient une once d'abnégation pour qu'elle se sente mieux.
+2115984329|00000000||Et pourtant c'est ta perle azur qui lui a donné le courage d'affronter sa plus grande peur. Parce qu'une partie de toi l'accompagnait.
+2115984330|00000000||Comme son luth, elle l'a gardée avec elle jusqu'à la fin. Et la porte toujours sur son coeur.
+2115984331|00000000||Parfois Essi revient à la vie dans mes rêves, comme si rien ne s'était passé.
+2115984332|00000000||Merci Geralt d'être venu avec moi.
+2115984333|00000000||Je n'ai pas eu le courage de venir seul, et je savais que tu passerais à proximité. C'est pourquoi je t'attendais non loin d'ici.
+2115984334|00000000||Dans ces moments, ensemble nous sommes plus forts, même si nous ne sommes pas moins tristes.
+2115984335|00000000||C'est seul qu'on fait son deuil, car on est seul quand on ressent.
+2115984336|00000000||Je retourne à Novigrad.
+2115984337|00000000||Viens-tu avec moi ?
+2115984338|00000000||Avoir des sentiments n'est pas ma principale force. Néanmoins, je ressens le besoin de me recueillir ici plus longtemps.
+2115984339|00000000||Je comprends.
+2115984340|00000000||Si où elle est, Poupée nous voit. Elle est très certainement heureuse de te savoir ici.
+2115984341|00000000||A bientôt Geralt.
+;
+2115984500|00000000||Je vous ferai payer pour ça.
+2115984501|00000000||Vous avez influencé le destin d'Essi pour vos simples desseins ?
+2115984502|00000000||Vous! Ici!
+2115984503|00000000||Quelle manière peu délicate d'accueillir une connaissance.
+2115984504|00000000||Vous avez quelque chose à voir avec ce qui est arrivé à Essi ?
+2115984505|00000000||Moi?
+2115984506|00000000||Ai-je déjà eu quelque chose à voir avec le destin funeste d'une personne….
+2115984507|00000000||Même un être comme moi ne peut être certain de la façon dont les choses vont évoluer si on les laisse faire.
+2115984508|00000000||Cette pauvre fille pouvait représenter une voie différente pour ta destinée.
+2115984509|00000000||Ceci m'aurait contrarié.
+2115984510|00000000||Et je n'aime pas être contrarié.
+2115984511|00000000||Dans ce type de situation,
+2115984512|00000000||il peut m'arriver de donner un coup de pouce au destin
+2115984513|00000000||pour m'assurer qu'il ne viendra pas perturber mes desseins…
+2115984514|00000000||Je vous ferai payer pour ça.
+2115984515|00000000||C'est un défi ?
+2115984516|00000000||J'aime les défis.
+2115984517|00000000||Mais je suis d'une sorte différente des monstres que tu oxis dans tes vagabondages.
+2115984518|00000000||Tu ne peux rien contre moi.
+2115984519|00000000||Je trouverai un moyen.
+2115984520|00000000||Ne t'y épuises pas trop inutilement… Je pourrais encore avoir besoin de tes services.
+2115984521|00000000||Ne t'inquiètes pas, nous nous reverrons…
+2115984522|00000000||mais seulement quand je l'aurai décidé.
+2115984523|00000000||Vous avez influencé le destin d'Essi pour vos simples desseins ?
+2115984524|00000000||C'est juste un effet collatéral.
+2115984525|00000000||Mes actes sont simplement guidés par mes intérêts.
+;
+2115984550|00000000||Qu'attends-tu ?
+2115984551|00000000||Tu veux venger cette barde ou pas ?
+;
+2115984560|00000000||Va chercher cette perle.
+2115984561|00000000||J'ai quelques préparatifs à faire avant de partir de mon côté.
+;
+2115984570|00000000||Laisse-moi une minute, et je suis à toi.
+;
+2115984580|00000000||Je ne vais pas me risquer à la réveiller.
+2115984581|00000000||Sinon, elle sera de mauvaise humeur.
+2115984582|00000000||Je vais attendre le matin.
+;
+2115984590|00000000||Je devrais demander conseil à Yen sur la façon de débarrasser le monde de cet être diabolique.
+2115984591|00000000||Elle doit encore être dans ses appartements de Skellige.
+;
+2115984600|00000000||Je l'ai rencontrée Bremerwoord.
+2115984601|00000000||Jaskier et Essi était amis de longue date.
+2115984602|00000000||Quelle surprise !
+2115984603|00000000||Tu arrives juste à temps.
+2115984604|00000000||J'étais en train de regrouper mes affaires en vue de mon départ de Skellige.
+2115984605|00000000||Avant ton départ,
+2115984606|00000000||j'aimerais solliciter ton aide.
+2115984607|00000000||Et quel genre d'aider ?
+2115984608|00000000||M'aider à tuer un démon.
+2115984609|00000000||Un démon ?
+2115984610|00000000||Tu deviens ambitieux.
+2115984611|00000000||J'aime ça.
+2115984612|00000000||Mais d'où te vient cette idée saugrenue ?
+2115984613|00000000||Ce démon a tué une amie chère à Jaskier et moi,
+2115984614|00000000||nommée Essi Daven.
+2115984615|00000000||J'ai entendu parler d'elle.
+2115984616|00000000||Mais je ne savais pas que vous aviez été amis.
+2115984617|00000000||Je l'ai rencontrée alors que j'aidais le duc Agloval de Bremerwoord.
+2115984618|00000000||J'avais offert à Essi une perle azur...
+2115984619|00000000||Epargne-moi les détails de ta rencontre avec cette barde je te prie.
+2115984620|00000000||Bien que je sois une puissante magicienne, venir à bout d'un démon est au-delà de mes compétences.
+2115984621|00000000||J'ai préféré développer mes connaissances sur d'autres sujets que l'extermination de démons,
+2115984622|00000000||si tu vois ce que je veux dire...
+2115984623|00000000||Je ne peux te garantir de trouver un moyen de tuer un démon.
+2115984624|00000000||Toutefois, je devrais pouvoir t'indiquer comment l'empêcher de nuire durant quelques siècles.
+2115984625|00000000||Mais pour cela il va me falloir un peu de temps pour étudier la question.
+2115984626|00000000||Je vais probablement également devoir aller me procurer des ouvrages anciens.
+2115984627|00000000||Comment puis-je t'aider ?
+2115984628|00000000||Je m'y connais peu en démons,
+2115984629|00000000||mais la nécromancie ne m'est pas étrangère.
+2115984630|00000000||Même si je ne sais pas encore exactement comment il faudra s'y prendre,
+2115984631|00000000||je pense qu'il faudra un objet qui serait susceptible de vous lier, la défunte et toi.
+2115984632|00000000||Cette de perle que tu lui avais offerte pourrait être intéressante...
+2115984633|00000000||J'ai ouï-dire que le duc de Bremerwoord, et sa compagne Sh'eenaz,
+2115984634|00000000||séjournent actuellement à Novigrad dans le quartier de l'île du Temple.
+2115984635|00000000||Il me semble que ce pourrait être un bon point de départ pour savoir comment mettre la main sur une de ces perles.
+2115984636|00000000||Entretemps,
+2115984637|00000000||je vais me renseigner sur comment empêcher ce démon de nuire.
+2115984638|00000000||Je serai de retour d'ici quelques jours.
+2115984639|00000000||Merci Yen.
+2115984640|00000000||Jaskier et Essi était amis de longue date.
+2115984641|00000000||J'ai du mal à imaginer Jaskier être simplement ami avec une fille.
+2115984642|00000000||Oui c'est surprenant, mais Jaskier avait un réel amour fraternel pour elle.
+;
+2115984670|00000000||Yen n'est plus ici.
+2115984671|00000000||Elle est certainement partie chercher des informations pour m'aider.
+2115984672|00000000||Je devrais aller chercher la perle qu'elle m'a demandé de trouver.
+;
+2115984680|00000000||La nuit, je n'ai aucune chance de trouver Agloval et Sh'eenaz.
+2115984681|00000000||Il est tard.
+2115984682|00000000||Je devrais attendre le lever du jour pour rechercher Sh'eenaz et Agloval.
+2115984683|00000000||Agloval et Sh'eenaz ont dû rentrer dans leurs appartements à cause de l'heure tardive.
+2115984684|00000000||Je devrais attendre jusqu'au matin.
+2115984685|00000000||Sh'eenaz et Agloval ne sont pas des oiseaux de nuit.
+2115984686|00000000||Je devrais attendre demain pour les chercher.
+;
+2115984690|00000000||Autant que je m'en souvienne,
+2115984691|00000000||Sh'eenaz avait les cheveux couleur céladon.
+2115984692|00000000||Cela devrait m'aider à la reconnaître.
+;
+2115984700|00000000||J'ai suivi la Voie.
+2115984701|00000000||C'est une longue histoire.
+2115984702|00000000||Sh'eenaz.
+2115984703|00000000||Duc.
+2115984704|00000000||Geralt !
+2115984705|00000000||Comment allez-vous depuis toutes ces années ?
+2115984706|00000000||Disons que j'ai suivi la voie.
+2115984707|00000000||Que nous vaut votre visite ?
+2115984708|00000000||Je suis ici pour Essi Daven.
+2115984709|00000000||Pauvre enfant…
+2115984710|00000000||J'ai appris ce qu'il lui était arrivé.
+2115984711|00000000||Oui elle ne méritait pas ça.
+2115984712|00000000||C'était une fille douée, qui savait dire les mots justes.
+2115984713|00000000||Et ce aussi bien dans ses ballades, que dans les moments disons... opportuns.
+2115984714|00000000||J'en ai fait l'expérience.
+2115984715|00000000||Ce qu'il lui est arrivé n'est pas véritablement le fruit du hasard.
+2115984716|00000000||Un être ancien, puissant et mauvais l'a provoqué.
+2115984717|00000000||C'est terrible !
+2115984718|00000000||Je n'ai pas su rendre à Essi les sentiments qu'elle me portait,
+2115984719|00000000||mais je voudrais au moins tenter de la venger.
+2115984720|00000000||Pour cela j'ai besoin d'une perle bleue azur identique à celle que j'ai offerte à Petit-Oeil.
+2115984721|00000000||Ce ne sera pas chose aisée.
+2115984722|00000000||Elles sont rares.
+2115984723|00000000||Pour autant je pense qu'avec des sens de sorceleur,
+2115984724|00000000||il doit être possible d'en trouver sur la côte au nord d'ici.
+2115984725|00000000||Par contre je pense que les sirènes locales ne seront pas aussi accueillantes que mes soeurs de Bremervoord.
+2115984726|00000000||Je m'en accomoderai.
+2115984727|00000000||Merci pour votre aide.
+2115984728|00000000||Merci pour votre visite Geralt.
+2115984729|00000000||Je n'ai nul doute que vous réussirez.
+2115984730|00000000||A bientôt.
+2115984731|00000000||Ce serait trop long à raconter.
+;
+2115984750|00000000||Vengez cette pauvre fille.
+2115984751|00000000||Vous auriez fait un si joli couple.
+;
+2115984760|00000000||Je suis sûr que vous réussirez.
+;
+2115984770|00000000||Yen n'est plus ici.
+2115984771|00000000||Elle a dû apprendre que nous avions réussi,
+2115984772|00000000||et aura quitté Skellige comme elle le prévoyait.
+;
+2115984790|00000000||Yen a dû avoir le temps de trouver les informations dont elle avait besoin.
+2115984791|00000000||Je devrais retourner auprès d'elle.
+;
+2115984800|00000000||C'est trop dangereux.
+2115984801|00000000||Tu ne sais pas à quoi tu veux te mesurer.
+2115984802|00000000||Ciri ?
+2115984803|00000000||Yennefer m'a raconté ce que tu lui avais demandé.
+2115984804|00000000||C'est alors que m'est revenu en mémoire le recueil de poésie d'Essi Daven intitulé "La Perle bleue".
+2115984805|00000000||Je l'avais lu étant enfant à l'époque où j'étais en formation avec Yennefer au temple de Melitele.
+2115984806|00000000||Ce recueil m'avait empli d'émotion,
+2115984807|00000000||et je comprends à présent pourquoi.
+2115984808|00000000||Je ne voudrais pas vous interrompre,
+2115984809|00000000||mais sachez que mes recherches ont portées leur fruit.
+2115984810|00000000||Mon intuition était bonne.
+2115984811|00000000||Un objet te liant au défunt est effectivement utile.
+2115984812|00000000||Comme je le craignais,
+2115984813|00000000||ce ne sera pas suffisant pour te permettre de détruire cet être diabolique,
+2115984814|00000000||mais cela vous aidera à le renvoyer d'où il vient,
+2115984815|00000000||et cela pour un bon moment.
+2115984816|00000000||As-tu une de ces perles ?
+2115984817|00000000||Il te faudra la déposer sur la tombe de ton amie.
+2115984818|00000000||Ceci invoquera et affaibliera le démon.
+2115984819|00000000||Il ne vous restera plus alors qu'à user de vos compétences au combat.
+2115984820|00000000||Que veux-tu dire par "vous" ?
+2115984821|00000000||Je viens avec toi.
+2115984822|00000000||Je n'ai pas connue Essi Daven,
+2115984823|00000000||mais sachant à présent ce qui se cachait derrière ces poèmes,
+2115984824|00000000||j'ai immédiatement voulu t'aider à détruire ce diable.
+2115984825|00000000||C'est trop dangereux.
+2115984826|00000000||J'y vais seul.
+2115984827|00000000||Hors de question.
+2115984828|00000000||Même affaibli,
+2115984829|00000000||vous ne serez pas trop de deux pour le vaincre.
+2115984830|00000000||Ça ne me plaît pas mais j'imagine que n'ai guère le choix.
+2115984831|00000000||Exactement.
+2115984832|00000000||Très bien...
+2115984833|00000000||Es-tu prête ?
+2115984834|00000000||Je suis prête depuis la minute où je suis arrivée ici.
+2115984835|00000000||Alors allons-y.
+2115984836|00000000||Revenez-moi entier.
+2115984837|00000000||Tu ne sais pas à quoi tu veux te mesurer.
+2115984838|00000000||J'ai déjà affronté des créatures très puissantes.
+;
+2115984900|00000000||Essi repose ici.
+2115984901|00000000||Je vais poser la perle sur sa tombe.
+2115984902|00000000||Oui finissons-en.
+2115984903|00000000||Ça marche !
+2115984904|00000000||Reste sur tes gardes.
+2115984905|00000000||Mais qu'est-ce que...
+2115984906|00000000||Finalement on dirait bien que c'est moi qui ai décidé de notre prochaine rencontre.
+2115984907|00000000||Et ce sera la dernière.
+2115984908|00000000||Je vois que tu n'es pas venu seul.
+2115984909|00000000||Dommage…
+2115984910|00000000||J'aurais pu avoir des projets pour elle aussi.
+2115984911|00000000||Mais je n'ai pas d'autre choix que de vous tuer tous les deux à présent.
+2115984912|00000000||C'est ce qu'on va voir...

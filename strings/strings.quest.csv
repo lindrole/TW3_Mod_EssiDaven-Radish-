@@ -1,0 +1,33 @@
+;meta[language=en]
+; id      |key(hex)|key(str)| text
+2115984000|00000000||Agloval
+2115984001|00000000||Sh'eenaz
+2115984002|00000000||Gaunter O'Dimm
+2115984003|00000000||Geralt finally succeeds in overcoming Gaunter O'Dimm.<br/>I hope this news eases Essi's spirit where she is, even if it doesn't bring her back to us.<br/>
+2115984004|00000000||Geralt and Essi met in Bremervoord.<br/>Despite Geralt's clumsiness and lack of tact, Essi fell under the witcher's spell, but it wasn't reciprocated.<br/>Geralt, Essi and I went a little way together, then we separated.<br/>A few years later, Poppet died of smallpox.<br/><br/>Recent events have made me feel the need to visit Poppet's grave.<br/>I take this opportunity to inform Geralt of Essi's doom, and show him her burial place.<br/>
+2115984005|00000000||It turned out that the fate of Poppet was not the fruit of chance, but had been caused by this devil of Master Mirror.<br/>
+2115984006|00000000||Essi Daven
+2115984007|00000000||Following their exchange in Novigrad, Sh'eenaz told Geralt where he could find one of those Sky Blue Pearls he needed.<br/>
+2115984008|00000000||A few years ago, Geralt had been hired by Duke Agloval to convince his beloved mermaid Sh'eenaz to make "a little sacrifice", and change her mermaid tail for human legs.<br/>After a few adventures, and the meeting of my dear Essi Daven, also nicknamed "Little-Eye", or more personally "Poppet", Sh'eenaz finally agreed to join definitively on dry land, her beloved Agloval.<br/>
+2115984009|00000000||Sh'eenaz and Agloval
+2115984010|00000000||MOD questgroup_sted Quests
+2115984011|00000000||Search a Sky Blue Pearl.
+2115984012|00000000||Search a Sky Blue Pearl.
+2115984013|00000000||Follow Dandelion.
+2115984014|00000000||Go back to Yennefer with the pearl.
+2115984015|00000000||Visit Skellige to ask Yennefer for help.
+2115984016|00000000||Defeat Gaunter O'Dimm.
+2115984017|00000000||Return to the road to Vizima.
+2115984018|00000000||Find Duke Agloval and his mate Sh'eenaz in Novigrad.
+2115984019|00000000||Geralt learned of Essi's sad fate and later discovered that this devil Gaunter O'Dimm had provoked it.<br/>A mixture of anger and injustice filled Geralt, who went to Yennefer for help.<br/>
+2115984020|00000000||Returning to Yennefer after finding the pearl, Geralt was surprised to see Ciri there.<br/>Ciri told him that as a child in the Temple of Melitele, she had read Essi's collection of poems, and that it had filled her with emotion.<br/>Meanwhile Yennefer had found a way to enchant the pearl to help them defeat this devilish being.<br/>
+2115984021|00000000||Although noticeably jealous at Geralt's mention of Poppet, Yennefer agreed to help him.<br/>She asked him to find a sky blue pearl like the one Geralt had given to Little-Eye.<br/>To do this she advised him to find Agloval, Duke of Bremerwoord, and her companion Sh'eenaz, the celadon-haired mermaid, who agreed for love to change her fishtail into legs.<br/>
+2115984022|00000000||I was waiting for Geralt not far from White Orchard, to show a him a special place to me.<br/>
+2115984023|00000000||The pearl enchanted by Yennefer had the desired effect, and allowed Geralt and Ciri to defeat Gaunter O'Dimm, and thus avenge Poppet.<br/>
+2115984024|00000000||Sh'eenaz pointed Geralt to a place where he could find one of these pearls.<br/>
+2115984025|00000000||A Small Tribute to Poppet
+2115984026|00000000|item_name_sted_misc_sky_blue_pearl|Sky Blue Pearl
+2115984027|00000000|item_desc_sted_misc_sky_blue_pearl|Item needed to complete Essi Daven's quest.
+2115984028|00000000|dlc_name_sted|A Small Tribute to Essi Daven
+2115984029|00000000|option_dlc_name_sted|MOD: A Small Tribute to Essi Daven
+2115984030|00000000|content_name_dlc_sted|MOD: A Small Tribute to Essi Daven

@@ -1,0 +1,68 @@
+;meta[language=en]
+; id      |key(hex)|key(str)| text
+2115994100|00000000||Dandelion?
+2115994101|00000000||What are you doing here? So far from Novigrad.
+2115994102|00000000||Hello Geralt.
+2115994103|00000000||I suppose that your presence here is due to another one of your conquests.
+2115994104|00000000||Not really...
+2115994105|00000000||Yes it's for a lady,
+2115994106|00000000||but not for what you think.
+2115994107|00000000||You intrigue me Dandelion.
+2115994108|00000000||I want to go to a special place not far from here, where I would like you come with me.
+2115994109|00000000||I will tell you more when we get there.
+2115994110|00000000||Very well, I follow you.
+2115994111|00000000||I find you different from usual, and if you ask me to come with you, you must have a good reason.
+2115994112|00000000||Indeed Geralt.
+2115994113|00000000||Let's go.
+2115994200|00000000||You see in the distance, it's Vizima.
+2115994201|00000000||Some time ago a smallpox epidemy has raged there.
+2115994300|00000000||Yes, I remember.
+2115994301|00000000||Sorry but I don't remember.
+2115994302|00000000||Here we are.. It's here.
+2115994303|00000000||Here what?
+2115994304|00000000||Here where rests Essi.
+2115994305|00000000||Do you remember Little Eye?
+2115994306|00000000||Yes, I remember. Her memory came back to me quite quickly after my amnesia.
+2115994307|00000000||I considered Poppet as my little sister.
+2115994308|00000000||She was running after life, while death was on her heels.
+2115994309|00000000||She was in Vizima at the time of the smallpox epidemic. And it took her away.
+2115994310|00000000||I couldn't bring myself to see her burn on the funeral pyres.
+2115994311|00000000||So I buried her in this peaceful place, far from the city.
+2115994312|00000000||This is very sad news that you are telling me.
+2115994313|00000000||I was not able to return to her the feelings she had for me. But it is certain that she affected me.
+2115994314|00000000||She did not deserve this tragic fate.
+2115994315|00000000||Sorry but I don't remember. I guess it's due to my amnesia.
+2115994316|00000000||You met some years ago with Essi, when you and I went to Bremervoord.
+2115994317|00000000||She had genuine feelings for you, even though things were different on your end.
+2115994318|00000000||The three of us went a little way together, then we separated.
+2115994319|00000000||She kept, worn as a lucky talisman, the sky blue pearl that you gave her.
+2115994320|00000000||I considered Poppet as my little sister.
+2115994321|00000000||She was running after life, while death was on her heels.
+2115994322|00000000||She was in Vizima at the time of the smallpox epidemic. And it took her away.
+2115994323|00000000||I couldn't bring myself to see her burn on the funeral pyres.
+2115994324|00000000||So I buried her in this peaceful place, far from the city.
+2115994325|00000000||This is very sad news that you are telling me.
+2115994326|00000000||I regret telling that her sky blue pearl would bring her luck.
+2115994327|00000000||No Geralt.
+2115994328|00000000||She knew your words were a little sacrifice to make her feel better.
+2115994329|00000000||And yet it was your sky blue pearl that gave her the courage to face her greatest fear. Because a part of you accompanied her.
+2115994330|00000000||Like her lute, she kept it with her until the end. And still carries it on her heart.
+2115994331|00000000||Sometimes Essi comes back to life in my dreams, as if nothing had happened.
+2115994332|00000000||Thank you Geralt for coming with me.
+2115994333|00000000||I didn't have the courage to come alone, and I knew you would pass by. That's why I was waiting for you not far from here.
+2115994334|00000000||In these moments, together we are stronger, even if we are no less sad.
+2115994335|00000000||It is alone that we mourn, because we are alone when we feel.
+2115994336|00000000||I'm going back to Novigrad.
+2115994337|00000000||Do you come with me?
+2115994338|00000000||Having feelings is not my main strength. Nevertheless, I feel the need to collect myself here longer.
+2115994339|00000000||I understand.
+2115994340|00000000||If where she is, Poppet sees us. She is most certainly happy to know you are here.
+2115994341|00000000||See you soon Geralt.; 
+2115994000|00000000||MOD questgroup_essidaven Quests
+2115994001|00000000||Follow Dandelion
+2115994002|00000000||Now Geralt knew of Essi's doom and whereabouts.<br/>
+2115994003|00000000||I was waiting for Geralt not far from White Orchard. We then headed to a special place...<br/>
+2115994004|00000000||A Small Tribute to Poppet
+2115994005|00000000|dlc_name_essidaven|Prod Quest Caption Essi Daven
+2115994006|00000000|option_dlc_name_essidaven|MOD: Prod Quest Caption Essi Daven
+2115994007|00000000|content_name_dlc_essidaven|MOD: Prod Quest Caption Essi Daven
