@@ -1,0 +1,20 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=You! Here!]
+;meta[translation=juː hˈiə]
+;meta[audio-hypothesis=SIL HH IY IH L AO R SIL K IH IY EH R SIL]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+;_       |  260|  345|  1.00| -1.00| <- VERIFY! | _  d  HH [  260 -  345]
+------------------------------------------------------------------------
+j       |  345|  505|  1.00|  0.50| ok         | j  ~> IY [  345 -  425] + IH [  425 -  505]
+;_       |  505|  635|  1.00| -1.00| <- VERIFY! | _  d  L  [  505 -  635]
+;_       |  635|  725|  1.00| -1.00| <- VERIFY! | _  d  AO [  635 -  725]
+;_       |  725|  790|  1.00| -1.00| <- VERIFY! | _  d  R  [  725 -  790]
+;_       |  900|  995|  1.00| -1.00| <- VERIFY! | _  d  K  [  900 -  995]
+u       |  995| 1115|  1.00|  0.12| ok         | u  ~> IH [  995 - 1025] + IY [ 1025 - 1115]
+------------------------------------------------------------------------
+h       | 1115| 1155|  1.00|  0.01| ok         | h  ~  EH [ 1115 - 1155]
+iə      | 1155| 1450|  1.10|  0.01| ok         | iə ~  R  [ 1155 - 1450]

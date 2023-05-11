@@ -1,0 +1,23 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=It's a challenge?]
+;meta[translation=ɪts ɐ tʃˈalɪndʒ]
+;meta[audio-hypothesis=SIL IH T S IH T CH AE L AH N JH]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+ɪ       |  270|  355|  1.00|  2.00| ok         | ɪ  ~  IH [  270 -  355]
+t       |  355|  385|  1.00|  2.00| ok         | t  ~  T  [  355 -  385]
+s       |  385|  425|  1.00|  2.00| ok         | s  ~  S  [  385 -  425]
+;_       |  425|  495|  1.00| -1.00| <- VERIFY! | _  d  IH [  425 -  495]
+------------------------------------------------------------------------
+ɐ       |  495|  535|  1.00| -1.00| <- VERIFY! | ɐ  ~  T  [  495 -  535]
+------------------------------------------------------------------------
+tʃ      |  535|  655|  1.00|  2.00| ok         | tʃ ~  CH [  535 -  655]
+a       |  655|  735|  1.10|  1.70| ok         | a  ~  AE [  655 -  735]
+l       |  735|  875|  1.00|  2.00| ok         | l  ~  L  [  735 -  875]
+ɪ       |  875|  925|  1.00|  0.25| ok         | ɪ  ~  AH [  875 -  925]
+n       |  925|  985|  1.00|  2.00| ok         | n  ~  N  [  925 -  985]
+dʒ      |  985| 1150|  1.00|  2.00| ok         | dʒ ~  JH [  985 - 1150]

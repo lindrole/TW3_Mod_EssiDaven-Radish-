@@ -1,0 +1,12 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=Me?]
+;meta[translation=mˈiː]
+;meta[audio-hypothesis=SIL M IY SIL]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+m       |  250|  385|  1.00|  2.00| ok         | m  ~  M  [  250 -  385]
+i       |  385|  690|  1.10|  2.00| ok         | i  ~  IY [  385 -  690]
