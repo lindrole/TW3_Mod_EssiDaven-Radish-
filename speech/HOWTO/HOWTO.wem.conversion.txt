@@ -1,0 +1,62 @@
+HOWTO convert audio into wem format
+------------------------------------
+
+For the conversion you need Wwise from https://www.audiokinetic.com/
+
+This *minimal* howto is only intended for the conversion into wem. The software
+suite can do MUCH MUCH more.
+
+Download and installation of required software
+-----------------------------------------------
+
+All tests were done with version v2015.1.6 which is no longer available from the
+audiokinetic WEbsite. The older version v2013.2.9 was used by CDPR to create W3
+and (obviously) works, too. Be aware that there are reported issues with other
+versions. Version v2013.2.9 is available on nexus.
+
+1. Download (offline version) from https://www.nexusmods.com/witcher3/mods/3234
+   For x64 offline installation you need:
+
+    - Wwise_v2013.2.9_Setup.exe
+    - Authoring_Data.msi
+    - Authoring_x64.msi
+
+    - in addition you may need one or all of the MS runtimes:
+        - vc2008redist_x64.exe
+        - vc2010redist_x64.exe
+        - vc2013redist_x64.exe
+
+2. Install the above
+
+
+Conversion of wav to wem
+-------------------------
+
+Note: the order is important! Settings in step 3 must be set before audio is
+imported!
+
+1. Start Wwise
+
+2. Create new project
+
+3. Set default conversion
+    - Project/Project Settings/Source Settings/
+        - Default Conversion Settings:
+            Vorbis Quality High
+
+4. Import audio:
+    - Project/Import Audio Files...
+        - (optional) Import as: Sound Voice
+        - add files
+            - files must be uncompressed wav (use 44.1khz or 48khz mono for voice)
+        - Import
+
+5. (optional) clear audio cache (removes all previously created files from cache dir):
+    Project/Clear Audio File Cache...
+
+6. Convert all audio files:
+    - Project/Convert All Audio Files...
+
+7. Copy all wem files from cache to a save location
+    - cache location:
+        in your project dir ".cache/..."

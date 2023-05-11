@@ -1,0 +1,401 @@
+HOWTO generate lipsynced w3speech files from audio
+---------------------------------------------------
+
+Assumptions:
+    - you are familiar with dialog scene creation with the w2scene encoder
+    - you are familiar with w3strings file creation and know what the idspace is
+    - you already have a strings csv with strings with a custom idspace from a
+      dialog
+    - if you want to generate lipsync from audio:
+      you have recorded/prepared your custom audio and have split it according
+      the strings from the strings csv
+    - you have installed and are familiar with an audio editor of your choice
+      (e.g. http://www.audacityteam.org/)
+    - (optional but recommened) you installed the storyboard UI mod for reviewing
+      voiceline/animation playback
+
+
+IMPORTANT:
+    lipsync tuning is time consuming and should be attempted when the audio is
+    final!
+
+
+First time creation (from audio)
+------------------------------------------------
+
+The easiest way to setup the project is to use the radish template project
+package. Although the project template provides a directory structure and
+utilities for more ambitious mod projects (including quests, custom environments,
+models, etc.) it also supports adding custom voiceline with lipsync animations.
+In this HOWTO only this small part will be used.
+
+
+1. setup project dir
+
+    - copy the content of the template.project folder into a new directory, e.g.
+
+      C:\w3.mods\mynewspeech\
+
+    - rename _settings_.bat-template to _settings_.bat in the new project directory
+
+    - edit the "_settings_.bat" batch file and adjust the MODNAME setting to your
+      liking, e.g. to "MyNewSpeech":
+
+      set MODNAME=MyNewSpeech
+
+      If you have different paths than in the introduction you can adjust
+      these in this batch, too:
+
+      set DIR_W3=<your witcher 3 directory>
+      set DIR_MODKIT=<your modkit bin\x64 directory>
+      set DIR_ENCODER=<your encoder installation directory>
+
+    - run _createLinks_.bat ONCE to connect the project with the modkit r4data
+      depot. You should see something like this:
+
+          --------------------------------------------------------------------------
+          -- LINKING PROJECT to MODKIT DEPOT
+          --------------------------------------------------------------------------
+
+          ERROR: depot directory not found!
+          ERROR: make sure "C:\w3.modding\modkit\r4data\dlc\dlcMyNewSpeech" exists and points to "C:\w3.mods\mynewspeech\\uncooked\dlc\dlcMyNewSpeech"
+
+          --------------------------------------------------------------------------
+          Should the following paths be linked?
+
+          1. "C:\w3.modding\modkit\r4data\dlc\dlcMyNewSpeech"
+           to
+             "C:\w3.mods\mynewspeech\\uncooked\dlc\dlcMyNewSpeech"
+
+          and
+
+          2. "C:\w3.modding\modkit\r4data\scripts\dlcMyNewSpeech"
+           to
+             "C:\w3.mods\mynewspeech\\mod.scripts"
+
+          --------------------------------------------------------------------------
+
+      Check the paths and confirm if they are correct. Otherwise go back to step 3 and
+      make sure you setup the correct paths there first.
+
+      This will create links in the modkit installation into some of your new project
+      subdirectorties required for wcc lite to run properly with the provided project
+      batch files.
+
+
+    - create a language specific subdir for wav and one for wem files in the
+      project if it doesn't exist yet:
+
+        <project dir>/speech/speech.en.wav
+        <project dir>/speech/speech.en.wem
+
+    - copy the csv containing the strings for all the audio lines (and ONLY those)
+      into your <project dir>/speech/ directory.
+
+    - rename the strings csv to "mod<MODNAME>.speech.csv" with MODNAME written
+      exactly as in the _settings_.bat file. This will ensure the strings will be
+      picked by the strings encoder, too.
+
+
+2. prepare audio for phoneme extraction
+
+    - make sure there is (or prepend) around 300ms of silence before the first
+      audible sound to prevent jerked mouth opening
+
+    - save audio as 44khz mono uncompressed wav into the above speech.en.wav directory
+
+    - (optional) if you already know the stringid for the audio you can (re)name
+      the audio file and set the stringid as a 10 digit prefix like:
+
+      nnnnnnnnnn<any info you like>.wav
+
+      This will skip the string id assigning and auto renaming step of the
+      phoneme extraction part and directly start the extraction in the gui.
+
+
+3. phoneme extraction
+
+    - open the phoneme extractor gui by starting _extract-phonemes-from-audio.bat
+      from the speech directory of your project. it will attempt to load the
+      strings csv file named
+
+        mod<MODNAME>.speech.csv
+
+    - select and assign the correct string id to the audio in the GUI by clicking
+      on an entry in the audio selection queue with a "missing id" label. The audio
+      file will be automatically renamed to
+
+        nnnnnnnnnn[dd.dd]<start of the string>.<ext>
+
+    - the phoneme extraction process should start automatically for all audio
+      files without an accompanying phoneme file in the background if it has a
+      line id assigned. The audio selection queue is updated regularily to reflect
+      the state of the extraction on a file by file basis
+
+    - once the extraction finishes for an audio file the information will be
+      saved into a phoneme file. the next time the gui starts these audio files
+      will not be processed anymore. to reextract the timings again just delete
+      the phoneme file
+
+
+4. phoneme timing tuning
+
+    - every audio entry in the audio selection queue with the state "done" has
+      phoneme information assigned. the timings of the phonemes can be adjusted
+      interactively with the gui and saved
+
+    - see the HOWTO.tuning-options.txt for more information (read especially
+      part 1 "Tuning of (3) phoneme files (timings and weights)")
+
+
+5. convert audio to wem
+
+    - see the docs.speech/HOWTO.wem.conversion.txt, use the renamed audio files
+      from step 3 as source for the conversion so you don't have to rename the
+      wem files manually afterwards
+
+    - put the converted files into the wem folder
+
+        <project dir>/speech/speech.en.wem/
+
+    - make sure the files names have the same naming scheme as in step 3 (but with
+      wem extension):
+
+        <project dir>/speech/speech.en.wem/nnnnnnnnnn[dd.dd]<any info you like>.wem
+
+
+6. generate lipsync animation and pack as w3speech file
+
+    - the used project template from the previous steps is a setup for more complex
+      mod projects. this HOWTO is only about generating and testing lipsync
+      animations. So there is a stripped down convenience batch file in the
+      docs.lipsync directory that can be used to "just" start the necessary steps
+      of the generic radish build pipeline and also directly install all necessary
+      parts into your game installation as a dlc mod
+
+    - copy the "lipsync-encode-and-test.bat" from the docs.lipsync directory into
+      the "speech" directory of your project
+
+    - open the windows command prompt, adjust the layout and history buffer of the
+      window in the window properties to double the width and increase height to
+      see the output unmangled. Then navigate to your project speech folder
+      using the command prompt, e.g:
+
+      cd \w3.mods\mynewspeech\speech\
+
+
+    - start the lipsync-encode-and-test.bat file without any parameters in the
+      command prompt. It will generate the lipsync animation from the phoneme
+      files, pack the audio and the animations into a w3speech file, create a sbui
+      voiceline test script and copy all the necessary files into your game
+      installation.
+
+      You should see more or less the following output (some parts omitted
+      with [...]):
+
+      --------------------------------------------------------------------------
+      -- ENCODING STRINGS
+      --------------------------------------------------------------------------
+
+      [...]
+
+      w3strings decoder/encoder v0.6.2
+      INFO - ENCODING c:\w3.mod\mynewspeech\\strings\all.en.strings.csv to c:\w3.mod\mynewspeech\\strings\all.en.strings.csv.w3strings (testscript: c:\w3.mod\mynewspeech\\strings\all.en.strings.csv.w3strings.ws)
+      INFO - opening c:\w3.mod\mynewspeech\\strings\all.en.strings.csv...
+      INFO - identified language: en
+      WARN - > autogenerating #0 missing string ids...
+      INFO - verifying string ids are within [2119999000..2119999999]
+      INFO - creating c:\w3.mod\mynewspeech\\strings\all.en.strings.csv.w3strings...
+      INFO - storing language: en
+      INFO - storing 40 strings
+      INFO - creating c:\w3.mod\mynewspeech\\strings\all.en.strings.csv.w3strings.ws...
+
+      -- COPYING W3STRINGS INTO DLC FOLDER
+
+      [...]
+
+      --------------------------------------------------------------------------
+      -- ENCODING SPEECH
+      --------------------------------------------------------------------------
+
+       >> GENERATING LIPSYNC ANIMATIONS
+
+      w3speech lipsync creator v0.6.2
+      INFO - GENERATING lipsyncanim: SCANNING c:\w3.mod\mynewspeech\\speech\speech.en.wav\*.phonemes for input files
+      INFO - parsing yaml file: d:\w3.modding\radish-tools\repo.lipsync/lipsync_settings.yml
+      INFO - lipsync settings:
+      INFO - > delay:                   -0.15s
+      INFO - > default kernel:          moving_avg2
+      INFO - > pose with dif. kernel:   #3
+      INFO - > global intensity:        1.2
+      INFO - > pose intensities >  0.0: #85
+      INFO - > pose intensities == 0.0: #0
+      INFO - scanning for repository files [d:\w3.modding\radish-tools\repo.lipsync/*.repo.yml]
+      INFO - parsing yaml file: d:\w3.modding\radish-tools\repo.lipsync\phoneme.[aɪ].stats.repo.yml
+      [...]
+      INFO - parsing yaml file: d:\w3.modding\radish-tools\repo.lipsync\phoneme.alias.repo.yml
+      INFO - phoneme mappings in repository: 8363
+      INFO - > phoneme aliases: 11
+      INFO - scanning for files [c:\w3.mod\mynewspeech\\speech\speech.en.wav\*.phonemes]
+      INFO - id: 2119999032, found phoneme track [c:\w3.mod\mynewspeech\speech\speech.en.wav\2119999032.phonemes]. encoding to lipsyncanim...
+      INFO - creating c:\w3.mod\mynewspeech\\speech\speech.en.wem\2119999032.lipsyncanim.csv...
+      INFO - storing 47 weights for 57 pose tracks
+      INFO - phoneme mapping query matches: #18
+      INFO - > full context:          #15
+      WARN - > start context:         #3
+      [...]
+      INFO - finished generating #40 lipsyncanim files.
+      --------------------------------------------------------------------------
+       >> ENCODING LIPSYNC ANIMATIONS TO CR2W
+
+      w3speech encoder v0.6.2
+      INFO - ENCODE CR2W: SCANNING c:\w3.mod\mynewspeech\\speech\speech.en.wem for input files
+      INFO - scanning for files [c:\w3.mod\mynewspeech\\speech\speech.en.wem/*]
+      INFO - id: 2119999032, found lipsync definition [c:\w3.mod\mynewspeech\speech\speech.en.wem\2119999032.lipsyncanim.csv]. encoding to cr2w...
+      INFO - opening c:\w3.mod\mynewspeech\speech\speech.en.wem\2119999032.lipsyncanim.csv...
+      INFO - read 57 lipsync anim posetracks
+      INFO - creating c:\w3.mod\mynewspeech\speech\speech.en.wem\2119999032.lipsyncanim.cr2w...
+      [...]
+      INFO - finished encoding of #40 lipsyncanim cr2w files.
+      --------------------------------------------------------------------------
+       >> CREATING W3SPEECH FILE
+
+      w3speech encoder v0.6.2
+      INFO - PACKING c:\w3.mod\mynewspeech\\speech\speech.en.wem into E:\The Witcher 3 Wild Hunt\dlc\dlcMyNewSpeech\content
+      INFO - scanning for files [c:\w3.mod\mynewspeech\\speech\speech.en.wem/*]
+      INFO - found #40 vo data sets
+      INFO - reading vo data into buffer for packaging
+      INFO - reading vo data for id: 2119999032
+      INFO - opening c:\w3.mod\mynewspeech\speech\speech.en.wem\2119999032[1.8]just.guessing.wem...
+      INFO - opening c:\w3.mod\mynewspeech\speech\speech.en.wem\2119999032.lipsyncanim.cr2w...
+      [...]
+      INFO - creating C:\The Witcher 3 Wild Hunt\dlc\dlcMyNewSpeech\content\speech.en.w3speech.packed...
+      INFO - storing vo data for id: 2119999032
+      [...]
+      INFO - finalizing header information
+      INFO - storing language: en
+      INFO - storing #40 vo data mappings
+      INFO - generating voiceline list scriptfile...
+      INFO - loading strings file c:\w3.mod\mynewspeech\\strings\all.en.strings.csv
+      INFO - loaded 40 strings
+      INFO - creating c:\w3.mod\mynewspeech\\mod.scripts-tmp\local/mynewspeech_additional_voicelines.ws...
+      --------------------------------------------------------------------------
+      >> UPDATING DLC W3SPEECH FILE
+
+
+      --------------------------------------------------------------------------
+      -- DEPLOYING TMP MOD
+      --------------------------------------------------------------------------
+
+      [...]
+
+      --------------------------------------------------------------------------
+      -- DONE.
+      --------------------------------------------------------------------------
+
+
+    - ignore warnings and "no match" errors in the output for now. those are hints
+      for things to correct/tune later. verify that a new w3speech file was
+      created:
+
+        <DIR_W3>/dlc/dlc<MODNAME>/content/enpc.w3speech
+
+
+7. start game and verify the lines are played with animation
+
+    There are multiple ways to playback and verify the new audio lines. One beeing
+    creating a specific w2scene and playing it. Another is the playback from
+    witcher script.
+
+    However I recommend to use the storyboard UI mod as it's the most easy and
+    flexible option: it provides a dedicated workmode with a tailored camera to
+    playback and preview/review voicelines. It's also trivial to use different
+    actor templates for voice line playback.
+
+    The speech packer automatically generates a script file containing a generated
+    script function which makes all the voicelines known to sbui. This script is
+    automatically copied into the game installation but the function has to be
+    enabled in sbui manually.
+
+
+    - open the automatically generated file
+
+        <project-dir>/mod.scripts-tmp/<MODNAME>_additional_voicelines.ws
+
+
+    - at the top it should contain a function named "<MODNAME>_addExtraActorVoiceLines"
+      which will look something like this :
+
+      function mynewspeech_addExtraActorVoiceLines(category: String, out lines: array<SSbUiExtraLines>) {
+          mynewspeech_addExtraLines_1(category, lines);
+      }
+
+    - a call to this function needs to be added into the sbui file
+
+        <dir_w3>/mods/modStoryboardUi/content/scripts/local/mod_additional_voicelines.ws
+
+      like this:
+
+      [...]
+      // ----------------------------------------------------------------------------
+      function SBUI_getExtraActorVoiceLines() : array<SSbUiExtraLines> {
+          var actorLines: array<SSbUiExtraLines>;
+
+          mynewspeech_addExtraActorVoiceLines("mynewspeech", actorLines);  // <-- this line
+
+          return actorLines;
+      }
+      // ----------------------------------------------------------------------------
+
+
+    - start the game, open the console, start the storyboard with the command
+
+        sbui
+
+    - change into the Voicelines Mode (key 9) and activate assignment of
+      dialoglines (key V). you should see a category named XTRA at the bottom of
+      the list menu.
+
+    - select the special cam (key LEFT CTRL) and playback your new voicelines by
+      selecting one of them
+
+
+First time creation (from text only)
+----------------------------------------------------
+
+Generation of mouth movement without audio is also possible. Instead of using
+timing information from the audio phoneme extraction it generates an uniform
+timing for all phonemes of the textline. The remaining workflow is the same but
+uses (stretched) stand-in silence wem files as audio.
+
+1. setup project dir as above
+
+
+2. generate phonemes from strings-csv
+
+    - open the windows command prompt, adjust the layout and history buffer of the
+      window in the window properties to double the width and increase height to
+      see the output unmangled. Then navigate to your speech project folder using
+      the command prompt, e.g:
+
+        cd \w3.mods\mynewspeech\speech
+
+    - open a commandline window  gui by starting _extract-phonemes-from-audio.bat
+      from the speech directory of your project. it will attempt to load the
+      strings csv file named
+
+        mod<MODNAME>.speech.csv
+
+    - start the phoneme generation in the commandline window with
+
+        _generate-phonemes-from-text.bat
+
+    - check the ouput for any errors and check that for every string a phoneme
+      file was generated in the wav sub directory and a placeholder wem audiofile
+      in the wem subdirectory of your project
+
+
+3. generate lipsync animation and pack as w3speech file as in step 6. from above
+
+
+4. verify the animations as in step 7. from above
