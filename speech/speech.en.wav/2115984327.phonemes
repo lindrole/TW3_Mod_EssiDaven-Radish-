@@ -1,0 +1,22 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=No, Geralt.]
+;meta[translation=nˈəʊ dʒˈɛɹɒlt]
+;meta[audio-hypothesis=SIL N OW V +SPN+ G AE R AH L T IH P SIL]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+n       |  280|  385|  1.00|  2.00| ok         | n  ~  N  [  280 -  385]
+əʊ      |  385|  535|  1.10|  2.00| ok         | əʊ ~  OW [  385 -  535]
+;_       |  535|  575|  1.00| -1.00| <- VERIFY! | _  d  V  [  535 -  575]
+------------------------------------------------------------------------
+dʒ      |  675|  765|  1.00|  1.70| ok         | dʒ ~  G  [  675 -  765]
+ɛ       |  765|  835|  1.10| -1.00| <- VERIFY! | ɛ  ~  AE [  765 -  835]
+ɹ       |  835|  885|  1.00|  2.00| ok         | ɹ  ~  R  [  835 -  885]
+ɒ       |  885|  935|  1.00|  1.70| ok         | ɒ  ~  AH [  885 -  935]
+l       |  935|  985|  1.00|  2.00| ok         | l  ~  L  [  935 -  985]
+t       |  985| 1055|  1.00|  2.00| ok         | t  ~  T  [  985 - 1055]
+;_       | 1055| 1105|  1.00| -1.00| <- VERIFY! | _  d  IH [ 1055 - 1105]
+;_       | 1105| 1170|  1.00| -1.00| <- VERIFY! | _  d  P  [ 1105 - 1170]
