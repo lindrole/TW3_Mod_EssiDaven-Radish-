@@ -1,0 +1,32 @@
+production:
+  settings:
+    sceneid: 59
+    strings-idspace: 5984
+    strings-idstart: 590
+
+  gameplay: true
+
+  assets:
+    actors:
+      geralt:
+        repo: "geralt"
+        by_voicetag: true
+        # tags: [ "PLAYER" ]
+
+dialogscript:
+  player: "geralt"
+  actors: [ "geralt" ]
+
+  section_start:
+    - PAUSE: 0.1
+    - NEXT: section_1
+
+  section_1:
+    - PAUSE: 3.0
+    - geralt: "I should ask Yen for advice on how to rid the world of this devilish being."
+    - PAUSE: 0.5
+    - geralt: "She must still be in her Skellige's apartments."
+    - NEXT: section_exit
+
+  section_exit:
+    - EXIT

@@ -1,0 +1,1790 @@
+repository:
+  actors:
+    geralt:
+      template: "gameplay\\templates\\characters\\player\\player.w2ent"
+
+    yennefer:
+      #INITIALtemplate: "characters\\npc_entities\\main_npc\\yennefer.w2ent"
+      template: "quests\\main_npcs\\yennefer.w2ent"
+      appearance: [ "yennefer_gown" ]
+
+
+  animations:
+    anim_6717_add_gesture_slight_explain_07:
+      animation: "add_gesture_slight_explain_07"
+      frames: 83
+
+    anim_6714_add_gesture_slight_explain_04:
+      animation: "add_gesture_slight_explain_04"
+      frames: 82
+
+    anim_12462_add_idle_weight_shift_05:
+      animation: "add_idle_weight_shift_05"
+      frames: 321
+
+    anim_12461_add_idle_weight_shift_04:
+      animation: "add_idle_weight_shift_04"
+      frames: 283
+
+    anim_12458_add_idle_weight_shift_01:
+      animation: "add_idle_weight_shift_01"
+      frames: 543
+
+
+    anim_6723_add_idle_weight_shift_01:
+      animation: "add_idle_weight_shift_01"
+      frames: 240
+
+    anim_12765_high_standing2_determined_gesture_question_02:
+      animation: "high_standing2_determined_gesture_question_02"
+      frames: 109
+
+    anim_6725_add_idle_weight_shift_03:
+      animation: "add_idle_weight_shift_03"
+      frames: 167
+
+    anim_12764_high_standing2_determined_gesture_question_01:
+      animation: "high_standing2_determined_gesture_question_01"
+      frames: 129
+
+    anim_12761_high_standing2_determined_gesture_explain_02:
+      animation: "high_standing2_determined_gesture_explain_02"
+      frames: 143
+
+    anim_12760_high_standing2_determined_gesture_explain_01:
+      animation: "high_standing2_determined_gesture_explain_01"
+      frames: 249
+
+    anim_12630_high_standing_bored_to_high_standing2_determined:
+      animation: "high_standing_bored_to_high_standing2_determined"
+      frames: 139
+
+    anim_12683_high_standing_determined_to_high_standing_bored:
+      animation: "high_standing_determined_to_high_standing_bored"
+      frames: 128
+
+    anim_12431_add_gesture_explain_01:
+      animation: "add_gesture_explain_01"
+      frames: 108
+
+    anim_12433_add_gesture_explain_03:
+      animation: "add_gesture_explain_03"
+      frames: 83
+
+    anim_12434_add_gesture_explain_04:
+      animation: "add_gesture_explain_04"
+      frames: 130
+
+    anim_12438_add_gesture_explain_08:
+      animation: "add_gesture_explain_08"
+      frames: 163
+
+    anim_12439_add_gesture_explain_09:
+      animation: "add_gesture_explain_09"
+      frames: 130
+
+    anim_7051_high_standing_determined_gesture_question_04:
+      animation: "high_standing_determined_gesture_question_04"
+      frames: 89
+
+    anim_7149_high_standing_determined2_to_high_standing_determined:
+      animation: "high_standing_determined2_to_high_standing_determined"
+      frames: 95
+
+    anim_12437_add_gesture_explain_07:
+      animation: "add_gesture_explain_07"
+      frames: 96
+
+    anim_7148_high_standing_determined2_idle:
+      animation: "high_standing_determined2_idle"
+      frames: 692
+
+    anim_12432_add_gesture_explain_02:
+      animation: "add_gesture_explain_02"
+      frames: 123
+
+    anim_7119_high_standing_determined_to_high_standing_determined2:
+      animation: "high_standing_determined_to_high_standing_determined2"
+      frames: 111
+
+    anim_12478_add_walk_calm_left_and_back:
+      animation: "add_walk_calm_left_and_back"
+      frames: 360
+
+    anim_12428_add_gesture_closeup_question_01:
+      animation: "add_gesture_closeup_question_01"
+      frames: 107
+
+    anim_12449_add_gesture_question_02:
+      animation: "add_gesture_question_02"
+      frames: 91
+
+    anim_12435_add_gesture_explain_05:
+      animation: "add_gesture_explain_05"
+      frames: 146
+
+    anim_12621_high_standing_aggressive_to_high_standing_determined:
+      animation: "high_standing_aggressive_to_high_standing_determined"
+      frames: 128
+
+    anim_12620_high_standing_aggressive_idle:
+      animation: "high_standing_aggressive_idle"
+      frames: 518
+
+    anim_12598_high_standing_aggressive_gesture_decline_01:
+      animation: "high_standing_aggressive_gesture_decline_01"
+      frames: 111
+
+    anim_12599_high_standing_aggressive_gesture_explain_01:
+      animation: "high_standing_aggressive_gesture_explain_01"
+      frames: 103
+
+    anim_12682_high_standing_determined_to_high_standing_aggressive:
+      animation: "high_standing_determined_to_high_standing_aggressive"
+      frames: 102
+
+    anim_12968_high_standing_happy_turn180_left:
+      animation: "high_standing_happy_turn180_left"
+      frames: 142
+
+    anim_12436_add_gesture_explain_06:
+      animation: "add_gesture_explain_06"
+      frames: 192
+
+    anim_6711_add_gesture_slight_explain_01:
+      animation: "add_gesture_slight_explain_01"
+      frames: 69
+
+    anim_6707_add_gesture_question_06:
+      animation: "add_gesture_question_06"
+      frames: 97
+
+    anim_12448_add_gesture_question_01:
+      animation: "add_gesture_question_01"
+      frames: 98
+
+    anim_6699_add_gesture_explain_10:
+      animation: "add_gesture_explain_10"
+      frames: 187
+
+    anim_12432_add_gesture_explain_02:
+      animation: "add_gesture_explain_02"
+      frames: 123
+
+    anim_6693_add_gesture_explain_04:
+      animation: "add_gesture_explain_04"
+      frames: 336
+
+  animations.mimic:
+    mimicsanim_464_geralt_neutral_question_can_we_beat_them_face:
+      animation: "geralt_neutral_question_can_we_beat_them_face"
+      frames: 75
+
+    mimicsanim_443_geralt_neutral_gesture_sure_sure_face:
+      animation: "geralt_neutral_gesture_sure_sure_face"
+      frames: 132
+
+    mimicsanim_506_geralt_reaction_scepticism_face:
+      animation: "geralt_reaction_scepticism_face"
+      frames: 330
+
+    mimicsanim_166_geralt_reaction_listening_new_info_face:
+      animation: "geralt_reaction_listening_new_info_face"
+      frames: 200
+
+    mimicsanim_119_geralt_neutral_gesture_brows_up_face_nrml:
+      animation: "geralt_neutral_gesture_brows_up_face_nrml"
+      frames: 90
+
+    mimicsanim_115_geralt_neutral_gesture_breath_face:
+      animation: "geralt_neutral_gesture_breath_face"
+      frames: 90
+
+    mimicsanim_317_happy_anim_combined_face:
+      animation: "happy_anim_combined_face"
+      frames: 540
+
+    mimicsanim_161_geralt_reaction_embarrassment_face:
+      animation: "geralt_reaction_embarrassment_face"
+      frames: 200
+
+    mimicsanim_1_confident_anim_combined_face:
+      animation: "confident_anim_combined_face"
+      frames: 610
+
+    mimicsanim_157_geralt_quick_nodding_face:
+      animation: "geralt_quick_nodding_face"
+      frames: 92
+
+    mimicsanim_472_geralt_neutral_shout_cheers_face:
+      animation: "geralt_neutral_shout_cheers_face"
+      frames: 75
+
+    mimicsanim_52_geralt_neutral_gesture_shout_out_of_my_sight_face:
+      animation: "geralt_neutral_gesture_shout_out_of_my_sight_face"
+      frames: 175
+
+    mimicsanim_449_geralt_neutral_gesture_what_face:
+      animation: "geralt_neutral_gesture_what_face"
+      frames: 115
+
+    mimicsanim_426_geralt_neutral_gesture_sceptical_remark_face:
+      animation: "geralt_neutral_gesture_sceptical_remark_face"
+      frames: 101
+
+    mimicsanim_442_geralt_neutral_gesture_suprised_worried_face:
+      animation: "geralt_neutral_gesture_suprised_worried_face"
+      frames: 95
+
+    mimicsanim_435_geralt_neutral_gesture_smile02_face:
+      animation: "geralt_neutral_gesture_smile02_face"
+      frames: 120
+
+    mimicsanim_461_geralt_neutral_no_fast_face:
+      animation: "geralt_neutral_no_fast_face"
+      frames: 80
+
+    mimicsanim_477_geralt_neutral_yes_ok_face:
+      animation: "geralt_neutral_yes_ok_face"
+      frames: 40
+
+    mimicsanim_127_geralt_neutral_gesture_interrupted_01_face:
+      animation: "geralt_neutral_gesture_interrupted_01_face"
+      frames: 155
+
+    mimicsanim_258_aggressive_anim_combined_face:
+      animation: "aggressive_anim_combined_face"
+      frames: 650
+
+    mimicsanim_368_yes_head_accent_face:
+      animation: "yes_head_accent_face"
+      frames: 50
+
+    mimicsanim_350_seducing_anim_combined_face:
+      animation: "seducing_anim_combined_face"
+      frames: 600
+
+    mimicsanim_262_aggressive_pose_face:
+      animation: "aggressive_pose_face"
+      frames: 10
+
+  actor.poses:
+    pose_0_high_standing_determined_idle:
+      idle_anim: "high_standing_determined_idle"
+
+    pose_1_high_standing_aggressive_idle:
+      idle_anim: "high_standing_aggressive_idle"
+
+    pose_2_high_standing_determined2_idle:
+      idle_anim: "high_standing_determined2_idle"
+
+    pose_high_standing_bored_idle:
+      idle_anim: "high_standing_bored_idle"
+
+  cameras:
+    #cam_yen_move:
+    #  fov: 20.0
+    #  transform:
+    #    pos: [ 0.5311997533, 3.4702739716, 1.9699997902 ]
+    #    rot: [ 0.0, 351.7002868652, 157.5002288818 ]
+    #  zoom: 2.0
+    #  dof:
+    #    aperture: [ 28.2495422363, 1.2700729370 ]
+    #    blur: [ 0.0, 12.5000000000 ]
+    #    focus: [ 2.0, 2.5000000000 ]
+    #    intensity: 1.0
+    #  event_generator:
+    #    plane: "Wide"
+    #    tags: [ "ext" ]
+
+    cam_yen_move:
+      fov: 20.0
+      transform:
+        pos: [ 0.5311997533, 3.4702739716, 1.9699997902 ]
+        rot: [ 0.0, 351.7002868652, 157.5002288818 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495422363, 1.2700729370 ]
+        blur: [ 3.0256519318, 6.0256519318 ]
+        focus: [ 3.5256519318, 4.5256519318 ]
+        intensity: 1.0
+      event_generator:
+        plane: "Wide"
+        tags: [ "ext" ]
+
+    cam_yen_vue_du_haut:
+      fov: 17.0
+      transform:
+        pos: [ 1.0591785908, 4.7788138390, 2.4999990463 ]
+        rot: [ 0.0, 347.2999877930, 158.3001861572 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495422363, 1.2700729370 ]
+        blur: [ 0.0, 5.0 ]
+        focus: [ 1.6499999762, 2.5000000000 ]
+        intensity: 1.0
+      event_generator:
+        plane: "Semicloseup"
+        tags: [ "ext" ]
+
+    cam_yen_supercloseup:
+      fov: 10.0
+      transform:
+        pos: [ 0.3848175406, 1.7732440233, 1.6600003242 ]
+        rot: [ 0.0, 359.1000366211, 167.8999328613 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495422363, 1.2700729370 ]
+        blur: [ 0.0, 1.8999999762 ]
+        focus: [ 0.0, 2.5000000000 ]
+        intensity: 1.0
+      event_generator:
+        plane: "Supercloseup"
+        tags: [ "ext" ]
+
+    cam_yen_closeup_ext:
+      fov: 10.0
+      transform:
+        pos: [ 0.5165843964, 2.8093304634, 1.7200002670 ]
+        rot: [ 0.0, 358.3999023438, 167.4000396729 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495422363, 1.2700729370 ]
+        blur: [ 0.0, 5.0 ]
+        focus: [ 1.8999999762, 2.5000000000 ]
+        intensity: 1.0
+      event_generator:
+        plane: "Closeup"
+        tags: [ "ext" ]
+
+    cam_yen_semicloseup_ext:
+      fov: 17.0
+      transform:
+        pos: [ 0.5785057545, 2.4955122471, 1.6999998093 ]
+        rot: [ 0.0, 357.1000976563, 164.3000793457 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495422363, 1.2700729370 ]
+        blur: [ 0.0, 5.0 ]
+        focus: [ 1.6499999762, 2.5000000000 ]
+        intensity: 1.0
+      event_generator:
+        plane: "Semicloseup"
+        tags: [ "ext" ]
+
+    cam_yen_medium_ext:
+      fov: 20.0
+      transform:
+        pos: [ 0.8824337125, 2.8720235825, 1.6999998093 ]
+        rot: [ 0.0, 356.2000122070, 155.9000091553 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495422363, 1.2700729370 ]
+        blur: [ 0.0, 5.0 ]
+        focus: [ 1.6900000572, 2.5000000000 ]
+        intensity: 1.0
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_yen_wide_ext:
+      fov: 20.0
+      transform:
+        pos: [ 1.1340124607, 3.7438161373, 1.6700000763 ]
+        rot: [ 0.0, 356.0000915527, 157.2000274658 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495422363, 1.2700729370 ]
+        blur: [ 0.0, 12.5000000000 ]
+        focus: [ 2.0, 2.5000000000 ]
+        intensity: 1.0
+      event_generator:
+        plane: "Wide"
+        tags: [ "ext" ]
+
+    cam_geralt_supercloseup:
+      fov: 10.0
+      transform:
+        pos: [ 0.4049514234, -0.2244062722, 1.7600002289 ]
+        rot: [ 0.0, 358.6999816895, 13.9000244141 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495422363, 1.2700729370 ]
+        blur: [ 0.0, 1.8999999762 ]
+        focus: [ 0.0, 2.5000000000 ]
+        intensity: 1.0
+      event_generator:
+        plane: "Supercloseup"
+        tags: [ "ext" ]
+
+    cam_geralt_closeup_ext:
+      fov: 12.5000000000
+      transform:
+        pos: [ 0.6000022292, -1.0, 1.7300000191 ]
+        rot: [ 0.0, 358.2999877930, 16.6999969482 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495422363, 1.2700729370 ]
+        blur: [ 0.0, 5.0 ]
+        focus: [ 1.6499999762, 2.5000000000 ]
+        intensity: 1.0
+      event_generator:
+        plane: "Closeup"
+        tags: [ "ext" ]
+
+    cam_geralt_semicloseup_ext:
+      fov: 17.0
+      transform:
+        pos: [ 0.6161633134, -1.0103194714, 1.6999998093 ]
+        rot: [ 0.0, 356.7999572754, 17.6000366211 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495422363, 1.2700729370 ]
+        blur: [ 0.0, 5.0 ]
+        focus: [ 1.6499999762, 2.5000000000 ]
+        intensity: 1.0
+      event_generator:
+        plane: "Semicloseup"
+        tags: [ "ext" ]
+
+    cam_geralt_medium_ext:
+      fov: 20.0
+      transform:
+        pos: [ 0.8488998413, -1.3975586891, 1.6999998093 ]
+        rot: [ 0.0, 355.0999755859, 20.9002075195 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495422363, 1.2700729370 ]
+        blur: [ 0.0, 5.0 ]
+        focus: [ 1.6900000572, 2.5000000000 ]
+        intensity: 1.0
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_geralt_wide_ext:
+      fov: 20.0
+      transform:
+        pos: [ 1.3244338036, -2.3380281925, 1.6700000763 ]
+        rot: [ 0.0, 356.3000793457, 24.2997436523 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495422363, 1.2700729370 ]
+        blur: [ 0.0, 5.0 ]
+        focus: [ 2.0, 2.5000000000 ]
+        intensity: 1.0
+      event_generator:
+        plane: "Wide"
+        tags: [ "ext" ]
+
+production:
+  settings:
+    sceneid: 6
+    strings-idspace: 5984
+    strings-idstart: 600
+
+  placement: "yennefer"
+  placement: "sted_skellige_ask_yen_scene_sp"
+    # INFO: world coordinates of used origin:
+      #pos: [ -55.9599113464, 600.0626220703, 2.4879655838 ]
+      #rot: [ 0.0, 17.6264190674, 0.0 ]
+
+      #pos: [ -54.9198608398, 597.3534545898, 2.5196912289 ]
+      #rot: [ 0.0, 42.6783599854, 0.0 ]
+
+  assets:
+    actors:
+      geralt:
+        repo: "geralt"
+        by_voicetag: true
+        tags: [ "PLAYER" ]
+
+      yennefer:
+        repo: "yennefer"
+        #by_voicetag: true
+        appearance: "yennefer_gown"
+        tags: [ "sted_yennefer" ]
+
+    cameras:
+      cam_yen_move:
+        repo: "cam_yen_move"
+
+      cam_yen_vue_du_haut:
+        repo: "cam_yen_vue_du_haut"
+
+      cam_yen_supercloseup:
+        repo: "cam_yen_supercloseup"
+
+      cam_yen_closeup_ext:
+        repo: "cam_yen_closeup_ext"
+
+      cam_yen_semicloseup_ext:
+        repo: "cam_yen_semicloseup_ext"
+
+      cam_yen_medium_ext:
+        repo: "cam_yen_medium_ext"
+
+      cam_yen_wide_ext:
+        repo: "cam_yen_wide_ext"
+
+      cam_geralt_supercloseup:
+        repo: "cam_geralt_supercloseup"
+
+      cam_geralt_closeup_ext:
+        repo: "cam_geralt_closeup_ext"
+
+      cam_geralt_semicloseup_ext:
+        repo: "cam_geralt_semicloseup_ext"
+
+      cam_geralt_medium_ext:
+        repo: "cam_geralt_medium_ext"
+
+      cam_geralt_wide_ext:
+        repo: "cam_geralt_wide_ext"
+
+
+    animations:
+      geralt_add_gesture_slight_explain_07:
+        actor: "geralt"
+        repo: "anim_6717_add_gesture_slight_explain_07"
+        #duration: 2.7666666508
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.4
+        blendin: 0.3
+        blendout: 0.3
+
+      geralt_add_gesture_slight_explain_04:
+        actor: "geralt"
+        repo: "anim_6714_add_gesture_slight_explain_04"
+        #duration: 2.7333333492
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 3.0
+        blendin: 0.3
+        blendout: 0.3
+
+      yennefer_add_idle_weight_shift_05:
+        actor: "yennefer"
+        repo: "anim_12462_add_idle_weight_shift_05"
+        #duration: 10.6999998093
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      yennefer_add_idle_weight_shift_04:
+        actor: "yennefer"
+        repo: "anim_12461_add_idle_weight_shift_04"
+        #duration: 9.4333333969
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      yennefer_add_idle_weight_shift_01:
+        actor: "yennefer"
+        repo: "anim_12458_add_idle_weight_shift_01"
+        #duration: 18.1000003815
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+
+
+      geralt_add_idle_weight_shift_01:
+        actor: "geralt"
+        repo: "anim_6723_add_idle_weight_shift_01"
+        #duration: 8.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      yennefer_high_standing2_determined_gesture_question_02:
+        actor: "yennefer"
+        repo: "anim_12765_high_standing2_determined_gesture_question_02"
+        #duration: 3.6333334446
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_add_idle_weight_shift_03:
+        actor: "geralt"
+        repo: "anim_6725_add_idle_weight_shift_03"
+        #duration: 5.5666666031
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      yennefer_high_standing2_determined_gesture_question_01:
+        actor: "yennefer"
+        repo: "anim_12764_high_standing2_determined_gesture_question_01"
+        #duration: 4.3000001907
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      yennefer_high_standing2_determined_gesture_explain_02:
+        actor: "yennefer"
+        repo: "anim_12761_high_standing2_determined_gesture_explain_02"
+        #duration: 4.7666668892
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.8
+        blendin: 0.5
+        blendout: 0.5
+
+      yennefer_high_standing2_determined_gesture_explain_01:
+        actor: "yennefer"
+        repo: "anim_12760_high_standing2_determined_gesture_explain_01"
+        #duration: 8.3000001907
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.7
+        blendin: 0.5
+        blendout: 0.5
+
+      yennefer_high_standing_determined2_idle:
+        actor: "yennefer"
+        repo: "anim_7148_high_standing_determined2_idle"
+        #duration: 23.0666675568
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      yennefer_high_standing_bored_to_high_standing2_determined:
+        actor: "yennefer"
+        repo: "anim_12630_high_standing_bored_to_high_standing2_determined"
+        #duration: 4.6333332062
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      yennefer_high_standing_determined_to_high_standing_bored:
+        actor: "yennefer"
+        repo: "anim_12683_high_standing_determined_to_high_standing_bored"
+        #duration: 4.2666668892
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      geralt_high_standing_determined_gesture_question_04:
+        actor: "geralt"
+        repo: "anim_7051_high_standing_determined_gesture_question_04"
+        #duration: 2.9666666985
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.3
+
+      geralt_high_standing_determined2_to_high_standing_determined:
+        actor: "geralt"
+        repo: "anim_7149_high_standing_determined2_to_high_standing_determined"
+        #duration: 3.1666667461
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      geralt_high_standing_determined2_idle:
+        actor: "geralt"
+        repo: "anim_7148_high_standing_determined2_idle"
+        #duration: 23.0666675568
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_determined_to_high_standing_determined2:
+        actor: "geralt"
+        repo: "anim_7119_high_standing_determined_to_high_standing_determined2"
+        #duration: 3.7000000477
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      geralt_add_gesture_slight_explain_01:
+        actor: "geralt"
+        repo: "anim_6711_add_gesture_slight_explain_01"
+        #duration: 2.2999999523
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.7
+
+      geralt_add_gesture_question_06:
+        actor: "geralt"
+        repo: "anim_6707_add_gesture_question_06"
+        #duration: 3.2333333492
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.7
+
+      geralt_add_gesture_explain_10:
+        actor: "geralt"
+        repo: "anim_6699_add_gesture_explain_10"
+        #duration: 6.2333331108
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 4.5
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.7
+
+      geralt_add_gesture_explain_04:
+        actor: "geralt"
+        repo: "anim_6693_add_gesture_explain_04"
+        #duration: 11.1999998093
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 7.68 #avec 0.6 c'était 7.68
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.7
+
+
+
+      yennefer_add_gesture_explain_01:
+        actor: "yennefer"
+        repo: "anim_12431_add_gesture_explain_01"
+        #duration: 3.5999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      yennefer_add_gesture_explain_02:
+        actor: "yennefer"
+        repo: "anim_12432_add_gesture_explain_02"
+        #duration: 4.0999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.0
+
+      yennefer_add_gesture_explain_02BIS:
+        actor: "yennefer"
+        repo: "anim_12432_add_gesture_explain_02"
+        #duration: 4.0999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      yennefer_add_gesture_explain_02TER:
+        actor: "yennefer"
+        repo: "anim_12432_add_gesture_explain_02"
+        #duration: 4.0999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 0.9
+        blendin: 0.7 #0.3
+        blendout: 0.3
+
+      yennefer_add_gesture_explain_03:
+        actor: "yennefer"
+        repo: "anim_12433_add_gesture_explain_03"
+        #duration: 2.7666666508
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 0.9
+        blendin: 0.0
+        blendout: 0.5 #0.3
+
+      yennefer_add_gesture_explain_04:
+        actor: "yennefer"
+        repo: "anim_12434_add_gesture_explain_04"
+        #duration: 4.3333334923
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 0.8
+        blendin: 0.5 #0.3
+        blendout: 0.5 #0.3
+
+      yennefer_add_gesture_explain_05: #beaucoup de gestes
+        actor: "yennefer"
+        repo: "anim_12435_add_gesture_explain_05"
+        #duration: 4.8666667938
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.3
+
+      yennefer_add_gesture_explain_05_bis:
+        actor: "yennefer"
+        repo: "anim_12435_add_gesture_explain_05"
+        #duration: 4.8666667938
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.4
+        blendin: 0.3
+        blendout: 0.3
+
+      yennefer_add_gesture_explain_05TER: #beaucoup de gestes
+        actor: "yennefer"
+        repo: "anim_12435_add_gesture_explain_05"
+        #duration: 4.8666667938
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.3
+
+      yennefer_add_gesture_explain_06: #bouge les 2 bras
+        actor: "yennefer"
+        repo: "anim_12436_add_gesture_explain_06"
+        #duration: 6.4000000954
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 4.9
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.5
+
+      yennefer_add_gesture_explain_06BIS: 
+        actor: "yennefer"
+        repo: "anim_12436_add_gesture_explain_06"
+        #duration: 6.4000000954
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 4.9
+        #stretch: 1.0
+        blendin: 0.7 #0.0
+        blendout: 0.3
+
+      yennefer_add_gesture_explain_07:
+        actor: "yennefer"
+        repo: "anim_12437_add_gesture_explain_07"
+        #duration: 3.2000000477
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      yennefer_add_gesture_explain_08:
+        actor: "yennefer"
+        repo: "anim_12438_add_gesture_explain_08"
+        #duration: 5.4333333969
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      yennefer_add_gesture_explain_09:
+        actor: "yennefer"
+        repo: "anim_12439_add_gesture_explain_09"
+        #duration: 4.3333334923
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+
+
+      yennefer_add_gesture_closeup_question_01:
+        actor: "yennefer"
+        repo: "anim_12428_add_gesture_closeup_question_01"
+        #duration: 3.5666666031
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.7 #0.3
+
+      yennefer_add_gesture_question_01:
+        actor: "yennefer"
+        repo: "anim_12448_add_gesture_question_01"
+        #duration: 3.2666666508
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.2
+        blendin: 0.0
+        blendout: 0.3
+
+      yennefer_add_gesture_question_02:
+        actor: "yennefer"
+        repo: "anim_12449_add_gesture_question_02"
+        #duration: 3.0333333015
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3 #0.0
+        blendout: 0.3
+
+
+
+
+
+
+
+
+      yennefer_add_walk_calm_left_and_back:
+        actor: "yennefer"
+        repo: "anim_12478_add_walk_calm_left_and_back"
+        #duration: 12.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 2.0
+        blendin: 0.7
+        blendout: 0.7
+
+      yennefer_high_standing_happy_turn180_left:
+        actor: "yennefer"
+        repo: "anim_12968_high_standing_happy_turn180_left"
+        #duration: 4.7333331108
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      yennefer_high_standing_aggressive_idle:
+        actor: "yennefer"
+        repo: "anim_12620_high_standing_aggressive_idle"
+        #duration: 17.2666664124
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      yennefer_high_standing_aggressive_gesture_decline_01:
+        actor: "yennefer"
+        repo: "anim_12598_high_standing_aggressive_gesture_decline_01"
+        #duration: 3.7000000477
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 0.8
+        blendin: 0.3
+        blendout: 0.3
+
+      yennefer_high_standing_aggressive_gesture_explain_01:
+        actor: "yennefer"
+        repo: "anim_12599_high_standing_aggressive_gesture_explain_01"
+        #duration: 3.4333333969
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 0.8
+        blendin: 0.0
+        blendout: 0.3
+
+      yennefer_high_standing_determined_to_high_standing_aggressive:
+        actor: "yennefer"
+        repo: "anim_12682_high_standing_determined_to_high_standing_aggressive"
+        #duration: 3.4000000954
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.3
+
+      yennefer_high_standing_aggressive_to_high_standing_determined:
+        actor: "yennefer"
+        repo: "anim_12621_high_standing_aggressive_to_high_standing_determined"
+        #duration: 4.2666668892
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.7
+
+
+
+
+
+    animations.mimic:
+      geralt_geralt_neutral_question_can_we_beat_them_face:
+        actor: "geralt"
+        repo: "mimicsanim_464_geralt_neutral_question_can_we_beat_them_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.5
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_gesture_sure_sure_face:
+        actor: "geralt"
+        repo: "mimicsanim_443_geralt_neutral_gesture_sure_sure_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      yennefer_geralt_reaction_scepticism_face:
+        actor: "yennefer"
+        repo: "mimicsanim_506_geralt_reaction_scepticism_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_reaction_listening_new_info_face:
+        actor: "geralt"
+        repo: "mimicsanim_166_geralt_reaction_listening_new_info_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_gesture_breath_face:
+        actor: "geralt"
+        repo: "mimicsanim_115_geralt_neutral_gesture_breath_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_gesture_brows_up_face_nrml:
+        actor: "geralt"
+        repo: "mimicsanim_119_geralt_neutral_gesture_brows_up_face_nrml"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      yennefer_seducing_anim_combined_face:
+        actor: "yennefer"
+        repo: "mimicsanim_350_seducing_anim_combined_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 3.5 #4.8
+        #stretch: 1.0 #1.2
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_reaction_embarrassment_face:
+        actor: "geralt"
+        repo: "mimicsanim_161_geralt_reaction_embarrassment_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 5.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.0000000000
+
+      yennefer_happy_anim_combined_face:
+        actor: "yennefer"
+        repo: "mimicsanim_317_happy_anim_combined_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 5.6
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+
+      yennefer_confident_anim_combined_face:
+        actor: "yennefer"
+        repo: "mimicsanim_1_confident_anim_combined_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 5.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.0000000000
+
+      geralt_geralt_quick_nodding_face:
+        actor: "geralt"
+        repo: "mimicsanim_157_geralt_quick_nodding_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      yennefer_geralt_neutral_shout_cheers_face:
+        actor: "yennefer"
+        repo: "mimicsanim_472_geralt_neutral_shout_cheers_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_gesture_shout_out_of_my_sight_face:
+        actor: "geralt"
+        repo: "mimicsanim_52_geralt_neutral_gesture_shout_out_of_my_sight_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 2.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      yennefer_geralt_neutral_gesture_what_face:
+        actor: "yennefer"
+        repo: "mimicsanim_449_geralt_neutral_gesture_what_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      yennefer_geralt_neutral_gesture_sceptical_remark_face:
+        actor: "yennefer"
+        repo: "mimicsanim_426_geralt_neutral_gesture_sceptical_remark_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      yennefer_geralt_neutral_gesture_suprised_worried_face:
+        actor: "yennefer"
+        repo: "mimicsanim_442_geralt_neutral_gesture_suprised_worried_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.2
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      yennefer_geralt_neutral_gesture_smile02_face:
+        actor: "yennefer"
+        repo: "mimicsanim_435_geralt_neutral_gesture_smile02_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.3
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      yennefer_geralt_neutral_no_fast_face:
+        actor: "yennefer"
+        repo: "mimicsanim_461_geralt_neutral_no_fast_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      yennefer_geralt_neutral_yes_ok_face:
+        actor: "yennefer"
+        repo: "mimicsanim_477_geralt_neutral_yes_ok_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.5
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_gesture_interrupted_01_face:
+        actor: "geralt"
+        repo: "mimicsanim_127_geralt_neutral_gesture_interrupted_01_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      yennefer_aggressive_anim_combined_face:
+        actor: "yennefer"
+        repo: "mimicsanim_258_aggressive_anim_combined_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 7.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      yennefer_yes_head_accent_face:
+        actor: "yennefer"
+        repo: "mimicsanim_368_yes_head_accent_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.3
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      yennefer_aggressive_pose_face:
+        actor: "yennefer"
+        repo: "mimicsanim_262_aggressive_pose_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 18.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+
+
+
+
+    actor.poses:
+      geralt_high_standing_determined_idle:
+        actor: "geralt"
+        repo: "pose_0_high_standing_determined_idle"
+
+      geralt_high_standing_determined2_idle:
+        actor: "geralt"
+        repo: "pose_2_high_standing_determined2_idle"
+
+      yennefer_high_standing_determined_idle:
+        actor: "yennefer"
+        repo: "pose_0_high_standing_determined_idle"
+
+      yennefer_high_standing_aggressive_idle:
+        actor: "yennefer"
+        repo: "pose_1_high_standing_aggressive_idle"
+
+      yennefer_high_standing_bored_idle:
+        actor: "yennefer"
+        repo: "pose_high_standing_bored_idle"
+
+      yennefer_high_standing_determined2_idle:
+        actor: "yennefer"
+        repo: "pose_2_high_standing_determined2_idle"
+
+
+storyboard:
+  #defaults:
+    #placement:
+      #geralt: [[ -0.0000013709, 1.5999965668, 0.0 ], [ 0.0, 0.0, 180.0 ]]
+      #yennefer: [[ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+
+    #actor.pose:
+      #geralt: geralt_high_standing_determined_idle
+      #yennefer: yennefer_high_standing_determined_idle
+
+  section_storyboard_ui:
+    
+    shot_0:
+      - fade.in: [0.0, 0.95]
+      - actor.placement: [0.0, geralt, [ 0.0, 1.6000189781, 0.0 ], [ 0.0, 0.0, 180.0 ]]
+      - actor.placement: [0.0, yennefer, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.pose: [0.0, geralt_high_standing_determined_idle]
+      - actor.pose: [0.0, yennefer_high_standing_determined_idle]
+      - actor.lookat: [0.0, yennefer, geralt]
+      - actor.lookat: [0.0, geralt, yennefer]
+      - cam: [0.0, cam_yen_wide_ext]
+      - actor.anim: [0.0, yennefer_add_gesture_explain_06]
+
+    shot_1: # What a surprise!
+      - actor.lookat: [0.0, yennefer, geralt]
+      - actor.anim.mimic: [0.0, yennefer_geralt_neutral_shout_cheers_face]
+    
+    shot_2: # You are just in time.
+      - cam: [0.5, cam_geralt_semicloseup_ext]
+      - actor.anim.mimic: [0.5, geralt_geralt_neutral_gesture_shout_out_of_my_sight_face]
+
+    shot_3: # I was gathering my things for my departure from Skellige.
+      - cam: [0.0, cam_yen_semicloseup_ext]
+      - actor.anim: [0.0, yennefer_add_gesture_explain_05]
+
+    shot_4: #Before you leave,
+      - cam: [0.0, cam_geralt_closeup_ext]
+      - actor.anim: [0.0, geralt_add_gesture_slight_explain_01]
+
+    shot_5: #I'd like to ask for your help.
+      - cam: [0.0, cam_geralt_closeup_ext]
+      - actor.anim: [0.0, geralt_add_gesture_question_06]
+
+    shot_6: #Of which kind of help?
+      - cam: [0.0, cam_yen_closeup_ext]
+      - actor.anim.mimic: [0.0, yennefer_geralt_neutral_gesture_what_face]
+      - actor.anim: [0.0, yennefer_add_gesture_question_02]
+
+    shot_7: #Help me to slay a demon.
+      - cam: [0.0, cam_geralt_medium_ext]
+      - actor.anim: [0.0, geralt_add_gesture_slight_explain_01]
+
+    shot_8: #A demon?
+      - cam: [0.0, cam_yen_closeup_ext]
+      - actor.anim.mimic: [0.0, yennefer_geralt_neutral_gesture_sceptical_remark_face]
+      - actor.anim: [0.0, yennefer_add_gesture_closeup_question_01]
+
+    shot_8_1: #PAUSE 
+      #- cam: [0.5, cam_yen_supercloseup]
+      - cam: [0.0, cam_yen_closeup_ext]
+    
+    shot_9: #You are getting ambitious. 
+      - actor.anim.mimic: [0.0, yennefer_happy_anim_combined_face]
+
+    shot_9_1: #I love this 
+      - cam: [0.0, cam_yen_closeup_ext]
+
+    shot_10: #But where does this crazy idea comes from?  
+      - cam: [0.0, cam_yen_medium_ext]
+      - actor.anim: [0.0, yennefer_add_gesture_question_01]
+      - actor.anim.mimic: [0.0, yennefer_geralt_neutral_gesture_suprised_worried_face]
+
+    shot_11: #This demon killed a dear friend of Dandelion and me, 
+      - cam: [0.0, cam_geralt_medium_ext]
+      - actor.anim: [0.0, geralt_add_gesture_explain_10]
+
+    shot_12: #named Essi Daven.
+      - actor.anim: [0.0, geralt_add_gesture_slight_explain_01]
+
+    shot_13: #I heared about her
+      - cam: [0.0, cam_yen_semicloseup_ext]
+      - actor.anim.mimic: [0.0, yennefer_yes_head_accent_face]
+
+    shot_14: #But I didn't know you had been friends.
+      - actor.anim: [0.0, yennefer_add_gesture_explain_02]
+      - actor.anim.mimic: [0.0, yennefer_geralt_neutral_no_fast_face]
+
+    shot_141: #CHOICE
+      - cam: [0.0, cam_geralt_supercloseup]
+
+  section_bremervoord:  
+    shot_15: #I met her while helping Duke Agloval of Bremerwoord. 
+      - cam: [0.0, cam_geralt_closeup_ext]
+      - actor.anim: [0.0, geralt_add_gesture_explain_04]
+
+    shot_16: #I had given Essi a sky blue pearl…
+      - actor.anim.mimic: [0.6, geralt_geralt_neutral_gesture_interrupted_01_face] #à 0.6 c'était trop tôt
+
+    shot_17: #Spare me the details of your encounter with that bard, please.
+      - actor.anim.mimic: [0.0, yennefer_aggressive_anim_combined_face]
+      - actor.anim: [0.0, yennefer_high_standing_determined_to_high_standing_aggressive]
+      - cam: [0.35, cam_yen_supercloseup]
+      - actor.pose: [0.4, yennefer_high_standing_aggressive_idle]
+
+    shot_18: #PAUSE 
+      - cam: [0.3, cam_geralt_supercloseup]
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_gesture_breath_face]
+
+    shot_19: #Although I am a powerful sorceress, defeating a demon is beyond my skills. 
+      - cam: [0.0, cam_yen_semicloseup_ext]
+      - actor.anim.mimic: [0.0, yennefer_aggressive_pose_face]
+      - actor.anim: [0.0, yennefer_high_standing_aggressive_gesture_explain_01]
+      - actor.anim: [0.5, yennefer_high_standing_aggressive_gesture_decline_01]
+
+    shot_20: #PAUSE 
+      - cam: [0.0, cam_geralt_semicloseup_ext]
+      - actor.anim: [0.0, yennefer_high_standing_aggressive_to_high_standing_determined]
+      - actor.pose: [0.1, yennefer_high_standing_determined_idle]
+
+    shot_21: #I preferred to develop my knowledge on other subjects than the extermination of demons.
+      - cam: [0.0, cam_yen_semicloseup_ext]
+      - actor.anim: [0.0, yennefer_add_gesture_explain_05_bis]
+
+    shot_22: #If you see what I mean…
+      - cam: [0.0, cam_yen_supercloseup]
+      - actor.anim.mimic: [0.0, yennefer_confident_anim_combined_face]
+
+    shot_23: #PAUSE
+      - cam: [0.0, cam_geralt_supercloseup]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_embarrassment_face]
+      
+    shot_24: #PAUSE
+      - cam: [0.0, cam_yen_supercloseup]
+      - actor.anim.mimic: [0.0, yennefer_seducing_anim_combined_face]
+
+    shot_25: #PAUSE
+      - cam: [0.0, cam_yen_semicloseup_ext]
+
+    shot_26: #I can't guarantee I'll find a way to kill a demon.
+      - actor.anim: [0.0, yennefer_add_walk_calm_left_and_back]
+      - cam.blend.start: [0.0, cam_yen_semicloseup_ext, smooth]
+      #- cam: [0.0, cam_yen_move]
+      - actor.anim: [0.8, geralt_high_standing_determined_to_high_standing_determined2]
+      - actor.pose: [0.9, geralt_high_standing_determined2_idle]
+
+    shot_27: #However, I should be able to tell you how to keep it from harming anybody for a few centuries.
+      - cam.blend.end: [0.2, cam_yen_move, smooth]
+
+    shot_28: #But for that I will need a little time to study the question.
+      - cam.blend.start: [0.7, cam_yen_move, smooth]
+
+    shot_29: #I will probably also have to go and get eldrish books.
+      - actor.anim: [0.3, geralt_high_standing_determined2_to_high_standing_determined]
+      - actor.pose: [0.5, geralt_high_standing_determined_idle]
+      - cam.blend.end: [0.9, cam_yen_semicloseup_ext, smooth]
+
+    shot_30: #How can I help you? 
+      - cam: [0.0, cam_geralt_closeup_ext]
+      - actor.anim: [0.0, geralt_high_standing_determined_gesture_question_04]
+
+    shot_31: #I don't know much about demons,
+      - cam: [0.0, cam_yen_semicloseup_ext]
+      - actor.anim: [0.0, yennefer_add_gesture_explain_03]
+
+    shot_32: #but necromancy is no stranger to me.
+      - actor.anim: [0.0, yennefer_add_gesture_explain_04]
+
+    shot_33: #Although I don't know exactly how to go about it yet,
+      - actor.anim: [0.0, yennefer_add_gesture_explain_06BIS]
+
+    shot_34: #I think that we will need an object that would bind the deceased and you.
+      - actor.anim: [0.35, yennefer_add_gesture_explain_02TER]
+
+    shot_35: #PAUSE 
+      - cam: [0.4, cam_geralt_semicloseup_ext]
+      - actor.anim: [0.0, geralt_high_standing_determined_to_high_standing_determined2]
+      - actor.pose: [0.9, geralt_high_standing_determined2_idle]
+
+    shot_36: #That pearl that you gave her might be interesting…
+      #- cam: [0.2, cam_yen_medium_ext]
+      #- actor.anim: [0.0, yennefer_add_gesture_explain_05TER]
+      - actor.anim: [0.0, yennefer_high_standing_determined_to_high_standing_bored]
+      - actor.pose: [0.2, yennefer_high_standing_bored_idle]      
+
+    shot_37: #PAUSE 
+      #- cam: [0.0, cam_geralt_closeup_ext]
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_gesture_brows_up_face_nrml]
+
+    shot_38: #I have heard that the Duke of Bremerwood and her companion Sh'eenaz,
+      - cam: [0.2, cam_yen_medium_ext]
+      #- actor.anim: [0.0, yennefer_add_gesture_explain_08]
+      - actor.anim: [0.0, yennefer_high_standing_bored_to_high_standing2_determined]
+      - actor.pose: [0.2, yennefer_high_standing_determined2_idle]
+     
+    shot_39: #are currently staying in Novigrad in the temple island neighborhood.
+      - actor.anim: [0.0, yennefer_high_standing2_determined_gesture_explain_01] 
+
+    shot_40: #PAUSE 
+      - cam: [0.0, cam_geralt_semicloseup_ext]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_listening_new_info_face]
+      - actor.anim: [0.0, geralt_high_standing_determined2_to_high_standing_determined]
+      - actor.pose: [0.8, geralt_high_standing_determined_idle]
+
+    shot_41: #It seems to me that this could be a good starting point to find out how to get your hands on one of these pearls.
+      - cam: [0.4, cam_yen_medium_ext]
+      - actor.anim: [0.7, geralt_add_idle_weight_shift_01]
+
+    shot_42: #PAUSE
+      - cam: [0.0, cam_geralt_semicloseup_ext]
+
+    shot_43: #In the meantime,
+      - actor.anim: [0.0, yennefer_high_standing2_determined_gesture_explain_02]
+
+    shot_44: #I will find out how to prevent this demon from harming.
+      - cam: [0.0, cam_yen_semicloseup_ext]
+      #- actor.anim: [0.3, geralt_add_idle_weight_shift_03]
+
+    shot_46: #Thanks Yen.
+      - cam: [0.0, cam_geralt_supercloseup]
+
+    shot_99:
+      ##- fade.out: [0.0, 1.0]
+      - cam.blend.togame: [0.0, cam_geralt_supercloseup]
+
+
+
+  section_friends:
+    shot_142: #Dandelion and Essi, were longtime friends.
+      - cam: [0.0, cam_geralt_medium_ext]
+      - actor.anim: [0.0, geralt_add_gesture_slight_explain_07]
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_question_can_we_beat_them_face]
+
+    shot_143: #I can't imagine Dandelion just being friends with a girl.
+      - cam: [0.0, cam_yen_semicloseup_ext]
+      - actor.anim: [0.0, yennefer_add_idle_weight_shift_05]
+      - actor.anim.mimic: [0.0, yennefer_geralt_reaction_scepticism_face]
+
+    shot_144: #Yes, it's surprising, but Dandelion had a real brotherly love for her.
+      - cam: [0.0, cam_geralt_medium_ext]
+      - actor.anim: [0.0, geralt_add_gesture_slight_explain_04]
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_gesture_sure_sure_face]
+
+    shot_145: #CHOICE
+      - cam: [0.0, cam_geralt_supercloseup]
+
+
+dialogscript:
+  player: "geralt"
+  actors: [ "geralt", "yennefer" ]
+
+  section_start:
+    - PAUSE: 0.0
+    - NEXT: section_storyboard_ui
+
+  section_storyboard_ui:
+    # shot Shot (empty)
+    - CUE: shot_0
+    - PAUSE: 1.0
+    - CUE: shot_1
+    - yennefer: What a surprise!
+    - PAUSE: 0.5
+    - CUE: shot_2
+    - yennefer: You are just in time.
+    - PAUSE: 0.5
+    - CUE: shot_3
+    - yennefer: I was gathering my things for my departure from Skellige.
+    - PAUSE: 0.5
+    - CUE: shot_4
+    - geralt: Before you leave,
+    - CUE: shot_5 
+    - geralt: I'd like to ask for your help.
+    - PAUSE: 0.5
+    - CUE: shot_6
+    #OLD- yennefer: Of which kind of help?
+    - yennefer: And what kind of help?
+    - PAUSE: 1.0
+    - CUE: shot_7
+    - geralt: Help me to slay a demon.
+    - PAUSE: 0.5
+    - CUE: shot_8
+    - yennefer: A demon?
+    - CUE: shot_8_1
+    - PAUSE: 1.5
+    - CUE: shot_9
+    - yennefer: You are getting ambitious.
+    - PAUSE: 1.0
+    - CUE: shot_9_1
+    - yennefer: I love this.
+    - PAUSE: 1.0
+    - CUE: shot_10
+    - yennefer: But where does this crazy idea comes from?
+    - PAUSE: 0.5
+    - CUE: shot_11
+    - geralt: This demon killed a dear friend of Dandelion and me,
+    #- PAUSE: 0.5
+    - CUE: shot_12
+    - geralt: named Essi Daven.
+    - PAUSE: 0.5 #0.8
+    - CUE: shot_13
+    - yennefer: I heard about her.
+    - PAUSE: 0.5
+    - CUE: shot_14
+    - yennefer: But I didn't know you had been friends.
+    - PAUSE: 0.5
+    - CUE: shot_141
+    - PAUSE: 0.1
+    - NEXT: section_choice_a
+
+  section_bremervoord:  
+    - CUE: shot_15
+    - geralt: I met her while helping Duke Agloval of Bremerwoord.
+    - PAUSE: 0.5
+    - CUE: shot_16
+    - geralt: I had given Essi a sky blue pearl…
+    - CUE: shot_17
+    - yennefer: Spare me the details of your encounter with that bard, please.
+    - CUE: shot_18
+    - PAUSE: 3.0
+    - CUE: shot_19
+    - yennefer: Although I am a powerful sorceress, defeating a demon is beyond my skills.
+    - CUE: shot_20
+    - PAUSE: 1.0
+    - CUE: shot_21
+    - yennefer: I preferred to develop my knowledge on other subjects than the extermination of demons.
+    - PAUSE: 0.5
+    - CUE: shot_22
+    - yennefer: If you see what I mean… #mettre le mimic confident
+    - PAUSE: 1.0
+    - CUE: shot_23
+    - PAUSE: 4.0 #geralt souri
+    - CUE: shot_24
+    - PAUSE: 2.0 #yen souri
+    - CUE: shot_25
+    - PAUSE: 1.0
+    - CUE: shot_26
+    - yennefer: I can't guarantee I'll find a way to kill a demon.
+    - PAUSE: 0.5
+    - CUE: shot_27
+    - yennefer: However, I should be able to tell you how to keep it from harming anybody for a few centuries.
+    - PAUSE: 0.5
+    - CUE: shot_28
+    - yennefer: But for that I will need a little time to study the question.
+    - PAUSE: 0.5
+    - CUE: shot_29
+    - yennefer: I will probably also have to go and get ancient books.
+    - PAUSE: 0.5
+
+  #  - NEXT: section_choice
+
+  #section_choice:
+  #  - yennefer: "I go to search something."
+  #  - CHOICE:
+  #    - ["I come with you.", "section_follow"]
+  #    - ["Can I help you?", "section_help"]
+  #    - TIME_LIMIT: 3.0
+
+  #section_follow:
+  #  - geralt: I come with you.
+  #  - yennefer: Ok follow me.
+  #  - NEXT: section_exit
+
+  #section_help:
+  #  - geralt: Can I help you?
+  #  - yennefer: yes you can help me.
+  #  - NEXT: section_exit
+
+    - CUE: shot_30
+    - geralt: How can I help you?
+    - PAUSE: 0.5
+    - CUE: shot_31
+    - yennefer: I don't know much about demons,
+    - CUE: shot_32
+    - yennefer: but necromancy is no stranger to me.
+    - PAUSE: 0.5
+    - CUE: shot_33
+    - yennefer: Although I don't know exactly how to go about it yet,
+    - PAUSE: 0.5
+    - CUE: shot_34
+    - yennefer: I think that we will need an object that would bind the deceased and you.
+    - CUE: shot_35
+    - PAUSE: 0.5
+    - CUE: shot_36
+    - yennefer: That pearl that you gave her might be interesting…
+    - CUE: shot_37
+    - PAUSE: 1.0
+    - CUE: shot_38
+    - yennefer: I have heard that the Duke of Bremerwood and her companion Sh'eenaz,
+    - CUE: shot_39
+    #OLD- yennefer: are currently staying in Novigrad in the temple island neighborhood.
+    - yennefer: are currently staying in Novigrad on the Temple Isle.
+    - CUE: shot_40    
+    - PAUSE: 0.5
+    - CUE: shot_41
+    - yennefer: It seems to me that this could be a good starting point to find out how to get your hands on one of these pearls.
+    - CUE: shot_42
+    - PAUSE: 0.5
+    - CUE: shot_43
+    - yennefer: In the meantime,
+    - CUE: shot_44
+    - yennefer: I will find out how to prevent this demon from harming.
+    - PAUSE: 0.5
+    - yennefer: I'll be back in few days.
+    - PAUSE: 0.5
+    - CUE: shot_46
+    - geralt: Thanks, Yen.
+    #- PAUSE: 0.5
+    - CUE: shot_99
+    - PAUSE: 1.0
+    - NEXT: section_exit    
+
+  section_choice_a:
+    - CHOICE:
+      - choice: ["I met her in Bremerwoord.", section_bremervoord]
+        emphasize: true
+      - ["Dandelion and Essi, were longtime friends.", section_friends]
+      ##- TIME_LIMIT: 3.0
+
+  # FAKE CHOICE
+  section_friends:
+    - CUE: shot_142
+    - geralt: Dandelion and Essi, were longtime friends. # Jaskier et Essi, étaient amis de longue date.
+    - PAUSE: 0.5
+    - CUE: shot_143
+    - yennefer: I can't imagine Dandelion just being friends with a girl. #J'imagine mal Jaskier être simplement ami avec une fille. // 
+    - PAUSE: 0.5
+    - CUE: shot_144
+    - geralt: Yes, it's surprising, but Dandelion had a real brotherly love for her. #Oui c'est surprenant, mais Jaskier lui portait un véritable amour fraternel. // 
+    - PAUSE: 0.5
+    - CUE: shot_145
+    - PAUSE: 0.1
+    - NEXT: section_choice_a
+
+
+  section_exit:
+    #- CAMERA_BLEND: 2.0
+    - EXIT

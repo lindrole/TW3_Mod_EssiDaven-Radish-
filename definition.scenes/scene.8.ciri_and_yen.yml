@@ -1,0 +1,1542 @@
+repository:
+  actors:
+    geralt:
+      template: "gameplay\\templates\\characters\\player\\player.w2ent"
+
+    yennefer:
+      ##template: "characters\\npc_entities\\main_npc\\yennefer.w2ent"
+      ##appearance: [ "yennefer_gown" ]
+      template: "quests\\main_npcs\\yennefer.w2ent"
+      appearance: [ "yennefer_gown" ]
+
+    ciri:
+      #template: "characters\\npc_entities\\main_npc\\ciri.w2ent"
+      #appearance: [ "ciri_winter" ]
+      template: "quests\\main_npcs\\cirilla.w2ent" #le problème c'est qu'elle a l'épée qui masque geralt sur certains plans
+      appearance: [ "ciri_winter" ]
+
+  animations:
+    anim_12439_add_gesture_explain_09:
+      animation: "add_gesture_explain_09"
+      frames: 130
+
+    anim_13571_sorceress_casting_short_spell_loop:
+      animation: "sorceress_casting_short_spell_loop"
+      frames: 175
+
+    anim_312_high_standing_determined_enter_front_45_left:
+      animation: "high_standing_determined_enter_front_45_left"
+      frames: 199
+
+    anim_6705_add_gesture_question_04:
+      animation: "add_gesture_question_04"
+      frames: 89
+
+    anim_1887_high_standing_neutral_gesture_explain_01:
+      animation: "high_standing_neutral_gesture_explain_01"
+      frames: 111
+
+    anim_1891_high_standing_neutral_gesture_explain_04:
+      animation: "high_standing_neutral_gesture_explain_04"
+      frames: 135
+
+    anim_1888_high_standing_neutral_gesture_explain_02:
+      animation: "high_standing_neutral_gesture_explain_02"
+      frames: 97
+
+    anim_1892_high_standing_neutral_gesture_explain_05:
+      animation: "high_standing_neutral_gesture_explain_05"
+      frames: 137
+
+    anim_12431_add_gesture_explain_01:
+      animation: "add_gesture_explain_01"
+      frames: 108
+
+    anim_12437_add_gesture_explain_07:
+      animation: "add_gesture_explain_07"
+      frames: 96
+
+    anim_12432_add_gesture_explain_02:
+      animation: "add_gesture_explain_02"
+      frames: 123
+
+    anim_12435_add_gesture_explain_05:
+      animation: "add_gesture_explain_05"
+      frames: 146
+
+    anim_12438_add_gesture_explain_08:
+      animation: "add_gesture_explain_08"
+      frames: 163
+
+    anim_12436_add_gesture_explain_06:
+      animation: "add_gesture_explain_06"
+      frames: 192
+
+    anim_12449_add_gesture_question_02:
+      animation: "add_gesture_question_02"
+      frames: 91
+
+    anim_509_q705_high_standing_determined_gesture_give_assasination_letter_man:
+      animation: "q705_high_standing_determined_gesture_give_assasination_letter_man"
+      frames: 255
+
+    anim_12666_high_standing_determined_gesture_take:
+      animation: "high_standing_determined_gesture_take"
+      frames: 162
+
+    anim_13572_sorceress_casting_short_spell_start:
+      animation: "sorceress_casting_short_spell_start"
+      frames: 85
+
+    anim_13573_sorceress_casting_short_spell_stop:
+      animation: "sorceress_casting_short_spell_stop"
+      frames: 85
+
+    anim_12649_high_standing_determined_gesture_give:
+      animation: "high_standing_determined_gesture_give"
+      frames: 165
+
+    anim_7073_high_standing_determined_gesture_take:
+      animation: "high_standing_determined_gesture_take"
+      frames: 150
+
+    anim_7119_high_standing_determined_to_high_standing_determined2:
+      animation: "high_standing_determined_to_high_standing_determined2"
+      frames: 111
+
+    anim_6712_add_gesture_slight_explain_02:
+      animation: "add_gesture_slight_explain_02"
+      frames: 107
+
+    anim_12434_add_gesture_explain_04:
+      animation: "add_gesture_explain_04"
+      frames: 130
+
+    anim_12433_add_gesture_explain_03:
+      animation: "add_gesture_explain_03"
+      frames: 83
+
+    anim_7149_high_standing_determined2_to_high_standing_determined:
+      animation: "high_standing_determined2_to_high_standing_determined"
+      frames: 95
+
+    anim_12458_add_idle_weight_shift_01:
+      animation: "add_idle_weight_shift_01"
+      frames: 543
+
+    anim_6704_add_gesture_question_03:
+      animation: "add_gesture_question_03"
+      frames: 81
+
+    anim_6706_add_gesture_question_05:
+      animation: "add_gesture_question_05"
+      frames: 76
+
+    anim_6709_add_gesture_question_hand_flick_01:
+      animation: "add_gesture_question_hand_flick_01"
+      frames: 66
+
+  animations.mimic:
+    mimicsanim_512_geralt_neutral_gesture_disapproval_face:
+      animation: "geralt_neutral_gesture_disapproval_face"
+      frames: 72
+
+    mimicsanim_280_constant_closed_eyes_face:
+      animation: "constant_closed_eyes_face"
+      frames: 21
+
+    mimicsanim_119_geralt_neutral_gesture_brows_up_face_nrml:
+      animation: "geralt_neutral_gesture_brows_up_face_nrml"
+      frames: 90
+
+    mimicsanim_323_head_left01_head_accent_face:
+      animation: "head_left01_head_accent_face"
+      frames: 55
+
+    mimicsanim_324_head_right01_head_accent_face:
+      animation: "head_right01_head_accent_face"
+      frames: 57
+
+    mimicsanim_363_surprised_anim_face:
+      animation: "surprised_anim_face"
+      frames: 600
+
+    mimicsanim_456_geralt_neutral_gesture_yes_face:
+      animation: "geralt_neutral_gesture_yes_face"
+      frames: 71
+
+    mimicsanim_62_geralt_reaction_i_dont_agree_face:
+      animation: "geralt_reaction_i_dont_agree_face"
+      frames: 160
+
+    mimicsanim_266_brows_down_accent_face:
+      animation: "brows_down_accent_face"
+      frames: 26
+
+    mimicsanim_136_geralt_neutral_no_not_a_chance_face:
+      animation: "geralt_neutral_no_not_a_chance_face"
+      frames: 160
+
+    mimicsanim_477_geralt_neutral_yes_ok_face:
+      animation: "geralt_neutral_yes_ok_face"
+      frames: 40
+
+    mimicsanim_416_geralt_neutral_gesture_question_ver02_happy_face:
+      animation: "geralt_neutral_gesture_question_ver02_happy_face"
+      frames: 80
+
+    mimicsanim_146_geralt_neutral_yes_ok_face:
+      animation: "geralt_neutral_yes_ok_face"
+      frames: 60
+
+    mimicsanim_414_geralt_neutral_gesture_question_ver01_not_bad_face:
+      animation: "geralt_neutral_gesture_question_ver01_not_bad_face"
+      frames: 80
+
+  actor.poses:
+    pose_0_high_standing_determined_idle:
+      idle_anim: "high_standing_determined_idle"
+
+    pose_400_High_Standing_Neutral:
+      name: "Standing"
+      emotional_state: "Neutral"
+      status: "High"
+      idle_anim: "high_standing_neutral_idle"
+
+    pose_2128_High_Standing2_Determined:
+      name: "Standing2"
+      emotional_state: "Determined"
+      status: "High"
+      idle_anim: "high_standing_determined2_idle"
+
+
+  cameras:
+    cam_1_cam_intro:
+      fov: 20.0
+      transform:
+        pos: [ -2.7338628769, -2.9223725796, 2.3999993801 ]
+        rot: [ 0.0, 348.2996520996, 323.5002441406 ]
+      zoom: 3.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_2_cam_geralt_large:
+      fov: 20.0
+      transform:
+        pos: [ -2.1029613018, -1.7472240925, 1.6000001431 ]
+        rot: [ 0.0, 358.8998107910, 322.7000122070 ]
+      zoom: 3.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_3_cam_geralt_proche_parle_ciri:
+      fov: 13.0
+      transform:
+        pos: [ 0.2400154769, -0.9294384718, 1.6800000668 ]
+        rot: [ 0.0, 0.5999999046, 7.1000061035 ]
+      zoom: 3.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Closeup"
+        tags: [ "ext" ]
+
+    cam_4_cam_geralt_ots_parle_yen:
+      fov: 20.0
+      transform:
+        pos: [ -1.5135735273, 0.1281865835, 1.7799999714 ]
+        rot: [ 0.0, 355.4998474121, 306.1999511719 ]
+      zoom: 3.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Semicloseup"
+        tags: [ "ext" ]
+
+    cam_5_cam_ciri_ots_parle_geralt:
+      fov: 13.0
+      transform:
+        pos: [ -0.4682113528, 2.3431491852, 1.7000000477 ]
+        rot: [ 0.0, 357.7999877930, 193.8000640869 ]
+      zoom: 3.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+
+      event_generator:
+        plane: "Closeup"
+        tags: [ "ext" ]
+
+    cam_6_cam_ciri_large:
+      fov: 25.0
+      transform:
+        pos: [ -0.5883971453, 2.6017093658, 1.6099998951 ]
+        rot: [ 0.0, 357.1001281738, 187.8000030518 ]
+      zoom: 3.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+
+      event_generator:
+        plane: "Wide"
+        tags: [ "ext" ]
+
+    cam_7_cam_yen_large:
+      fov: 25.0
+      transform:
+        pos: [ 1.6976045370, -0.2945932448, 1.6099998951 ]
+        rot: [ 0.0, 356.4995727539, 64.1000671387 ]
+      zoom: 3.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Wide"
+        tags: [ "ext" ]
+
+    cam_8_cam_yen_ots_parle_geralt:
+      fov: 20.0
+      transform:
+        pos: [ 0.5866562128, 2.4840903282, 1.7799999714 ]
+        rot: [ 0.0, 354.5000305176, 142.6000366211 ]
+      zoom: 3.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Semicloseup"
+        tags: [ "ext" ]
+
+    cam_9_cam_yen_proche:
+      fov: 25.0
+      transform:
+        pos: [ -0.2779172957, 1.4386346340, 1.6000001431 ]
+        rot: [ 0.0, 0.9002075195, 133.7999572754 ]
+      zoom: 3.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Wide"
+        tags: [ "ext" ]
+
+    cam_10_cam_yen_cast_spell:
+      fov: 25.0
+      transform:
+        pos: [ 0.8172947764, 0.8838921785, 1.4100000858 ]
+        rot: [ 0.0, 7.3993530273, 92.8000793457 ]
+      zoom: 3.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Wide"
+        tags: [ "ext" ]
+
+
+
+
+production:
+  settings:
+    sceneid: 8
+    strings-idspace: 5984
+    strings-idstart: 800
+
+  #TESTplacement: "ciri"
+  placement: "sted_skellige_ciriyen_sp"
+    # INFO: world coordinates of used origin:
+      #pos: [ -55.5740127563, 610.0767211914, 2.5196912289 ]
+      #rot: [ 0.0, 201.2080688477, 0.0 ]
+
+  assets:
+    actors:
+      geralt:
+        repo: "geralt"
+        by_voicetag: true
+        tags: [ "PLAYER" ]
+
+      yennefer:
+        repo: "yennefer"
+        #by_voicetag: true
+        appearance: "yennefer_gown"
+        tags: [ "sted_yennefer" ]
+
+      ciri:
+        repo: "ciri"
+        #by_voicetag: true
+        appearance: "ciri_winter"
+        tags: [ "sted_ciri_1" ]
+
+    cameras:
+      cam_1_cam_intro:
+        repo: "cam_1_cam_intro"
+
+      cam_2_cam_geralt_large:
+        repo: "cam_2_cam_geralt_large"
+
+      cam_3_cam_geralt_proche_parle_ciri:
+        repo: "cam_3_cam_geralt_proche_parle_ciri"
+
+      cam_4_cam_geralt_ots_parle_yen:
+        repo: "cam_4_cam_geralt_ots_parle_yen"
+
+      cam_5_cam_ciri_ots_parle_geralt:
+        repo: "cam_5_cam_ciri_ots_parle_geralt"
+
+      cam_6_cam_ciri_large:
+        repo: "cam_6_cam_ciri_large"
+
+      cam_7_cam_yen_large:
+        repo: "cam_7_cam_yen_large"
+
+      cam_8_cam_yen_ots_parle_geralt:
+        repo: "cam_8_cam_yen_ots_parle_geralt"
+
+      cam_9_cam_yen_proche:
+        repo: "cam_9_cam_yen_proche"
+
+      cam_10_cam_yen_cast_spell:
+        repo: "cam_10_cam_yen_cast_spell"
+
+    animations:
+      ciri_add_gesture_explain_09:
+        actor: "ciri"
+        repo: "anim_12439_add_gesture_explain_09"
+        #duration: 4.3333334923
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.1
+        blendin: 1.0
+        blendout: 0.0
+
+      yennefer_sorceress_casting_short_spell_loop:
+        actor: "yennefer"
+        repo: "anim_13571_sorceress_casting_short_spell_loop"
+        #duration: 5.8333334923
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.0
+
+      geralt_high_standing_determined_enter_front_45_left:
+        actor: "geralt"
+        repo: "anim_312_high_standing_determined_enter_front_45_left"
+        #duration: 6.6333332062
+        #weight: 0.6000000238
+        clipfront: 3.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.4
+
+      geralt_add_gesture_question_04:
+        actor: "geralt"
+        repo: "anim_6705_add_gesture_question_04"
+        #duration: 2.9666666985
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      ciri_high_standing_neutral_gesture_explain_01:
+        actor: "ciri"
+        repo: "anim_1887_high_standing_neutral_gesture_explain_01"
+        #duration: 3.7000000477
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.4
+
+      ciri_high_standing_neutral_gesture_explain_01bis:
+        actor: "ciri"
+        repo: "anim_1887_high_standing_neutral_gesture_explain_01"
+        #duration: 3.7000000477
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.75
+        blendin: 0.4
+        blendout: 0.4
+
+      ciri_high_standing_neutral_gesture_explain_01c:
+        actor: "ciri"
+        repo: "anim_1887_high_standing_neutral_gesture_explain_01"
+        #duration: 3.7000000477
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 0.9
+        blendin: 0.3
+        blendout: 0.4
+
+      ciri_high_standing_neutral_gesture_explain_04:
+        actor: "ciri"
+        repo: "anim_1891_high_standing_neutral_gesture_explain_04"
+        #duration: 4.5000000000
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.55
+        blendin: 0.0
+        blendout: 0.4
+
+      ciri_high_standing_neutral_gesture_explain_04a:
+        actor: "ciri"
+        repo: "anim_1891_high_standing_neutral_gesture_explain_04"
+        #duration: 4.5000000000
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.55
+        blendin: 0.3
+        blendout: 0.4
+
+      ciri_high_standing_neutral_gesture_explain_04c:
+        actor: "ciri"
+        repo: "anim_1891_high_standing_neutral_gesture_explain_04"
+        #duration: 4.5000000000
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.2
+        blendin: 0.3
+        blendout: 0.4
+
+      ciri_high_standing_neutral_gesture_explain_02:
+        actor: "ciri"
+        repo: "anim_1888_high_standing_neutral_gesture_explain_02"
+        #duration: 3.2333333492
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.4
+        blendout: 0.4
+
+      ciri_high_standing_neutral_gesture_explain_05:
+        actor: "ciri"
+        repo: "anim_1892_high_standing_neutral_gesture_explain_05"
+        #duration: 4.5666666031
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.15
+        blendin: 0.0
+        blendout: 0.4
+
+      ciri_high_standing_neutral_gesture_explain_05b:
+        actor: "ciri"
+        repo: "anim_1892_high_standing_neutral_gesture_explain_05"
+        #duration: 4.5666666031
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.15
+        blendin: 0.4
+        blendout: 0.4
+
+      yennefer_add_gesture_explain_01:
+        actor: "yennefer"
+        repo: "anim_12431_add_gesture_explain_01"
+        #duration: 3.5999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 2.8
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.4
+
+      yennefer_add_gesture_explain_01bis:
+        actor: "yennefer"
+        repo: "anim_12431_add_gesture_explain_01"
+        #duration: 3.5999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 2.5
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.4
+
+      yennefer_add_gesture_explain_07:
+        actor: "yennefer"
+        repo: "anim_12437_add_gesture_explain_07"
+        #duration: 3.2000000477
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.2
+        blendin: 0.3
+        blendout: 0.4
+
+      yennefer_add_gesture_explain_02:
+        actor: "yennefer"
+        repo: "anim_12432_add_gesture_explain_02"
+        #duration: 4.0999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 2.2
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.4
+
+      yennefer_add_gesture_explain_05a:
+        actor: "yennefer"
+        repo: "anim_12435_add_gesture_explain_05"
+        #duration: 4.8666667938
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 0.9
+        blendin: 0.3
+        blendout: 0.4
+
+      yennefer_add_gesture_explain_05:
+        actor: "yennefer"
+        repo: "anim_12435_add_gesture_explain_05"
+        #duration: 4.8666667938
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 0.9
+        blendin: 0.0
+        blendout: 0.4
+
+      yennefer_add_gesture_explain_08:
+        actor: "yennefer"
+        repo: "anim_12438_add_gesture_explain_08"
+        #duration: 5.4333333969
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.4
+
+      yennefer_add_gesture_explain_08bis:
+        actor: "yennefer"
+        repo: "anim_12438_add_gesture_explain_08"
+        #duration: 5.4333333969
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 0.9
+        blendin: 0.4
+        blendout: 0.4
+
+      yennefer_add_gesture_explain_06:
+        actor: "yennefer"
+        repo: "anim_12436_add_gesture_explain_06"
+        #duration: 6.4000000954
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.2
+        blendin: 0.0
+        blendout: 0.4
+
+      yennefer_add_gesture_question_02:
+        actor: "yennefer"
+        repo: "anim_12449_add_gesture_question_02"
+        #duration: 3.0333333015
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.3
+
+      geralt_q705_high_standing_determined_gesture_give_assasination_letter_man:
+        actor: "geralt"
+        repo: "anim_509_q705_high_standing_determined_gesture_give_assasination_letter_man"
+        #duration: 8.5000000000
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 4.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      yennefer_high_standing_determined_gesture_take:
+        actor: "yennefer"
+        repo: "anim_12666_high_standing_determined_gesture_take"
+        #duration: 5.4000000954
+        #weight: 0.6000000238
+        clipfront: 1.5
+        clipend: 4.5
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      yennefer_sorceress_casting_short_spell_start:
+        actor: "yennefer"
+        repo: "anim_13572_sorceress_casting_short_spell_start"
+        #duration: 2.8333332539
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.3
+
+      yennefer_sorceress_casting_short_spell_stop:
+        actor: "yennefer"
+        repo: "anim_13573_sorceress_casting_short_spell_stop"
+        #duration: 2.8333332539
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      yennefer_high_standing_determined_gesture_give:
+        actor: "yennefer"
+        repo: "anim_12649_high_standing_determined_gesture_give"
+        #duration: 5.5000000000
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.5
+
+      geralt_high_standing_determined_gesture_take:
+        actor: "geralt"
+        repo: "anim_7073_high_standing_determined_gesture_take"
+        #duration: 5.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.5
+
+      geralt_high_standing_determined_to_high_standing_determined2:
+        actor: "geralt"
+        repo: "anim_7119_high_standing_determined_to_high_standing_determined2"
+        #duration: 3.7000000477
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      geralt_add_gesture_slight_explain_02:
+        actor: "geralt"
+        repo: "anim_6712_add_gesture_slight_explain_02"
+        #duration: 3.5666666031
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      yennefer_add_gesture_explain_04:
+        actor: "yennefer"
+        repo: "anim_12434_add_gesture_explain_04"
+        #duration: 4.3333334923
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 2.5
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.5
+
+      yennefer_add_gesture_explain_03:
+        actor: "yennefer"
+        repo: "anim_12433_add_gesture_explain_03"
+        #duration: 2.7666666508
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.5
+        blendin: 0.3
+        blendout: 0.4
+
+      geralt_high_standing_determined2_to_high_standing_determined:
+        actor: "geralt"
+        repo: "anim_7149_high_standing_determined2_to_high_standing_determined"
+        #duration: 3.1666667461
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      ciri_add_idle_weight_shift_01:
+        actor: "ciri"
+        repo: "anim_12458_add_idle_weight_shift_01"
+        #duration: 18.1000003815
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 5.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 1.5
+
+      geralt_add_gesture_question_03:
+        actor: "geralt"
+        repo: "anim_6704_add_gesture_question_03"
+        #duration: 2.7000000477
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 2.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.5
+
+      geralt_add_gesture_question_05:
+        actor: "geralt"
+        repo: "anim_6706_add_gesture_question_05"
+        #duration: 2.5333333015
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      ciri_add_gesture_explain_01:
+        actor: "ciri"
+        repo: "anim_12431_add_gesture_explain_01"
+        #duration: 2.2000000477
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      geralt_add_gesture_question_hand_flick_01:
+        actor: "geralt"
+        repo: "anim_6709_add_gesture_question_hand_flick_01"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+    animations.mimic:
+      ciri_geralt_neutral_gesture_disapproval_face:
+        actor: "ciri"
+        repo: "mimicsanim_512_geralt_neutral_gesture_disapproval_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.9
+        blendin: 0.5000000000
+        blendout: 0.0
+
+      yennefer_constant_closed_eyes_face:
+        actor: "yennefer"
+        repo: "mimicsanim_280_constant_closed_eyes_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 12.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_gesture_brows_up_face_nrml:
+        actor: "geralt"
+        repo: "mimicsanim_119_geralt_neutral_gesture_brows_up_face_nrml"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.3
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      ciri_head_left01_head_accent_face:
+        actor: "ciri"
+        repo: "mimicsanim_323_head_left01_head_accent_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      ciri_head_right01_head_accent_face:
+        actor: "ciri"
+        repo: "mimicsanim_324_head_right01_head_accent_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      yennefer_head_left01_head_accent_face:
+        actor: "yennefer"
+        repo: "mimicsanim_323_head_left01_head_accent_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_surprised_anim_face:
+        actor: "geralt"
+        repo: "mimicsanim_363_surprised_anim_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 6.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      ciri_geralt_neutral_gesture_yes_face:
+        actor: "ciri"
+        repo: "mimicsanim_456_geralt_neutral_gesture_yes_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_reaction_i_dont_agree_face:
+        actor: "geralt"
+        repo: "mimicsanim_62_geralt_reaction_i_dont_agree_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.1
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      ciri_brows_down_accent_face:
+        actor: "ciri"
+        repo: "mimicsanim_266_brows_down_accent_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 5.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_no_not_a_chance_face:
+        actor: "geralt"
+        repo: "mimicsanim_136_geralt_neutral_no_not_a_chance_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 4.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      ciri_geralt_neutral_yes_ok_face:
+        actor: "ciri"
+        repo: "mimicsanim_477_geralt_neutral_yes_ok_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.6
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      ciri_geralt_neutral_gesture_question_ver02_happy_face:
+        actor: "ciri"
+        repo: "mimicsanim_416_geralt_neutral_gesture_question_ver02_happy_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 2.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_yes_ok_face:
+        actor: "geralt"
+        repo: "mimicsanim_146_geralt_neutral_yes_ok_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      yennefer_geralt_neutral_gesture_question_ver01_not_bad_face:
+        actor: "yennefer"
+        repo: "mimicsanim_414_geralt_neutral_gesture_question_ver01_not_bad_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.3
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+    actor.poses:
+      geralt_high_standing_determined_idle:
+        actor: "geralt"
+        repo: "pose_0_high_standing_determined_idle"
+
+      ciri_high_standing_determined_idle:
+        actor: "ciri"
+        repo: "pose_0_high_standing_determined_idle"
+
+      yennefer_high_standing_determined_idle:
+        actor: "yennefer"
+        repo: "pose_0_high_standing_determined_idle"
+
+      ciri_High_Standing_Neutral:
+        actor: "ciri"
+        repo: "pose_400_High_Standing_Neutral"
+
+      geralt_High_Standing2_Determined:
+        actor: "geralt"
+        repo: "pose_2128_High_Standing2_Determined"
+
+      ciri_High_Standing2_Determined:
+        actor: "ciri"
+        repo: "pose_2128_High_Standing2_Determined"
+
+
+storyboard:
+  #defaults:
+    #placement:
+      #geralt: [[ 0.1059106588, 1.1101132631, 0.0 ], [ 0.0, 0.0, 153.6000061035 ]]
+      #ciri: [[ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      #yennefer: [[ -0.9069498777, 0.7720457315, 0.0 ], [ 0.0, 0.0, 292.0 ]]
+
+    #actor.pose:
+      #geralt: geralt_high_standing_determined_idle
+      #ciri: ciri_high_standing_determined_idle
+      #yennefer: yennefer_high_standing_determined_idle
+
+  section_storyboard_ui:
+
+    shot_1: #intro
+      - fade.in: [0.0, 0.5]
+      - actor.placement: [0.0, geralt, [ 0.1059106588, 1.1101132631, 0.0 ], [ 0.0, 0.0, 153.6000061035 ]]
+      - actor.placement: [0.0, ciri, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.placement: [0.0, yennefer, [ -0.9069498777, 0.7720457315, 0.0 ], [ 0.0, 0.0, 292.0 ]]
+      - actor.pose: [0.0, geralt_high_standing_determined_idle]
+      - actor.pose: [0.0, ciri_High_Standing_Neutral]
+      - actor.pose: [0.0, yennefer_high_standing_determined_idle]
+      - cam: [0.0, cam_1_cam_intro]
+      - actor.anim: [0.0, geralt_high_standing_determined_enter_front_45_left]
+      - actor.lookat: [0.0, geralt, yennefer]
+      - actor.lookat: [0.0, ciri, yennefer]
+      - actor.lookat: [0.0, yennefer, ciri]
+      - actor.lookat: [0.1, ciri, geralt]
+      - actor.lookat: [0.1, yennefer, geralt]
+      - actor.lookat: [0.1, geralt, ciri]
+
+      - actor.anim: [0.5, geralt_add_gesture_question_04]
+      - actor.anim.mimic: [0.5, geralt_geralt_neutral_gesture_brows_up_face_nrml]
+      - actor.scabbard.hide: [0.0, ciri]
+
+    shot_2: #ciri?
+      - actor.lookat: [0.0, geralt, ciri]
+
+
+    shot_3: #Yennefer told me what you asked her.
+      - cam: [0.0, cam_6_cam_ciri_large]
+      - actor.anim: [0.0, ciri_high_standing_neutral_gesture_explain_01]
+      - actor.anim.mimic: [0.0, ciri_head_left01_head_accent_face]
+      - actor.lookat: [0.0, yennefer, geralt]
+
+    shot_4: #That's when I remembered Essi Daven's small and beauti
+      - cam: [0.0, cam_5_cam_ciri_ots_parle_geralt]
+      - actor.anim: [0.2, ciri_high_standing_neutral_gesture_explain_01bis]
+      - actor.anim.mimic: [0.0, ciri_head_right01_head_accent_face]
+
+    shot_5: #I had read it as a child when I was in
+      - cam: [0.0, cam_6_cam_ciri_large]
+      - actor.anim: [0.0, ciri_high_standing_neutral_gesture_explain_04a]
+
+    shot_6: #This book had filled me with emotion,
+      - cam: [0.0, cam_3_cam_geralt_proche_parle_ciri]
+      #- actor.anim: [0.0, ciri_high_standing_neutral_gesture_explain_02]
+      - actor.anim: [0.0, ciri_high_standing_neutral_gesture_explain_05]
+
+    shot_7: #and now I understand why.
+      - cam: [0.0, cam_5_cam_ciri_ots_parle_geralt]
+      #- actor.anim: [0.0, ciri_high_standing_neutral_gesture_explain_05]
+      - actor.lookat: [0.0, yennefer, ciri]
+
+    shot_8: #I wouldn't want to interrupt you,
+      - actor.placement: [0.0, yennefer, [ -0.9069498777, 0.7720457315, 0.0 ], [ 0.0, 0.0, 270.1000061035 ]]
+      - cam: [0.0, cam_7_cam_yen_large]
+      - actor.anim: [0.0, yennefer_add_gesture_explain_01]
+      - actor.lookat: [0.0, geralt, yennefer]
+      - actor.lookat: [0.0, ciri, yennefer]
+
+    shot_9: #but know that my research has paid off.
+      - actor.anim: [0.0, yennefer_add_gesture_explain_07]
+      - actor.lookat: [0.0, yennefer, geralt]
+
+    shot_10: #My intuition was right.
+      - actor.placement: [0.0, yennefer, [ -0.9069498777, 0.7720457315, 0.0 ], [ 0.0, 0.0, 292.0 ]]
+      - cam: [0.0, cam_8_cam_yen_ots_parle_geralt]
+      - actor.anim: [0.0, yennefer_add_gesture_explain_02]
+      - actor.anim.mimic: [0.0, yennefer_head_left01_head_accent_face]
+
+    shot_11: #An object linking you to the
+      - actor.anim: [0.0, yennefer_add_gesture_explain_05a]
+
+    shot_12: #As I feared,
+      - actor.placement: [0.0, yennefer, [ -0.9069498777, 0.7720457315, 0.0 ], [ 0.0, 0.0, 270.1000061035 ]]
+      - cam: [0.0, cam_7_cam_yen_large]
+      - actor.anim: [0.0, yennefer_add_gesture_explain_08]
+
+    shot_13: #this should not allow you to destroy 
+      - actor.placement: [0.0, yennefer, [ -0.9069498777, 0.7720457315, 0.0 ], [ 0.0, 0.0, 292.0 ]]
+      - cam: [0.0, cam_4_cam_geralt_ots_parle_yen]
+      #- actor.lookat: [0.0, geralt, yennefer]
+      - actor.lookat: [0.0, yennefer, geralt]
+
+    shot_14: #but it will help you to send him back
+      - actor.placement: [0.0, yennefer, [ -0.9069498777, 0.7720457315, 0.0 ], [ 0.0, 0.0, 270.1000061035 ]]
+      - cam: [0.0, cam_7_cam_yen_large]
+      - actor.anim: [0.0, yennefer_add_gesture_explain_06]
+
+    shot_15: #and this for quite a while.
+      - actor.placement: [0.0, yennefer, [ -0.9069498777, 0.7720457315, 0.0 ], [ 0.0, 0.0, 292.0 ]]
+      - cam: [0.0, cam_4_cam_geralt_ots_parle_yen]
+
+    shot_16: #Do you have one of these pearls?
+      - cam: [0.0, cam_8_cam_yen_ots_parle_geralt]
+      - actor.anim: [0.0, yennefer_add_gesture_question_02]
+
+    shot_17: #geralt donne
+      #- actor.placement: [0.0, geralt, [ 0.1059106588, 1.1101132631, 0.0 ], [ 0.0, 0.0, 153.6000061035 ]]
+      - actor.placement: [0.0, geralt, [ 0.1059106588, 1.1101132631, 0.0 ], [ 0.0, 0.0, 125.0 ]] ################### pour tourner geralt afin qu'il donne dans la main
+      - cam: [0.0, cam_4_cam_geralt_ots_parle_yen]
+      - actor.anim: [0.0, geralt_q705_high_standing_determined_gesture_give_assasination_letter_man]
+      #- actor.anim: [0.4, yennefer_high_standing_determined_gesture_take]
+
+    shot_18: #yen prend
+      - actor.placement: [0.0, geralt, [ 0.1059106588, 1.1101132631, 0.0 ], [ 0.0, 0.0, 153.6000061035 ]]
+      - cam: [0.0, cam_8_cam_yen_ots_parle_geralt]
+      - actor.anim: [0.0, yennefer_high_standing_determined_gesture_take]
+      - fade.out: [0.6, 0.5]
+
+    shot_19: #yen jette le sort start
+      - fade.in: [0.0, 0.3]
+      - actor.placement: [0.0, yennefer, [ -0.9069498777, 0.7720457315, 0.0 ], [ 0.0, 0.0, 270.1000061035 ]]
+      - cam: [0.0, cam_10_cam_yen_cast_spell]
+      - actor.anim: [0.0, yennefer_sorceress_casting_short_spell_start]
+      - actor.anim.mimic: [0.5, yennefer_constant_closed_eyes_face]
+      - actor.hide: [0.0, geralt]
+
+    shot_20: #yen jette le sort loop
+      - actor.effect.start: [0.0, yennefer, generic_spell_rh]
+      - actor.effect.stop: [1.0, yennefer, generic_spell_rh]
+      - actor.anim: [0.0, yennefer_sorceress_casting_short_spell_loop]
+
+    shot_21: #yen jette le sort stop
+      - actor.anim: [0.0, yennefer_sorceress_casting_short_spell_stop]
+      - fade.out: [0.7, 0.3]
+
+    shot_22: #yen rend perle
+      - fade.in: [0.0, 0.3]
+      - actor.placement: [0.0, yennefer, [ -0.9069498777, 0.7720457315, 0.0 ], [ 0.0, 0.0, 292.0 ]]
+      - cam: [0.0, cam_8_cam_yen_ots_parle_geralt]
+      - actor.anim: [0.0, yennefer_high_standing_determined_gesture_give]
+      - actor.show: [0.0, geralt]
+
+    shot_23: #geralt reprend perle
+      - cam: [0.0, cam_4_cam_geralt_ots_parle_yen]
+      - actor.anim: [0.0, geralt_high_standing_determined_gesture_take]
+
+    #shot_24: #You'll have to put it on your friend's grave.
+      #- cam: [0.0, cam_34_you_ll_have_to_put]
+      #- actor.anim: [0.0, yennefer_add_gesture_explain_05]
+
+    shot_25: #This will summon and weaken the demon.
+      - cam: [0.0, cam_8_cam_yen_ots_parle_geralt]
+      - actor.anim: [0.0, yennefer_add_gesture_explain_01bis]
+      #- actor.anim: [0.0, yennefer_add_gesture_explain_08]
+
+    shot_26: #All you will have to do then is use your skills in combat.
+      #- cam: [0.0, cam_34_you_ll_have_to_put]
+      - actor.anim: [0.0, yennefer_add_gesture_explain_08bis]
+      - actor.anim: [0.5, geralt_high_standing_determined_to_high_standing_determined2]
+
+    shot_27: #What do you mean by "you"?
+      - actor.pose: [0.0, geralt_High_Standing2_Determined]
+      - cam: [0.0, cam_2_cam_geralt_large]
+      - actor.anim.mimic: [0.0, geralt_surprised_anim_face]
+
+    shot_28: #I am coming with you.
+      - actor.pose: [0.0, ciri_High_Standing2_Determined] #########################################
+      - cam: [0.0, cam_5_cam_ciri_ots_parle_geralt]
+      #- cam: [0.0, cam_38_i_am_coming]
+      - actor.anim.mimic: [0.0, ciri_geralt_neutral_gesture_yes_face]
+      - actor.lookat: [0.0, geralt, ciri]
+      - actor.lookat: [0.0, ciri, geralt]
+      - actor.lookat: [0.0, yennefer, ciri]
+
+    #shot_281: #PAUSE
+      #- actor.anim: [0.0, ciri_high_standing_neutral_gesture_explain_01c]
+
+    shot_29: #I did not know Essi Daven,
+      #- actor.pose: [0.0, ciri_high_standing_determined_idle] #######################################
+      - cam: [0.0, cam_6_cam_ciri_large]
+      - actor.lookat: [0.0, yennefer, geralt]
+      - actor.pose: [0.0, ciri_High_Standing_Neutral]
+      - actor.anim: [0.0, ciri_high_standing_neutral_gesture_explain_01c]
+
+    shot_30: #but knowing now what was hidden behind these subtle ballads,
+      - actor.anim: [0.2, ciri_high_standing_neutral_gesture_explain_04c]
+
+    shot_31: #I immediately wanted to help you to destroy this devil.
+      - cam: [0.0, cam_5_cam_ciri_ots_parle_geralt]
+      #- cam: [0.0, cam_38_i_am_coming]
+      - actor.anim: [0.0, ciri_high_standing_neutral_gesture_explain_05b] #######################################
+
+
+
+  section_choice:
+    CHOICE_1:
+      - actor.scabbard.hide: [0.0, ciri]
+      - actor.placement: [0.0, geralt, [ 0.1059106588, 1.1101132631, 0.0 ], [ 0.0, 0.0, 153.6000061035 ]]
+      - actor.placement: [0.0, ciri, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.placement: [0.0, yennefer, [ -0.9069498777, 0.7720457315, 0.0 ], [ 0.0, 0.0, 292.0 ]]
+      - actor.pose: [0.0, geralt_high_standing_determined_idle]
+      - actor.pose: [0.0, ciri_High_Standing_Neutral]
+      - actor.pose: [0.0, yennefer_high_standing_determined_idle]
+      - actor.lookat: [0.0, geralt, ciri]
+      - actor.lookat: [0.0, ciri, geralt]
+      - actor.lookat: [0.0, yennefer, ciri]
+      - cam: [0.0, cam_3_cam_geralt_proche_parle_ciri]
+      ##- actor.anim.mimic: [0.5, geralt_geralt_neutral_gesture_brows_up_face_nrml]
+
+
+  section_measure:
+    shot_311: #You don't know what you want to measure yourself against.
+      - actor.scabbard.hide: [0.0, ciri]
+      - actor.placement: [0.0, geralt, [ 0.1059106588, 1.1101132631, 0.0 ], [ 0.0, 0.0, 153.6000061035 ]]
+      - actor.placement: [0.0, ciri, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.placement: [0.0, yennefer, [ -0.9069498777, 0.7720457315, 0.0 ], [ 0.0, 0.0, 292.0 ]]
+      - actor.pose: [0.0, geralt_high_standing_determined_idle]
+      - actor.pose: [0.0, ciri_High_Standing_Neutral]
+      - actor.pose: [0.0, yennefer_high_standing_determined_idle]
+      - actor.lookat: [0.0, geralt, ciri]
+      - actor.lookat: [0.0, ciri, geralt]
+      - actor.lookat: [0.0, yennefer, ciri]
+      - cam: [0.0, cam_3_cam_geralt_proche_parle_ciri]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_i_dont_agree_face]
+
+    shot_312: #I've yet faced some very powerful creatures.
+      - cam: [0.0, cam_5_cam_ciri_ots_parle_geralt]
+      - actor.anim.mimic: [0.0, ciri_geralt_neutral_gesture_disapproval_face]
+      - actor.anim: [0.0, ciri_add_gesture_explain_09]
+
+
+
+  section_dangerous:
+    shot_32: #It's too dangerous.
+      - actor.scabbard.hide: [0.0, ciri]
+      - actor.placement: [0.0, geralt, [ 0.1059106588, 1.1101132631, 0.0 ], [ 0.0, 0.0, 153.6000061035 ]]
+      - actor.placement: [0.0, ciri, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.placement: [0.0, yennefer, [ -0.9069498777, 0.7720457315, 0.0 ], [ 0.0, 0.0, 292.0 ]]
+      - actor.pose: [0.0, geralt_high_standing_determined_idle]
+      - actor.pose: [0.0, ciri_High_Standing_Neutral]
+      - actor.pose: [0.0, yennefer_high_standing_determined_idle]
+      - actor.lookat: [0.0, geralt, ciri]
+      - actor.lookat: [0.0, ciri, geralt]
+      - actor.lookat: [0.0, yennefer, ciri]
+
+      - cam: [0.0, cam_3_cam_geralt_proche_parle_ciri]
+      #- actor.anim: [0.0, geralt_add_gesture_slight_explain_02]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_i_dont_agree_face]
+
+    shot_33: #I go there alone.
+      - cam: [0.0, cam_2_cam_geralt_large]
+
+    shot_34: #Out of the question.
+      - cam: [0.0, cam_5_cam_ciri_ots_parle_geralt]
+      #- cam: [0.0, cam_38_i_am_coming]
+      - actor.anim: [0.0, ciri_high_standing_neutral_gesture_explain_02]
+      - actor.anim.mimic: [0.0, ciri_brows_down_accent_face]
+
+    shot_35: #Even weakened,
+      - cam: [0.0, cam_8_cam_yen_ots_parle_geralt]
+      - actor.anim: [0.0, yennefer_add_gesture_explain_04]
+      - actor.lookat: [0.0, geralt, yennefer]
+      - actor.lookat: [0.0, yennefer, geralt]
+      - actor.lookat: [0.0, ciri, yennefer]
+
+    shot_36: #it's preferable that you will be two to defeat him.
+      - cam: [0.0, cam_9_cam_yen_proche]
+      - actor.anim: [0.0, yennefer_add_gesture_explain_03]
+
+    shot_361: #PAUSE
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_no_not_a_chance_face]
+      - actor.pose: [0.0, ciri_high_standing_determined_idle]
+
+    shot_37: #I don't like it but I guess I have no choice.
+      - cam: [0.0, cam_3_cam_geralt_proche_parle_ciri]
+      - actor.anim: [0.0, geralt_high_standing_determined2_to_high_standing_determined]
+      - actor.pose: [0.1, geralt_high_standing_determined_idle]
+      #- actor.anim.mimic: [0.0, geralt_geralt_neutral_no_not_a_chance_face]
+      - actor.lookat: [0.0, geralt, yennefer]
+      - actor.lookat: [0.5, geralt, ciri]
+      - actor.lookat: [0.0, ciri, geralt]
+
+    shot_371: #PAUSE
+      - actor.anim.mimic: [0.0, ciri_geralt_neutral_yes_ok_face]
+
+
+    shot_38: #Exactly.
+      - cam: [0.0, cam_5_cam_ciri_ots_parle_geralt]
+      #- cam: [0.0, cam_38_i_am_coming]
+      ################################################- actor.anim: [0.0, ciri_add_idle_weight_shift_01]
+      #- actor.anim.mimic: [0.0, ciri_geralt_neutral_yes_ok_face]
+
+    shot_39: #Very well…
+      - cam: [0.0, cam_2_cam_geralt_large]
+      - actor.anim: [0.0, geralt_add_gesture_question_03]
+      
+
+    shot_40: #Are you ready?
+      - cam: [0.0, cam_3_cam_geralt_proche_parle_ciri]
+      - actor.anim: [0.0, geralt_add_gesture_question_05]
+
+    shot_41: #I've been ready since the minute I got here.
+      - cam: [0.0, cam_5_cam_ciri_ots_parle_geralt]
+      #- cam: [0.0, cam_38_i_am_coming]
+      - actor.anim: [0.0, ciri_add_gesture_explain_01]
+      - actor.anim.mimic: [0.0, ciri_geralt_neutral_gesture_question_ver02_happy_face]
+
+    shot_42: #So let's go.
+      - cam: [0.0, cam_3_cam_geralt_proche_parle_ciri]
+      - actor.anim: [0.0, geralt_add_gesture_question_hand_flick_01]
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_yes_ok_face]
+
+    shot_43: #Come back to me unscathed.
+      - cam: [0.0, cam_9_cam_yen_proche]
+      - actor.anim.mimic: [0.0, yennefer_geralt_neutral_gesture_question_ver01_not_bad_face]
+
+    shot_44: #fade out
+      - fade.out: [0.5, 2.0]
+
+
+dialogscript:
+  player: "geralt"
+  actors: [ "geralt", "yennefer", "ciri" ]
+
+  section_start:
+    - PAUSE: 0.0
+    - NEXT: section_storyboard_ui
+
+  section_storyboard_ui:
+    # shot Shot (empty)
+    - CUE: shot_1
+    - PAUSE: 3.0
+    - CUE: shot_2
+    - geralt: Ciri?
+    - PAUSE: 0.5
+    - CUE: shot_3
+    - ciri: Yennefer told me what you asked her.
+    - PAUSE: 0.5
+    - CUE: shot_4
+    - ciri: That's when I remembered Essi Daven's small and beautifully bound volume entitled "The Blue Pearl".
+    - PAUSE: 0.5
+    - CUE: shot_5
+    - ciri: I had read it as a child when I was in training with Yennefer at the Melitele's Temple.
+    - PAUSE: 0.5
+    - CUE: shot_6
+    - ciri: This book had filled me with emotion,
+    - PAUSE: 0.2
+    - CUE: shot_7
+    - ciri: and now I understand why.
+    - PAUSE: 0.2
+    - CUE: shot_8
+    - yennefer: I wouldn't want to interrupt you,
+    - PAUSE: 0.2
+    - CUE: shot_9
+    - yennefer: but know that my research has paid off.
+    - PAUSE: 0.5
+    - CUE: shot_10
+    - yennefer: My intuition was right.
+    - PAUSE: 0.5
+    - CUE: shot_11
+    - yennefer: An object linking you to the deceased is indeed useful.
+    - PAUSE: 0.5
+    - CUE: shot_12
+    - yennefer: As I feared,
+    - PAUSE: 0.2
+    - CUE: shot_13
+    - yennefer: this should not allow you to destroy this abomination,
+    - PAUSE: 0.2
+    - CUE: shot_14
+    - yennefer: but it will help you to send him back where he came from,
+    - PAUSE: 0.5
+    - CUE: shot_15
+    - yennefer: and this for quite a while.
+    - PAUSE: 1.0
+    - CUE: shot_16
+    - yennefer: Do you have one of these pearls?
+    - PAUSE: 0.5
+    - CUE: shot_17
+    - PAUSE: 4.0 #geralt donne
+    - CUE: shot_18
+    - PAUSE: 3.5 #yen prend
+    - CUE: shot_19
+    - PAUSE: 2.0 #yen jette le sort start
+    - CUE: shot_20
+    - PAUSE: 5.83 #yen jette le sort loop
+    - CUE: shot_21
+    - PAUSE: 3.0 #yen jette le sort stop
+    - CUE: shot_22
+    - PAUSE: 2.0 #yen rend perle
+    - CUE: shot_23
+    #- PAUSE: 5.0 #geralt reprend perle
+    #- CUE: shot_24
+    - yennefer: You'll have to put it on your friend's grave.
+    - PAUSE: 1.0
+    - CUE: shot_25
+    - yennefer: This will summon and weaken the demon.
+    - PAUSE: 0.5
+    - CUE: shot_26
+    - yennefer: All you will have to do then is use your skills in combat.
+    - PAUSE: 0.5
+    - CUE: shot_27
+    - geralt: What do you mean by "you"?
+    - PAUSE: 0.5
+    - CUE: shot_28
+    - ciri: I am coming with you.
+    #- CUE: shot_281
+    - PAUSE: 0.5
+    - CUE: shot_29
+    - ciri: I did not know Essi Daven,
+    - PAUSE: 0.5
+    - CUE: shot_30
+    - ciri: but knowing now what was hidden behind these subtle ballads,
+    - PAUSE: 0.5
+    - CUE: shot_31
+    - ciri: I immediately wanted to help you to destroy this devil.
+    - PAUSE: 1.0
+    ##- CUE: shot_311
+    - PAUSE: 0.1
+    - NEXT: section_choice
+
+  section_dangerous:
+    - CUE: shot_32
+    - geralt: It's too dangerous.
+    - PAUSE: 0.5
+    - CUE: shot_33
+    - geralt: I go there alone.
+    - PAUSE: 0.5
+    - CUE: shot_34
+    - ciri: Out of the question.
+    - PAUSE: 0.5
+    - CUE: shot_35
+    - yennefer: Even weakened,
+    - PAUSE: 0.5
+    - CUE: shot_36
+    - yennefer: it's preferable that you will be two to defeat him.
+    - CUE: shot_361
+    - PAUSE: 1.0
+    - CUE: shot_37
+    - geralt: I don't like it but I guess I have no choice.
+    - CUE: shot_371
+    - PAUSE: 0.5
+    - CUE: shot_38
+    - ciri: Exactly.
+    - PAUSE: 1.0
+    - CUE: shot_39
+    - geralt: Very well…
+    - PAUSE: 0.5
+    - CUE: shot_40
+    - geralt: Are you ready?
+    - PAUSE: 0.5
+    - CUE: shot_41
+    - ciri: I've been ready since the minute I got here.
+    - PAUSE: 0.5
+    - CUE: shot_42
+    - geralt: So let's go.
+    - PAUSE: 0.5
+    - CUE: shot_43
+    - yennefer: Come back to me unscathed.
+    - CUE: shot_44
+    - PAUSE: 1.0
+    - NEXT: section_exit
+
+  section_choice:
+    - CHOICE:
+      - choice: ["It's too dangerous.", section_dangerous]
+        emphasize: true
+      - ["You don't know what you want to measure yourself against.", section_measure]
+      ##- TIME_LIMIT: 3.0
+
+  # FAKE CHOICE
+  section_measure:
+    - CUE: shot_311
+    - geralt: You don't know what you want to measure yourself against. #Tu ne sais pas à quoi tu veux te mesurer. // 
+    - PAUSE: 0.5
+    - CUE: shot_312
+    - ciri: I've already faced some very powerful creatures. #Je me suis déjà mesurée à des créatures très puissantes. //
+    - PAUSE: 0.5 
+    ##- CUE: shot_312
+    - PAUSE: 0.1
+    - NEXT: section_choice
+
+
+  section_exit:
+    #- PAUSE: 0.1
+    #- OUTPUT: BlackScreen
+    #- BLACKSCREEN: true     # true = black loading screen
+    - EXIT

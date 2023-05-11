@@ -1,0 +1,43 @@
+repository:
+  actors:
+    Sh'eenaz:
+      template: "dlc/dlcsted/data/entities/sheenaz_actor.w2ent"
+      appearance: [ "sheenaz_actor_app1" ]
+
+
+
+production:
+    settings:
+        sceneid: 75
+        strings-idspace: 5984
+        strings-idstart: 750
+
+    gameplay: true
+
+    assets:
+        actors:
+            geraLt:
+                repo: geralt
+                by_voicetag: true #est-ce vraiment nécessaire vu qu'il ne parle pas ?
+
+            Sh'eenaz:
+                repo: "Sh'eenaz"
+                #by_voicetag: true
+                appearance: "sheenaz_actor_app1"
+                tags: [ "Sh'eenaz" ]
+
+
+
+
+dialogscript:
+    player: geraLt
+    actors: [ geralt, Sh'eenaz ]
+
+    section_start:
+        - Sh'eenaz: Avenge this poor girl.
+        - PAUSE: 0.5
+        - Sh'eenaz: You would have made such a cute couple.
+        - NEXT: section_exit
+
+    section_exit:
+        - EXIT

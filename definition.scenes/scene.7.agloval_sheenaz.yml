@@ -1,0 +1,1203 @@
+repository:
+  actors:
+    geralt:
+      template: "gameplay\\templates\\characters\\player\\player.w2ent"
+
+    agloval:
+      template: "dlc/dlcsted/data/entities/agloval_actor.w2ent"
+      appearance: [ "agloval_actor_app1" ]
+
+    sheenaz:
+      template: "dlc/dlcsted/data/entities/sheenaz_actor.w2ent"
+      appearance: [ "sheenaz_actor_app1" ]
+
+  animations:
+    anim_12458_add_idle_weight_shift_01:
+      animation: "add_idle_weight_shift_01"
+      frames: 543
+
+    anim_7253_high_standing_proud_gesture_weight_shift:
+      animation: "high_standing_proud_gesture_weight_shift"
+      frames: 306
+
+    anim_12460_add_idle_weight_shift_03:
+      animation: "add_idle_weight_shift_03"
+      frames: 231
+
+    anim_7254_high_standing_proud_gesture_welcome:
+      animation: "high_standing_proud_gesture_welcome"
+      frames: 81
+
+    anim_7240_high_standing_proud_gesture_question_04:
+      animation: "high_standing_proud_gesture_question_04"
+      frames: 83
+
+    anim_6714_add_gesture_slight_explain_04:
+      animation: "add_gesture_slight_explain_04"
+      frames: 82
+
+    anim_7237_high_standing_proud_gesture_question_01:
+      animation: "high_standing_proud_gesture_question_01"
+      frames: 124
+
+    anim_4136_high_standing_sad_idle:
+      animation: "high_standing_sad_idle"
+      frames: 498
+
+    anim_7274_high_standing_proud_to_high_standing_sad:
+      animation: "high_standing_proud_to_high_standing_sad"
+      frames: 100
+
+    anim_7310_high_standing_sad_gesture_right_hand_1:
+      animation: "high_standing_sad_gesture_right_hand_1"
+      frames: 75
+
+    anim_7302_high_standing_sad_gesture_both_hands_2:
+      animation: "high_standing_sad_gesture_both_hands_2"
+      frames: 75
+
+    anim_7312_high_standing_sad_gesture_weighing:
+      animation: "high_standing_sad_gesture_weighing"
+      frames: 125
+
+    anim_7311_high_standing_sad_gesture_sigh:
+      animation: "high_standing_sad_gesture_sigh"
+      frames: 95
+
+    anim_6716_add_gesture_slight_explain_06:
+      animation: "add_gesture_slight_explain_06"
+      frames: 78
+
+    anim_6694_add_gesture_explain_05:
+      animation: "add_gesture_explain_05"
+      frames: 123
+
+    anim_6715_add_gesture_slight_explain_05:
+      animation: "add_gesture_slight_explain_05"
+      frames: 147
+
+    anim_6690_add_gesture_explain_01:
+      animation: "add_gesture_explain_01"
+      frames: 277
+
+    anim_12432_add_gesture_explain_02:
+      animation: "add_gesture_explain_02"
+      frames: 123
+
+    anim_12431_add_gesture_explain_01:
+      animation: "add_gesture_explain_01"
+      frames: 108
+
+    anim_12435_add_gesture_explain_05:
+      animation: "add_gesture_explain_05"
+      frames: 146
+
+    anim_6692_add_gesture_explain_03:
+      animation: "add_gesture_explain_03"
+      frames: 357
+
+    anim_7032_high_standing_determined_gesture_left_shoulder_relax:
+      animation: "high_standing_determined_gesture_left_shoulder_relax"
+      frames: 107
+
+    anim_6696_add_gesture_explain_07:
+      animation: "add_gesture_explain_07"
+      frames: 78
+
+    anim_7091_high_standing_determined_gesture_you:
+      animation: "high_standing_determined_gesture_you"
+      frames: 81
+
+  animations.mimic:
+    mimicsanim_338_nod_head_accent_face:
+      animation: "nod_head_accent_face"
+      frames: 55
+
+    mimicsanim_344_sad_anim_combined_face:
+      animation: "sad_anim_combined_face"
+      frames: 540
+
+    mimicsanim_169_geralt_reaction_sad_face:
+      animation: "geralt_reaction_sad_face"
+      frames: 225
+
+    mimicsanim_134_geralt_neutral_no_contempt_face:
+      animation: "geralt_neutral_no_contempt_face"
+      frames: 85
+
+    mimicsanim_474_geralt_neutral_shout_we_won_face:
+      animation: "geralt_neutral_shout_we_won_face"
+      frames: 96
+
+    mimicsanim_49_geralt_neutral_gesture_maybe_face:
+      animation: "geralt_neutral_gesture_maybe_face"
+      frames: 70
+
+    mimicsanim_137_geralt_neutral_no_slow_face:
+      animation: "geralt_neutral_no_slow_face"
+      frames: 90
+
+    mimicsanim_253_afraid_anim_combined_face:
+      animation: "afraid_anim_combined_face"
+      frames: 500
+
+    mimicsanim_157_geralt_quick_nodding_face:
+      animation: "geralt_quick_nodding_face"
+      frames: 92
+
+    mimicsanim_337_no_head_accent_face:
+      animation: "no_head_accent_face"
+      frames: 60
+
+    mimicsanim_145_geralt_neutral_yes_long_face:
+      animation: "geralt_neutral_yes_long_face"
+      frames: 90
+
+    mimicsanim_476_geralt_neutral_yes_long_face:
+      animation: "geralt_neutral_yes_long_face"
+      frames: 116
+
+    mimicsanim_248_geralt_neutral_yes_long_face:
+      animation: "geralt_neutral_yes_long_face"
+      frames: 130
+
+  actor.poses:
+    pose_0_high_standing_determined_idle:
+      idle_anim: "high_standing_determined_idle"
+
+    pose_2139_High_Standing_Proud:
+      name: "Standing"
+      emotional_state: "Proud"
+      status: "High"
+      idle_anim: "high_standing_proud_idle"
+
+    pose_2140_High_Standing_Sad:
+      name: "Standing"
+      emotional_state: "Sad"
+      status: "High"
+      idle_anim: "high_standing_sad_idle"
+
+  cameras:
+    cam_1_geralt_large:
+      fov: 25.0
+      transform:
+        pos: [ -1.4903671741, -1.3228305578, 1.5900001526 ]
+        rot: [ 0.0, 357.1000366211, 328.2000122070 ]
+      zoom: 3.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Wide"
+        tags: [ "ext" ]
+
+    cam_2_geralt_proche:
+      fov: 25.0
+      transform:
+        pos: [ -0.4372099340, 0.3765713871, 1.7899971008 ]
+        rot: [ 0.0, 354.0999145508, 326.7999877930 ]
+      zoom: 3.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Wide"
+        tags: [ "ext" ]
+
+    cam_3_geralt_ots_sheenaz:
+      fov: 25.0
+      transform:
+        pos: [ -0.7196021080, -0.6576113105, 1.5900001526 ]
+        rot: [ 0.0, 1.9000549316, 330.7000122070 ]
+      zoom: 3.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Wide"
+        tags: [ "ext" ]
+
+    cam_4_geralt_ots_agloval:
+      fov: 25.0
+      transform:
+        pos: [ -1.2328009605, -0.1637453437, 1.5900001526 ]
+        rot: [ 0.0, 1.8001403809, 320.1000061035 ]
+      zoom: 3.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Wide"
+        tags: [ "ext" ]
+
+    cam_5_sheenaz_ots_geralt:
+      fov: 20.0
+      transform:
+        pos: [ -1.2394304276, 2.7997374535, 1.5999984741 ]
+        rot: [ 0.0, 359.0999755859, 206.1001281738 ]
+      zoom: 3.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_6_sheenaz_proche:
+      fov: 20.0
+      transform:
+        pos: [ -0.4401038885, 1.5101940632, 1.5999984741 ]
+        rot: [ 0.0, 358.5999450684, 195.8000488281 ]
+      zoom: 3.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_7_agloval_ots_geralt:
+      fov: 25.0
+      transform:
+        pos: [ 1.8618395329, 0.6599212289, 1.5999984741 ]
+        rot: [ 0.0, 358.4000854492, 90.6999969482 ]
+      zoom: 3.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Wide"
+        tags: [ "ext" ]
+
+    cam_8_agloval_proche:
+      fov: 25.0
+      transform:
+        pos: [ 0.2635245323, 0.7054145932, 1.7999954224 ]
+        rot: [ 0.0, 355.3000488281, 86.9000091553 ]
+      zoom: 3.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Wide"
+        tags: [ "ext" ]
+
+    cam_9_agloval_ots_sheenaz:
+      fov: 20.0
+      transform:
+        pos: [ 1.6627146006, -0.5358965397, 1.5999984741 ]
+        rot: [ 0.0, 359.5998840332, 58.2001419067 ]
+      zoom: 3.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+production:
+  settings:
+    sceneid: 7
+    strings-idspace: 5984
+    strings-idstart: 700
+
+  placement: "sheenaz"
+    # INFO: world coordinates of used origin:
+      #pos: [ 472.8479003906, 2204.0493164063, 45.0378036499 ]
+      #rot: [ 0.0, 36.6138076782, 0.0 ]
+
+  assets:
+    actors:
+      geralt:
+        repo: "geralt"
+        by_voicetag: true
+        tags: [ "PLAYER" ]
+
+      sheenaz:
+        repo: "sheenaz"
+        #by_voicetag: true
+        appearance: "sheenaz_actor_app1"
+        tags: [ "sheenaz" ]
+
+      agloval:
+        repo: "agloval"
+        #by_voicetag: true
+        appearance: "agloval_actor_app1"
+        tags: [ "agloval" ]
+
+    cameras:
+      cam_1_geralt_large:
+        repo: "cam_1_geralt_large"
+
+      cam_2_geralt_proche:
+        repo: "cam_2_geralt_proche"
+
+      cam_3_geralt_ots_sheenaz:
+        repo: "cam_3_geralt_ots_sheenaz"
+
+      cam_4_geralt_ots_agloval:
+        repo: "cam_4_geralt_ots_agloval"
+
+      cam_5_sheenaz_ots_geralt:
+        repo: "cam_5_sheenaz_ots_geralt"
+
+      cam_6_sheenaz_proche:
+        repo: "cam_6_sheenaz_proche"
+
+      cam_7_agloval_ots_geralt:
+        repo: "cam_7_agloval_ots_geralt"
+
+      cam_8_agloval_proche:
+        repo: "cam_8_agloval_proche"
+
+      cam_9_agloval_ots_sheenaz:
+        repo: "cam_9_agloval_ots_sheenaz"
+
+    animations:
+      sheenaz_add_idle_weight_shift_01:
+        actor: "sheenaz"
+        repo: "anim_12458_add_idle_weight_shift_01"
+        #duration: 18.1000003815
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 2.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      agloval_high_standing_proud_gesture_weight_shift:
+        actor: "agloval"
+        repo: "anim_7253_high_standing_proud_gesture_weight_shift"
+        #duration: 10.1999998093
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 4.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 1.0
+
+      sheenaz_add_idle_weight_shift_03:
+        actor: "sheenaz"
+        repo: "anim_12460_add_idle_weight_shift_03"
+        #duration: 7.6999998093
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      agloval_high_standing_proud_gesture_welcome:
+        actor: "agloval"
+        repo: "anim_7254_high_standing_proud_gesture_welcome"
+        #duration: 2.7000000477
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.1
+        blendin: 0.5
+        blendout: 0.5
+
+      agloval_high_standing_proud_gesture_question_04:
+        actor: "agloval"
+        repo: "anim_7240_high_standing_proud_gesture_question_04"
+        #duration: 2.7666666508
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.5
+        blendin: 0.5
+        blendout: 0.5
+
+      geralt_add_gesture_slight_explain_04:
+        actor: "geralt"
+        repo: "anim_6714_add_gesture_slight_explain_04"
+        #duration: 2.7333333492
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 2.40
+        stretch: 2.0
+        blendin: 0.5
+        blendout: 0.5
+
+      geralt_add_gesture_slight_explain_04bis:
+        actor: "geralt"
+        repo: "anim_6714_add_gesture_slight_explain_04"
+        #duration: 2.7333333492
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 1.8967
+        stretch: 2.0
+        blendin: 0.5
+        blendout: 0.5
+
+      agloval_high_standing_proud_gesture_question_01:
+        actor: "agloval"
+        repo: "anim_7237_high_standing_proud_gesture_question_01"
+        #duration: 4.1333332062
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 0.9
+        blendin: 0.5
+        blendout: 0.5
+
+      sheenaz_high_standing_sad_idle:
+        actor: "sheenaz"
+        repo: "anim_4136_high_standing_sad_idle"
+        #duration: 16.6000003815
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      agloval_high_standing_proud_to_high_standing_sad:
+        actor: "agloval"
+        repo: "anim_7274_high_standing_proud_to_high_standing_sad"
+        #duration: 3.3333332539
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.5
+
+      agloval_high_standing_sad_gesture_right_hand_1:
+        actor: "agloval"
+        repo: "anim_7310_high_standing_sad_gesture_right_hand_1"
+        #duration: 2.5000000000
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.2
+        blendin: 0.5
+        blendout: 0.5
+
+      agloval_high_standing_sad_gesture_both_hands_2:
+        actor: "agloval"
+        repo: "anim_7302_high_standing_sad_gesture_both_hands_2"
+        #duration: 2.5000000000
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.2
+        blendin: 0.5
+        blendout: 0.5
+
+      agloval_high_standing_sad_gesture_weighing:
+        actor: "agloval"
+        repo: "anim_7312_high_standing_sad_gesture_weighing"
+        #duration: 4.1666665077
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      agloval_high_standing_sad_gesture_sigh:
+        actor: "agloval"
+        repo: "anim_7311_high_standing_sad_gesture_sigh"
+        #duration: 3.1666667461
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      geralt_add_gesture_slight_explain_06:
+        actor: "geralt"
+        repo: "anim_6716_add_gesture_slight_explain_06"
+        #duration: 2.5999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.7
+        blendin: 0.5
+        blendout: 0.5
+
+      geralt_add_gesture_explain_05:
+        actor: "geralt"
+        repo: "anim_6694_add_gesture_explain_05"
+        #duration: 4.0999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.1
+        blendin: 0.5
+        blendout: 0.5
+
+      geralt_add_gesture_slight_explain_05:
+        actor: "geralt"
+        repo: "anim_6715_add_gesture_slight_explain_05"
+        #duration: 4.9000000954
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 0.8
+        blendin: 0.5
+        blendout: 0.5
+
+      geralt_add_gesture_explain_01:
+        actor: "geralt"
+        repo: "anim_6690_add_gesture_explain_01"
+        #duration: 9.2333335876
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 3.5
+        stretch: 1.7
+        blendin: 0.5
+        blendout: 0.5
+
+      sheenaz_add_gesture_explain_02:
+        actor: "sheenaz"
+        repo: "anim_12432_add_gesture_explain_02"
+        #duration: 4.0999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.15
+        blendin: 0.5
+        blendout: 0.5
+
+      sheenaz_add_gesture_explain_01:
+        actor: "sheenaz"
+        repo: "anim_12431_add_gesture_explain_01"
+        #duration: 3.5999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.15
+        blendin: 0.5
+        blendout: 0.5
+
+      sheenaz_add_gesture_explain_05:
+        actor: "sheenaz"
+        repo: "anim_12435_add_gesture_explain_05"
+        #duration: 4.8666667938
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.15
+        blendin: 0.5
+        blendout: 0.5
+
+      sheenaz_add_gesture_explain_03:
+        actor: "sheenaz"
+        repo: "anim_6692_add_gesture_explain_03"
+        #duration: 11.8999996185
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 7.5
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 1.0
+
+      geralt_high_standing_determined_gesture_left_shoulder_relax:
+        actor: "geralt"
+        repo: "anim_7032_high_standing_determined_gesture_left_shoulder_relax"
+        #duration: 3.5666666031
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.5
+
+      agloval_add_gesture_explain_07:
+        actor: "agloval"
+        repo: "anim_6696_add_gesture_explain_07"
+        #duration: 2.5999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.4
+        blendin: 0.0
+        blendout: 0.5
+
+      agloval_high_standing_determined_gesture_you:
+        actor: "agloval"
+        repo: "anim_7091_high_standing_determined_gesture_you"
+        #duration: 2.7000000477
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.4
+        blendin: 0.5
+        blendout: 0.5
+
+    animations.mimic:
+      geralt_nod_head_accent_face:
+        actor: "geralt"
+        repo: "mimicsanim_338_nod_head_accent_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      sheenaz_sad_anim_combined_face1:
+        actor: "sheenaz"
+        repo: "mimicsanim_344_sad_anim_combined_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 3.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      sheenaz_sad_anim_combined_face2:
+        actor: "sheenaz"
+        repo: "mimicsanim_344_sad_anim_combined_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      agloval_sad_anim_combined_face:
+        actor: "agloval"
+        repo: "mimicsanim_344_sad_anim_combined_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 6.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      sheenaz_geralt_reaction_sad_face:
+        actor: "sheenaz"
+        repo: "mimicsanim_169_geralt_reaction_sad_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 4.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      agloval_geralt_neutral_no_contempt_face:
+        actor: "agloval"
+        repo: "mimicsanim_134_geralt_neutral_no_contempt_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      agloval_geralt_neutral_shout_we_won_face:
+        actor: "agloval"
+        repo: "mimicsanim_474_geralt_neutral_shout_we_won_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      agloval_geralt_neutral_gesture_maybe_face:
+        actor: "agloval"
+        repo: "mimicsanim_49_geralt_neutral_gesture_maybe_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_no_slow_face:
+        actor: "geralt"
+        repo: "mimicsanim_137_geralt_neutral_no_slow_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      sheenaz_afraid_anim_combined_face:
+        actor: "sheenaz"
+        repo: "mimicsanim_253_afraid_anim_combined_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      agloval_geralt_quick_nodding_face:
+        actor: "agloval"
+        repo: "mimicsanim_157_geralt_quick_nodding_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.7
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      sheenaz_no_head_accent_face:
+        actor: "sheenaz"
+        repo: "mimicsanim_337_no_head_accent_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 2.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_yes_long_face:
+        actor: "geralt"
+        repo: "mimicsanim_145_geralt_neutral_yes_long_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      sheenaz_geralt_neutral_yes_long_face:
+        actor: "sheenaz"
+        repo: "mimicsanim_476_geralt_neutral_yes_long_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.3
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+    actor.poses:
+      geralt_high_standing_determined_idle:
+        actor: "geralt"
+        repo: "pose_0_high_standing_determined_idle"
+
+      sheenaz_high_standing_determined_idle:
+        actor: "sheenaz"
+        repo: "pose_0_high_standing_determined_idle"
+
+      agloval_High_Standing_Proud:
+        actor: "agloval"
+        repo: "pose_2139_High_Standing_Proud"
+
+      agloval_high_standing_determined_idle:
+        actor: "agloval"
+        repo: "pose_0_high_standing_determined_idle"
+
+      sheenaz_High_Standing_Sad:
+        actor: "sheenaz"
+        repo: "pose_2140_High_Standing_Sad"
+
+      agloval_High_Standing_Sad:
+        actor: "agloval"
+        repo: "pose_2140_High_Standing_Sad"
+
+
+storyboard:
+  #defaults:
+    #placement:
+      #geralt: [[ 0.1059764028, 1.1102137566, 0.0 ], [ 0.0, 0.0, 153.6000061035 ]]
+      #Agloval: [[ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      #Sh'eenaz: [[ -0.9069024324, 0.7721078396, 0.0 ], [ 0.0, 0.0, 292.0 ]]
+
+    #actor.pose:
+      #geralt: geralt_high_standing_determined_idle
+      #Agloval: Agloval_high_standing_determined_idle
+      #Sh'eenaz: Sh'eenaz_high_standing_determined_idle
+
+  section_storyboard_ui:
+    shot_1: #Sh'eenaz.
+      - actor.placement: [0.0, geralt, [ 0.1059764028, 1.1102137566, 0.0 ], [ 0.0, 0.0, 153.6000061035 ]]
+      - actor.placement: [0.0, sheenaz, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.placement: [0.0, agloval, [ -0.9069024324, 0.7721078396, 0.0 ], [ 0.0, 0.0, 292.0 ]]
+      - actor.pose: [0.0, geralt_high_standing_determined_idle]
+      - actor.pose: [0.0, sheenaz_high_standing_determined_idle]
+      - actor.pose: [0.0, agloval_High_Standing_Proud]
+      - cam: [0.0, cam_1_geralt_large]
+      - actor.lookat: [0.0, geralt, sheenaz]
+      - actor.lookat: [0.0, sheenaz, geralt]
+      - actor.lookat: [0.0, agloval, geralt]
+      - actor.anim: [0.0, agloval_high_standing_proud_gesture_weight_shift]
+      - actor.anim.mimic: [0.0, geralt_nod_head_accent_face]
+
+    shot_101: #PAUSE
+      - actor.lookat: [0.0, geralt, agloval]
+      - actor.anim.mimic: [0.0, geralt_nod_head_accent_face]
+
+    shot_2: #Duke
+      - actor.anim: [0.0, sheenaz_add_idle_weight_shift_01]
+
+    shot_3: #Geralt!
+      - cam: [0.0, cam_7_agloval_ots_geralt]
+      - actor.anim: [0.0, sheenaz_add_idle_weight_shift_03]
+      - actor.anim: [0.0, agloval_high_standing_proud_gesture_welcome]
+
+    shot_4: #How have you been since all these years?
+      - actor.anim: [0.0, agloval_high_standing_proud_gesture_question_04]
+
+
+
+  section_choice:
+    CHOICE_1:
+      - actor.placement: [0.0, geralt, [ 0.1059764028, 1.1102137566, 0.0 ], [ 0.0, 0.0, 153.6000061035 ]]
+      - actor.placement: [0.0, sheenaz, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.placement: [0.0, agloval, [ -0.9069024324, 0.7721078396, 0.0 ], [ 0.0, 0.0, 292.0 ]]
+      #- actor.pose: [0.0, geralt_high_standing_determined_idle]
+      #- actor.pose: [0.0, sheenaz_high_standing_determined_idle]
+      #- actor.pose: [0.0, agloval_High_Standing_Proud]
+      - actor.lookat: [0.0, geralt, agloval]
+      - actor.lookat: [0.0, sheenaz, geralt]
+      - actor.lookat: [0.0, agloval, geralt]
+      - cam: [0.0, cam_2_geralt_proche]
+
+  section_long:
+    shot_52: #Let's say I followed the path.
+      - actor.placement: [0.0, geralt, [ 0.1059764028, 1.1102137566, 0.0 ], [ 0.0, 0.0, 153.6000061035 ]]
+      - actor.placement: [0.0, sheenaz, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.placement: [0.0, agloval, [ -0.9069024324, 0.7721078396, 0.0 ], [ 0.0, 0.0, 292.0 ]]
+      #- actor.pose: [0.0, geralt_high_standing_determined_idle]
+      #- actor.pose: [0.0, sheenaz_high_standing_determined_idle]
+      - actor.pose: [0.0, agloval_High_Standing_Proud]
+      - actor.lookat: [0.0, geralt, agloval]
+      - actor.lookat: [0.0, sheenaz, geralt]
+      - actor.lookat: [0.0, agloval, geralt]
+
+      - cam: [0.0, cam_4_geralt_ots_agloval]
+      - actor.anim: [0.0, geralt_add_gesture_slight_explain_04bis]
+
+
+  section_path:
+    shot_5: #Let's say I followed the path.
+      - actor.placement: [0.0, geralt, [ 0.1059764028, 1.1102137566, 0.0 ], [ 0.0, 0.0, 153.6000061035 ]]
+      - actor.placement: [0.0, sheenaz, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.placement: [0.0, agloval, [ -0.9069024324, 0.7721078396, 0.0 ], [ 0.0, 0.0, 292.0 ]]
+      #- actor.pose: [0.0, geralt_high_standing_determined_idle]
+      #- actor.pose: [0.0, sheenaz_high_standing_determined_idle]
+      - actor.pose: [0.0, agloval_High_Standing_Proud]
+      - actor.lookat: [0.0, geralt, agloval]
+      - actor.lookat: [0.0, sheenaz, geralt]
+      - actor.lookat: [0.0, agloval, geralt]
+
+      - cam: [0.0, cam_4_geralt_ots_agloval]
+      - actor.anim: [0.0, geralt_add_gesture_slight_explain_04bis]
+
+
+
+
+  section_visit:
+    shot_51: #PAUSE
+      - actor.placement: [0.0, geralt, [ 0.1059764028, 1.1102137566, 0.0 ], [ 0.0, 0.0, 153.6000061035 ]]
+      - actor.placement: [0.0, sheenaz, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.placement: [0.0, agloval, [ -0.9069024324, 0.7721078396, 0.0 ], [ 0.0, 0.0, 292.0 ]]
+      #- actor.pose: [0.0, geralt_high_standing_determined_idle]
+      #- actor.pose: [0.0, sheenaz_high_standing_determined_idle]
+      - actor.pose: [0.0, agloval_High_Standing_Proud]
+      - actor.lookat: [0.0, geralt, agloval]
+      - actor.lookat: [0.0, sheenaz, geralt]
+      - actor.lookat: [0.0, agloval, geralt]
+    
+      - actor.anim: [0.0, agloval_high_standing_proud_gesture_question_01]
+      - cam: [0.0, cam_7_agloval_ots_geralt]
+
+    shot_6: #What is your visit worth to us?
+      - cam: [0.0, cam_7_agloval_ots_geralt]
+
+    shot_7: #I'm here for Essi Daven.
+      #- actor.pose: [0.0, agloval_high_standing_determined_idle]
+      - cam: [0.0, cam_2_geralt_proche]
+      - actor.lookat: [0.0, geralt, sheenaz]
+      - actor.pose: [0.0, sheenaz_High_Standing_Sad]
+
+    shot_71: #PAUSE
+      - actor.anim.mimic: [0.0, sheenaz_sad_anim_combined_face1]
+
+    shot_8: #Poor child…
+      - cam: [0.0, cam_6_sheenaz_proche]
+      - actor.anim.mimic: [0.0, agloval_sad_anim_combined_face]
+      
+    shot_9: #I learned what had happened to her.
+      - cam: [0.0, cam_5_sheenaz_ots_geralt]
+      - actor.anim.mimic: [0.0, sheenaz_geralt_reaction_sad_face]
+      - actor.lookat: [0.0, agloval, sheenaz]
+
+    shot_10: #Yes, she didn't deserve that.
+      - cam: [0.0, cam_7_agloval_ots_geralt]
+      - actor.anim: [0.0, agloval_high_standing_proud_to_high_standing_sad]
+      - actor.pose: [0.2, agloval_High_Standing_Sad]
+      - actor.anim.mimic: [0.0, sheenaz_sad_anim_combined_face2]
+      - actor.anim.mimic: [0.0, agloval_geralt_neutral_no_contempt_face]
+      - actor.lookat: [0.0, geralt, agloval]
+      - actor.lookat: [0.0, sheenaz, agloval]
+      - actor.lookat: [0.0, agloval, geralt]
+
+    shot_11: #She was a gifted girl, who knew how to say the right words.
+      - cam: [0.0, cam_9_agloval_ots_sheenaz]
+      - actor.anim: [0.0, agloval_high_standing_sad_gesture_right_hand_1]
+      - actor.anim: [0.5, agloval_high_standing_sad_gesture_both_hands_2]
+
+    shot_12:
+      - cam: [0.0, cam_7_agloval_ots_geralt]
+      - actor.anim: [0.0, agloval_high_standing_sad_gesture_weighing]
+      - cam: [0.5, cam_8_agloval_proche]
+      - actor.anim.mimic: [0.6, agloval_geralt_neutral_shout_we_won_face]
+
+    shot_13: #I have experienced it.
+      - cam: [0.0, cam_7_agloval_ots_geralt]
+      - actor.anim: [0.0, agloval_high_standing_sad_gesture_sigh]
+      - actor.anim.mimic: [0.0, agloval_geralt_neutral_gesture_maybe_face]
+
+    shot_14: #What happened to her was not really a coincidence.
+      - actor.pose: [0.0, sheenaz_high_standing_determined_idle]
+      #- actor.pose: [0.0, agloval_high_standing_determined_idle]
+      - cam: [0.0, cam_4_geralt_ots_agloval]
+      - actor.anim: [0.0, geralt_add_gesture_slight_explain_06]
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_no_slow_face]
+      - actor.lookat: [0.0, sheenaz, geralt]
+
+    shot_15: #An ancient, powerful and evil being provoked it.
+      - actor.pose: [0.0, agloval_high_standing_determined_idle]
+      - cam: [0.0, cam_3_geralt_ots_sheenaz]
+      - actor.anim: [0.0, geralt_add_gesture_explain_05]
+      - actor.lookat: [0.0, geralt, sheenaz]
+
+    shot_151: #PAUSE
+      - actor.anim.mimic: [0.0, sheenaz_afraid_anim_combined_face]
+
+    shot_16: #It's awful!
+      - cam: [0.0, cam_6_sheenaz_proche]
+
+    shot_17: #I didn't know how to give back to Essi the feelings she had for me,
+      - cam: [0.0, cam_3_geralt_ots_sheenaz]
+      - actor.anim: [0.0, geralt_add_gesture_slight_explain_04]
+
+    shot_18: #but I would at least try to avenge her.
+      - cam: [0.0, cam_4_geralt_ots_agloval]
+      - actor.anim: [0.0, geralt_add_gesture_slight_explain_05]
+      - actor.lookat: [0.0, geralt, agloval]
+
+    shot_19: #For that I need a sky blue pearl identical to the one I gave to Little-Eye.
+      - cam: [0.0, cam_3_geralt_ots_sheenaz]
+      - actor.anim: [0.0, geralt_add_gesture_explain_01]
+      - actor.lookat: [0.0, geralt, sheenaz]
+
+    shot_20: #It won't be easy.
+      - cam: [0.0, cam_6_sheenaz_proche]
+      - actor.anim: [0.0, sheenaz_add_gesture_explain_02]
+      - actor.lookat: [0.0, agloval, sheenaz]
+
+    shot_21: #However, I think that with witcher senses,
+      #- actor.pose: [0.0, agloval_High_Standing_Proud]
+      - cam: [0.0, cam_5_sheenaz_ots_geralt]
+      - actor.anim: [0.0, sheenaz_add_gesture_explain_01]
+
+    shot_22: #it should be possible to find some on the coast north of here.
+      - cam: [0.0, cam_9_agloval_ots_sheenaz]
+      - actor.anim: [0.0, sheenaz_add_gesture_explain_05]
+      - actor.anim.mimic: [0.0, agloval_geralt_quick_nodding_face]
+
+    shot_23: #But I think that my mermaid sisters will not be as welcoming as those of Bremervoord.
+      - cam: [0.0, cam_6_sheenaz_proche]
+      - actor.anim: [0.0, sheenaz_add_gesture_explain_03]
+      - actor.anim.mimic: [0.5, sheenaz_no_head_accent_face]
+
+    shot_231: #PAUSE
+      - actor.anim: [0.0, geralt_high_standing_determined_gesture_left_shoulder_relax]
+
+    shot_24: #I'll settle for that.
+      - cam: [0.0, cam_3_geralt_ots_sheenaz]
+      - actor.lookat: [0.0, agloval, geralt]   
+
+    shot_25: #Thanks for your help.
+      - cam: [0.0, cam_2_geralt_proche]
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_yes_long_face]
+      - actor.lookat: [0.3, geralt, agloval]
+
+    shot_26: #Thank you for your visit Geralt.
+      - cam: [0.0, cam_7_agloval_ots_geralt]
+      - actor.anim: [0.0, agloval_add_gesture_explain_07]
+      - actor.lookat: [0.0, sheenaz, agloval]
+
+    shot_27: #I have no doubt that you will succeed.
+      - actor.anim: [0.0, agloval_high_standing_determined_gesture_you]
+      - actor.anim.mimic: [0.0, sheenaz_geralt_neutral_yes_long_face]
+      - actor.lookat: [0.7, sheenaz, geralt]
+
+    shot_28: #See you soon.
+      ##- cam: [0.0, cam_6_sheenaz_proche]
+      - cam.blend.togame: [0.0, cam_6_sheenaz_proche]
+      #- actor.anim.mimic: [0.0, sheenaz_geralt_neutral_yes_long_face]
+
+
+dialogscript:
+  player: "geralt"
+  actors: [ "geralt", "sheenaz", "agloval" ]
+
+  section_start:
+    - PAUSE: 0.0
+    - NEXT: script_setfact_havemet
+
+  script_setfact_havemet:
+      - SCRIPT:
+          function: AddFact_S
+          parameter:
+              - factName: sted_havemet_sheenaz
+              - value: 1
+              - validFor: 0
+      - NEXT: section_storyboard_ui
+
+  section_storyboard_ui:
+    - CUE: shot_1
+    - PAUSE: 0.5
+    - geralt: Sh'eenaz.
+    - CUE: shot_101
+    - PAUSE: 0.5
+    - CUE: shot_2
+    - geralt: Duke.
+    - PAUSE: 0.5
+    - CUE: shot_3
+    - agloval: Geralt!
+    - PAUSE: 1.5
+    - CUE: shot_4
+    - agloval: How have you been since all these years?
+    - PAUSE: 0.5
+    ##- CUE: shot_152
+    - PAUSE: 0.1
+    - NEXT: section_choice
+
+  section_path:
+    - CUE: shot_5
+    - geralt: Let's say I followed the path.
+    - NEXT: section_visit
+
+  section_visit:
+    - CUE: shot_51
+    - PAUSE: 0.5
+    - CUE: shot_6
+    - agloval: What is your visit worth to us?
+    - PAUSE: 0.5
+    - CUE: shot_7
+    - geralt: I'm here for Essi Daven.
+    - CUE: shot_71
+    - PAUSE: 0.5
+    - CUE: shot_8
+    - sheenaz: Poor child…
+    - PAUSE: 0.5
+    - CUE: shot_9
+    - sheenaz: I learned what had happened to her.
+    - PAUSE: 0.5
+    - CUE: shot_10
+    - agloval: Yes, she didn't deserve that.
+    - PAUSE: 0.5
+    - CUE: shot_11
+    - agloval: She was a gifted girl, who knew how to say the right words.
+    - PAUSE: 0.5
+    - CUE: shot_12
+    - agloval: And this, as well in her ballads, as in the moments let's say… opportune.
+    - PAUSE: 0.5
+    - CUE: shot_13
+    - agloval: I have experienced it.
+    - PAUSE: 0.5
+    - CUE: shot_14
+    - geralt: What happened to her was not really a coincidence.
+    - PAUSE: 0.5
+    - CUE: shot_15
+    - geralt: An ancient, powerful and evil being provoked it.
+    - CUE: shot_151
+    - PAUSE: 0.5
+    - CUE: shot_16
+    - sheenaz: It's awful!
+    - PAUSE: 0.5
+    - CUE: shot_17
+    - geralt: I didn't know how to give back to Essi the feelings she had for me,
+    - PAUSE: 0.5
+    - CUE: shot_18
+    - geralt: but I would at least try to avenge her.
+    - PAUSE: 0.5
+    - CUE: shot_19    
+    - geralt: For that I need a sky blue pearl identical to the one I gave to Little-Eye.
+    - PAUSE: 0.5
+    - CUE: shot_20
+    - sheenaz: It won't be easy.
+    - PAUSE: 0.5
+    - sheenaz: They are rare.
+    - PAUSE: 0.5
+    - CUE: shot_21
+    - sheenaz: However, I think that with witcher senses,
+    - PAUSE: 0.5
+    - CUE: shot_22
+    - sheenaz: it should be possible to find some on the coast north of here.
+    - PAUSE: 0.5
+    - CUE: shot_23
+    #OLD- sheenaz: But I think that my mermaid sisters will not be as welcoming as those of Bremervoord.
+    - sheenaz: But I think that the local sirens won't be as welcoming as my mermaid sisters from Bremervoord.
+    - CUE: shot_231
+    - PAUSE: 0.5
+    - CUE: shot_24
+    - geralt: I'll settle for that.
+    - PAUSE: 1.0
+    - CUE: shot_25
+    - geralt: Thanks for your help.
+    - PAUSE: 0.5
+    - CUE: shot_26
+    - agloval: Thank you for your visit Geralt.
+    - PAUSE: 0.5
+    - CUE: shot_27
+    - agloval: I have no doubt that you will succeed.
+    - PAUSE: 0.5
+    - CUE: shot_28
+    - sheenaz: See you soon.
+    - PAUSE: 0.5
+    - NEXT: section_exit
+
+  section_choice:
+    - CHOICE:
+      - choice: ["I followed the Path.", section_path]
+        ##emphasize: true
+      - choice: ["It's a too long story.", section_long]
+        ##emphasize: true
+      ##- TIME_LIMIT: 3.0
+
+  # FAKE CHOICE
+  section_long:
+    - CUE: shot_52
+    - geralt: That would be too long a story to tell. #Ce serait une histoire trop longue à raconter. //
+    - NEXT: section_visit
+
+  section_exit:
+    ##- CAMERA_BLEND: 2.0
+    - EXIT

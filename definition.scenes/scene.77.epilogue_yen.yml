@@ -1,0 +1,33 @@
+production:
+  settings:
+    sceneid: 77
+    strings-idspace: 5984
+    strings-idstart: 770
+
+  gameplay: true
+
+  assets:
+    actors:
+      geralt:
+        repo: "geralt"
+        by_voicetag: true
+        # tags: [ "PLAYER" ]
+
+dialogscript:
+  player: "geralt"
+  actors: [ "geralt" ]
+
+  section_start:
+    - PAUSE: 0.0
+    - NEXT: section_1
+  section_1:
+    - PAUSE: 1.0
+    - geralt: "Yen is no longer here."
+    - PAUSE: 0.5
+    - geralt: "She must have learned that we succeeded,"
+    - PAUSE: 0.5
+    - geralt: "and left Skellige as she planned."
+    - NEXT: section_exit
+
+  section_exit:
+    - EXIT

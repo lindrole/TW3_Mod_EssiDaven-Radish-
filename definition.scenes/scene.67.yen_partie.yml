@@ -1,0 +1,34 @@
+production:
+  settings:
+    sceneid: 67
+    strings-idspace: 5984
+    strings-idstart: 670
+
+  gameplay: true
+
+  assets:
+    actors:
+      geralt:
+        repo: "geralt"
+        by_voicetag: true
+        # tags: [ "PLAYER" ]
+
+dialogscript:
+  player: "geralt"
+  actors: [ "geralt" ]
+
+  section_start:
+    - PAUSE: 0.1
+    - NEXT: section_1
+
+  section_1:
+    - PAUSE: 5.0
+    - geralt: "Yen is no longer here."
+    - PAUSE: 0.5
+    - geralt: "She must have gone looking for information to help me."
+    - PAUSE: 0.5
+    - geralt: "I should go get the pearl she asked me to find."
+    - NEXT: section_exit
+
+  section_exit:
+    - EXIT

@@ -1,0 +1,41 @@
+production:
+  settings:
+    sceneid: 79
+    strings-idspace: 5984
+    strings-idstart: 790
+
+  gameplay: true
+
+  assets:
+    actors:
+      geralt:
+        repo: "geralt"
+        by_voicetag: true
+        # tags: [ "PLAYER" ]
+
+dialogscript:
+  player: "geralt"
+  actors: [ "geralt" ]
+
+  section_start:
+    - PAUSE: 0.1
+    - NEXT: script_setfact_pearlfound
+
+  script_setfact_pearlfound:
+      - SCRIPT:
+          function: AddFact_S
+          parameter:
+              - factName: sted_pearlfound
+              - value: 1
+              - validFor: 0
+      - NEXT: section_storyboard_ui
+
+  section_storyboard_ui:
+    - PAUSE: 2.0
+    - geralt: "Yen must have had time to find the information she needed."
+    - PAUSE: 1.0
+    - geralt: "I should go back to her."
+    - NEXT: section_exit
+
+  section_exit:
+    - EXIT

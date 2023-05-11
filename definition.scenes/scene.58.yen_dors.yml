@@ -1,0 +1,34 @@
+production:
+  settings:
+    sceneid: 58
+    strings-idspace: 5984
+    strings-idstart: 580
+
+  gameplay: true
+
+  assets:
+    actors:
+      geralt:
+        repo: "geralt"
+        by_voicetag: true
+        # tags: [ "PLAYER" ]
+
+dialogscript:
+  player: "geralt"
+  actors: [ "geralt" ]
+
+  section_start:
+    - PAUSE: 0.1
+    - NEXT: section_1
+
+  section_1:
+    #- PAUSE: 0.5
+    - geralt: "I'm not going to risk waking her up."
+    - PAUSE: 0.5
+    - geralt: "Otherwise, she will be in a foul mood."
+    - PAUSE: 1.0
+    - geralt: "I will wait for the morning."
+    - NEXT: section_exit
+
+  section_exit:
+    - EXIT

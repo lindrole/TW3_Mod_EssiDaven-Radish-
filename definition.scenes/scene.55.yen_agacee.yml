@@ -1,0 +1,41 @@
+repository:
+  actors:
+    yennefer:
+      #template: "characters\\npc_entities\\main_npc\\yennefer.w2ent"
+      #appearance: [ "yennefer_gown" ]
+      template: "quests\\main_npcs\\yennefer.w2ent"
+      appearance:
+        - yennefer_gown
+
+
+production:
+    settings:
+        sceneid: 55
+        strings-idspace: 5984
+        strings-idstart: 550
+
+    gameplay: true
+
+    assets:
+        actors:
+            geraLt:
+                repo: geralt
+                by_voicetag: true #est-ce vraiment nécessaire vu qu'il ne parle pas ?
+
+            yennefer:
+                repo: yennefer
+                #by_voicetag: true
+                tags: [ "sted_yennefer" ]
+
+dialogscript:
+    player: geraLt
+    actors: [ geralt, yennefer ]
+
+    section_start:
+        - yennefer: What are you waiting for?
+        - PAUSE: 0.5
+        - yennefer: Do you want to avenge that bard or not?
+        - NEXT: section_exit
+
+    section_exit:
+        - EXIT

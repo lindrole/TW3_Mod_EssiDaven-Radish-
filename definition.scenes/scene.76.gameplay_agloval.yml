@@ -1,0 +1,39 @@
+repository:
+  actors:
+    Agloval:
+      template: "dlc/dlcsted/data/entities/agloval_actor.w2ent"
+      appearance: [ "agloval_actor_app1" ]
+
+
+production:
+    settings:
+        sceneid: 76
+        strings-idspace: 5984
+        strings-idstart: 760
+
+    gameplay: true
+
+    assets:
+        actors:
+            geraLt:
+                repo: geralt
+                by_voicetag: true #est-ce vraiment nécessaire vu qu'il ne parle pas ?
+
+            Agloval:
+                repo: "Agloval"
+                #by_voicetag: true
+                appearance: "agloval_actor_app1"
+                tags: [ "Agloval" ]
+
+
+
+dialogscript:
+    player: geraLt
+    actors: [ geralt, Agloval ]
+
+    section_start:
+        - Agloval: I'm sure you will succeed.
+        - NEXT: section_exit
+
+    section_exit:
+        - EXIT

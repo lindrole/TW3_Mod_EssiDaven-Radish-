@@ -1,0 +1,1241 @@
+repository:
+  actors:
+    geralt:
+      template: "gameplay\\templates\\characters\\player\\player.w2ent"
+
+    ciri:
+      template: "quests\\main_npcs\\cirilla.w2ent"
+      appearance: [ "ciri" ]
+
+    mirror_man:
+      template: "dlc\\ep1\\data\\characters\\npc_entities\\main_npc\\mirror_man.w2ent"
+      appearance: [ "mirror_man_satan" ]
+      #template: "quests\\secondary_npcs\\mr_mirror.w2ent"
+      #appearance:
+        #- mirror_man_satan
+
+  props:
+    #fx_tombe1:
+      #template: "dlc\\ep1\\data\\fx\\glyphword\\glyphword_6\\glyphword_6.w2ent"
+
+    fx_tombe:  
+      template: "fx\\monsters\\noonwraith\\noonwraith_split_entity.w2ent"
+      #template: "dlc\\ep1\\data\\fx\\quest\\q602\\q602_brazzier_blockade.w2ent"
+
+    magic_obstacle_sq210:
+      template: "fx\\quest\\sq210\\magic_obstacle_sq210.w2ent"
+
+    magic_obstacle_sq210_cloned:
+      template: "fx\\quest\\sq210\\magic_obstacle_sq210.w2ent"
+
+    fogling_fog:
+      template: "fx\\monsters\\fogling\\fogling_fog.w2ent"
+
+    runeword_4:
+      template: "dlc\\ep1\\data\\fx\\runeword\\runeword_4\\runeword_4.w2ent"
+
+
+
+
+
+  animations:
+    anim_8525_push_static_back:
+      animation: "push_static_back"
+      frames: 54
+
+    anim_8526_push_static_forward:
+      animation: "push_static_forward"
+      frames: 45
+
+    anim_8527_push_static_left:
+      animation: "push_static_left"
+      frames: 55
+
+    anim_6984_high_standing_determined_enter_rightside:
+      animation: "high_standing_determined_enter_rightside"
+      frames: 161
+
+    anim_12915_high_standing_aggressive_enter_rightside:
+      animation: "high_standing_aggressive_enter_rightside"
+      frames: 151
+
+    anim_335_high_standing_determined_to_low_kneeling_determined2:
+      animation: "high_standing_determined_to_low_kneeling_determined2"
+      frames: 160
+
+    anim_12620_high_standing_aggressive_idle:
+      animation: "high_standing_aggressive_idle"
+      frames: 518
+
+    anim_359_low_kneeling_determined2_to_low_kneeling_determined2_forensics:
+      animation: "low_kneeling_determined2_to_low_kneeling_determined2_forensics"
+      frames: 100
+
+    anim_345_low_kneeling_determined2_forensics_gesture_explain01:
+      animation: "low_kneeling_determined2_forensics_gesture_explain01"
+      frames: 180
+
+    anim_358_low_kneeling_determined2_to_high_standing_determined:
+      animation: "low_kneeling_determined2_to_high_standing_determined"
+      frames: 110
+
+    anim_5298_combat_locomotion_step_back:
+      animation: "combat_locomotion_step_back"
+      frames: 40
+
+    anim_7792_inventory_unsheathe_silver:
+      animation: "inventory_unsheathe_silver"
+      frames: 45
+
+    anim_12676_high_standing_determined_pull_sword_to_witcher_combat_pose_relaxed:
+      animation: "high_standing_determined_pull_sword_to_witcher_combat_pose_relaxed"
+      frames: 85
+
+    anim_356_low_kneeling_determined2_idle:
+      animation: "low_kneeling_determined2_idle"
+      frames: 110
+
+    anim_349_low_kneeling_determined2_forensics_idle:
+      animation: "low_kneeling_determined2_forensics_idle"
+      frames: 200
+
+    anim_7710_dialogue_witcher_combat_pose_ready:
+      animation: "dialogue_witcher_combat_pose_ready"
+      frames: 95
+
+    anim_12892_dialogue_witcher_combat_pose_relaxed: #woman
+      animation: "dialogue_witcher_combat_pose_relaxed"
+      frames: 138
+
+    anim_12939_high_standing_determined_enter_rightside:
+      animation: "high_standing_determined_enter_rightside"
+      frames: 156
+
+    anim_7713_dialogue_witcher_coombat_pose_relaxed_to_ready:
+      animation: "dialogue_witcher_coombat_pose_relaxed_to_ready"
+      frames: 83
+
+    anim_7712_dialogue_witcher_combat_pose_relaxed: #man
+      animation: "dialogue_witcher_combat_pose_relaxed"
+      frames: 89
+
+
+    anim_7050_high_standing_determined_gesture_question_03:
+      animation: "high_standing_determined_gesture_question_03"
+      frames: 81
+
+    anim_7053_high_standing_determined_gesture_question_06:
+      animation: "high_standing_determined_gesture_question_06"
+      frames: 97
+
+    anim_283_dg704_truth_09_detlaff_standing_aggressive_gesture_taunt:
+      animation: "dg704_truth_09_detlaff_standing_aggressive_gesture_taunt"
+      frames: 455
+
+    anim_6708_add_gesture_question_07:
+      animation: "add_gesture_question_07"
+      frames: 81
+
+
+
+  animations.mimic:
+    mimicsanim_118_geralt_neutral_gesture_brows_up_face_lcl:
+      animation: "geralt_neutral_gesture_brows_up_face_lcl"
+      frames: 90
+
+    mimicsanim_116_geralt_neutral_gesture_brows_down_face_lcl:
+      animation: "geralt_neutral_gesture_brows_down_face_lcl"
+      frames: 90
+
+    mimicsanim_266_brows_down_accent_face:
+      animation: "brows_down_accent_face"
+      frames: 26
+
+    mimicsanim_137_geralt_neutral_no_slow_face:
+      animation: "geralt_neutral_no_slow_face"
+      frames: 90
+
+    mimicsanim_134_geralt_neutral_no_contempt_face:
+      animation: "geralt_neutral_no_contempt_face"
+      frames: 85
+
+    mimicsanim_134_geralt_neutral_no_contempt_face:
+      animation: "geralt_neutral_no_contempt_face"
+      frames: 85
+
+    mimicsanim_140_geralt_neutral_question_problem_face:
+      animation: "geralt_neutral_question_problem_face"
+      frames: 95
+
+
+  actor.poses:
+    pose_0_high_standing_determined_idle:
+      idle_anim: "high_standing_determined_idle"
+
+    pose_1_high_standing_aggressive_idle:
+      idle_anim: "high_standing_aggressive_idle"
+
+    pose_2_low_kneeling_determined2_idle:
+      idle_anim: "low_kneeling_determined2_idle"
+
+    pose_3_low_kneeling_determined2_forensics_idle:
+      idle_anim: "low_kneeling_determined2_forensics_idle"
+
+    pose_4_dialogue_witcher_combat_pose_ready:
+      idle_anim: "dialogue_witcher_combat_pose_ready"
+
+    pose_5_dialogue_witcher_combat_pose_relaxed:
+      idle_anim: "dialogue_witcher_combat_pose_relaxed"
+
+
+
+  cameras:
+    #cam_1_vue_de_dos:
+    #  fov: 40.0
+    #  transform:
+    #    pos: [ -0.7542925477, -1.1327646971, 1.8271226883 ]
+    #    rot: [ 0.0, 342.9000244141, 351.2000427246 ]
+    #  zoom: 0.0
+    #  dof:
+    #    aperture: [ 28.2495002747, 1.2700699568 ]
+    #    blur: [ 1.0, 5.0 ]
+    #    focus: [ 1.0, 5.0 ]
+    #    intensity: 0.2500000000
+    #  event_generator:
+    #    plane: "Medium"
+    #    tags: [ "ext" ]
+
+    cam_1_vue_de_dos: #NEW
+      fov: 40.0
+      transform:
+        pos: [ -0.5566592216, -1.1633491516, 1.8271226883 ]
+        rot: [ 0.0, 342.9000244141, 351.2000427246 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_3_vue_large_du_sol:
+      fov: 40.0
+      transform:
+        pos: [ 0.7306430340, 4.1671781540, 0.2271165848 ]
+        rot: [ 0.0, 16.6000194550, 148.7000579834 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_5_mirror_proche: #proche_mirror
+      fov: 40.0
+      transform:
+        pos: [ -0.5925354958, 2.2258057594, 1.6271219254 ]
+        rot: [ 0.0, 357.5000000000, 331.9000244141 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_19_ots_mirror: #ots_mirror
+      fov: 40.0
+      transform:
+        pos: [ 0.3740608692, 3.8781299591, 1.6271219254 ]
+        rot: [ 0.0, 353.7000122070, 151.2998809814 ]
+        #OLD rot: [ 0.0, 357.1000061035, 153.8000030518 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    #cam_9_gros_plan_geralt:
+    #  fov: 40.0
+    #  transform:
+    #    pos: [ -0.6656313539, 2.5380811691, 1.5271215439 ]
+    #    rot: [ 0.0, 0.0000109226, 119.2001953125 ]
+    #  zoom: 0.0
+    #  dof:
+    #    aperture: [ 28.2495002747, 1.2700699568 ]
+    #    blur: [ 1.0, 5.0 ]
+    #    focus: [ 1.0, 5.0 ]
+    #    intensity: 0.2500000000
+    #  event_generator:
+    #    plane: "Medium"
+    #    tags: [ "ext" ]
+
+    #cam_9_gros_plan_geralt: #NEW
+    #  fov: 40.0
+    #  transform:
+    #    pos: [ -0.7144047618, 2.6253652573, 1.5271215439 ]
+    #    rot: [ 0.0, 0.4000109136, 120.0002136230 ]
+    #  zoom: 0.0
+    #  dof:
+    #    aperture: [ 28.2495002747, 1.2700699568 ]
+    #    blur: [ 1.0, 5.0 ]
+    #    focus: [ 1.0, 5.0 ]
+    #    intensity: 0.2500000000
+    #  event_generator:
+    #    plane: "Medium"
+    #    tags: [ "ext" ]
+
+
+    #cam_9_gros_plan_geralt: #NEW2
+    #  fov: 40.0
+    #  transform:
+    #    pos: [ -0.7631779909, 2.7126495838, 1.5271215439 ]
+    #    rot: [ 0.0, 0.5000109673, 116.8000030518 ]
+    #  zoom: 0.0
+    #  dof:
+    #    aperture: [ 28.2495002747, 1.2700699568 ]
+    #    blur: [ 1.0, 5.0 ]
+    #    focus: [ 1.0, 5.0 ]
+    #    intensity: 0.2500000000
+    #  event_generator:
+    #    plane: "Medium"
+    #    tags: [ "ext" ]
+
+    #cam_9_gros_plan_geralt: #NEW3
+    #  fov: 40.0
+    #  transform:
+    #    pos: [ -0.7631779909, 2.7126495838, 1.3271207809 ]
+    #    rot: [ 0.0, 1.8000110388, 117.1999969482 ]
+    #  zoom: 0.0
+    #  dof:
+    #    aperture: [ 28.2495002747, 1.2700699568 ]
+    #    blur: [ 1.0, 5.0 ]
+    #    focus: [ 1.0, 5.0 ]
+    #    intensity: 0.2500000000
+    #  event_generator:
+    #    plane: "Medium"
+    #    tags: [ "ext" ]
+
+    #cam_9_gros_plan_geralt: #NEW 4
+    #  fov: 40.0
+    #  transform:
+    #    pos: [ -0.7631779909, 2.7126495838, 1.5271215439 ]
+    #    rot: [ 0.0, 355.7000122070, 122.9000091553 ]
+    #  zoom: 0.0
+    #  dof:
+    #    aperture: [ 28.2495002747, 1.2700699568 ]
+    #    blur: [ 1.0, 5.0 ]
+    #    focus: [ 1.0, 5.0 ]
+    #    intensity: 0.2500000000
+    #  event_generator:
+    #    plane: "Medium"
+    #    tags: [ "ext" ]
+
+    cam_9_gros_plan_geralt: #NEW 5
+      fov: 40.0
+      transform:
+        pos: [ -0.9261450768, 2.9645414352, 1.5271215439 ]
+        rot: [ 0.0, 355.7000122070, 122.9000091553 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_10_Shot_g_aerien__cloned_:
+      fov: 40.0
+      transform:
+        pos: [ -0.6711822152, -1.8999464512, 1.3271198273 ]
+        rot: [ 0.0, 359.6999816895, 358.2997741699 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    #cam_16_gros_plan_ciri: #OLD
+    #  fov: 40.0
+    #  transform:
+    #    pos: [ 0.2525075078, 0.9965293407, 1.6271219254 ]
+    #    rot: [ 0.0, 356.6000061035, 151.4001922607 ]
+    #  zoom: 0.0
+    #  dof:
+    #    aperture: [ 28.2495002747, 1.2700699568 ]
+    #    blur: [ 1.0, 5.0 ]
+    #    focus: [ 1.0, 5.0 ]
+    #    intensity: 0.2500000000
+    #  event_generator:
+    #    plane: "Medium"
+    #    tags: [ "ext" ]
+
+    #cam_16_gros_plan_ciri: #NEW
+    #  fov: 40.0
+    #  transform:
+    #    pos: [ 0.2525075078, 0.9965293407, 1.6271219254 ]
+    #    rot: [ 0.0, 354.0000305176, 158.1002807617 ]
+    #  zoom: 0.0
+    #  dof:
+    #    aperture: [ 28.2495002747, 1.2700699568 ]
+    #    blur: [ 1.0, 5.0 ]
+    #    focus: [ 1.0, 5.0 ]
+    #    intensity: 0.2500000000
+    #  event_generator:
+    #    plane: "Medium"
+    #    tags: [ "ext" ]
+
+    cam_16_gros_plan_ciri: #NEW 2
+      fov: 40.0
+      transform:
+        pos: [ 0.2525075078, 0.9965293407, 1.6271219254 ]
+        rot: [ 0.0, 350.7000122070, 158.4002990723 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_17_vue_proche_de_la_tombe: #vue proche de la tombe
+      fov: 40.0
+      transform:
+        pos: [ -1.1638050079, 2.1967625618, 1.8271226883 ]
+        rot: [ 0.0, 327.2000122070, 326.9000549316 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_18_vue_d_ensemble_de_la_tombe: #vue d'ensemble de la tombe
+      fov: 40.0
+      transform:
+        pos: [ -8.5301742554, -3.9702892303, 8.6271476746 ]
+        rot: [ 0.0, 327.8999938965, 314.2000427246 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 12.3568019867, 15.3568019867 ]
+        focus: [ 12.8568019867, 13.8568019867 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+
+
+
+production:
+  settings:
+    sceneid: 9
+    strings-idspace: 5984
+    strings-idstart: 900
+
+  placement: "sted_prologue_ciri_at_grave_sp"
+    # INFO: world coordinates of used origin:
+      #pos: [ -345.5597839355, -190.9962615967, 8.5530033112 ]
+      #rot: [ 0.0, 39.8161926270, 0.0 ]
+
+  assets:
+    actors:
+      geralt:
+        repo: "geralt"
+        by_voicetag: true
+        tags: [ "PLAYER" ]
+
+      ciri:
+        repo: "ciri"
+        #by_voicetag: true
+        appearance: "ciri"
+        tags: [ "ciri" ]
+
+      mirror_man:
+        repo: "mirror_man"
+        #by_voicetag: true
+        appearance: "mirror_man_satan"
+        tags: [ "sted_mirror_man" ]
+
+
+
+    props:
+      #fx_tombe1:
+        #repo: "fx_tombe1"
+
+      fx_tombe:
+        repo: "fx_tombe"
+
+      magic_obstacle_sq210:
+        repo: "magic_obstacle_sq210"
+
+      magic_obstacle_sq210_cloned:
+        repo: "magic_obstacle_sq210_cloned"
+
+      fogling_fog:
+        repo: "fogling_fog"
+
+      runeword_4:
+        repo: "runeword_4"
+
+
+
+    cameras:
+      cam_1_vue_de_dos:
+        repo: "cam_1_vue_de_dos"
+
+      cam_3_vue_large_du_sol:
+        repo: "cam_3_vue_large_du_sol"
+
+      cam_9_gros_plan_geralt:
+        repo: "cam_9_gros_plan_geralt"
+
+      cam_10_Shot_g_aerien__cloned_:
+        repo: "cam_10_Shot_g_aerien__cloned_"
+
+      cam_11_Shot_g_aerien:
+        repo: "cam_11_Shot_g_aerien"
+
+      cam_12_Shot_apparition:
+        repo: "cam_12_Shot_apparition"
+
+      cam_16_gros_plan_ciri:
+        repo: "cam_16_gros_plan_ciri"
+
+      cam_17_vue_proche_de_la_tombe:
+        repo: "cam_17_vue_proche_de_la_tombe"
+
+      cam_18_vue_d_ensemble_de_la_tombe:
+        repo: "cam_18_vue_d_ensemble_de_la_tombe"
+
+      cam_5_mirror_proche:
+        repo: "cam_5_mirror_proche"
+
+      cam_19_ots_mirror:
+        repo: "cam_19_ots_mirror"
+
+
+
+    animations:
+      geralt_dialogue_witcher_coombat_pose_relaxed_to_ready:
+        actor: "geralt"
+        repo: "anim_7713_dialogue_witcher_coombat_pose_relaxed_to_ready"
+        #duration: 2.7666666508
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_dialogue_witcher_combat_pose_relaxed:
+        actor: "geralt"
+        repo: "anim_7712_dialogue_witcher_combat_pose_relaxed"
+        #duration: 2.9666666985
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      mirror_man_push_static_back:
+        actor: "mirror_man"
+        repo: "anim_8525_push_static_back"
+        #duration: 1.7999999523
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.3
+
+      mirror_man_push_static_forward:
+        actor: "mirror_man"
+        repo: "anim_8526_push_static_forward"
+        #duration: 1.5000000000
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.3
+
+      mirror_man_push_static_left:
+        actor: "mirror_man"
+        repo: "anim_8527_push_static_left"
+        #duration: 1.8333333731
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.3
+
+      geralt_high_standing_determined_enter_rightside:
+        actor: "geralt"
+        repo: "anim_6984_high_standing_determined_enter_rightside"
+        #duration: 5.3666667938
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.3
+
+      ciri_high_standing_determined_enter_rightside:
+        actor: "ciri"
+        repo: "anim_12939_high_standing_determined_enter_rightside"
+        #duration: 5.1999998093
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.3
+
+      ciri_high_standing_aggressive_enter_rightside:
+        actor: "ciri"
+        repo: "anim_12915_high_standing_aggressive_enter_rightside"
+        #duration: 5.0333333015
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.3
+
+      geralt_high_standing_determined_to_low_kneeling_determined2:
+        actor: "geralt"
+        repo: "anim_335_high_standing_determined_to_low_kneeling_determined2"
+        #duration: 5.3333334923
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      ciri_high_standing_aggressive_idle:
+        actor: "ciri"
+        repo: "anim_12620_high_standing_aggressive_idle"
+        #duration: 17.2666664124
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_low_kneeling_determined2_to_low_kneeling_determined2_forensics:
+        actor: "geralt"
+        repo: "anim_359_low_kneeling_determined2_to_low_kneeling_determined2_forensics"
+        #duration: 3.3333332539
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      geralt_low_kneeling_determined2_forensics_gesture_explain01:
+        actor: "geralt"
+        repo: "anim_345_low_kneeling_determined2_forensics_gesture_explain01"
+        #duration: 6.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 2.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      geralt_low_kneeling_determined2_to_high_standing_determined:
+        actor: "geralt"
+        repo: "anim_358_low_kneeling_determined2_to_high_standing_determined"
+        #duration: 3.6666667461
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.0
+
+      geralt_combat_locomotion_step_back:
+        actor: "geralt"
+        repo: "anim_5298_combat_locomotion_step_back"
+        #duration: 1.3333333731
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.3
+
+      geralt_inventory_unsheathe_silver:
+        actor: "geralt"
+        repo: "anim_7792_inventory_unsheathe_silver"
+        #duration: 1.5000000000
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 1.3 #0.3 initialement
+
+      ciri_high_standing_determined_pull_sword_to_witcher_combat_pose_relaxed:
+        actor: "ciri"
+        repo: "anim_12676_high_standing_determined_pull_sword_to_witcher_combat_pose_relaxed"
+        #duration: 2.8333332539
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0 #j'avais mis 0.7
+        blendout: 0.3
+
+
+      mirror_man_high_standing_determined_gesture_question_03:
+        actor: "mirror_man"
+        repo: "anim_7050_high_standing_determined_gesture_question_03"
+        #duration: 2.7000000477
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      mirror_man_high_standing_determined_gesture_question_06:
+        actor: "mirror_man"
+        repo: "anim_7053_high_standing_determined_gesture_question_06"
+        #duration: 3.2333333492
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      mirror_man_dg704_truth_09_detlaff_standing_aggressive_gesture_taunt:
+        actor: "mirror_man"
+        repo: "anim_283_dg704_truth_09_detlaff_standing_aggressive_gesture_taunt"
+        #duration: 15.1666669846
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      mirror_man_add_gesture_question_07:
+        actor: "mirror_man"
+        repo: "anim_6708_add_gesture_question_07"
+        #duration: 2.7000000477
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+
+
+
+    animations.mimic:
+      mirror_man_geralt_neutral_gesture_brows_up_face_lcl:
+        actor: "mirror_man"
+        repo: "mimicsanim_118_geralt_neutral_gesture_brows_up_face_lcl"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_gesture_brows_up_face_lcl:
+        actor: "geralt"
+        repo: "mimicsanim_118_geralt_neutral_gesture_brows_up_face_lcl"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 3.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      ciri_brows_down_accent_face:
+        actor: "ciri"
+        repo: "mimicsanim_266_brows_down_accent_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 3.0
+        blendin: 0.3000000000
+        blendout: 0.3000000000
+
+      mirror_man_geralt_neutral_gesture_brows_down_face_lcl:
+        actor: "mirror_man"
+        repo: "mimicsanim_116_geralt_neutral_gesture_brows_down_face_lcl"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_gesture_brows_down_face_lcl:
+        actor: "geralt"
+        repo: "mimicsanim_116_geralt_neutral_gesture_brows_down_face_lcl"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      ciri_geralt_neutral_gesture_yes_face:
+        actor: "ciri"
+        repo: "mimicsanim_456_geralt_neutral_gesture_yes_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      mirror_man_geralt_neutral_no_slow_face:
+        actor: "mirror_man"
+        repo: "mimicsanim_137_geralt_neutral_no_slow_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      mirror_man_geralt_neutral_no_contempt_face:
+        actor: "mirror_man"
+        repo: "mimicsanim_134_geralt_neutral_no_contempt_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_no_contempt_face:
+        actor: "geralt"
+        repo: "mimicsanim_134_geralt_neutral_no_contempt_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_question_problem_face:
+        actor: "geralt"
+        repo: "mimicsanim_140_geralt_neutral_question_problem_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+
+
+
+
+    actor.poses:
+      geralt_high_standing_determined_idle:
+        actor: "geralt"
+        repo: "pose_0_high_standing_determined_idle"
+
+      ciri_high_standing_determined_idle:
+        actor: "ciri"
+        repo: "pose_0_high_standing_determined_idle"
+
+      ciri_high_standing_aggressive_idle:
+        actor: "ciri"
+        repo: "pose_1_high_standing_aggressive_idle"
+
+      geralt_low_kneeling_determined2_idle:
+        actor: "geralt"
+        repo: "pose_2_low_kneeling_determined2_idle"
+
+      geralt_low_kneeling_determined2_forensics_idle:
+        actor: "geralt"
+        repo: "pose_3_low_kneeling_determined2_forensics_idle"
+
+      geralt_dialogue_witcher_combat_pose_ready:
+        actor: "geralt"
+        repo: "pose_4_dialogue_witcher_combat_pose_ready"
+
+      ciri_dialogue_witcher_combat_pose_relaxed:
+        actor: "ciri"
+        repo: "pose_5_dialogue_witcher_combat_pose_relaxed"
+
+      mirror_man_high_standing_determined_idle:
+        actor: "mirror_man"
+        repo: "pose_0_high_standing_determined_idle"
+
+
+
+    soundbanks:
+      - music_nomansgrad
+      #- music_prologue
+      #- magic_ghost
+        #[MOD_SoundEventsUi] SOUND EVENT: [magic_ghost_appear], BANK NAME: [magic_ghost.bnk]
+      #- monster_noonwraith
+        #[MOD_SoundEventsUi] SOUND EVENT: [monster_noonwraith_fx_appear], BANK NAME: [monster_noonwraith.bnk]
+
+storyboard:
+  #defaults:
+    #placement:
+      #geralt: [[ -0.8631927371, 2.6411943436, -0.1314392090 ], [ 0.0, 0.0, 294.5000000000 ]]
+      #ciri: [[ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+
+    #actor.pose:
+      #geralt: geralt_high_standing_determined_idle
+      #ciri: ciri_high_standing_determined_idle
+
+
+
+
+  section_start:
+    shot_0:
+      - fade.in: [0.0, 0.95] # pour le fade in/out c'est en secondes
+      - cam: [0.0, cam_17_vue_proche_de_la_tombe]
+      - actor.hide: [0.0, geralt]
+      - actor.hide: [0.0, ciri]
+      - actor.hide: [0.0, mirror_man]
+      - prop.placement: [0.0, fx_tombe, [ 10.2192311287, 13.5932250023, -10.6435575485 ], [ 0.0, 0.0, 0.0 ]]
+      - prop.effect.stop: [0.0, fx_tombe, split]
+      #- prop.placement: [0.0, magic_obstacle_sq210_cloned, [ -1900.7050218582, 1700.0856876373, -1000.3148279190 ], [ 0.0, 0.0, 0.0 ]]
+      #- prop.effect.stop: [0.0, magic_obstacle_sq210_cloned, magic_obstacle]
+      #- prop.placement: [0.0, magic_obstacle_sq210, [ 1900.2196826935, 1200.1210267544, -1000.3148279190 ], [ 0.0, 0.0, 0.0 ]]
+      #- prop.effect.stop: [0.0, magic_obstacle_sq210, magic_obstacle]
+      #- prop.placement: [0.2, fogling_fog, [ -100.0792609453, 102.9616999626, -100.0794639587 ], [ 0.0, 0.0, 126.3000640869 ]]
+      #- prop.effect.stop: [0.0, fogling_fog, fog]
+
+  section_storyboard_ui:
+    shot_0_1: # vue de départ
+      - world.weather: [0.0, WT_Rain_Storm, 0] #le dernier chiffre est le temps en secondes de transition sinon par défaut c'est 60 secondes // WT_Clear // WT_Rain_Storm pour la tempete
+      - actor.placement: [0.0, geralt, [ -10.8631927371, 12.6411943436, -10.1314392090 ], [ 0.0, 0.0, 294.5000000000 ]] #met geralt loin pour ne pas avoir le bug du carreau d'arbalète
+      - actor.placement: [0.0, ciri, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.hide: [0.0, geralt]
+      - actor.hide: [0.0, ciri]
+      - actor.hide: [0.0, mirror_man]
+      - prop.placement: [0.0, fx_tombe, [ 10.2192311287, 13.5932250023, -10.6435575485 ], [ 0.0, 0.0, 0.0 ]]
+      - prop.effect.stop: [0.0, fx_tombe, split]
+      #- prop.placement: [0.0, magic_obstacle_sq210_cloned, [ -190.7050218582, 170.0856876373, -100.3148279190 ], [ 0.0, 0.0, 0.0 ]]
+      #- prop.effect.stop: [0.0, magic_obstacle_sq210_cloned, magic_obstacle]
+      #- prop.placement: [0.0, magic_obstacle_sq210, [ 190.2196826935, 120.1210267544, -100.3148279190 ], [ 0.0, 0.0, 0.0 ]]
+      #- prop.effect.stop: [0.0, magic_obstacle_sq210, magic_obstacle]
+      #- prop.placement: [0.2, fogling_fog, [ -100.0792609453, 102.9616999626, -100.0794639587 ], [ 0.0, 0.0, 126.3000640869 ]]
+      #- prop.effect.stop: [0.0, fogling_fog, fog]
+      - cam: [0.0, cam_17_vue_proche_de_la_tombe]
+      - cam.blend.start: [0.2, cam_17_vue_proche_de_la_tombe]
+      - cam.blend.end: [1.0, cam_1_vue_de_dos]
+    
+    shot_1: # arrivée "Essi rests here."
+      - actor.placement: [0.0, geralt, [ -0.8631927371, 2.6411943436, -0.1314392090 ], [ 0.0, 0.0, 294.5000000000 ]]
+      - actor.show: [0.0, geralt]
+      - actor.show: [0.0, ciri]
+      - actor.pose: [0.0, geralt_high_standing_determined_idle]
+      - actor.pose: [0.0, ciri_high_standing_aggressive_idle]
+      - actor.lookat: [0.0, geralt, [ -1.0, 2.65, -0.5 ]] # regarde vers la tombe NEW2
+      - actor.lookat: [0.0, ciri, geralt]
+      - actor.anim: [0.0, geralt_high_standing_determined_enter_rightside]
+      - actor.anim: [0.0, ciri_high_standing_aggressive_enter_rightside]
+    
+    shot_2: # shot geralt s'accroupi "I will put the pearl on her grave."
+      - actor.anim: [0.0, geralt_high_standing_determined_to_low_kneeling_determined2]
+      - cam: [0.0, cam_3_vue_large_du_sol]
+
+    shot_2_1: 
+      - actor.pose: [0.0, geralt_low_kneeling_determined2_idle]
+      - actor.anim.mimic: [0.0, ciri_geralt_neutral_gesture_yes_face]
+      - cam: [0.0, cam_16_gros_plan_ciri]
+
+    shot_3: # geralt se met en position de déposer la perle
+      - actor.pose: [0.5, geralt_low_kneeling_determined2_forensics_idle]
+      - cam: [0.0, cam_3_vue_large_du_sol]
+      - actor.anim: [0.0, geralt_low_kneeling_determined2_to_low_kneeling_determined2_forensics]
+    
+    shot_5: #geralt se relève et les pierres volent
+      #- prop.placement: [0.0, magic_obstacle_sq210, [ 9.2196826935, 2.1210267544, -0.3148279190 ], [ 0.0, 0.0, 0.0 ]]
+      #- prop.effect.start: [0.0, magic_obstacle_sq210, magic_obstacle]
+      #- prop.placement: [0.0, magic_obstacle_sq210_cloned, [ -9.7050218582, 7.0856876373, -0.3148279190 ], [ 0.0, 0.0, 0.0 ]]
+      #- prop.effect.start: [0.0, magic_obstacle_sq210_cloned, magic_obstacle]
+      - cam: [0.0, cam_1_vue_de_dos]
+      - actor.hide: [0.0, mirror_man]
+      - actor.anim: [0.0, geralt_low_kneeling_determined2_to_high_standing_determined]
+      - actor.pose: [0.5, geralt_high_standing_determined_idle]
+      - actor.pose: [0.0, ciri_high_standing_aggressive_idle]
+      - actor.anim: [0.0, ciri_high_standing_determined_pull_sword_to_witcher_combat_pose_relaxed]
+      - actor.equip.right: [0.35, ciri, Zireael Sword] #INITIAL 0.3
+      - actor.pose: [0.5, ciri_dialogue_witcher_combat_pose_relaxed]
+      - actor.placement: [0.0, ciri, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.placement: [0.0, geralt, [ -0.8631927371, 2.6411943436, -0.1314392090 ], [ 0.0, 0.0, 294.5000000000 ]]
+      - actor.placement: [0.0, mirror_man, [ -0.0792609453, 2.9616999626, -0.0794639587 ], [ 0.0, 0.0, 126.3000640869 ]]
+      - actor.lookat: [0.0, geralt, [ -1.0, 2.65, -0.5 ]] # regarde vers la tombe NEW2
+      - actor.lookat: [0.0, ciri, geralt]
+
+    shot_6: # ciri It works!
+      - cam: [0.0, cam_16_gros_plan_ciri]
+      - actor.placement: [0.2, geralt, [ -1.7576863766, 2.4533841610, -0.1314392090 ], [ 0.0, 0.0, 294.5000000000 ]]
+      - actor.lookat: [0.2, ciri, [ 0.9050846696, 0.4153271616, 1.6145305634 ]] #look at right
+      - actor.lookat: [0.8, geralt, [ -0.9397070408, 0.3020766675, 1.5404701233 ]] #look at left
+      - actor.lookat: [0.8, ciri, geralt] #look at left
+    
+    shot_8: # geralt regarde à gauche
+      - cam: [0.0, cam_9_gros_plan_geralt]
+      - actor.anim: [0.0, geralt_inventory_unsheathe_silver]
+      - actor.equip.right: [0.5, geralt, silversword]
+      - actor.pose: [0.1, geralt_dialogue_witcher_combat_pose_ready]
+      ##- actor.lookat: [0.0, geralt, [ -0.9397070408, 0.3020766675, 1.5404701233 ]] #regarde à gauche
+      - actor.lookat: [0.0, geralt, [ 0.9050846696, 0.4153271616, 1.6145305634 ]] #regarde à droite
+  
+    shot_9: # puis geralt regarde à droite
+      ##- actor.lookat: [0.0, geralt, [ 0.9050846696, 0.4153271616, 1.6145305634 ]] #regarde à droite
+      - actor.lookat: [0.3, geralt, [ -1.0, 2.65, -0.5 ]] # regarde vers la tombe NEW2 #initial 0.6
+      - actor.anim.mimic: [0.3, geralt_geralt_neutral_gesture_brows_up_face_lcl] #initial 0.6
+
+    shot_10: # la fumée apparaît
+      - cam: [0.0, cam_1_vue_de_dos]
+      - actor.lookat: [0.0, geralt, [ -1.0, 2.65, -0.5 ]] # regarde vers la tombe NEW2
+      - actor.lookat: [0.0, ciri, [ -1.0, 2.65, -0.5 ]] # regarde vers la tombe NEW2
+      - prop.placement: [0.0, fx_tombe, [ -0.0792609453, 2.9616999626, -0.0794639587 ], [ 0.0, 0.0, 126.3000640869 ]]
+      - prop.effect.start: [0.0, fx_tombe, split]
+      #- prop.placement: [0.2, fogling_fog, [ -0.0792609453, 2.9616999626, -0.0794639587 ], [ 0.0, 0.0, 126.3000640869 ]]
+      #- prop.effect.start: [0.2, fogling_fog, fog]
+      - actor.effect.start: [0.0, mirror_man, invisible] #test pour que mirror apparraisse directement invisible
+
+    shot_11: # mirror apparaît push left
+      - actor.show: [0.0, mirror_man]
+      - actor.anim: [0.0, mirror_man_push_static_left]
+      - actor.lookat: [0.5, geralt, mirror_man]
+      - actor.lookat: [0.5, ciri, mirror_man]
+      - prop.placement: [0.0, runeword_4, [ -0.0792609453, 2.9616999626, -0.0794639587 ], [ 0.0, 0.0, 126.3000640869 ]]
+      - prop.effect.start: [0.0, runeword_4, runeword_4_hit]
+      - actor.effect.start: [0.0, mirror_man, axii_stopping]
+      - prop.effect.stop: [0.8, fx_tombe, split]
+
+    shot_12: # push forward
+      - actor.anim: [0.0, mirror_man_push_static_forward]
+      - actor.effect.stop: [0.9, mirror_man, invisible]
+
+    shot_13: # push back / But what the…
+      - actor.anim: [0.0, mirror_man_push_static_back]
+      - cam: [0.5, cam_5_mirror_proche]  
+      - actor.anim.mimic: [0.5, mirror_man_geralt_neutral_gesture_brows_up_face_lcl]
+      - actor.anim: [0.5, mirror_man_high_standing_determined_gesture_question_06]    
+    
+    shot_14: # mirror regarde  
+      - actor.effect.stop: [0.0, mirror_man, axii_stopping]
+      - actor.anim.mimic: [0.5, mirror_man_geralt_neutral_gesture_brows_down_face_lcl]
+      - actor.lookat: [0.0, mirror_man, geralt]
+      - actor.lookat: [0.4, mirror_man, ciri]
+      - actor.lookat: [0.9, mirror_man, geralt]
+
+    shot_15: # ots mirror  
+      #- prop.effect.stop: [0.0, fogling_fog, fog]
+      - cam: [0.0, cam_19_ots_mirror]        
+
+    shot_16: #In the end, it seems that it was me who decided on our next meeting. 
+      - cam: [0.5, cam_9_gros_plan_geralt]  
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_gesture_brows_down_face_lcl]
+      - actor.anim.mimic: [0.5, geralt_geralt_neutral_question_problem_face]
+
+    shot_17:  #And it will be the last.
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_no_contempt_face]
+
+    shot_18: #I see you didn't come alone.
+      - cam: [0.0, cam_5_mirror_proche]
+      - actor.lookat: [0.0, mirror_man, ciri]  
+      - actor.anim.mimic: [0.0, mirror_man_geralt_neutral_gesture_brows_down_face_lcl]
+      - actor.anim: [0.0, mirror_man_add_gesture_question_07]  
+
+    shot_19: #Shame…
+      - actor.lookat: [0.0, mirror_man, geralt]
+      - actor.anim.mimic: [0.0, mirror_man_geralt_neutral_no_slow_face]
+
+    shot_20: #I could have had plans for her too.
+      - actor.lookat: [0.4, mirror_man, ciri]
+      - actor.anim: [0.0, mirror_man_high_standing_determined_gesture_question_03]
+
+    shot_21: #But I have no choice but to kill you both now.
+      - actor.lookat: [0.0, mirror_man, geralt]
+      - actor.lookat: [0.7, mirror_man, ciri]
+      - actor.anim.mimic: [0.0, mirror_man_geralt_neutral_no_contempt_face ]
+      - actor.anim: [0.0, mirror_man_dg704_truth_09_detlaff_standing_aggressive_gesture_taunt]      
+
+    shot_22: #We'll see…
+      - cam: [0.0, cam_16_gros_plan_ciri]
+      - cam.blend.togame: [0.9, cam_16_gros_plan_ciri]
+      - actor.anim.mimic: [0.0, ciri_brows_down_accent_face]
+
+
+
+
+dialogscript:
+  player: "geralt"
+  actors: [ "geralt", "ciri", "mirror_man" ]  
+  #OLDprops: [ "fx_tombe", "magic_obstacle_sq210", "magic_obstacle_sq210_cloned", "fogling_fog", "runeword_4" ]
+  props: [ "fx_tombe", "runeword_4" ]
+
+
+  section_start:
+    - CUE: shot_0
+    - PAUSE: 0.0
+    - NEXT: script_music_final
+
+
+  script_music_final:
+    - SCRIPT:
+        function: STED_PlayMusicScene
+        parameter:
+          - areaName: "novigrad"
+          - eventName: "mus_q601_mr_mirror_02_tense"
+          #- eventName: "mus_q605_final_confrontation_stage01_EN"
+          - saveType: "SESB_ClearSaved" # saveType: "SESB_Save", "SESB_DontSave", "SESB_ClearSaved"
+    - NEXT: section_storyboard_ui
+
+
+  section_storyboard_ui:
+    #- PAUSE: 0.0
+    - CUE: shot_0_1
+    - PAUSE: 10.0
+
+# arrivée "Essi rests here."
+    - CUE: shot_1
+    - PAUSE: 3.0
+    - geralt: Essi rests here.
+    - pause: 0.5
+
+# shot geralt s'accroupi "I will put the pearl on her grave."
+    - CUE: shot_2
+    - geralt: I will put the pearl on her grave.
+    - PAUSE: 0.5
+
+    - CUE: shot_2_1
+    - PAUSE: 0.4
+    - ciri: Yes, let's get it over with.
+    #- PAUSE: 0.1
+
+# geralt se met en position de déposer la perle
+    - CUE: shot_3
+    - PAUSE: 3.3
+
+# geralt se relève
+    - CUE: shot_5
+    - PAUSE: 3.0
+
+# ciri: it works!
+    - CUE: shot_6
+    - ciri: It works!
+    - PAUSE: 0.5
+    
+# gros plan sur geralt qui regarde à droite
+    - CUE: shot_8
+    - geralt: Stays alert.
+    - PAUSE: 0.5
+    
+# puis geralt regarde à gauche
+    - CUE: shot_9
+    - PAUSE: 1.5 #avant 1.0
+    
+# la fumée apparaît
+    - CUE: shot_10
+    - PAUSE: 3.0
+
+# mirror apparaît push left
+    - CUE: shot_11
+    - PAUSE: 1.83
+
+# push forward
+    - CUE: shot_12
+    - PAUSE: 1.5
+
+# push back
+    - CUE: shot_13
+    - PAUSE: 1.0 #initialement 1.8
+    - mirror_man: But what the…
+
+# mirror regarde
+    - CUE: shot_14
+    - PAUSE: 2.5
+
+# ots mirror
+    - CUE: shot_15
+    - PAUSE: 0.5
+
+    - CUE: shot_16
+    - geralt: In the end, it seems that it was me who decided on our next meeting.
+    - PAUSE: 0.5
+
+    - CUE: shot_17
+    - geralt: And it will be the last.
+    - PAUSE: 1.0
+
+    - CUE: shot_18
+    - mirror_man: I see you didn't come alone.
+    - PAUSE: 0.5
+
+    - CUE: shot_19
+    - mirror_man: Shame…
+    - PAUSE: 1.5
+
+    - CUE: shot_20
+    - mirror_man: I could have had plans for her too.
+    - PAUSE: 0.5
+
+    - CUE: shot_21
+    - mirror_man: But I have no other choice than kill you both now.
+    - PAUSE: 1.0
+
+    - CUE: shot_22
+    - ciri: We'll see…
+    - PAUSE: 0.5
+
+
+      
+    - NEXT: section_exit
+
+  section_exit:
+    ##- CAMERA_BLEND: 2.0
+    - EXIT
