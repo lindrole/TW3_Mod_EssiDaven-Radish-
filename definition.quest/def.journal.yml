@@ -1,0 +1,69 @@
+journals:
+  quests:
+    essi_daven:
+      title: "A Small Tribute to Poppet"
+      type: sidequest
+      #world: prologue                       # optional, if empty every objective requires world
+      level: 35
+      description:
+        - dandelion_found: I was waiting for Geralt not far from White Orchard, to show a him a special place to me.<br/>
+        - after_grave: Geralt learned of Essi's sad fate and later discovered that this devil Gaunter O'Dimm had provoked it.<br/>A mixture of anger and injustice filled Geralt, who went to Yennefer for help.<br/>
+        #- after_meet_mirror: After this unexpected encounter, it became clear that Poppet's illness was not due to bad luck, but had been caused by that devil of Gaunter O'Dimm.<br/>Geralt's memories of his time with Essi becoming more and more precise, he couldn't bring himself to let this demon continue his misdeeds.<br/>So Geralt decided to seek help from Yennefer, and her knowledge of necromancy.<br/>
+        - choice_pearl_yen: Although noticeably jealous at Geralt's mention of Poppet, Yennefer agreed to help him.<br/>She asked him to find a sky blue pearl like the one Geralt had given to Little-Eye.<br/>To do this she advised him to find Agloval, Duke of Bremerwoord, and her companion Sh'eenaz, the celadon-haired mermaid, who agreed for love to change her fishtail into legs.<br/>
+        - sheenaz_agloval_found: Sh'eenaz pointed Geralt to a place where he could find one of these pearls.<br/>
+        - back_to_yen: Returning to Yennefer after finding the pearl, Geralt was surprised to see Ciri there.<br/>Ciri told him that as a child in the Temple of Melitele, she had read Essi's collection of poems, and that it had filled her with emotion.<br/>Meanwhile Yennefer had found a way to enchant the pearl to help them defeat this devilish being.<br/>
+        - final_ciri: The pearl enchanted by Yennefer had the desired effect, and allowed Geralt and Ciri to defeat Gaunter O'Dimm, and thus avenge Poppet.<br/>
+
+      instructions:
+        quest:
+          - follow Dandelion:
+              world: prologue
+              caption: Follow Dandelion.
+              mappins:
+                - ~sted_dandelion
+
+          - leave grave:
+              world: prologue
+              caption: Return to the road to Vizima.
+              mappins:
+                - [crossroads_mappin, 0]
+
+          - go to yennefer:
+              world: skellige
+              caption: Visit Skellige to ask Yennefer for help.
+              mappins:
+                - ~sted_yennefer
+                #- [yen_skellige_apartment_mappin, 10] ## First parameter is the name of the marker defined in a layer. See "layers.yml" under "cemetery_layer/mappins"
+                                            ## Second parameter is the map area marker radius defined in meters.
+
+          - search agloval sheenaz:
+              world: novigrad
+              caption: Find Duke Agloval and his mate Sh'eenaz in Novigrad.
+              mappins:
+                - [search_agloval_sheenaz_mappin, 36] #initialement 50
+
+          - find pearl:
+              world: novigrad
+              caption: Search a Sky Blue Pearl.
+              mappins:
+                - [pearl_mappin, 53]
+
+          - find pearl near:
+              world: novigrad
+              caption: Search a Sky Blue Pearl.
+              mappins:
+                - [pearl_mappin_near, 20]
+
+          - go back to yennefer:
+              world: skellige
+              caption: Go back to Yennefer with the pearl.
+              mappins:
+                - ~sted_yennefer
+                #- [yen_location_mappin, 0] ## First parameter is the name of the marker defined in a layer. See "layers.yml" under "cemetery_layer/mappins"
+                                            ## Second parameter is the map area marker radius defined in meters.   
+
+          - kill mirror man:
+              world: prologue
+              caption: Defeat Gaunter O'Dimm.
+              mappins:
+                - ~sted_mirror_man   

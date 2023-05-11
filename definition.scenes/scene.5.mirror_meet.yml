@@ -1,0 +1,1335 @@
+repository:
+  actors:
+    geralt:
+      template: "gameplay\\templates\\characters\\player\\player.w2ent"
+
+    mirror_man:
+      ##template: "dlc\\ep1\\data\\characters\\npc_entities\\main_npc\\mirror_man.w2ent"
+      ##appearance: [ "mirror_man" ]
+      template: "quests\\secondary_npcs\\mr_mirror.w2ent"
+      appearance:
+        - mirror_man
+
+  animations:
+    anim_2855_ep1_mirror_standing_pose2_gesture_question_01:
+      animation: "ep1_mirror_standing_pose2_gesture_question_01"
+      frames: 140
+
+    anim_2853_ep1_mirror_standing_pose2_gesture_explain_01:
+      animation: "ep1_mirror_standing_pose2_gesture_explain_01"
+      frames: 230
+
+    anim_2854_ep1_mirror_standing_pose2_gesture_explain_02:
+      animation: "ep1_mirror_standing_pose2_gesture_explain_02"
+      frames: 165
+
+
+
+    anim_6970_high_standing_determined_calm_enter_frontal:
+      animation: "high_standing_determined_calm_enter_frontal"
+      frames: 253
+
+    anim_6972_high_standing_determined_calm_enter_rightside:
+      animation: "high_standing_determined_calm_enter_rightside"
+      frames: 255
+
+    anim_6706_add_gesture_question_05:
+      animation: "add_gesture_question_05"
+      frames: 76
+
+    anim_2849_ep1_mirror_standing_pose1_idle:
+      animation: "ep1_mirror_standing_pose1_idle"
+      frames: 539
+
+    anim_7096_high_standing_determined_idle:
+      animation: "high_standing_determined_idle"
+      frames: 288
+
+    anim_2857_ep1_mirror_standing_pose2_idle:
+      animation: "ep1_mirror_standing_pose2_idle"
+      frames: 470
+
+    anim_2851_ep1_mirror_standing_pose1_weight_shift_02:
+      animation: "ep1_mirror_standing_pose1_weight_shift_02"
+      frames: 300
+
+    anim_2839_ep1_mirror_standing_pose1_descend_end:
+      animation: "ep1_mirror_standing_pose1_descend_end"
+      frames: 102
+
+    anim_2848_ep1_mirror_standing_pose1_gesture_shrug_02:
+      animation: "ep1_mirror_standing_pose1_gesture_shrug_02"
+      frames: 100
+
+    anim_2842_ep1_mirror_standing_pose1_gesture_explain_02:
+      animation: "ep1_mirror_standing_pose1_gesture_explain_02"
+      frames: 80
+
+    anim_7119_high_standing_determined_to_high_standing_determined2:
+      animation: "high_standing_determined_to_high_standing_determined2"
+      frames: 111
+
+    anim_2845_ep1_mirror_standing_pose1_gesture_question_02:
+      animation: "ep1_mirror_standing_pose1_gesture_question_02"
+      frames: 160
+
+    anim_7148_high_standing_determined2_idle:
+      animation: "high_standing_determined2_idle"
+      frames: 692
+
+    anim_2847_ep1_mirror_standing_pose1_gesture_shrug_01:
+      animation: "ep1_mirror_standing_pose1_gesture_shrug_01"
+      frames: 100
+
+    anim_2844_ep1_mirror_standing_pose1_gesture_question_01:
+      animation: "ep1_mirror_standing_pose1_gesture_question_01"
+      frames: 135
+
+    anim_2841_ep1_mirror_standing_pose1_gesture_explain_01:
+      animation: "ep1_mirror_standing_pose1_gesture_explain_01"
+      frames: 150
+
+    anim_7149_high_standing_determined2_to_high_standing_determined:
+      animation: "high_standing_determined2_to_high_standing_determined"
+      frames: 95
+
+    anim_7037_high_standing_determined_gesture_me_and_you:
+      animation: "high_standing_determined_gesture_me_and_you"
+      frames: 70
+
+    anim_2855_ep1_mirror_standing_pose2_gesture_question_01:
+      animation: "ep1_mirror_standing_pose2_gesture_question_01"
+      frames: 140
+
+    anim_2856_ep1_mirror_standing_pose2_gesture_question_02:
+      animation: "ep1_mirror_standing_pose2_gesture_question_02"
+      frames: 160
+
+    anim_6932_high_standing_aggressive_to_high_standing_determined:
+      animation: "high_standing_aggressive_to_high_standing_determined"
+      frames: 119
+
+    anim_7058_high_standing_determined_gesture_right_shoulder_relax:
+      animation: "high_standing_determined_gesture_right_shoulder_relax"
+      frames: 91
+
+    anim_2843_ep1_mirror_standing_pose1_gesture_explain_03:
+      animation: "ep1_mirror_standing_pose1_gesture_explain_03"
+      frames: 110
+
+    anim_7032_high_standing_determined_gesture_left_shoulder_relax:
+      animation: "high_standing_determined_gesture_left_shoulder_relax"
+      frames: 107
+
+    anim_3764_low_standing_determined_exit_rightside:
+      animation: "low_standing_determined_exit_rightside"
+      frames: 90
+
+    anim_6930_high_standing_aggressive_idle:
+      animation: "high_standing_aggressive_idle"
+      frames: 347
+ 
+    anim_7114_high_standing_determined_to_high_standing_aggressive:
+      animation: "high_standing_determined_to_high_standing_aggressive"
+      frames: 125
+
+    anim_6978_high_standing_determined_calm_exit_rightside:
+      animation: "high_standing_determined_calm_exit_rightside"
+      frames: 245
+
+
+
+  animations.mimic:
+
+    mimicsanim_278_constant_brows_down_accent_face:
+      animation: "constant_brows_down_accent_face"
+      frames: 21
+
+    mimicsanim_116_geralt_neutral_gesture_brows_down_face_lcl:
+      animation: "geralt_neutral_gesture_brows_down_face_lcl"
+      frames: 90
+
+    mimicsanim_64_geralt_reaction_irritation_face:
+      animation: "geralt_reaction_irritation_face"
+      frames: 260
+
+    mimicsanim_508_geralt_reaction_smile_face:
+      animation: "geralt_reaction_smile_face"
+      frames: 270
+
+    mimicsanim_66_geralt_reaction_scepticism_face:
+      animation: "geralt_reaction_scepticism_face"
+      frames: 200
+
+    mimicsanim_143_geralt_neutral_question_where_face:
+      animation: "geralt_neutral_question_where_face"
+      frames: 160
+
+    mimicsanim_15_geralt_reaction_irritation_face:
+      animation: "geralt_reaction_irritation_face"
+      frames: 243
+
+    mimicsanim_49_geralt_neutral_gesture_maybe_face:
+      animation: "geralt_neutral_gesture_maybe_face"
+      frames: 70
+
+    mimicsanim_118_geralt_neutral_gesture_brows_up_face_lcl:
+      animation: "geralt_neutral_gesture_brows_up_face_lcl"
+      frames: 90
+
+    mimicsanim_433_geralt_neutral_gesture_smile_face:
+      animation: "geralt_neutral_gesture_smile_face"
+      frames: 67
+
+        
+  actor.poses:
+    pose_0_high_standing_determined_idle:
+      idle_anim: "high_standing_determined_idle"
+
+    pose_1_mirror_standing_pose1_idle:
+      idle_anim: "ep1_mirror_standing_pose1_idle"
+
+    pose_2_mirror_standing_pose2_idle:
+      idle_anim: "ep1_mirror_standing_pose2_idle"
+
+    pose_2128_High_Standing2_Determined:
+      name: "Standing2"
+      emotional_state: "Determined"
+      status: "High"
+      idle_anim: "high_standing_determined2_idle"
+
+
+  cameras:
+    cam_1_geralt_large:
+      fov: 20.0
+      transform:
+        pos: [ -1.2199962139, -1.3700041771, 1.6700000763 ]
+        rot: [ 0.0, 355.6000061035, 331.2000122070 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495422363, 1.2700729370 ]
+        blur: [ 0.0, 5.0 ]
+        focus: [ 2.0, 2.5000000000 ]
+        intensity: 1.0
+      event_generator:
+        plane: "Wide"
+        tags: [ "ext" ]
+
+    cam_3_mirror_large:
+      fov: 20.0
+      transform:
+        pos: [ -0.7500109076, 2.5999979973, 1.6499996185 ]
+        rot: [ 0.0, 357.0, 201.2000122070 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 42.1379013062, 2.7060298920 ]
+        blur: [ 0.0, 5.0 ]
+        focus: [ 1.4500000477, 2.5000000000 ]
+        intensity: 1.0
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_5_geralt_ots:
+      fov: 20.0
+      transform:
+        pos: [ -1.0600076914, -1.1800020933, 1.6999998093 ]
+        rot: [ 0.0, 355.7999877930, 332.5999755859 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495422363, 1.2700729370 ]
+        blur: [ 0.0, 5.0 ]
+        focus: [ 1.6900000572, 2.5000000000 ]
+        intensity: 1.0
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_6_mirror_me_et_changement_meteo:
+      fov: 17.0
+      transform:
+        pos: [ -0.4500054419, 1.5700039864, 1.3599987030 ]
+        rot: [ 0.0, 14.3000793457, 193.8000183105 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495422363, 1.2700729370 ]
+        blur: [ 0.0, 5.0 ]
+        focus: [ 0.0, 2.5000000000 ]
+        intensity: 1.0
+      event_generator:
+        plane: "Semicloseup"
+        tags: [ "ext" ]
+
+    cam_7_mirror_have_i_anything:
+      fov: 20.0
+      transform:
+        pos: [ -1.3799847364, 3.4400005341, 1.6700000763 ]
+        rot: [ 0.0, 356.3999328613, 208.5000000000 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495422363, 1.2700729370 ]
+        blur: [ 0.0, 12.5000000000 ]
+        focus: [ 2.0, 2.5000000000 ]
+        intensity: 1.0
+      event_generator:
+        plane: "Wide"
+        tags: [ "ext" ]
+
+    cam_8_geralt_tres_proche:
+      fov: 10.0
+      transform:
+        pos: [ -0.6099952459, -1.1700047255, 1.7200002670 ]
+        rot: [ 0.0, 359.0, 344.7000122070 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495422363, 1.2700729370 ]
+        blur: [ 0.0, 5.0 ]
+        focus: [ 1.8999999762, 2.5000000000 ]
+        intensity: 1.0
+      event_generator:
+        plane: "Closeup"
+        tags: [ "ext" ]
+
+    cam_21_mirror_proche:
+      fov: 17.0
+      transform:
+        pos: [ -0.4500054419, 1.5700039864, 1.7600002289 ]
+        rot: [ 0.0, 357.3999938965, 199.6000061035 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495422363, 1.2700729370 ]
+        blur: [ 0.0, 5.0 ]
+        focus: [ 0.0, 2.5000000000 ]
+        intensity: 1.0
+      event_generator:
+        plane: "Semicloseup"
+        tags: [ "ext" ]
+
+    cam_24_mirror_ots:
+      fov: 20.0
+      transform:
+        pos: [ -1.3799847364, 3.4400005341, 1.6700000763 ]
+        rot: [ 0.0, 355.5000000000, 209.2000122070 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495422363, 1.2700729370 ]
+        blur: [ 0.0, 12.5000000000 ]
+        focus: [ 2.0, 2.5000000000 ]
+        intensity: 1.0
+      event_generator:
+        plane: "Wide"
+        tags: [ "ext" ]
+
+
+        
+
+production:
+  settings:
+    sceneid: 5
+    strings-idspace: 5984
+    strings-idstart: 500
+
+  placement: "sted_prologue_mirror_meet_sp"
+    # mettre/voir les coordonnées exactes dans la section "scenepoint" du fichier layer.yml dans le dossier "definition quest"
+    # INFO: world coordinates of used origin:
+      #pos: [ -341.6181945801, -175.8096313477, 8.2598142624 ]
+      #rot: [ 0.0, 191.2993164063, 0.0 ]
+
+
+
+  assets:
+    actors:
+      geralt:
+        repo: "geralt"
+        by_voicetag: true
+        tags: [ "PLAYER" ]
+
+      mirror_man:
+        repo: "mirror_man"
+        #by_voicetag: true
+        appearance: "mirror_man"
+        tags: [ "mirror_man" ]
+
+
+
+    cameras:
+      cam_1_geralt_large:
+        repo: "cam_1_geralt_large"
+
+      cam_3_mirror_large:
+        repo: "cam_3_mirror_large"
+
+      cam_5_geralt_ots:
+        repo: "cam_5_geralt_ots"
+
+      cam_6_mirror_me_et_changement_meteo:
+        repo: "cam_6_mirror_me_et_changement_meteo"
+
+      cam_7_mirror_have_i_anything:
+        repo: "cam_7_mirror_have_i_anything"
+
+      cam_8_geralt_tres_proche:
+        repo: "cam_8_geralt_tres_proche"
+
+      cam_21_mirror_proche:
+        repo: "cam_21_mirror_proche"
+
+      cam_24_mirror_ots:
+        repo: "cam_24_mirror_ots"
+
+
+            
+
+
+
+    animations:
+      mirror_man_ep1_mirror_standing_pose2_gesture_question_01:
+        actor: "mirror_man"
+        repo: "anim_2855_ep1_mirror_standing_pose2_gesture_question_01"
+        #duration: 4.6666665077
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      mirror_man_ep1_mirror_standing_pose2_gesture_explain_01:
+        actor: "mirror_man"
+        repo: "anim_2853_ep1_mirror_standing_pose2_gesture_explain_01"
+        #duration: 7.6666665077
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 6.7
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      mirror_man_ep1_mirror_standing_pose2_gesture_explain_02:
+        actor: "mirror_man"
+        repo: "anim_2854_ep1_mirror_standing_pose2_gesture_explain_02"
+        #duration: 5.5000000000
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_determined_calm_enter_frontal:
+        actor: "geralt"
+        repo: "anim_6970_high_standing_determined_calm_enter_frontal"
+        #duration: 8.4333333969
+        #weight: 0.6000000238
+        clipfront: 4.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.5
+
+      mirror_man_high_standing_determined_calm_enter_rightside:
+        actor: "mirror_man"
+        repo: "anim_6972_high_standing_determined_calm_enter_rightside"
+        #duration: 8.5000000000
+        #weight: 0.6000000238
+        clipfront: 3.5
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.5
+
+      geralt_add_gesture_question_05:
+        actor: "geralt"
+        repo: "anim_6706_add_gesture_question_05"
+        #duration: 2.5333333015
+        weight: 1.0
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.5
+        blendin: 0.5
+        blendout: 0.3
+
+      mirror_man_ep1_mirror_standing_pose1_idle:
+        actor: "mirror_man"
+        repo: "anim_2849_ep1_mirror_standing_pose1_idle"
+        #duration: 17.9666671753
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_determined_idle:
+        actor: "geralt"
+        repo: "anim_7096_high_standing_determined_idle"
+        #duration: 9.6000003815
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      mirror_man_ep1_mirror_standing_pose2_idle:
+        actor: "mirror_man"
+        repo: "anim_2857_ep1_mirror_standing_pose2_idle"
+        #duration: 15.6666669846
+        #weight: 0.6000000238
+        clipfront: 4.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.5
+
+      mirror_man_ep1_mirror_standing_pose1_weight_shift_02:
+        actor: "mirror_man"
+        repo: "anim_2851_ep1_mirror_standing_pose1_weight_shift_02"
+        #duration: 10.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 5.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 1.0
+
+      mirror_man_ep1_mirror_standing_pose1_weight_shift_02B:
+        actor: "mirror_man"
+        repo: "anim_2851_ep1_mirror_standing_pose1_weight_shift_02"
+        #duration: 10.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 5.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 1.0
+
+
+      mirror_man_ep1_mirror_standing_pose1_descend_end:
+        actor: "mirror_man"
+        repo: "anim_2839_ep1_mirror_standing_pose1_descend_end"
+        #duration: 3.4000000954
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 1.0
+        blendout: 0.3
+
+      mirror_man_ep1_mirror_standing_pose1_gesture_shrug_02:
+        actor: "mirror_man"
+        repo: "anim_2848_ep1_mirror_standing_pose1_gesture_shrug_02"
+        #duration: 3.3333332539
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      mirror_man_ep1_mirror_standing_pose1_gesture_explain_02:
+        actor: "mirror_man"
+        repo: "anim_2842_ep1_mirror_standing_pose1_gesture_explain_02"
+        #duration: 2.6666667461
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      geralt_high_standing_determined_to_high_standing_determined2:
+        actor: "geralt"
+        repo: "anim_7119_high_standing_determined_to_high_standing_determined2"
+        #duration: 3.7000000477
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      mirror_man_ep1_mirror_standing_pose1_gesture_question_02:
+        actor: "mirror_man"
+        repo: "anim_2845_ep1_mirror_standing_pose1_gesture_question_02"
+        #duration: 5.3333334923
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      geralt_high_standing_determined2_idle:
+        actor: "geralt"
+        repo: "anim_7148_high_standing_determined2_idle"
+        #duration: 23.0666675568
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 10.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.3
+
+      mirror_man_ep1_mirror_standing_pose1_gesture_shrug_01:
+        actor: "mirror_man"
+        repo: "anim_2847_ep1_mirror_standing_pose1_gesture_shrug_01"
+        #duration: 3.3333332539
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      mirror_man_ep1_mirror_standing_pose1_gesture_question_01:
+        actor: "mirror_man"
+        repo: "anim_2844_ep1_mirror_standing_pose1_gesture_question_01"
+        #duration: 4.5000000000
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      mirror_man_ep1_mirror_standing_pose1_gesture_explain_01:
+        actor: "mirror_man"
+        repo: "anim_2841_ep1_mirror_standing_pose1_gesture_explain_01"
+        #duration: 5.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      geralt_high_standing_determined2_to_high_standing_determined:
+        actor: "geralt"
+        repo: "anim_7149_high_standing_determined2_to_high_standing_determined"
+        #duration: 3.1666667461
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.5
+
+      geralt_high_standing_determined_gesture_me_and_you:
+        actor: "geralt"
+        repo: "anim_7037_high_standing_determined_gesture_me_and_you"
+        #duration: 2.3333332539
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.5
+
+      mirror_man_ep1_mirror_standing_pose2_gesture_question_01:
+        actor: "mirror_man"
+        repo: "anim_2855_ep1_mirror_standing_pose2_gesture_question_01"
+        #duration: 4.6666665077
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      mirror_man_ep1_mirror_standing_pose2_gesture_question_02:
+        actor: "mirror_man"
+        repo: "anim_2856_ep1_mirror_standing_pose2_gesture_question_02"
+        #duration: 5.3333334923
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      geralt_high_standing_aggressive_to_high_standing_determined:
+        actor: "geralt"
+        repo: "anim_6932_high_standing_aggressive_to_high_standing_determined"
+        #duration: 3.9666666985
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.5
+
+      geralt_high_standing_determined_gesture_right_shoulder_relax:
+        actor: "geralt"
+        repo: "anim_7058_high_standing_determined_gesture_right_shoulder_relax"
+        #duration: 3.0333333015
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      mirror_man_ep1_mirror_standing_pose1_gesture_explain_03:
+        actor: "mirror_man"
+        repo: "anim_2843_ep1_mirror_standing_pose1_gesture_explain_03"
+        #duration: 3.6666667461
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      geralt_high_standing_determined_gesture_left_shoulder_relax:
+        actor: "geralt"
+        repo: "anim_7032_high_standing_determined_gesture_left_shoulder_relax"
+        #duration: 3.5666666031
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      mirror_man_low_standing_determined_exit_rightside:
+        actor: "mirror_man"
+        repo: "anim_3764_low_standing_determined_exit_rightside"
+        #duration: 3.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.2
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_aggressive_idle:
+        actor: "geralt"
+        repo: "anim_6930_high_standing_aggressive_idle"
+        #duration: 11.5666666031
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      geralt_high_standing_determined_to_high_standing_aggressive:
+        actor: "geralt"
+        repo: "anim_7114_high_standing_determined_to_high_standing_aggressive"
+        #duration: 4.1666665077
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.5
+
+      mirror_man_high_standing_determined_calm_exit_rightside:
+        actor: "mirror_man"
+        repo: "anim_6978_high_standing_determined_calm_exit_rightside"
+        #duration: 8.1666669846
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.0
+
+
+
+
+
+    animations.mimic:
+
+      geralt_constant_brows_down_accent_face:
+        actor: "geralt"
+        repo: "mimicsanim_278_constant_brows_down_accent_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 10.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_gesture_brows_down_face_lcl:
+        actor: "geralt"
+        repo: "mimicsanim_116_geralt_neutral_gesture_brows_down_face_lcl"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.6
+        blendin: 0.3000000000
+        blendout: 0.3000000000
+
+      geralt_geralt_neutral_gesture_brows_down_face_lcl_medium:
+        actor: "geralt"
+        repo: "mimicsanim_116_geralt_neutral_gesture_brows_down_face_lcl"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 2.0
+        blendin: 0.3000000000
+        blendout: 0.3000000000
+
+
+      geralt_geralt_neutral_gesture_brows_down_face_lcl_long:
+        actor: "geralt"
+        repo: "mimicsanim_116_geralt_neutral_gesture_brows_down_face_lcl"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 5.0
+        blendin: 0.3000000000
+        blendout: 0.3000000000
+
+      mirror_man_geralt_reaction_irritation_face:
+        actor: "mirror_man"
+        repo: "mimicsanim_64_geralt_reaction_irritation_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      mirror_man_geralt_reaction_smile_face:
+        actor: "mirror_man"
+        repo: "mimicsanim_508_geralt_reaction_smile_face"
+        #duration: 0.0
+        weight: 1.0
+        clipfront: 4.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      mirror_man_geralt_reaction_scepticism_face:
+        actor: "mirror_man"
+        repo: "mimicsanim_66_geralt_reaction_scepticism_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      mirror_man_geralt_neutral_question_where_face:
+        actor: "mirror_man"
+        repo: "mimicsanim_143_geralt_neutral_question_where_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      mirror_man_geralt_neutral_gesture_maybe_face:
+        actor: "mirror_man"
+        repo: "mimicsanim_49_geralt_neutral_gesture_maybe_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      mirror_man_geralt_neutral_gesture_brows_up_face_lcl:
+        actor: "mirror_man"
+        repo: "mimicsanim_118_geralt_neutral_gesture_brows_up_face_lcl"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      mirror_man_geralt_neutral_gesture_smile_face:
+        actor: "mirror_man"
+        repo: "mimicsanim_433_geralt_neutral_gesture_smile_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000 
+ 
+
+
+            
+    actor.poses:
+      geralt_high_standing_determined_idle:
+        actor: "geralt"
+        repo: "pose_0_high_standing_determined_idle"
+
+      mirror_man_high_standing_determined_idle:
+        actor: "mirror_man"
+        repo: "pose_0_high_standing_determined_idle"
+
+      mirror_man_mirror_standing_pose1_idle:
+        actor: "mirror_man"
+        repo: "pose_1_mirror_standing_pose1_idle"
+
+      mirror_man_mirror_standing_pose2_idle:
+        actor: "mirror_man"
+        repo: "pose_2_mirror_standing_pose2_idle"
+
+      geralt_High_Standing2_Determined:
+        actor: "geralt"
+        repo: "pose_2128_High_Standing2_Determined"
+
+
+    soundbanks:
+      - music_nomansgrad
+      - music_prologue
+
+
+
+
+storyboard:
+  defaults:
+    #placement:
+      #geralt: [[ -0.0000115931, 1.6000002623, 0.0 ], [ 0.0, 0.0, 180.0 ]]
+      #mirror_man: [[ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+
+    actor.pose:
+      geralt: geralt_high_standing_determined_idle
+      mirror_man: mirror_man_high_standing_determined_idle
+      mirror_man: mirror_man_mirror_standing_pose1_idle
+      mirror_man: mirror_man_mirror_standing_pose2_idle
+
+
+  section_storyboard_ui:
+    # shot geralt sort du bois
+    shot_1:
+      - actor.hide: [0.0, mirror_man]
+      - actor.placement: [0.0, geralt, [ -0.0000115931, 1.6000002623, 0.0 ], [ 0.0, 0.0, 180.0 ]]
+      - actor.placement: [0.0, mirror_man, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.lookat: [0.0, geralt, mirror_man]
+      - actor.lookat: [0.0, mirror_man, geralt]
+      - actor.pose: [0.0, geralt_high_standing_determined_idle]
+      - actor.pose: [0.0, mirror_man_high_standing_determined_idle]
+      - cam: [0.0, cam_1_geralt_large]
+      - actor.anim: [0.0, geralt_high_standing_determined_calm_enter_frontal]
+
+      - actor.lookat: [0.6, geralt, [ -0.8032623529, -2.5735418797, 1.6851301193 ]]
+      - actor.anim: [0.6, geralt_add_gesture_question_05]
+      - actor.anim.mimic: [0.6, geralt_geralt_neutral_gesture_brows_down_face_lcl]
+
+    # shot geralt you here
+    #shot_2:
+      #- actor.anim: [0.0, geralt_add_gesture_question_05]
+      #- actor.anim: [0.0, mirror_man_ep1_mirror_standing_pose1_idle]
+      #- actor.anim.mimic: [0.0, geralt_geralt_neutral_gesture_brows_down_face_lcl]
+      #- actor.lookat: [0.0, mirror_man, geralt]
+      #- actor.lookat: [0.0, geralt, mirror_man]
+
+    # shot mirror arrive
+    shot_3:
+      - actor.show: [0.0, mirror_man]
+      - actor.lookat: [0.0, geralt, mirror_man]
+      - cam: [0.0, cam_3_mirror_large]
+      - actor.anim: [0.0, mirror_man_high_standing_determined_calm_enter_rightside]
+      
+    shot_3_1:
+      - actor.pose: [0.2, mirror_man_mirror_standing_pose2_idle]
+      - cam: [0.2, cam_8_geralt_tres_proche]
+      - actor.anim.mimic: [0.2, geralt_geralt_neutral_gesture_brows_down_face_lcl]
+
+    # shot mirror what an indelicate
+    shot_4:
+      - cam: [0.0, cam_3_mirror_large]
+      #- actor.anim: [0.0, mirror_man_ep1_mirror_standing_pose2_idle]
+      - actor.anim.mimic: [0.0, mirror_man_geralt_reaction_irritation_face]
+
+    # shot geralt do you have anything
+    shot_5:
+      - cam: [0.0, cam_5_geralt_ots]
+      - actor.anim: [0.0, geralt_add_gesture_question_05]
+      #- actor.anim: [0.0, mirror_man_ep1_mirror_standing_pose1_idle]
+      - world.weather: [0.0, WT_Rain_Storm, 8] #le dernier chiffre est le temps en secondes de transition sinon par défaut c'est 60 secondes // WT_Clear // WT_Rain_Storm pour la tempete
+      
+      - actor.anim.mimic: [0.2, geralt_geralt_neutral_gesture_brows_down_face_lcl]
+
+    # shot mirror me et changement meteo
+    shot_6:
+      - actor.pose: [0.0, mirror_man_mirror_standing_pose1_idle]
+      - cam: [0.0, cam_6_mirror_me_et_changement_meteo]
+      - actor.anim: [0.0, mirror_man_ep1_mirror_standing_pose1_weight_shift_02]
+      - actor.anim.mimic: [0.0, mirror_man_geralt_reaction_scepticism_face]
+      #- world.weather: [0.0, WT_Rain_Storm, 10] #le dernier chiffre est le temps en secondes de transition sinon par défaut c'est 60 secondes // WT_Clear // WT_Rain_Storm pour la tempete
+      #- actor.lookat: [0.0, mirror_man, [ 3.2378063202, 0.8974462748, 1.7079887390 ]]
+
+    shot_6_1:
+      - cam: [0.6, cam_8_geralt_tres_proche]
+      - actor.anim.mimic: [0.6, geralt_geralt_neutral_gesture_brows_down_face_lcl]
+
+    # shot mirror have i anything
+    shot_7:
+      - cam: [0.0, cam_7_mirror_have_i_anything]
+      - actor.anim: [0.0, mirror_man_ep1_mirror_standing_pose1_descend_end]
+      #- actor.anim.mimic: [0.0, mirror_man_geralt_reaction_scepticism_face]
+      - actor.anim.mimic: [0.1, mirror_man_geralt_reaction_smile_face]
+
+    # shot geralt have i anything
+    #shot_8:
+      - cam: [0.8, cam_8_geralt_tres_proche]
+      #- actor.anim: [0.8, mirror_man_ep1_mirror_standing_pose1_idle]
+      - actor.anim.mimic: [0.8, geralt_geralt_neutral_gesture_brows_down_face_lcl]
+      #- actor.anim.mimic: [0.8, mirror_man_geralt_reaction_scepticism_face]
+     
+    shot_9: #Even a being like me can't be sure how things will turn out if left to their own devices.
+      - cam: [0.0, cam_3_mirror_large]
+      #- actor.anim: [0.0, geralt_high_standing_determined_idle]
+      - actor.anim: [0.0, mirror_man_ep1_mirror_standing_pose1_gesture_shrug_02]
+      - actor.anim.mimic: [0.0, mirror_man_geralt_reaction_smile_face]
+      #- actor.anim.mimic: [0.0, mirror_man_geralt_reaction_scepticism_face]
+    # shot mirror even a being (cloned)
+    #shot_10:
+      #- actor.anim: [0.5, geralt_high_standing_determined_idle]
+      - actor.anim: [0.6, mirror_man_ep1_mirror_standing_pose1_gesture_explain_02]
+      #- actor.anim.mimic: [0.5, mirror_man_geralt_reaction_scepticism_face]
+      #- actor.anim.mimic: [0.5, mirror_man_geralt_reaction_irritation_face]
+      - actor.anim.mimic: [0.65, mirror_man_geralt_neutral_gesture_maybe_face]
+
+    # shot mirror this poor girl
+    shot_11:
+      - actor.anim: [0.0, geralt_high_standing_determined_to_high_standing_determined2]
+      - actor.anim: [0.0, mirror_man_ep1_mirror_standing_pose1_gesture_question_02]
+      #- actor.anim: [0.0, mirror_man_ep1_mirror_standing_pose1_idle]
+      - actor.anim.mimic: [0.0, mirror_man_geralt_neutral_question_where_face]
+      ##- actor.anim: [0.5, geralt_high_standing_determined2_idle]
+      - actor.pose: [0.5, geralt_High_Standing2_Determined]
+
+    # shot mirror this would have upset
+    shot_12:
+      #- actor.anim: [0.0, geralt_high_standing_determined2_idle]
+      - actor.anim: [0.0, mirror_man_ep1_mirror_standing_pose1_gesture_shrug_01]
+      - actor.anim.mimic: [0.0, mirror_man_geralt_reaction_irritation_face]
+
+    # shot mirror and i dont like
+    shot_13:
+      #- actor.anim: [0.0, geralt_high_standing_determined2_idle]
+      - actor.anim: [0.0, mirror_man_ep1_mirror_standing_pose1_gesture_question_01]
+      #- actor.anim.mimic: [0.0, mirror_man_geralt_reaction_irritation_face]
+
+    # shot geralt and i dont like (pause
+    #shot_14:
+      - cam: [0.5, cam_8_geralt_tres_proche]
+      #- actor.anim: [0.5, geralt_high_standing_determined2_idle]
+      #- actor.anim: [0.5, mirror_man_ep1_mirror_standing_pose1_idle]
+      - actor.anim.mimic: [0.5, geralt_geralt_neutral_gesture_brows_down_face_lcl]
+      #- actor.anim.mimic: [0.5, mirror_man_geralt_reaction_irritation_face]
+
+    # shot mirror in this type of situation
+    shot_15:
+      - actor.anim: [0.0, geralt_high_standing_determined2_to_high_standing_determined]
+      - cam: [0.0, cam_3_mirror_large]
+      #- actor.anim: [0.0, geralt_high_standing_determined2_idle]
+      - actor.anim.mimic: [0.0, mirror_man_geralt_neutral_gesture_maybe_face]
+    # shot mirror i give a helping hand
+    #shot_16:
+      - actor.anim: [0.5, mirror_man_ep1_mirror_standing_pose1_gesture_explain_02]
+      - actor.anim.mimic: [0.5, mirror_man_geralt_neutral_gesture_maybe_face]
+      - actor.pose: [0.5, geralt_high_standing_determined_idle]
+
+    shot_150:
+      - actor.anim: [0.4, mirror_man_ep1_mirror_standing_pose1_weight_shift_02B] ##############################
+      
+    shot_151: #to make sure that it will not come to disturb my intentions…
+      - actor.anim.mimic: [0.0, mirror_man_geralt_reaction_smile_face]
+      #- actor.anim.mimic: [0.0, mirror_man_geralt_neutral_gesture_smile_face]
+      - actor.anim: [0.6, mirror_man_ep1_mirror_standing_pose1_gesture_explain_01]
+
+    shot_152:
+      - actor.pose: [0.0, mirror_man_mirror_standing_pose2_idle]
+      - cam: [0.0, cam_8_geralt_tres_proche]
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_gesture_brows_down_face_lcl_long]
+      - actor.hide: [0.0, mirror_man]
+
+
+  section_choice:
+    CHOICE_1:
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_gesture_brows_down_face_lcl_long]
+      ##- actor.anim.mimic: [0.0, geralt_constant_brows_down_accent_face]
+      - actor.pose: [0.0, mirror_man_mirror_standing_pose2_idle] 
+      ##-->mirror est en pose2
+      - actor.hide: [0.0, mirror_man]
+
+
+
+  section_intentions:
+    shot_153:
+      #- actor.pose: [0.0, mirror_man_mirror_standing_pose2_idle]
+      - cam: [0.0, cam_8_geralt_tres_proche]
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_gesture_brows_down_face_lcl_medium]
+      - actor.hide: [0.0, mirror_man]
+      
+    shot_154: #It's just a side effect.
+      - actor.anim: [0.0, mirror_man_ep1_mirror_standing_pose2_gesture_explain_01]
+
+    shot_155: #It's just a side effect.
+      - actor.show: [0.0, mirror_man]
+      - cam: [0.0, cam_3_mirror_large]
+      ##- actor.anim: [0.0, mirror_man_ep1_mirror_standing_pose2_gesture_explain_01]
+      - actor.anim.mimic: [0.0, mirror_man_geralt_neutral_gesture_maybe_face]
+
+    shot_156:
+      #- actor.pose: [0.0, mirror_man_mirror_standing_pose2_idle]
+      - cam: [0.0, cam_8_geralt_tres_proche]
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_gesture_brows_down_face_lcl]
+      - actor.hide: [0.0, mirror_man] 
+
+
+
+  section_pay:
+    # shot geralt i ll make you pay
+    shot_17:
+      ##- actor.pose: [0.9, mirror_man_mirror_standing_pose2_idle]
+      - cam: [0.0, cam_8_geralt_tres_proche]
+      - actor.anim: [0.0, geralt_high_standing_determined_gesture_me_and_you]
+      #- actor.anim: [0.0, mirror_man_ep1_mirror_standing_pose1_idle]
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_gesture_brows_down_face_lcl]
+      - actor.anim.mimic: [0.0, mirror_man_geralt_reaction_irritation_face]
+      - actor.hide: [0.0, mirror_man]
+
+    # shot mirror its a challenge
+    shot_18: #It's a challenge?
+      - cam: [0.0, cam_3_mirror_large]
+      ##- actor.pose: [0.0, mirror_man_mirror_standing_pose2_idle]
+      #- actor.anim: [0.0, geralt_high_standing_determined_idle]
+      #- actor.anim: [0.0, mirror_man_ep1_mirror_standing_pose2_idle]
+      - actor.anim.mimic: [0.0, mirror_man_geralt_neutral_gesture_brows_up_face_lcl]
+      - actor.anim: [0.5, geralt_high_standing_determined_to_high_standing_aggressive]
+      - actor.show: [0.0, mirror_man]
+
+    # shot mirror i like challenges
+    shot_19:
+      #- actor.anim: [0.0, mirror_man_ep1_mirror_standing_pose2_idle]
+      - actor.anim.mimic: [0.0, mirror_man_geralt_neutral_gesture_smile_face]
+
+    # shot Pause
+    shot_191:
+      - actor.anim: [0.0, geralt_high_standing_aggressive_idle]
+
+    # shot mirror but im a different kind
+    shot_20:
+      - actor.anim: [0.0, mirror_man_ep1_mirror_standing_pose2_gesture_question_01]
+
+    # shot mirror you cant
+    shot_21:
+      - cam: [0.0, cam_21_mirror_proche]
+      #- actor.anim: [0.0, geralt_high_standing_determined_idle]
+      - actor.anim: [0.0, mirror_man_ep1_mirror_standing_pose2_gesture_question_02]
+
+    # shot geralt i will find a way
+    shot_22:
+      - actor.pose: [0.0, mirror_man_mirror_standing_pose1_idle]
+      - cam: [0.0, cam_8_geralt_tres_proche]
+      - actor.anim: [0.0, geralt_high_standing_aggressive_to_high_standing_determined]
+      #- actor.anim: [0.0, mirror_man_ep1_mirror_standing_pose1_idle]
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_gesture_brows_down_face_lcl]
+      - actor.anim.mimic: [0.0, mirror_man_geralt_reaction_irritation_face]
+
+    # shot mirror dont exhaust
+    shot_23:
+      - cam: [0.0, cam_21_mirror_proche]
+      #- actor.anim: [0.0, geralt_high_standing_determined_idle]
+      - actor.anim: [0.0, mirror_man_ep1_mirror_standing_pose1_gesture_question_01]
+      - actor.anim.mimic: [0.5, mirror_man_geralt_neutral_gesture_maybe_face]
+
+    # shot mirror will meet again
+    shot_24:
+      - cam: [0.0, cam_24_mirror_ots]
+      #- actor.anim: [0.0, geralt_high_standing_determined_gesture_right_shoulder_relax]
+      - actor.anim: [0.0, mirror_man_ep1_mirror_standing_pose1_gesture_explain_03]
+
+    # shot geralt will meet again
+    #shot_25:
+      #- cam: [0.5, cam_8_geralt_tres_proche]
+      #- actor.anim: [0.5, geralt_high_standing_determined_gesture_left_shoulder_relax]
+      #- actor.anim: [0.5, mirror_man_ep1_mirror_standing_pose1_idle]
+      - actor.anim.mimic: [0.5, geralt_geralt_neutral_gesture_brows_down_face_lcl]
+      - actor.anim.mimic: [0.5, mirror_man_geralt_reaction_irritation_face]
+
+    shot_241:
+      - cam: [0.0, cam_8_geralt_tres_proche]
+      #- actor.anim.mimic: [0.0, geralt_geralt_neutral_gesture_brows_down_face_lcl]  
+
+    # shot mirror when ill decide
+    shot_26:
+      - cam: [0.0, cam_24_mirror_ots]
+      #- actor.anim: [0.0, geralt_high_standing_determined_idle]
+      #- actor.anim: [0.0, mirror_man_ep1_mirror_standing_pose2_gesture_question_02]
+
+    # shot mirror exit
+    shot_27:
+      - cam: [0.0, cam_1_geralt_large]
+      - cam.blend.togame: [0.9, cam_1_geralt_large]
+      #- actor.anim: [0.0, geralt_high_standing_determined_idle]
+      #- actor.anim: [0.0, mirror_man_low_standing_determined_exit_rightside]
+      - actor.anim: [0.0, mirror_man_high_standing_determined_calm_exit_rightside]
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_gesture_brows_down_face_lcl]
+      - world.weather: [0.0, WT_Mid_Clouds, 60] #le dernier chiffre est le temps en secondes de transition sinon par défaut c'est 60 secondes // WT_Heavy_Clouds // WT_Mid_Clouds // WT_Light_Clouds // WT_Light_Rain // WT_Clear // WT_Rain_Storm pour la tempete
+      - actor.anim.mimic: [0.5, geralt_geralt_neutral_gesture_brows_down_face_lcl]
+
+
+
+
+
+
+dialogscript:
+  player: "geralt"
+  actors: [ "geralt", "mirror_man" ]
+
+  section_start:
+    - PAUSE: 0.0
+    - NEXT: script_music_mirror
+#    - NEXT: section_storyboard_ui
+
+
+
+  script_music_mirror:
+    - SCRIPT:
+        function: STED_PlayMusicScene
+        parameter:
+          - areaName: "novigrad"
+          - eventName: "mus_q605_01_mirror_in_oxenfurt"
+          - saveType: "SESB_ClearSaved" # saveType: "SESB_Save", "SESB_DontSave", "SESB_ClearSaved"
+    - NEXT: section_storyboard_ui
+
+
+
+  section_storyboard_ui:
+    - CUE: shot_1
+    - PAUSE: 2.0
+    #- CUE: shot_2 
+    - geralt: You! Here!
+    - CUE: shot_3
+    - PAUSE: 2.0
+    #- mirror_man: Geralt…
+    - CUE: shot_3_1
+    - PAUSE: 3.0
+    - CUE: shot_4
+    - mirror_man: What an indelicate way to welcome an acquaintance.
+    - PAUSE: 1.0
+    - CUE: shot_5
+    - geralt: Do you have anything to do with what happened to Essi?
+    - PAUSE: 0.5
+    - CUE: shot_6
+    - mirror_man: Me?
+    - CUE: shot_6_1
+    - PAUSE: 5.0
+    - CUE: shot_7
+    #- CUE: shot_8
+    - mirror_man: Have I ever had anything to do with someone's doom…
+    - PAUSE: 2.0
+    - CUE: shot_9
+    #- CUE: shot_10
+    - mirror_man: Even a being like me can't be sure how things will turn out if left to their own devices.
+    - PAUSE: 1.0
+    - CUE: shot_11
+    - mirror_man: This poor girl could represent a different path for your destiny.
+    - PAUSE: 1.0
+    - CUE: shot_12
+    - mirror_man: This would have upset me.
+    - PAUSE: 0.5
+    - CUE: shot_13
+    #- CUE: shot_14
+    - mirror_man: And I don't like to be upset.
+    - PAUSE: 1.0
+    - CUE: shot_15
+    #- CUE: shot_16
+    - mirror_man: In this type of situation, 
+    - PAUSE: 0.2
+    - CUE: shot_150
+    - mirror_man: it can happen that I give a helping hand to fate
+    - PAUSE: 0.1
+    - CUE: shot_151
+    - mirror_man: to make sure that it will not come to disturb my intentions…
+    - PAUSE: 1.0
+    - CUE: shot_152
+    - PAUSE: 0.1
+    - NEXT: section_choice
+
+  section_pay:
+    - CUE: shot_17
+    - geralt: I'll make you pay for this.
+    - PAUSE: 1.0
+    - CUE: shot_18
+    - mirror_man: It's a challenge?
+    - PAUSE: 0.5
+    - CUE: shot_19
+    - mirror_man: I like challenges.
+    - CUE: shot_191
+    - PAUSE: 0.5
+    - CUE: shot_20
+    - mirror_man: But I'm of a different kind from the monsters you ox in your wanderings.
+    - PAUSE: 0.5
+    - CUE: shot_21
+    - mirror_man: You can't do anything against me.
+    - PAUSE: 1.0
+    - CUE: shot_22
+    - geralt: I will find a way.
+    - PAUSE: 1.0
+    - CUE: shot_23
+    - mirror_man: Don't exhaust yourself too much unnecessarily… I could still need your services.
+    - PAUSE: 0.5
+    - CUE: shot_24
+    #- CUE: shot_25
+    - mirror_man: Don't worry, we'll meet again…
+    - CUE: shot_241
+    - PAUSE: 2.0
+    - CUE: shot_26
+    - mirror_man: But only when I'll decide.
+    - CUE: shot_27
+    - PAUSE: 8.0
+    #- NEXT: section_exit
+#    - NEXT: script_music_end
+#
+# 
+#  script_music_end:
+#    - SCRIPT:
+#        function: STED_PlayMusicScene
+#        parameter:
+#          - areaName: "prologue"
+#          - eventName: "play_music_prologue"
+#          - saveType: "SESB_ClearSaved"
+    - NEXT: section_exit
+
+  section_choice:
+    - CHOICE:
+      - choice: ["I'll make you pay for this.", section_pay]
+        emphasize: true
+      - ["You influenced the fate of Essi for your simple intentions?", section_intentions]
+      ##- TIME_LIMIT: 3.0
+
+  # FAKE CHOICE
+  section_intentions:
+    - CUE: shot_153
+    - geralt: You influenced the fate of Essi for your simple "intentions"? #Vous avez influencé le destin d'Essi pour vos simples "desseins" ?
+    - CUE: shot_154
+    - PAUSE: 0.5  
+    - CUE: shot_155
+    - mirror_man: It's just a side effect. #Ce n'est qu'un effet collatéral.
+    - PAUSE: 0.5
+    - mirror_man: My acts are simply guided by my interests. #Mes actes ont simplement été guidés par mes intérêts.
+    - PAUSE: 0.5
+    - CUE: shot_156
+    - PAUSE: 0.1
+    - NEXT: section_choice
+
+
+  section_exit:
+    ##- CAMERA_BLEND: 2.0
+    - EXIT

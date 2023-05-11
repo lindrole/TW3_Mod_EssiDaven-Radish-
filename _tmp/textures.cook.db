@@ -1,0 +1,71 @@
+{
+    "files": [
+        {
+            "path": "dlc\\dlcsted\\data\\fx\\sted_fire_anim_04.xbm",
+            "level": 0,
+            "class": "CBitmapTexture",
+            "seed": 1,
+            "id": "4DB76EB5-C2B6F78C-DEABEA4F-F809A63E",
+            "diskSize": 1409
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\fx\\sted_fire_mid_2k.xbm",
+            "level": 0,
+            "class": "CBitmapTexture",
+            "seed": 1,
+            "id": "31D4A5AC-19650C70-D69F0FAA-14098526",
+            "diskSize": 2081
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\fx\\sted_fire_spark_04.xbm",
+            "level": 0,
+            "class": "CBitmapTexture",
+            "seed": 1,
+            "id": "A2F51439-2F33E3E6-45AEB0F8-BA72087C",
+            "diskSize": 1039
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\fx\\sted_fire_tileable_2.xbm",
+            "level": 0,
+            "class": "CBitmapTexture",
+            "seed": 1,
+            "id": "71F50286-9617538F-49378AB0-468721B7",
+            "diskSize": 1387
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\gameplay\\gui_new\\icons\\characters\\journal_essi.png",
+            "level": 0,
+            "seed": 1,
+            "consumed": 1,
+            "id": "ABFC3EE1-7F6853DD-528DBAD0-0EA9D40B"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\gameplay\\gui_new\\icons\\characters\\journal_sheenaz.png",
+            "level": 0,
+            "seed": 1,
+            "consumed": 1,
+            "id": "C60DDD51-720D08FB-FD0190BA-D8BA4FE0"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\gameplay\\gui_new\\icons\\inventory\\sted_pearl_64x64_skyblue.png",
+            "level": 0,
+            "seed": 1,
+            "consumed": 1,
+            "id": "C5C53168-98827BA5-AC54A4E2-AD6EC5F8"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\gameplay\\gui_new\\textures\\journal\\characters\\journal_essi.png",
+            "level": 0,
+            "seed": 1,
+            "consumed": 1,
+            "id": "9101E17C-BFA7D9A9-5416F65D-BE3FC641"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\gameplay\\gui_new\\textures\\journal\\characters\\journal_sheenaz.png",
+            "level": 0,
+            "seed": 1,
+            "consumed": 1,
+            "id": "013FFAA4-749AA62D-FC4DEBF5-76C398EF"
+        }
+    ]
+}

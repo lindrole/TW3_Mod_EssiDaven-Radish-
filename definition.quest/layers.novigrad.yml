@@ -1,0 +1,193 @@
+layers: 
+
+  layer_novigrad: 
+    world: "novigrad"
+    #context: ""
+
+    mappins: 
+      search_agloval_sheenaz_mappin: 
+        #radius for quest instructions: 36
+        pos: [ 460.9552001953, 2199.3491210938, 44.7430381775 ]
+
+    areas: 
+      temple_isle_area: 
+        height: 100.0
+        borderpoints: 
+          - [ 641.7991943359, 2204.5803222656, -11.4646205902 ]
+          - [ 549.1962890625, 2332.0371093750, -11.4646205902 ]
+          - [ 399.3980712891, 2283.3574218750, -11.4646205902 ]
+          - [ 403.9909973145, 2124.7612304688, -11.4646205902 ]
+          - [ 549.1962890625, 2077.1235351563, -11.4646205902 ]
+
+    actionpoints: 
+      soir_ag: [ 446.7610778809, 2184.3105468750, 39.5573539734, 0.0, "work_woman/stand_mwd_picking_herbs_jt" ] #pas de la porte
+      soir_sh: [ 445.7610778809, 2184.3105468750, 39.5573539734, 0.0, "work_man/q111_sabath_waiting_man" ] #pas de la porte
+
+      matin_ag: [ 446.7610778809, 2184.3105468750, 39.5573539734, 180.0, "work_woman/stand_mwd_picking_herbs_jt" ] #pas de la porte
+      matin_sh: [ 445.7610778809, 2184.3105468750, 39.5573539734, 180.0, "work_man/q111_sabath_waiting_man" ] #pas de la porte
+      
+      1ag_sabath: [ 491.1304321289, 2203.6386718750, 45.3951759338, -72.3999938965, "work_man/q111_sabath_waiting_man" ]
+      1sh_flower: [ 493.0166931152, 2204.2368164063, 45.4560394287, -159.5999908447, "ep2_noblewoman/stand_w_picking_flowers_jt" ]
+
+      2ag_flirt: [ 429.2606201172, 2197.0051269531, 37.1178131104, 0.0, "ep2_man/stand_m_flirting_jt" ]
+      2sh_flirt: [ 429.3206176758, 2199.6264648438, 37.1153869629, 180.0, "ep2_noblewoman/stand_w_flirting_jt" ]
+
+      3ag_crossed: [ 470.9186706543, 2215.8889160156, 40.6414184570, 100.2000274658, "resting_man/stand_mwd_arms_crossed_jt" ]
+      3sh_adjust: [ 469.2002563477, 2215.7507324219, 40.7842483521, -48.3999977112, "resting_woman/stand_mw_adjusting_clothes_jt" ]
+
+      4ag_looking: [ 482.4252014160, 2184.6437988281, 33.8827896118, 0.0, "household_man/stand_mwd_looking_at_goods_jt" ]
+      4sh_sight: [ 483.7729187012, 2185.4006347656, 33.9363555908, -102.4000015259, "resting_woman/stand_mw_sightseeing_jt" ]
+
+
+##################################################################################################################################################
+
+  layer_coast: 
+    world: "novigrad"
+    #context: ""
+
+    interactiveEntities:
+      sky_blue_pearl_shell:
+        template: CEntity:shell_blue_pearl
+        #pos: [ 267.8720703125, 2560.4060058594, -2.6580886841 ]
+        pos: [ 260.1200256348, 2562.8112792969, -2.3034057617 ]
+        rot: [ 0.0, 0.0, 0.0 ]
+        scale: [ 0.2, 0.2, 0.2 ]
+        valid_interactions: [Loot]
+
+    areas: 
+      guard_area: 
+        height: 10.0
+        borderpoints: 
+          - [ 375.4815063477, 2485.7109375000, -1.8184280396 ]
+          - [ 369.0805053711, 2561.9311523438, -1.8184280396 ]
+          - [ 375.3507995605, 2584.4079589844, -1.8184280396 ]
+          - [ 237.8559265137, 2595.4797363281, -1.8184280396 ]
+          - [ 212.8483276367, 2565.6398925781, -1.8184280396 ]
+          - [ 246.9437866211, 2482.5483398438, -1.8184280396 ]
+          - [ 316.5549926758, 2455.6281738281, -1.8184280396 ]
+
+      sirens_area: 
+        height: 10.0
+        borderpoints: 
+          - [ 355.7080383301, 2501.9396972656, -2.5408859253 ]
+          - [ 345.9111938477, 2554.1218261719, -2.5408859253 ]
+          - [ 355.0418701172, 2574.0561523438, -2.5408859253 ]
+          - [ 255.9072113037, 2579.1262207031, -2.5408859253 ]
+          - [ 246.9113769531, 2556.2558593750, -2.5408859253 ]
+          - [ 270.5920715332, 2506.9509277344, -2.5408859253 ]
+          - [ 312.9799804688, 2484.5351562500, -2.5408859253 ]
+
+      pearl_area: 
+        height: 10.0
+        borderpoints: 
+          - [ 304.7145690918, 2554.4689941406, -2.3880960643 ]
+          - [ 277.4133911133, 2570.4682617188, -2.3880960643 ]
+          - [ 262.3233642578, 2575.3481445313, -2.3880960643 ]
+          - [ 248.8921813965, 2558.7800292969, -2.3880960643 ]
+          - [ 290.4509582520, 2531.0922851563, -2.3880960643 ]
+
+    mappins: 
+      pearl_mappin: 
+        #radius for quest instructions: 50
+        pos: [ 295.9559936523, 2530.1999511719, 0.0 ]
+
+      pearl_mappin_near: 
+        #radius for quest instructions: 20
+        pos: [ 274.8807067871, 2552.5378417969, 0.0 ]
+
+
+    waypoints:
+      siren_spawn1: [ 267.8720703125, 2560.4060058594, -2.6580886845, 4.0 ]
+      siren_spawn2: [ 316.7116699219, 2565.1315917969, -4.5299496655, 4.0 ]
+      siren_spawn3: [ 291.2969055176, 2532.8833007813, -2.0099520685, 4.0 ]
+      siren_spawn4: [ 305.8351135254, 2513.1296386719, -2.0099520685, 4.0 ]
+      siren_spawn5: [ 310.8528747559, 2540.2114257813, -3.2099509235, 4.0 ]
+      siren_spawn6: [ 322.7306518555, 2521.0744628906, -1.2899520395, 4.0 ]
+
+
+
+
+    statics:
+      shell_static_2: 
+        #template: "W3AnimatedContainer:gameplay\\containers\\new_locations\\underwater\\average\\underwater_shell_average.w2ent" # shell spécial
+        template: "W3ClueStash:quests\\minor_quests\\novigrad\\quest_files\\mq3031_aging_romance\\entities\\mq3031_shell_normal.w2ent"
+        pos: [ 316.7116699219, 2565.1315917969, -4.5299496651 ]
+        rot: [ 0.0, 0.0, 0.0 ]
+        scale: [ 0.2, 0.2, 0.2 ]
+
+      shell_static_3: 
+        template: "W3ClueStash:quests\\minor_quests\\novigrad\\quest_files\\mq3031_aging_romance\\entities\\mq3031_shell_normal.w2ent"
+        pos: [ 291.2969055176, 2532.8833007813, -2.0099520683 ]
+        rot: [ 0.0, 0.0, 0.0 ]
+        scale: [ 0.5, 0.5, 0.5 ]
+
+      shell_static_4: 
+        #template: "W3AnimatedContainer:gameplay\\containers\\new_locations\\underwater\\average\\underwater_shell_average.w2ent" # shell spécial
+        template: "W3ClueStash:quests\\minor_quests\\novigrad\\quest_files\\mq3031_aging_romance\\entities\\mq3031_shell_normal.w2ent"
+        pos: [ 305.8351135254, 2513.1296386719, -2.0099520683 ]
+        rot: [ 0.0, 0.0, 0.0 ]
+        scale: [ 0.2, 0.2, 0.2 ]
+
+      shell_static_5: 
+        template: "W3ClueStash:quests\\minor_quests\\novigrad\\quest_files\\mq3031_aging_romance\\entities\\mq3031_shell_normal.w2ent"
+        pos: [ 310.8528747559, 2540.2114257813, -3.2099509239 ]
+        rot: [ 0.0, 0.0, 0.0 ]
+        scale: [ 0.5, 0.5, 0.5 ]
+
+      shell_static_6: 
+        template: "W3ClueStash:quests\\minor_quests\\novigrad\\quest_files\\mq3031_aging_romance\\entities\\mq3031_shell_normal.w2ent"
+        pos: [ 322.7306518555, 2521.0744628906, -1.2899520397 ]
+        rot: [ 0, 0, 0 ]
+        scale: [ 0.5, 0.5, 0.5 ]
+
+      shell_static_7: 
+        template: "W3ClueStash:quests\\minor_quests\\novigrad\\quest_files\\mq3031_aging_romance\\entities\\mq3031_shell_normal.w2ent"
+        pos: [ 337.7388610840, 2564.4272460938, -1.3000564575 ]
+        scale: [ 0.5, 0.5, 0.5 ]
+
+      shell_static_8: 
+        template: "W3ClueStash:quests\\minor_quests\\novigrad\\quest_files\\mq3031_aging_romance\\entities\\mq3031_shell_normal.w2ent"
+        pos: [ 326.2234191895, 2558.4875488281, -2.4353561401 ]
+        scale: [ 0.5, 0.5, 0.5 ]
+
+      shell_static_9: 
+        template: "W3ClueStash:quests\\minor_quests\\novigrad\\quest_files\\mq3031_aging_romance\\entities\\mq3031_shell_normal.w2ent"
+        pos: [ 335.3223266602, 2549.5878906250, -1.0448226929 ]
+        scale: [ 0.5, 0.5, 0.5 ]
+
+      shell_static_10: 
+        template: "W3ClueStash:quests\\minor_quests\\novigrad\\quest_files\\mq3031_aging_romance\\entities\\mq3031_shell_normal.w2ent"
+        pos: [ 325.6893920898, 2530.8911132813, -1.6698837280 ]
+        scale: [ 0.5, 0.5, 0.5 ]
+
+      shell_static_11: 
+        template: "W3ClueStash:quests\\minor_quests\\novigrad\\quest_files\\mq3031_aging_romance\\entities\\mq3031_shell_normal.w2ent"
+        pos: [ 306.2722473145, 2558.0356445313, -3.1072006226 ]
+        scale: [ 0.5, 0.5, 0.5 ]
+
+      shell_static_12: 
+        template: "W3ClueStash:quests\\minor_quests\\novigrad\\quest_files\\mq3031_aging_romance\\entities\\mq3031_shell_normal.w2ent"
+        pos: [ 294.6918640137, 2551.4716796875, -2.1675796509 ]
+        scale: [ 0.5, 0.5, 0.5 ]
+
+      shell_static_13: 
+        template: "W3ClueStash:quests\\minor_quests\\novigrad\\quest_files\\mq3031_aging_romance\\entities\\mq3031_shell_normal.w2ent"
+        pos: [ 283.2416076660, 2544.3881835938, -1.3922958374 ]
+        scale: [ 0.5, 0.5, 0.5 ]
+
+      shell_static_14: 
+        template: "W3ClueStash:quests\\minor_quests\\novigrad\\quest_files\\mq3031_aging_romance\\entities\\mq3031_shell_normal.w2ent"
+        pos: [ 290.3940734863, 2518.2185058594, -2.0619888306 ]
+        scale: [ 0.5, 0.5, 0.5 ]
+
+      shell_static_155555: 
+        template: "W3ClueStash:quests\\minor_quests\\novigrad\\quest_files\\mq3031_aging_romance\\entities\\mq3031_shell_normal.w2ent"
+        #pos: [ 260.1200256348, 2562.8112792969, -2.3034057617 ]
+        pos: [ 267.8720703125, 2560.4060058594, -2.6580886841 ]
+        scale: [ 0.5, 0.5, 0.5 ]
+
+      shell_static_16: 
+        template: "W3ClueStash:quests\\minor_quests\\novigrad\\quest_files\\mq3031_aging_romance\\entities\\mq3031_shell_normal.w2ent"
+        pos: [ 309.9104919434, 2530.1015625000, -2.5494918823 ]
+        scale: [ 0.5, 0.5, 0.5 ]
+

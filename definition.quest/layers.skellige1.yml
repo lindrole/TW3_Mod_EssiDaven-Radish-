@@ -1,0 +1,131 @@
+layers: 
+
+  layer_skellige1: 
+    world: "skellige"
+    #context: ""
+
+
+    actionpoints: 
+      yen_day_actionpoint:
+        - [ -58.3132629395, 607.6683959961, 2.5141677856, -147.2, "household_woman/q401_yennefer_inspecting_megascope" ] #at megascope
+        - [ -62.7747039795, 609.7817382813, 2.5196914673, -250, "household_woman/q401_yennefer_inspecting_megascope" ] #at buffet
+        - [ -53.6933593750, 607.3212890625, 2.5197067261, -151, "household_woman/q401_yennefer_inspecting_megascope" ] #at book
+        #- [ -58.3132629395, 607.6683959961, 2.5146255493, -147.2, "household_woman/q401_yennefer_inspecting_megascope" ] #at megascope
+        # new_actionpoint_megascope: [ -58.3480491638, 608.0059204102, 2.5141677856, 0.0, "work_woman/stand_mwd_picking_herbs_jt" ]
+
+
+      yen_brushing_actionpoint: 
+        pos: [ -55.4701385498, 595.3390502930, 2.5196914673 ]
+        rot: [ 0.0, 0.0, -133.8000335693 ]
+        action: "household_woman/sit_nw_brushing_hair_jt"
+        ignoreCollisions: true
+
+      yen_sleeps_r_actionpoint: #côté bain
+        pos: [ -51.0856666565, 596.9430541992, 2.5196914673 ]        
+        rot: [ 0.0, 0.0, -239.6000366211 ]
+        action: "sleeping_woman/lie_mw_sleep_rich_bed_r_new_jt"
+        ignoreCollisions: true
+
+      yen_waiting_actionpoint: [ -55.8194580078, 597.6724853516, 2.5196914673, -162.6000213623, "work_woman/stand_mw_lost_in_thoughts_jt" ]
+
+      yen_carpet_actionpoint: [ -60.5080490112, 606.9152832031, 2.5196914673, -63.5999946594, "work_woman/stand_mw_lost_in_thoughts_jt" ]
+
+
+
+
+
+    scenepoints:
+      ask_yen_scene: 
+        pos: [ -55.9599113464, 600.0626220703, 2.4879655838 ]
+        rot: [ 0.0, 0.0, 17.6264190674 ] 
+        #pos: [ -54.9198608398, 597.3534545898, 2.5196912289 ]
+
+
+
+
+
+    mappins: 
+      yen_location_mappin: [ -55.3610153198, 596.8872680664, 2.5196914673 ] # NOT USED
+
+      yen_skellige_apartment_mappin: # NOT USED
+        #radius for quest instructions: 10
+        pos: [ -57.5775489807, 603.5482177734, 2.5138320923 ]
+
+
+
+
+    areas: 
+      yen_location_area: 
+        #height: 2.0
+        borderpoints: 
+          - [ -47.1700210571, 597.3589477539, 2.5197067261 ]
+          - [ -54.8407859802, 616.3026733398, 2.5197067261 ]
+          - [ -64.9418487549, 612.3897705078, 2.5197067261 ]
+          - [ -56.9907875061, 593.0420532227, 2.5197067261 ]
+
+      yen_work_area: 
+        #height: 2.0
+        borderpoints: 
+          - [ -52.0487136841, 607.1782226563, 2.5196914673 ]
+          - [ -52.4915466309, 609.1583251953, 2.5196914673 ]
+          - [ -63.8753356934, 611.0515136719, 2.5196914673 ]
+          - [ -61.7654991150, 607.0770874023, 2.5196914673 ]
+          - [ -56.2928886414, 605.6344604492, 2.5196914673 ]
+
+      near_yen_area: 
+        #height: 2.0
+        borderpoints: 
+          - [ -54.4593048096, 601.6488647461, 2.5196914673 ]
+          - [ -59.4471931458, 600.8480834961, 2.5196914673 ]
+          - [ -57.0290946960, 594.2482910156, 2.5196914673 ]
+          - [ -50.7781906128, 595.0704345703, 2.5196914673 ]
+          - [ -51.9067420959, 600.2862548828, 2.5196914673 ]
+
+      skallige_large_area: 
+        height: 500.0
+        borderpoints: 
+          - [ 302.7246704102, 610.3475952148, -12.5196914673 ]
+          - [ 52.5920219421, 954.6276855469, -12.5196914673 ]
+          - [ -352.1414184570, 823.1198730469, -12.5196914673 ]
+          - [ -352.1414184570, 397.5753173828, -12.5196914673 ]
+          - [ 52.5920066833, 266.0672302246, -12.5196914673 ]
+
+      near_bed_area: 
+        #height: 2.0
+        borderpoints: 
+          - [ -48.5894775391, 597.7390136719, 3.3749825954 ]
+          - [ -50.1814575195, 601.5015258789, 3.3749825954 ]
+          - [ -53.0475006104, 600.2352905273, 3.3749825954 ]
+          - [ -54.3975105286, 597.4639282227, 3.3749825954 ]
+          - [ -53.0314216614, 594.8165283203, 3.3749825954 ]
+
+########################################################################
+
+  layer_dynamic_work_yen: 
+    world: "skellige"
+    #context: ""
+
+
+    waypoints:
+      yen_spawn: [ -58.3132629395, 607.6683959961, 2.5146255493, 0.0 ]
+
+
+    actionpoints: 
+      yen_working1_actionpoint:
+        pos: [ -58.3132629395, 607.6683959961, 2.5146255493 ]
+        rot: [ 0.0, 0.0, -147.2 ]
+        action: "household_woman/q401_yennefer_inspecting_megascope" #at megascope
+        tags: [ yen_working ]
+
+      yen_working2_actionpoint:
+        pos: [ -62.7747039795, 609.7817382813, 2.5196914673 ]
+        rot: [ 0.0, 0.0, -250 ]
+        action: "household_woman/q401_yennefer_inspecting_megascope" #at buffet
+        tags: [ yen_working ]
+
+      yen_working3_actionpoint:
+        pos: [ -53.6933593750, 607.3212890625, 2.5197067261 ]
+        rot: [ 0.0, 0.0, -151 ]
+        action: "household_woman/q401_yennefer_inspecting_megascope" #at book
+        tags: [ yen_working ]
+

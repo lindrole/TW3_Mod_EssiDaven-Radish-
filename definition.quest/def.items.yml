@@ -1,0 +1,23 @@
+#
+# definition of valid items references and descriptions
+#
+
+items:
+  #objet_custom:
+  misc:
+    sky_blue_pearl:
+      name: "Sky Blue Pearl"
+      description: "Item needed to complete Essi Daven's quest."
+
+  #EXEMPLE DU MOD "ANTR"
+  #notices:
+  #  regis_letter:
+  #    name: "Mysterious letter"
+  #    description: "Unsigned letter, delivered by owl."
+  #    text: "Dear Geralt,<br><br>I sincerely hope this letter finds you and your beloved in good health.<br>As you may be aware, I find myself rather far away from Toussaint, however my thoughts remain timelessly embedded within its beautiful countryside.<br>I write to you now in dire hope that it is not yet too late regarding the fate of a certain red-haired mutual acquaintance. I must ask a favor of you, my friend.<br>While I was unable to obtain the proper opportunity to tell you about her as much as I would have liked, (and surely your experience at the orphanage has thwarted any hint of desire to learn the details of my familiarity with her) I divulge that she is in fact still dear to me. As such, if there is any possibility that she can be led away from the monstrous path she has chosen, I beg you to find some way to assist her in doing so. I must remind you of my own unfortunate past, though I am rather ashamed to speak of such times.<br>It is my most sincere opinion that the act of drinking blood for sustenance is a mere myth. It is an act that stems from the most basic instincts that drive many a vampire to such behavior. However I am most certain Orianna possesses sufficient strength of character to remove herself from the confines of such primitive instincts.<br>And if you have exhausted all possibilities… Geralt, I implore you, please do take care. She possesses an immense amount of experience, and has already bested one witcher. I truly prefer you to remain my living, breathing, close friend for years to come.<br>I have full faith that when the time comes (and in light of my humble request), you shall certainly make the best decision.<br><br>Sincerely, your faithful friend, R.<br>"
+
+
+loot:
+  shell_loot:
+    #- objet_custom/sky_blue_pearl
+    - misc/sky_blue_pearl

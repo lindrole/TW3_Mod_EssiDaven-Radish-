@@ -1,0 +1,347 @@
+templates:
+  # minimal man entity with specific appearance and ability to playback in scenes
+  agloval_actor:
+    includes:
+      - CEntityTemplate:dlc\bob\data\gameplay\community\community_npcs\citizens\noble.w2ent
+
+
+    appearances:
+      agloval_actor_app1:
+        ".type": CEntityAppearance
+        wasIncluded: true
+
+        includedTemplates:
+          - characters\models\common\man_average\body\g_01_ma__body.w2ent
+          - dlc\bob\data\characters\models\crowd_npc\bob_citizen\arms\a_01_ma__bob.w2ent
+          - dlc\bob\data\characters\models\crowd_npc\bob_citizen\legs\l2_01_ma__bob.w2ent
+          - dlc\bob\data\characters\models\crowd_npc\bob_citizen\shoes\s_01_ma__bob.w2ent
+          - dlc\bob\data\characters\models\crowd_npc\bob_citizen\torso\t2_06_ma__bob.w2ent
+          - characters\models\common\man_average\heads\h_30_ma__citizen_young.w2ent
+          - characters\models\common\man_average\hair\c_12_ma__hair.w2ent
+    usedAppearances:
+      - agloval_actor_app1
+      
+    entityObject:
+      .type: "CNewNPC"
+      # tags: [rad_agloval_actor]  no effect here
+      streamingDistance: 10
+      isInteractionActivator: true
+      displayName: Agloval
+      
+    coloringEntries:
+      - ".type": SEntityTemplateColoringEntry
+        appearance: agloval_actor_app1
+        componentName: g_01_ma__body
+        colorShift1:  #CColorShift
+          hue: 231
+          saturation: 0
+          luminance: -100
+        colorShift2:
+          hue: 190
+          saturation: 0
+          luminance: -70
+          
+      - ".type": SEntityTemplateColoringEntry
+        appearance: agloval_actor_app1
+        componentName: a_01_ma__bob
+        colorShift1:  #CColorShift
+          hue: 0
+          saturation: -100
+          luminance: -70
+        colorShift2:
+          hue: 329
+          saturation: -85
+          luminance: 31
+          
+      - ".type": SEntityTemplateColoringEntry
+        appearance: agloval_actor_app1
+        componentName: l2_01_ma__bob
+        colorShift1:  #CColorShift
+          hue: 106
+          saturation: -29
+          luminance: -60
+        colorShift2:
+          hue: 125
+          saturation: -92
+          luminance: 31
+          
+      - ".type": SEntityTemplateColoringEntry
+        appearance: agloval_actor_app1
+        componentName: s_01_ma__bob
+        colorShift1:  #CColorShift
+          hue: 319
+          saturation: -49
+          luminance: -58
+        colorShift2:
+          hue: 118
+          saturation: -33
+          luminance: -56
+          
+      - ".type": SEntityTemplateColoringEntry
+        appearance: agloval_actor_app1
+        componentName: t2_06_ma__bob
+        colorShift1:  #CColorShift
+          hue: 106
+          saturation: -29
+          luminance: -60
+        colorShift2:
+          hue: 334
+          saturation: -91
+          luminance: 8
+
+
+    ###################################################################################
+
+  sheenaz_actor:
+    includes:
+      #NOK va trop vite- quests\sidequests\novigrad\quest_files\sq303_brothel\characters\sq303_courtisan.w2ent #marche trop vite
+      - CEntityTemplate:dlc\bob\data\gameplay\community\community_npcs\citizens\noble_woman.w2ent #ok marche lentement
+      #NOK va trop vite- dlc\bob\data\characters\npc_entities\crowd_npc\bob_citizen\bob_noble_female.w2ent
+      
+
+    appearances:
+      sheenaz_actor_app1:
+        ".type": CEntityAppearance
+        wasIncluded: true
+        includedTemplates:
+          - characters\models\crowd_npc\novigrad_prostitute\torso\t2_04_wa__novigrad_prostitute.w2ent         #torse
+          - dlc\bob\data\characters\models\secondary_npc\sq701_forest_nymph\c_01__sq701_forest_nymph.w2ent    #cheveux seulement
+          
+          - dlc\bob\data\characters\models\common\woman_average\heads\h_02_wa__bob.w2ent                  #bug léger, belle mais un peu vieille
+          ##- characters\models\common\woman_average\heads\h_56_wa__novigrad_citizen.w2ent                  #pas hyper hyper belle
+          ##- characters\models\common\woman_average\heads\h_50_wa__novigrad_citizen.w2ent                  #modele original / bug avec les cheveux lors de scene
+          
+          - dlc\bob\data\characters\models\crowd_npc\bob_citizen_woman\dress\d_06_wa__bob_woman_noble_px.w2ent  #robe
+          #OLD- characters\models\crowd_npc\novigrad_prostitute\dress\d_02_wa__novigrad_prostitute.w2ent
+          - characters\models\common\woman_average\body\ls_02_wa__body_barefoot.w2ent                         #jambes
+          - characters\models\crowd_npc\skellige_villager_woman\items\i_01_wa__skellige_villager.w2ent        #item:collier
+          
+    usedAppearances:
+      - sheenaz_actor_app1
+      
+    entityObject:
+      .type: "CNewNPC"
+      # tags: [rad_sheenaz_actor]  no effect here
+      streamingDistance: 10
+      isInteractionActivator: true
+      displayName: Sh'eenaz
+      
+    coloringEntries:
+      - ".type": SEntityTemplateColoringEntry
+        appearance: sheenaz_actor_app1
+        componentName: t2_04_wa__novigrad_prostitute
+        colorShift1:  #CColorShift
+          hue: 146
+          saturation: -38
+          luminance: -20
+        colorShift2:
+          hue: 146
+          saturation: -38
+          luminance: -20
+          
+      - ".type": SEntityTemplateColoringEntry
+        appearance: sheenaz_actor_app1
+        componentName: d_06_wa__bob_woman_noble_px
+        colorShift1:  #CColorShift
+          hue: 146
+          saturation: -38
+          luminance: -20
+        colorShift2:
+          hue: 146
+          saturation: -38
+          luminance: -20
+
+      # NOT COLORED component
+      #- ".type": SEntityTemplateColoringEntry
+      #  appearance: sheenaz_actor_app1
+      #  componentName: c_13_wa__hair_weavress
+      #  colorShift1:  #CColorShift
+      #    hue: 100
+      #    saturation: 0
+      #    luminance: 0
+      #  colorShift2:
+      #    hue: 100
+      #    saturation: 0
+      #    luminance: 0
+
+
+    ###################################################################################
+
+      #NOK- CEntityTemplate:characters\models\common\man_average\body\n_01_ma__body.w2ent #original for mirror man
+      #NOK- CEntityTemplate:dlc\bob\data\quests\main_npcs\dettlaff_van_eretein_vampire.w2ent #OK mais ne se bat pas
+      #NOK- gameplay\templates\characters\npcs\test_enemies\enemy_1handed_axe.w2ent #fonctionne mais naze car se bat avec une hache
+      #BOF- gameplay\templates\monsters\fogling_lvl26.w2ent #BOF ça pourrait le faire mais bof car il a des longs bras
+      #NOK- gameplay\templates\monsters\forktail_lvl30.w2ent #NOK c'est une araignée
+      #NOK- gameplay\templates\characters\npcs\ai_presets\ai_preset_quest.w2ent
+      #- gameplay\templates\characters\npcs\ai_presets\ai_preset_quest_main.w2ent
+      #NOK voix de femme- gameplay\templates\characters\npcs\test_enemies\enemy_sorceress.w2ent
+      #NOK- gameplay\templates\monsters\bies_lvl2a.w2ent
+      #NOK pas beau- gameplay\templates\monsters\nightwraith_lvl25.w2ent
+      #NOK- gameplay\templates\monsters\wh_q105_replacer.w2ent
+      #NOK- gameplay\templates\monsters\wraith_lvl24.w2ent
+      #NOK- gameplay\community\community_npcs\nml\custom\nml_burrows_soltis.w2ent
+      #NOK- dlc\bob\data\quests\main_quests\quest_files\q704_truth\characters\q704_dettlaff_vampire.w2ent
+      #NOK- dlc\bob\data\characters\base_entities\dettlaff_vampire_base\dettlaff_vampire_base.w2ent
+      #FONCTIONNE mais NOK moche- quests\minor_quests\novigrad\quest_files\mq3037_sleeping_vampire\characters\mq3037_vampire_monster.w2ent
+      #NOK- dlc\bob\data\characters\npc_entities\secondary_npc\original_vampire.w2ent
+      #- characters\npc_entities\monsters\vampire_katakan_lvl3.w2ent
+      #NOK- dlc\bob\data\gameplay\templates\ai_presets\ai_preset_bruxa_commoner.w2ent
+      #FONCTIONNE mais NOK moche- quests\minor_quests\no_mans_land\quest_files\mq1057_fugas\characters\mq1057_fugas.w2ent
+      #NOK- quests\minor_quests\novigrad\quest_files\mq3037_sleeping_vampire\characters\mq3037_vampire_man.w2ent
+      #FONCTIONNE mais NOK- quests\minor_quests\novigrad\quest_files\mq3037_sleeping_vampire\characters\mq3037_vampire_monster.w2ent
+      #- quests\secondary_npcs\mr_mirror.w2ent
+
+  mirror_devil_fighter:
+    includes:
+      - dlc/dlcsted/data/entities/enemy_succubus_edited.w2ent  # recolored effects + stats + small mesh parts (to man version)
+
+    appearances:
+      mirror_fighter:
+        ".type": CEntityAppearance
+        wasIncluded: true
+        includedTemplates:
+          - characters\models\common\man_average\body\n_01_ma__body.w2ent
+          - dlc\ep1\data\characters\models\main_npc\mirror_man\a_03_ma__mirror_man.w2ent #arms
+          - dlc\ep1\data\characters\models\main_npc\mirror_man\h_01_ma__mirror_man_satan.w2ent #head
+          - dlc\ep1\data\characters\models\main_npc\mirror_man\s_03_ma__mirror_man.w2ent #shoes
+          - dlc\ep1\data\characters\models\main_npc\mirror_man\g_01_ma__mirror_man_satan.w2ent #body
+          - dlc\ep1\data\characters\models\main_npc\mirror_man\t2_01_ma__mirror_man.w2ent #torso
+          - characters\models\crowd_npc\novigrad_citizen\legs\l0_01_ma__novigrad_citizen.w2ent
+          - characters\models\crowd_npc\medic\items\i_12_ma__medic.w2ent
+          - characters\models\secondary_npc\mirror_man\i_15_ma__mirror_man.w2ent
+          - dlc\ep1\data\characters\models\main_npc\mirror_man\items__mirror_man.w2ent
+          
+    usedAppearances:
+      - mirror_fighter
+      
+    entityObject:
+      .type: "CStedMirrorFight:CNewNPC"
+      tags: [sted_mirror_man]
+      streamingDistance: 10
+      isInteractionActivator: true
+      displayName: Gaunter O'Dimm
+
+      #grantNoExperienceAfterKill: true
+      #level: 40 # =player level +5
+
+    coloringEntries:
+      - ".type": SEntityTemplateColoringEntry
+        appearance: mirror_fighter
+        componentName: a_03_ma__mirror_man
+        colorShift1:  #CColorShift
+          hue: 323
+          saturation: -42
+          luminance: -28
+        colorShift2:
+          hue: 119
+          saturation: -49
+          luminance: -53
+
+      - ".type": SEntityTemplateColoringEntry
+        appearance: mirror_fighter
+        componentName: t2_01_ma__mirror_man
+        colorShift1:  #CColorShift
+          hue: 317
+          saturation: -42
+          luminance: -28
+        colorShift2:
+          hue: 31
+          saturation: -36
+          #luminance: -53
+
+      - ".type": SEntityTemplateColoringEntry
+        appearance: mirror_fighter
+        componentName: s_03_ma__mirror_man
+        colorShift1:  #CColorShift
+          hue: 306
+          saturation: -61
+          luminance: -71
+        colorShift2:
+          #hue: 31
+          saturation: -100
+          luminance: -77
+
+      - ".type": SEntityTemplateColoringEntry
+        appearance: mirror_fighter
+        componentName: l0_01_ma__novigrad_citizen
+        colorShift1:  #CColorShift
+          hue: 102
+          saturation: -36
+          luminance: -58
+        colorShift2:
+          #hue: 31
+          saturation: -80
+          luminance: -73
+
+
+    ###################################################################################
+
+  coast_sirens:
+    includes:
+      ##- characters\npc_entities\monsters\siren_lvl3.w2ent
+      - quests\minor_quests\skellige\quest_files\mq2021_survivor\characters\mq2021_sirens.w2ent
+    
+    entityObject:
+      .type: "CStedSiren:CNewNPC"
+      ##level: 18 # ici on peut forcer le niveau du monstre
+      ##displayName: Siren
+
+
+    ###################################################################################
+
+  skellige_animal:
+    includes:
+      - characters/npc_entities/animals/chicken.w2ent
+    
+    entityObject:
+      .type: "CStedAnimal:CNewNPC"
+
+
+    ###################################################################################
+
+  skellige_animal2:
+    includes:
+      - characters/npc_entities/animals/chicken.w2ent
+    
+    entityObject:
+      .type: "CStedAnimal2:CNewNPC"
+
+
+  shadow_a:
+    includes:
+      - dlc\ep1\data\quests\quest_files\q605_finale\characters\q605_shadow_fogling.w2ent
+    
+    entityObject:
+      .type: "CStedShadowa:CNewNPC"
+      level: 15 # = player level -20
+
+    ###################################################################################
+
+  shadow_b: #NON UTILISé
+    includes:
+      - dlc\ep1\data\quests\quest_files\q605_finale\characters\q605_shadow_gargoyle.w2ent
+    
+    entityObject:
+      .type: "CStedShadowB:CNewNPC"
+      #level: 15 # = player level -20
+
+    ###################################################################################
+
+  shadow_c: #NON UTILISé
+    includes:
+      - dlc\ep1\data\quests\quest_files\q605_finale\characters\q605_shadow_hym.w2ent
+    
+    entityObject:
+      .type: "CStedShadowC:CNewNPC"
+      #level: 15 # = player level -20
+
+    ###################################################################################
+
+  shadow_d: #NON UTILISé
+    includes:
+      - dlc\ep1\data\quests\quest_files\q604_mansion\characters\q604_alghoul3.w2ent
+    
+    entityObject:
+      .type: "CStedShadowD:CNewNPC"
+      #level: 15 # = player level -20
+

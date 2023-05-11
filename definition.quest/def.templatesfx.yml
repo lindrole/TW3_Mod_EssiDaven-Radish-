@@ -1,0 +1,110 @@
+templates:
+  pearl_fx:
+    includes:
+#      - "CEntity:environment\\decorations\\votive\\lessun_totems\\lessun_totem_b_px.w2ent" # emplacement D:\Witcher 3\_modTools\Witcher 3 Mod Tools\r4data\environment\decorations\votive\lessun_totems
+      - "W3ClueStash:quests\\part_1\\quest_files\\q303_treasure\\clues\\q303_valuable_pearl.w2ent"
+
+
+## dans cet exemple, l'emplacement du fichier dont sont extrait les FX est : D:\Witcher 3\_modTools\Witcher 3 Mod Tools\r4data\dlc\bob\data\fx\quest\mq7023\mq7023_magical_barrier.w2ent
+
+
+##### Finalement jen'ai pas utilisé cette histoire de "slots"
+#    slots:
+#      fx_abc:
+#        transform:
+#          pos: [0.0, 0.0, 1.5] # [x, y, z]
+
+    entityObject:
+      .type: CEntity
+      autoPlayEffectName: new_effect #nom à choisir et doit être identique à celui utilisé en dessous de <effects:> quelques lignes en dessous, et qui vient remplacer le "object_0"
+
+
+###### Faire attention à bien ajouter des tabulations pour redécaler tout le copier-coller
+
+    effects:
+      new_effect:
+        ".type": CFXDefinition
+        trackGroups:
+          sounds:
+            ".type": CFXTrackGroup
+#           name: sounds
+            tracks:
+              unnamed_0:
+                ".type": CFXTrack
+                trackItems:
+                  - ".type": CFXTrackItemSoundEvent
+                    timeBegin: 0.0318458602
+                    soundEventName: mq7023_arena_barrier_activation
+                  - ".type": CFXTrackItemSoundEvent
+                    timeBegin: 0.1110180691
+                    soundEventName: mq7023_arena_barrier_LP
+                  - ".type": CFXTrackItemSoundEvent
+                    timeBegin: 0.5606412888
+                    soundEventName: mq7023_arena_barrier_LP_stop
+            isExpanded: true
+            trackGroupColor: [ 196, 235, 148, 100 ]
+          fx:
+            ".type": CFXTrackGroup
+#           name: fx
+            tracks:
+              fx2:
+                ".type": CFXTrack
+                trackItems:
+                  - ".type": CFXTrackItemParticles
+                    timeBegin: 0.4566094875
+                    timeDuration: 3.4938778877
+                    particleSystem: "dlc\\bob\\data\\fx\\quest\\mq7023\\mq7023_barrier_end.w2p"
+                    spawner:
+                      ".type": CFXSimpleSpawner
+                    interpolation:
+                      - [ 1.0, 1.0, 1.0 ]
+                      - [ 1.0, 1.0, 1.0 ]
+                      - [ 1.0, 1.0, 1.0 ]
+                      - [ 1.0, 1.0, 1.0 ]
+                      - [ 1.0, 1.0, 1.0 ]
+                      - [ 1.0, 1.0, 1.0 ]
+                      - [ 1.0, 1.0, 1.0 ]
+                      - [ 1.0, 1.0, 1.0 ]
+                      - [ 1.0, 1.0, 1.0 ]
+                      - [ 1.0, 1.0, 1.0 ]
+                      - [ 1.0, 1.0, 1.0 ]
+                      - [ 1.0, 1.0, 1.0 ]
+                      - [ 1.0, 1.0, 1.0 ]
+                      - [ 1.0, 1.0, 1.0 ]
+                      - [ 1.0, 1.0, 1.0 ]
+                      - [ 1.0, 1.0, 1.0 ]
+#                name: fx2
+              fx:
+                ".type": CFXTrack
+                trackItems:
+                  - ".type": CFXTrackItemParticles
+                    timeDuration: 1.5247493982
+                    particleSystem: "dlc\\bob\\data\\fx\\quest\\mq7023\\mq7023_magical_barrier.w2p"
+                    spawner:
+                      ".type": CFXSimpleSpawner
+                    interpolation:
+                      - [ 1.0, 1.0, 1.0 ]
+                      - [ 1.0, 1.0, 1.0 ]
+                      - [ 1.0, 1.0, 1.0 ]
+                      - [ 1.0, 1.0, 1.0 ]
+                      - [ 1.0, 1.0, 1.0 ]
+                      - [ 1.0, 0.9083245397, 1.0 ]
+                      - [ 1.0, 0.8046280742, 1.0 ]
+                      - [ 1.0, 0.7009316087, 1.0 ]
+                      - [ 1.0, 0.5972350836, 1.0 ]
+                      - [ 1.0, 0.4935386181, 1.0 ]
+                      - [ 1.0, 0.3898421526, 1.0 ]
+                      - [ 1.0, 0.2861456871, 1.0 ]
+                      - [ 1.0, 0.1824492812, 1.0 ]
+                      - [ 1.0, 0.0787528157, 1.0 ]
+                      - [ 1.0, 0.0, 1.0 ]
+                      - [ 1.0, 0.0, 1.0 ]
+#               name: fx
+            isExpanded: true
+            trackGroupColor: [ 231, 187, 226, 100 ]
+        length: 4.1869454384
+        loopStart: 0.1890298277
+        loopEnd: 0.38457793
+#       name: barrier
+        showDistance: 100.0 #initial 50.0
+        isLooped: true

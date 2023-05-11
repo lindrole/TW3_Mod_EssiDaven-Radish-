@@ -1,0 +1,543 @@
+communities:
+
+  #######################################################################
+
+  community_prologue1:
+
+    actors:
+      dandelion:
+        template: "quests\\main_npcs\\dandelion.w2ent"
+        tags: [sted_dandelion]
+        
+    phases:
+      phase1:
+        dandelion:
+          start_in_ap: true
+          appearance: dandelion
+          actionpoints:
+            "09:00": prologue/actionpoint_dandelion_croisement
+            #"10:00": prologue/actionpoint_dandelion_croisement
+            #"12:00": prologue/actionpoint_dandelion_croisement
+
+      phase2:
+        dandelion:
+          start_in_ap: true
+          appearance: dandelion
+          #add_tags: [phase2, phase2_test]
+          #appearance: [triss, true]     # [someappearance, only_on_spawn_bool]
+          actionpoints:
+            "00:00": prologue/actionpoint_dandelion_gameplay
+            "11:00": prologue/actionpoint_dandelion_gameplay
+            "13:00": prologue/actionpoint_dandelion_gameplay
+
+      phase3:
+        dandelion:
+          start_in_ap: true
+          appearance: dandelion
+          actionpoints:
+            "00:00": prologue/actor_dandelion_tombe
+            "11:00": prologue/actor_dandelion_tombe
+            "13:00": prologue/actor_dandelion_tombe
+
+
+
+    ######################################################################
+
+  community_skellige1:
+
+    actors:
+      yennefer:
+        template: "quests\\main_npcs\\yennefer.w2ent"
+        tags: [sted_yennefer]
+        
+    phases:
+      phase_ask_yen:
+        yennefer:
+          start_in_ap: true
+          appearance: yennefer_gown #autre appearence possible : "yennefer_gown" / yennefer_lingerie" / "yennefer_head_towel" 
+          actionpoints:
+            "00:00": skellige/yen_waiting_actionpoint
+
+      phase_yen_carpet:
+        yennefer:
+          start_in_ap: true
+          appearance: yennefer_gown #autre appearence possible : "yennefer_gown" / yennefer_lingerie" / "yennefer_head_towel" 
+          actionpoints:
+            "00:00": skellige/yen_carpet_actionpoint
+
+      phase_yen_work:
+        yennefer:
+          start_in_ap: false
+          appearance: yennefer_gown ####################### semble ne servir à rien // il faut d'abord la faire apparaître avec un actionpoint classique avec l'apparence souhaitée
+          spawn_at: skellige/yen_spawn
+          dynamicwork:
+            categories:
+              - household_woman # la catégorie correspond à la racine du type d'action cf. fichier layer ; et je pense que l'on peut en mettre plusieurs
+            actionpoint_tags:
+              - yen_working
+
+      phase4_yen_day:
+        yennefer:
+          start_in_ap: true
+          appearance: yennefer_gown #autre appearence possible : "yennefer_gown" / yennefer_lingerie" / "yennefer_head_towel" 
+          actionpoints:
+            "06:00": skellige/yen_day_actionpoint
+            "07:00": skellige/yen_day_actionpoint
+            "08:00": skellige/yen_day_actionpoint
+            "09:00": skellige/yen_day_actionpoint
+            "10:00": skellige/yen_day_actionpoint
+            "11:00": skellige/yen_day_actionpoint
+            "12:00": skellige/yen_day_actionpoint
+            "13:00": skellige/yen_day_actionpoint
+            "14:00": skellige/yen_day_actionpoint
+            "15:00": skellige/yen_day_actionpoint
+            "16:00": skellige/yen_day_actionpoint
+            "17:00": skellige/yen_day_actionpoint
+            "18:00": skellige/yen_day_actionpoint
+            
+            
+      phase5_yen_night:
+        yennefer:
+          start_in_ap: true
+          appearance: yennefer_lingerie 
+          actionpoints:
+            "00:00": skellige/yen_sleeps_r_actionpoint
+
+      phase5_yen_brushing:
+        yennefer:
+          start_in_ap: true
+          appearance: yennefer_lingerie
+          actionpoints:
+            "18:00": skellige/yen_brushing_actionpoint
+            
+
+    ############################################################################
+
+
+    ############################################################################
+      #siren1: characters/npc_entities/monsters/siren_lvl3.w2ent
+      #siren2: characters/npc_entities/monsters/siren_lvl3.w2ent
+      #siren3: characters/npc_entities/monsters/siren_lvl3.w2ent
+      #siren4: characters/npc_entities/monsters/siren_lvl3.w2ent
+      #siren5: characters/npc_entities/monsters/siren_lvl3.w2ent
+      #siren6: characters/npc_entities/monsters/siren_lvl3.w2ent
+
+  community_shadow_a: #finalement je n'au utilsé que ce spectre là
+    actors:
+      shadow_a:
+        template: "dlc/ep1/data/quests/quest_files/q605_finale/characters/q605_shadow_fogling.w2ent"
+        ##template: CStedSiren:coast_sirens #même en changeant l'attitude, il reste immobile sans attaquer
+      shadow_a2:
+        template: "dlc/ep1/data/quests/quest_files/q605_finale/characters/q605_shadow_fogling.w2ent"        
+      shadow_a3:
+        template: "dlc/ep1/data/quests/quest_files/q605_finale/characters/q605_shadow_fogling.w2ent"
+      shadow_a4:
+        template: "dlc/ep1/data/quests/quest_files/q605_finale/characters/q605_shadow_fogling.w2ent"
+
+
+    phases:
+      shadow_a_guarding:
+        shadow_a:
+          #attitude: monsters #hostile_to_player
+          attitude: hostile_to_player
+          immortality: none
+          #scripted: CStedCustomInitializer
+          use_last_ap: false
+          start_in_ap: false # must be set to false if spawntimes/spawnpoint is used
+          spawn_hidden: false # spawns only if palyer camera is not pointing to spawnpoint
+          spawn_at: prologue/shadow_spawn1
+          guard: [ prologue/specter_guard_area, 0.0 ]
+          spawntimes:
+            "00:00": [1, true, 15] #quantity, respawn, respawn delay in seconds
+
+        shadow_a2:
+          #attitude: monsters #hostile_to_player
+          attitude: hostile_to_player
+          immortality: none
+          #scripted: CStedCustomInitializer
+          use_last_ap: false
+          start_in_ap: false # must be set to false if spawntimes/spawnpoint is used
+          spawn_hidden: false # spawns only if palyer camera is not pointing to spawnpoint
+          spawn_at: prologue/shadow_spawn2
+          guard: [ prologue/specter_guard_area, 0.0 ]
+          spawntimes:
+            "00:00": [1, true, 45] #quantity, respawn, respawn delay in seconds
+
+        #shadow_a3:
+          ##attitude: monsters #hostile_to_player
+          #attitude: hostile_to_player
+          #immortality: none
+          ##scripted: CStedCustomInitializer
+          #use_last_ap: false
+          #start_in_ap: false # must be set to false if spawntimes/spawnpoint is used
+          #spawn_hidden: false # spawns only if palyer camera is not pointing to spawnpoint
+          #spawn_at: prologue/shadow_spawn3
+          #guard: [ prologue/specter_guard_area, 0.0 ]
+          #spawntimes:
+            #"00:00": [1, true, 999] #quantity, respawn, respawn delay in seconds
+
+        #shadow_a4:
+          ##attitude: monsters #hostile_to_player
+          #attitude: hostile_to_player
+          #immortality: none
+          ##scripted: CStedCustomInitializer
+          #use_last_ap: false
+          #start_in_ap: false # must be set to false if spawntimes/spawnpoint is used
+          #spawn_hidden: false # spawns only if palyer camera is not pointing to spawnpoint
+          #spawn_at: prologue/shadow_spawn4
+          #guard: [ prologue/specter_guard_area, 0.0 ]
+          #spawntimes:
+            #"00:00": [1, true, 999] #quantity, respawn, respawn delay in seconds
+
+
+  community_shadow_b:
+    actors:
+      shadow_b:
+        template: "dlc/ep1/data/quests/quest_files/q605_finale/characters/q605_shadow_gargoyle.w2ent"
+            
+    phases:
+      shadow_b_guarding:
+        shadow_b:
+          #attitude: monsters #hostile_to_player
+          immortality: none
+          #scripted: CStedCustomInitializer
+          use_last_ap: false
+          start_in_ap: false # must be set to false if spawntimes/spawnpoint is used
+          spawn_hidden: false # spawns only if palyer camera is not pointing to spawnpoint
+          spawn_at: prologue/shadow_spawn2
+          guard: [ prologue/field_guard_area, 0.0 ]
+          spawntimes:
+            "00:00": [1, true, 300] #quantity, respawn, respawn delay in seconds
+
+  community_shadow_c:
+    actors:
+      shadow_c:
+        template: "dlc/ep1/data/quests/quest_files/q605_finale/characters/q605_shadow_hym.w2ent"
+        
+    phases:
+      shadow_c_guarding:
+        shadow_c:
+          #attitude: monsters #hostile_to_player
+          immortality: none
+          #scripted: CStedCustomInitializer
+          use_last_ap: false
+          start_in_ap: false # must be set to false if spawntimes/spawnpoint is used
+          spawn_hidden: false # spawns only if palyer camera is not pointing to spawnpoint
+          spawn_at: prologue/shadow_spawn3
+          guard: [ prologue/field_guard_area, 0.0 ]
+          spawntimes:
+            "00:00": [1, true, 300] #quantity, respawn, respawn delay in seconds
+
+  community_shadow_d:
+    actors:
+      shadow_d:
+        template: "dlc/ep1/data/quests/quest_files/q604_mansion/characters/q604_alghoul3.w2ent"
+        
+    phases:
+      shadow_d_guarding:
+        shadow_d:
+          #attitude: monsters #hostile_to_player
+          immortality: none
+          #scripted: CStedCustomInitializer
+          use_last_ap: false
+          start_in_ap: false # must be set to false if spawntimes/spawnpoint is used
+          spawn_hidden: false # spawns only if palyer camera is not pointing to spawnpoint
+          spawn_at: prologue/shadow_spawn4
+          guard: [ prologue/field_guard_area, 0.0 ]
+          spawntimes:
+            "00:00": [1, true, 300] #quantity, respawn, respawn delay in seconds
+
+  community_sirens:
+    actors:
+      siren1:
+        ##template: CStedSiren:coast_sirens #template défini dans def.templates.yml
+        ##template: characters\npc_entities\monsters\siren_lvl1.w2ent #OK siren level 13
+        ##template: quests\part_1\quest_files\q202_giant\entities\q202_siren.w2ent
+        template: quests\minor_quests\skellige\quest_files\mq2021_survivor\characters\mq2021_sirens.w2ent #OK siren level 13 // Ok en TEMPLATE mais n'a pas de nom
+        ##template: quests\part_3\quest_files\q502_avallach\characters\q502_siren.w2ent #OK siren level 13 // mais buggé si utilisé via TEMPLATE
+        ##template: quests\sidequests\skellige\quest_files\sq202_yen\characters\sq202_siren.w2ent #OK siren level 13
+        ##template: quests\part_3\quest_files\q111_imlerith\characters\q111_sirens_lake.w2ent ##BUGGE
+        ##template: quests\sidequests\skellige\quest_files\sq209_weregild\characters\sq209_siren_vision_v2_01.w2ent ## AMICALES
+        
+
+      siren2:
+        template: quests\minor_quests\skellige\quest_files\mq2021_survivor\characters\mq2021_sirens.w2ent       
+      siren3:
+        template: quests\minor_quests\skellige\quest_files\mq2021_survivor\characters\mq2021_sirens.w2ent      
+      siren4:
+        template: quests\minor_quests\skellige\quest_files\mq2021_survivor\characters\mq2021_sirens.w2ent
+      siren5:
+        template: quests\minor_quests\skellige\quest_files\mq2021_survivor\characters\mq2021_sirens.w2ent
+      siren6:
+        template: quests\minor_quests\skellige\quest_files\mq2021_survivor\characters\mq2021_sirens.w2ent
+
+      
+    phases:
+      sirens_guarding:
+        siren1:
+          #attitude: monsters # exemples : monsters / q104_avallach_friendly_to_all
+          immortality: none # none / immortal
+          ##level: 99
+          #scripted: CStedCustomInitializer
+          use_last_ap: false
+          start_in_ap: false # must be set to false if spawntimes/spawnpoint is used
+          spawn_hidden: true # spawns only if palyer camera is not pointing to spawnpoint
+          spawn_at: novigrad/siren_spawn1
+          guard: [ novigrad/sirens_area, novigrad/guard_area ] # [<area-reference>, <pursuit-range>]
+          spawntimes:
+            "00:00": [1, true, 60] #quantity, respawn, respawn delay in seconds
+
+        siren2:
+          #attitude: monsters
+          immortality: none
+          ##level: 99
+          #scripted: CStedCustomInitializer
+          use_last_ap: false
+          start_in_ap: false
+          spawn_hidden: true
+          spawn_at: novigrad/siren_spawn2
+          guard: [ novigrad/sirens_area, novigrad/guard_area ]
+          spawntimes:
+            "00:00": [1, true, 999]
+
+        siren3:
+          #attitude: monsters
+          immortality: none
+          ##level: 99
+          #scripted: CStedCustomInitializer
+          use_last_ap: false
+          start_in_ap: false
+          spawn_hidden: true
+          spawn_at: novigrad/siren_spawn3
+          guard: [ novigrad/sirens_area, novigrad/guard_area ]
+          spawntimes:
+            "00:00": [1, true, 999]
+
+        siren4:
+          #attitude: monsters
+          immortality: none
+          ##level: 99
+          #scripted: CStedCustomInitializer
+          use_last_ap: false
+          start_in_ap: false
+          spawn_hidden: true
+          spawn_at: novigrad/siren_spawn4
+          guard: [ novigrad/sirens_area, novigrad/guard_area ]
+          spawntimes:
+            "00:00": [1, true, 999]
+
+        siren5:
+          #attitude: monsters
+          immortality: none
+          ##level: 99
+          #scripted: CStedCustomInitializer
+          use_last_ap: false
+          start_in_ap: false
+          spawn_hidden: true
+          spawn_at: novigrad/siren_spawn5
+          guard: [ novigrad/sirens_area, novigrad/guard_area ]
+          spawntimes:
+            "00:00": [1, true, 999]
+
+        siren6:
+          #attitude: monsters
+          immortality: none
+          ##level: 99
+          #scripted: CStedCustomInitializer
+          use_last_ap: false
+          start_in_ap: false
+          spawn_hidden: true
+          spawn_at: novigrad/siren_spawn6
+          guard: [ novigrad/sirens_area, novigrad/guard_area ]
+          spawntimes:
+            "00:00": [1, true, 999]
+
+    ############################################################################
+
+  community_novigrad1:
+
+    actors:
+      agloval:
+        template: "dlc/dlcsted/data/entities/agloval_actor.w2ent"
+        tags: [sted_agloval]
+    
+    phases:
+      phase_agloval_1:
+        agloval:
+          start_in_ap: true
+          appearance: agloval_actor_app1
+          actionpoints:
+            "05:00": novigrad/matin_ag
+            "05:01": novigrad/1ag_sabath
+            #"05:30": novigrad/2ag_flirt
+            #"06:30": novigrad/3ag_crossed
+            #"07:30": novigrad/4ag_looking
+            "08:30": novigrad/3ag_crossed
+            #"09:30": novigrad/3ag_crossed
+            #"10:30": novigrad/1ag_sabath
+            "12:30": novigrad/4ag_looking
+            #"12:30": novigrad/1ag_sabath
+            #"13:30": novigrad/3ag_crossed
+            #"14:30": novigrad/2ag_flirt
+            #"15:30": novigrad/4ag_looking
+            "16:30": novigrad/2ag_flirt
+            #"17:30": novigrad/1ag_sabath
+            #"18:30": novigrad/4ag_looking
+            #"19:30": novigrad/2ag_flirt
+            "20:30": novigrad/soir_ag
+            
+
+
+
+    ############################################################################
+
+  community_novigrad2:
+
+    actors:
+      sheenaz:
+        template: "dlc/dlcsted/data/entities/sheenaz_actor.w2ent"
+        tags: [sted_sheenaz]
+        
+    phases:
+      phase_sheenaz_1:
+        sheenaz:
+          start_in_ap: true
+          appearance: sheenaz_actor_app1
+          actionpoints:
+            "05:00": novigrad/matin_sh
+            "05:01": novigrad/1sh_flower 
+            #"05:30": novigrad/2sh_flirt
+            #"06:30": novigrad/3sh_adjust
+            #"07:30": novigrad/4sh_sight
+            "08:30": novigrad/3sh_adjust
+            #"09:30": novigrad/3sh_adjust
+            #"10:30": novigrad/1sh_flower
+            "12:30": novigrad/4sh_sight
+            #"12:30": novigrad/1sh_flower
+            #"13:30": novigrad/3sh_adjust
+            #"14:30": novigrad/2sh_flirt
+            #"15:30": novigrad/4sh_sight
+            "16:30": novigrad/2sh_flirt
+            #"17:30": novigrad/1sh_flower
+            #"18:30": novigrad/4sh_sight
+            #"19:30": novigrad/2sh_flirt
+            "20:30": novigrad/soir_sh
+            
+
+
+    ##########################################################################################################
+            
+  community_skellige_after:
+
+    actors:
+      yennefer:
+        template: "quests\\main_npcs\\yennefer.w2ent"
+        tags: [sted_yennefer]
+
+      ciri:
+        template: "quests\\main_npcs\\cirilla.w2ent"
+        tags: [sted_ciri_1]
+
+        
+    phases:
+      phase_after:
+        yennefer:
+          start_in_ap: true
+          appearance: yennefer_gown #autre apperence possible : "yennefer_gown" / yennefer_lingerie" / "yennefer_head_towel" 
+          actionpoints:
+            "00:00": skellige/actionpoint_yen_discuss
+
+        ciri:
+          start_in_ap: true
+          appearance: ciri_winter
+          actionpoints:
+            "00:00": skellige/actionpoint_ciri_listen
+         
+    ##########################################################################################################
+            
+  community_prologue_fight:
+
+    actors:
+      ciri:
+        template: "quests\\main_npcs\\cirilla.w2ent"
+        tags: [sted_ciri]
+
+      mirror_man:
+        template: CStedMirrorFight:mirror_devil_fighter
+        #OLDtemplate: "dlc\\dlcsted\\data\\entities\\mirror_devil_fighter.w2ent"
+        #appearance: [ "mirror_fighter" ]
+        tags: [sted_mirror_man]
+
+    
+    phases:
+      phase_fight:
+        mirror_man:
+          attitude: hostile_to_player #hostile_to_player #friendly
+          immortality: none # none / immortal ## NEW
+          #level: 41 #le level est dans le fichier "def.templates.yml"
+          #scripted: CStedCustomInitializer
+          start_in_ap: true
+          appearance: mirror_fighter
+          guard: [ prologue/field_guard_area, 0.0 ] ## NEW
+          actionpoints:
+            "00:00": prologue/ap_mirror
+
+        ciri:
+          attitude: player
+          immortality: invulnerable
+          level: 1
+          start_in_ap: true
+          appearance: ciri
+          actionpoints:
+            "00:00": prologue/ap_ciri
+
+
+    ############################################################################
+
+  community_animal:
+    actors:
+      animal1:
+        template: CStedAnimal:skellige_animal #template défini dans def.templates.yml
+ 
+        
+    phases:
+      animal_wandering:
+        animal1:
+          #attitude: monsters # exemples : monsters / q104_avallach_friendly_to_all
+          #immortality: none # none / immortal
+          #level: 99
+          use_last_ap: false
+          start_in_ap: false # must be set to false if spawntimes/spawnpoint is used
+          #spawn_hidden: true # spawns only if palyer camera is not pointing to spawnpoint
+          spawn_at: skellige/animal_spawnpoint
+          wanderarea: 
+            area: skellige/animal_wandering_area
+            #movetype: walk ##walk/run/fastrun/sprint/absspeed
+            #speed: 1.0
+            #maxdistance: 100
+            #mindistance: 40
+
+    ############################################################################
+
+  community_animal2:
+    actors:
+      animal2:
+        template: CStedAnimal2:skellige_animal2 #template défini dans def.templates.yml
+ 
+        
+    phases:
+      animal_wandering2:
+        animal2:
+          #attitude: monsters # exemples : monsters / q104_avallach_friendly_to_all
+          #immortality: none # none / immortal
+          #level: 99
+          use_last_ap: false
+          start_in_ap: false # must be set to false if spawntimes/spawnpoint is used
+          #spawn_hidden: true # spawns only if palyer camera is not pointing to spawnpoint
+          spawn_at: skellige/animal_spawnpoint2
+          wanderarea: 
+            area: skellige/animal_wandering_area2
+            #movetype: walk ##walk/run/fastrun/sprint/absspeed
+            #speed: 1.0
+            #maxdistance: 100
+            #mindistance: 40

@@ -1,0 +1,862 @@
+repository:
+  actors:
+    dandelion:
+      template: "characters\\npc_entities\\main_npc\\dandelion.w2ent"
+      appearance: [ "dandelion" ]
+      #template: "quests\\main_npcs\\dandelion.w2ent"
+      #appearance:
+        #- dandelion
+
+  animations:
+    anim_7091_high_standing_determined_gesture_you:
+      animation: "high_standing_determined_gesture_you"
+      frames: 81
+
+    anim_7057_high_standing_determined_gesture_right_hand_2:
+      animation: "high_standing_determined_gesture_right_hand_2"
+      frames: 56
+
+    anim_6704_add_gesture_question_03:
+      animation: "add_gesture_question_03"
+      frames: 81
+
+    anim_7000_high_standing_determined_gesture_both_hands_2:
+      animation: "high_standing_determined_gesture_both_hands_2"
+      frames: 60
+
+    anim_7041_high_standing_determined_gesture_point_up_l:
+      animation: "high_standing_determined_gesture_point_up_l"
+      frames: 144
+
+    anim_6705_add_gesture_question_04:
+      animation: "add_gesture_question_04"
+      frames: 89
+
+    anim_6970_high_standing_determined_calm_enter_frontal:
+      animation: "high_standing_determined_calm_enter_frontal"
+      frames: 253
+
+    anim_6709_add_gesture_question_hand_flick_01:
+      animation: "add_gesture_question_hand_flick_01"
+      frames: 66
+
+    anim_7324_high_standing_sad_turn180_left:
+      animation: "high_standing_sad_turn180_left"
+      frames: 107
+
+    anim_7022_high_standing_determined_gesture_greeting_01:
+      animation: "high_standing_determined_gesture_greeting_01"
+      frames: 86
+
+    anim_7119_high_standing_determined_to_high_standing_determined2:
+      animation: "high_standing_determined_to_high_standing_determined2"
+      frames: 111
+
+    anim_7002_high_standing_determined_gesture_both_hands_flick_1:
+      animation: "high_standing_determined_gesture_both_hands_flick_1"
+      frames: 73
+
+    anim_7149_high_standing_determined2_to_high_standing_determined:
+      animation: "high_standing_determined2_to_high_standing_determined"
+      frames: 95
+
+    anim_6712_add_gesture_slight_explain_02:
+      animation: "add_gesture_slight_explain_02"
+      frames: 107
+
+    anim_6696_add_gesture_explain_07:
+      animation: "add_gesture_explain_07"
+      frames: 78
+
+    anim_7067_high_standing_determined_gesture_shrug:
+      animation: "high_standing_determined_gesture_shrug"
+      frames: 83
+
+    anim_7057_high_standing_determined_gesture_right_hand_2:
+      animation: "high_standing_determined_gesture_right_hand_2"
+      frames: 56
+
+  animations.mimic:
+    mimicsanim_442_geralt_neutral_gesture_suprised_worried_face:
+      animation: "geralt_neutral_gesture_suprised_worried_face"
+      frames: 95
+
+    mimicsanim_169_geralt_reaction_sad_face:
+      animation: "geralt_reaction_sad_face"
+      frames: 225
+
+    mimicsanim_66_geralt_reaction_scepticism_face:
+      animation: "geralt_reaction_scepticism_face"
+      frames: 200
+
+    mimicsanim_135_geralt_neutral_no_fast_face:
+      animation: "geralt_neutral_no_fast_face"
+      frames: 55
+
+    mimicsanim_147_geralt_neutral_yes_slow_face:
+      animation: "geralt_neutral_yes_slow_face"
+      frames: 50
+
+    mimicsanim_137_geralt_neutral_no_slow_face:
+      animation: "geralt_neutral_no_slow_face"
+      frames: 90
+
+    mimicsanim_129_geralt_neutral_gesture_sceptical_remark_face:
+      animation: "geralt_neutral_gesture_sceptical_remark_face"
+      frames: 110
+
+    mimicsanim_165_geralt_reaction_irritation_face:
+      animation: "geralt_reaction_irritation_face"
+      frames: 200
+
+    mimicsanim_442_geralt_neutral_gesture_suprised_worried_face:
+      animation: "geralt_neutral_gesture_suprised_worried_face"
+      frames: 95
+
+  actor.poses:
+    pose_0_high_standing_determined_idle:
+      idle_anim: "high_standing_determined_idle"
+
+    pose_2140_High_Standing_Sad:
+      name: "Standing"
+      emotional_state: "Sad"
+      status: "High"
+      idle_anim: "high_standing_sad_idle"
+
+    pose_2128_High_Standing2_Determined:
+      name: "Standing2"
+      emotional_state: "Determined"
+      status: "High"
+      idle_anim: "high_standing_determined2_idle"
+
+    pose_2127_High_Standing_Determined:
+      name: "Standing"
+      emotional_state: "Determined"
+      status: "High"
+      idle_anim: "high_standing_determined_idle"
+
+  cameras:
+    cam_1_geralt_wide_custom:
+      fov: 20.0
+      transform:
+        pos: [ 0.8389135599, -2.0990390778, 1.6700000763 ]
+        rot: [ 0.0, 358.2999572754, 14.9000244141 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Wide"
+        tags: [ "ext" ]
+
+    cam_2_geralt_wide:
+      fov: 20.0
+      transform:
+        pos: [ 1.3799948692, -1.8400039673, 1.6700000763 ]
+        rot: [ 0.0, 355.5000000000, 29.2000122070 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Wide"
+        tags: [ "ext" ]
+
+    cam_3_geralt_semicloseup_ext:
+      fov: 17.0
+      transform:
+        pos: [ 0.5700043440, -0.7800027728, 1.7600002289 ]
+        rot: [ 0.0, 356.5000000000, 19.0 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Semicloseup"
+        tags: [ "ext" ]
+
+    cam_4_geralt_semicloseup_int:
+      fov: 17.0
+      transform:
+        pos: [ 0.4723169804, -0.4963448942, 1.7600002289 ]
+        rot: [ 0.0, 357.2000427246, 17.0 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Semicloseup"
+        tags: [ "ext" ]
+
+    cam_5_dand_medium_ext:
+      fov: 20.0
+      transform:
+        pos: [ 1.0600066185, 2.7800016403, 1.6999998093 ]
+        rot: [ 0.0, 355.7999877930, 152.6000061035 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_7_dand_closeup_ext:
+      fov: 10.0
+      transform:
+        pos: [ 0.6099890471, 2.7699987888, 1.7200002670 ]
+        rot: [ 0.0, 359.0, 164.7000122070 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Closeup"
+        tags: [ "ext" ]
+
+    cam_8_dand_supercloseup:
+      fov: 10.0
+      transform:
+        pos: [ 0.4799905419, 1.7399951220, 1.7600002289 ]
+        rot: [ 0.0, 358.7000122070, 162.2000122070 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Supercloseup"
+        tags: [ "ext" ]
+
+    cam_9_geralt_supercloseup:
+      fov: 10.0
+      transform:
+        pos: [ 0.4600079656, 0.0, 1.7600002289 ]
+        rot: [ 0.0, 358.8999938965, 18.1000061035 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Supercloseup"
+        tags: [ "ext" ]
+
+    cam_10_dand_medium_int:
+      fov: 23.0
+      transform:
+        pos: [ 0.9200013280, 2.0600008965, 1.6999998093 ]
+        rot: [ 0.0, 355.2000122070, 150.5000000000 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_11_dand_wide:
+      fov: 20.0
+      transform:
+        pos: [ 1.2199997902, 2.9700036049, 1.6700000763 ]
+        rot: [ 0.0, 355.6000061035, 151.2000122070 ]
+      zoom: 2.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Wide"
+        tags: [ "ext" ]
+
+production:
+  settings:
+    sceneid: 1
+    strings-idspace: 5984
+    strings-idstart: 100
+
+  placement: "sted_prologue_crossroads_scene_sp"
+    # INFO: world coordinates of used origin:
+      #pos: [ -295.9614257813, -127.2604675293, 7.0541048050 ]
+      #rot: [ 0.0, 345.3725585938, 0.0 ]
+
+    #OLD INFO: world coordinates of used origin:
+      #OLDpos: [ -294.5448913574, -125.7759780884, 7.0892806053 ]
+      #OLDrot: [ 0.0, -194.3940887451, 0.0 ]
+
+  assets:
+    actors:
+      geralt:
+        repo: geralt
+        #by_voicetag: true
+        #tags: [ "PLAYER" ]
+
+      npc:
+        repo: dandelion
+        #by_voicetag: true
+        #appearance: "dandelion"
+        #tags: [ "npc" ]
+
+    cameras:
+      cam_1_geralt_wide_custom:
+        repo: "cam_1_geralt_wide_custom"
+
+      cam_2_geralt_wide:
+        repo: "cam_2_geralt_wide"
+
+      cam_3_geralt_semicloseup_ext:
+        repo: "cam_3_geralt_semicloseup_ext"
+
+      cam_4_geralt_semicloseup_int:
+        repo: "cam_4_geralt_semicloseup_int"
+
+      cam_5_dand_medium_ext:
+        repo: "cam_5_dand_medium_ext"
+
+      cam_7_dand_closeup_ext:
+        repo: "cam_7_dand_closeup_ext"
+
+      cam_8_dand_supercloseup:
+        repo: "cam_8_dand_supercloseup"
+
+      cam_9_geralt_supercloseup:
+        repo: "cam_9_geralt_supercloseup"
+
+      cam_10_dand_medium_int:
+        repo: "cam_10_dand_medium_int"
+
+      cam_11_dand_wide:
+        repo: "cam_11_dand_wide"
+
+    animations:
+      geralt_high_standing_determined_gesture_you:
+        actor: "geralt"
+        repo: "anim_7091_high_standing_determined_gesture_you"
+        #duration: 2.7000000477
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      geralt_high_standing_determined_gesture_right_hand_2:
+        actor: "geralt"
+        repo: "anim_7057_high_standing_determined_gesture_right_hand_2"
+        #duration: 1.8666666746
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_add_gesture_question_03:
+        actor: "geralt"
+        repo: "anim_6704_add_gesture_question_03"
+        #duration: 2.7000000477
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.6
+        blendin: 0.5
+        blendout: 0.5
+
+      npc_high_standing_determined_gesture_both_hands_2:
+        actor: "npc"
+        repo: "anim_7000_high_standing_determined_gesture_both_hands_2"
+        #duration: 2.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      npc_high_standing_determined_gesture_point_up_l:
+        actor: "npc"
+        repo: "anim_7041_high_standing_determined_gesture_point_up_l"
+        #duration: 4.8000001907
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.0
+
+      geralt_high_standing_determined_calm_enter_frontal:
+        actor: "geralt"
+        repo: "anim_6970_high_standing_determined_calm_enter_frontal"
+        #duration: 8.4333333969
+        #weight: 0.6000000238
+        clipfront: 2.0
+        clipend: 7.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.5
+
+      geralt_add_gesture_question_hand_flick_01:
+        actor: "geralt"
+        repo: "anim_6709_add_gesture_question_hand_flick_01"
+        #duration: 2.2000000477
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.7
+        blendin: 0.3
+        blendout: 0.3
+
+      npc_high_standing_sad_turn180_left:
+        actor: "npc"
+        repo: "anim_7324_high_standing_sad_turn180_left"
+        #duration: 3.5666666031
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      npc_high_standing_determined_gesture_greeting_01:
+        actor: "npc"
+        repo: "anim_7022_high_standing_determined_gesture_greeting_01"
+        #duration: 2.8666665554
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      geralt_high_standing_determined_to_high_standing_determined2:
+        actor: "geralt"
+        repo: "anim_7119_high_standing_determined_to_high_standing_determined2"
+        #duration: 3.7000000477
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.5
+
+      npc_high_standing_determined_gesture_both_hands_flick_1:
+        actor: "npc"
+        repo: "anim_7002_high_standing_determined_gesture_both_hands_flick_1"
+        #duration: 2.4333333969
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.3
+        blendout: 0.3
+
+      geralt_high_standing_determined2_to_high_standing_determined:
+        actor: "geralt"
+        repo: "anim_7149_high_standing_determined2_to_high_standing_determined"
+        #duration: 3.1666667461
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      npc_add_gesture_slight_explain_02:
+        actor: "npc"
+        repo: "anim_6712_add_gesture_slight_explain_02"
+        #duration: 3.5666666031
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.9
+        blendin: 0.5
+        blendout: 0.5
+
+      npc_add_gesture_explain_07:
+        actor: "npc"
+        repo: "anim_6696_add_gesture_explain_07"
+        #duration: 2.5999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.5
+        blendin: 0.5
+        blendout: 0.5
+
+      geralt_high_standing_determined_gesture_shrug:
+        actor: "geralt"
+        repo: "anim_7067_high_standing_determined_gesture_shrug"
+        #duration: 2.7666666508
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      geralt_high_standing_determined_gesture_right_hand_2:
+        actor: "geralt"
+        repo: "anim_7057_high_standing_determined_gesture_right_hand_2"
+        #duration: 1.8666666746
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.6
+        blendin: 0.5
+        blendout: 0.5
+
+      add_gesture_question_04:
+        actor: geralt
+        repo: anim_6705_add_gesture_question_04
+        #duration: 2.9666666985
+        weight: 1.0 #initial 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 1.5
+        blendout: 0.5
+
+    animations.mimic:
+      geralt_geralt_neutral_gesture_suprised_worried_face:
+        actor: "geralt"
+        repo: "mimicsanim_442_geralt_neutral_gesture_suprised_worried_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      npc_geralt_reaction_sad_face:
+        actor: "npc"
+        repo: "mimicsanim_169_geralt_reaction_sad_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        clipfront: 3.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_reaction_scepticism_face:
+        actor: "geralt"
+        repo: "mimicsanim_66_geralt_reaction_scepticism_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      npc_geralt_neutral_no_fast_face:
+        actor: "npc"
+        repo: "mimicsanim_135_geralt_neutral_no_fast_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      npc_geralt_neutral_yes_slow_face:
+        actor: "npc"
+        repo: "mimicsanim_147_geralt_neutral_yes_slow_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.5
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      npc_geralt_neutral_yes_slow_face2:
+        actor: "npc"
+        repo: "mimicsanim_147_geralt_neutral_yes_slow_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 2.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      npc_geralt_neutral_no_slow_face:
+        actor: "npc"
+        repo: "mimicsanim_137_geralt_neutral_no_slow_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_gesture_sceptical_remark_face:
+        actor: "geralt"
+        repo: "mimicsanim_129_geralt_neutral_gesture_sceptical_remark_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_reaction_irritation_face:
+        actor: "geralt"
+        repo: "mimicsanim_165_geralt_reaction_irritation_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_gesture_suprised_worried_face:
+        actor: "geralt"
+        repo: "mimicsanim_442_geralt_neutral_gesture_suprised_worried_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+    actor.poses:
+      geralt_high_standing_determined_idle:
+        actor: "geralt"
+        repo: "pose_0_high_standing_determined_idle"
+
+      npc_high_standing_determined_idle:
+        actor: "npc"
+        repo: "pose_0_high_standing_determined_idle"
+
+      npc_High_Standing_Sad:
+        actor: "npc"
+        repo: "pose_2140_High_Standing_Sad"
+
+      geralt_High_Standing2_Determined:
+        actor: "geralt"
+        repo: "pose_2128_High_Standing2_Determined"
+
+      npc_High_Standing_Determined:
+        actor: "npc"
+        repo: "pose_2127_High_Standing_Determined"
+
+storyboard:
+  #defaults:
+    #placement:
+      #geralt: [[ 0.0, 1.6000001431, 0.0 ], [ 0.0, 0.0, 180.0 ]]
+      #npc: [[ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+
+    #actor.pose:
+      #geralt: geralt_high_standing_determined_idle
+      #npc: npc_high_standing_determined_idle
+
+  section_storyboard_ui:
+    shot_0: #INTRO
+      - actor.placement: [0.0, geralt, [ 0.0, 1.6000001431, 0.0 ], [ 0.0, 0.0, 180.0 ]]
+      - actor.placement: [0.0, npc, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 180.0 ]]
+      - actor.pose: [0.0, geralt_high_standing_determined_idle]
+      - actor.pose: [0.0, npc_High_Standing_Sad]
+      - actor.anim: [0.0, geralt_high_standing_determined_calm_enter_frontal]
+      - actor.anim.mimic: [0.0, npc_geralt_reaction_sad_face]
+      - actor.lookat: [0.0, geralt, npc]
+      - actor.lookat: [0.0, npc, [ -0.0901072621, 0.8209788203, 1.1116418839 ]]
+      - cam: [0.0, cam_1_geralt_wide_custom]
+      - cam.blend.start: [0.0, cam_1_geralt_wide_custom, smooth]
+      - actor.anim: [0.5, add_gesture_question_04]
+      
+    shot_1: #Dandelion?
+      - actor.lookat: [0.0, geralt, npc]
+      - actor.anim: [0.5, npc_high_standing_sad_turn180_left]
+      - actor.lookat: [0.5, npc, geralt]
+
+    shot_2: #PAUSE
+      #- cam: [0.0, cam_2_geralt_wide]
+      - cam.blend.end: [0.0, cam_2_geralt_wide, smooth]
+      - actor.anim: [0.5, geralt_high_standing_determined_gesture_you]
+
+    shot_3: #What are you doing here? So far from Novigrad.
+      - cam: [0.0, cam_2_geralt_wide]
+      ##- actor.anim: [0.0, geralt_add_gesture_question_hand_flick_01]
+      #so far from
+      - cam: [0.3, cam_4_geralt_semicloseup_int]
+      - actor.hide: [0.3, npc]
+      - actor.placement: [0.3, npc, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.anim: [0.4, geralt_high_standing_determined_gesture_shrug]
+      
+    shot_4: #Hello Geralt.
+      - actor.show: [0.0, npc]
+      - cam: [0.0, cam_5_dand_medium_ext]
+      - actor.anim: [0.0, npc_high_standing_determined_gesture_greeting_01]
+
+    shot_4bis: #PAUSE
+      - actor.anim.mimic: [0.3, geralt_geralt_reaction_scepticism_face]
+
+    shot_5: #I suppose that your presence here is due to another one of your conquests.
+      - cam: [0.0, cam_3_geralt_semicloseup_ext]
+      - actor.pose: [0.4, geralt_High_Standing2_Determined]
+      - actor.anim: [0.0, geralt_high_standing_determined_to_high_standing_determined2]
+
+    shot_6: #Not really… 
+      - cam: [0.0, cam_8_dand_supercloseup]
+      - actor.anim.mimic: [0.0, npc_geralt_neutral_no_fast_face]
+
+    shot_7: #PAUSE
+      - actor.anim.mimic: [0.0, npc_geralt_reaction_sad_face]
+
+    shot_8: #Yes it's for a lady,
+      - cam: [0.0, cam_7_dand_closeup_ext]
+      - actor.anim.mimic: [0.0, npc_geralt_neutral_yes_slow_face]
+
+    shot_9: #but not for what you think.
+      - cam: [0.0, cam_5_dand_medium_ext]
+      - actor.anim: [0.0, npc_high_standing_determined_gesture_both_hands_flick_1]
+      - actor.anim.mimic: [0.0, npc_geralt_neutral_no_slow_face]
+
+    shot_10: #You intrigue me Dandelion.
+      - actor.pose: [0.2, geralt_high_standing_determined_idle]
+      - actor.pose: [0.0, npc_High_Standing_Determined]
+      - cam: [0.0, cam_9_geralt_supercloseup]
+      - actor.anim: [0.0, geralt_high_standing_determined2_to_high_standing_determined]
+      #- actor.anim.mimic: [0.0, geralt_geralt_neutral_gesture_sceptical_remark_face]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_irritation_face]
+
+    shot_11: #I want to go to a special place not far from here, where I would like you come with me.
+      #- actor.pose: [0.0, npc_high_standing_determined_idle]
+      - cam: [0.0, cam_10_dand_medium_int]
+      - actor.anim: [0.0, npc_add_gesture_slight_explain_02]
+
+    shot_12: #PAUSE
+      - cam: [0.0, cam_11_dand_wide]
+      - actor.anim: [0.0, npc_add_gesture_explain_07]
+
+    shot_121: #I will tell you more when we get there.
+      - actor.anim.mimic: [0.0, npc_geralt_neutral_yes_slow_face2]
+
+  section_different:      
+    shot_14: #I find you different from usual, and if you ask me to come with you, you must have a good reason.
+      - cam: [0.0, cam_3_geralt_semicloseup_ext]
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_gesture_suprised_worried_face]
+      - actor.anim: [0.0, geralt_high_standing_determined_gesture_right_hand_2]
+      #and if
+      - actor.anim: [0.4, geralt_add_gesture_question_03]
+
+    shot_15: #Indeed Geralt.
+      - cam: [0.0, cam_11_dand_wide] #wide
+      - actor.anim: [0.0, npc_high_standing_determined_gesture_both_hands_2]
+
+  section_follow:
+    shot_122: #PAUSE
+      - actor.anim: [0.0, geralt_high_standing_determined_gesture_shrug]
+
+    shot_13: #Very well, I follow you.
+      - cam: [0.0, cam_2_geralt_wide]
+      #- actor.anim: [0.0, geralt_high_standing_determined_gesture_shrug]
+      - actor.anim: [0.5, geralt_add_gesture_question_hand_flick_01]
+
+    shot_16: #Let's go.
+      ##- cam.blend.togame: [0.0, cam_10_dand_medium_int]
+      - cam: [0.0, cam_10_dand_medium_int]
+      - actor.anim: [0.0, npc_high_standing_determined_gesture_point_up_l]
+      
+
+dialogscript:
+  player: "geralt"
+  actors: [ "geralt", "npc" ]
+
+  section_start:
+    - PAUSE: 0.0
+    - NEXT: section_storyboard_ui
+
+  section_storyboard_ui:
+    - CUE: shot_0 
+    - PAUSE: 2.5
+    - CUE: shot_1
+    - geralt: Dandelion?
+    - CUE: shot_2
+    - PAUSE: 1.0 
+    - CUE: shot_3
+    - geralt: What are you doing here? So far from Novigrad.
+    - PAUSE: 0.0
+    - CUE: shot_4 
+    - npc: Hello, Geralt.
+    - CUE: shot_4bis
+    - PAUSE: 0.5
+    - CUE: shot_5 
+    - geralt: I suppose that your presence here is due to another one of your conquests.
+    - PAUSE: 0.4
+    - CUE: shot_6 
+    - npc: Not really…
+    - CUE: shot_7 
+    - PAUSE: 1.5
+    - CUE: shot_8
+    - npc: Yes it's for a lady,
+    - CUE: shot_9 
+    - npc: but not for what you think.
+    - PAUSE: 0.2
+    - CUE: shot_10
+    - geralt: You intrigue me, Dandelion.
+    - PAUSE: 0.5
+    - CUE: shot_11
+    ##- npc: I want to go to a special place not far from here, where I would like you come with me.
+    - npc: I want you to go with me to a special place not far from here.
+    - CUE: shot_12
+    - PAUSE: 0.5 
+    - CUE: shot_121
+    - npc: I will tell you more when we get there.
+    - NEXT: section_choice
+
+  #FAUX CHOIX OPTIONNEL
+  section_different:
+    - CUE: shot_14
+    - geralt: I find you different from usual, and if you ask me to come with you, you must have a good reason. 
+    - CUE: shot_15
+    - npc: Indeed, Geralt.
+    - PAUSE: 0.5
+    - NEXT: section_choice
+
+  section_follow:
+    - CUE: shot_122
+    - PAUSE: 0.5
+    - CUE: shot_13
+    - geralt: Very well, I follow you.
+    - PAUSE: 0.5
+    - CUE: shot_16
+    - npc: Let's go.
+    - NEXT: section_exit
+
+  section_choice:
+    - CHOICE:
+      - choice: ["Very well, I follow you.", section_follow]
+        emphasize: true
+      - ["I find you different from usual.", section_different]
+      ##- TIME_LIMIT: 3.0
+
+  section_exit:
+    - CAMERA_BLEND: 2.0
+    - EXIT
+

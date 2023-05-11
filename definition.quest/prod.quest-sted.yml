@@ -1,0 +1,25 @@
+#
+# production settings
+# 
+# (version: 609, saved: 2022-12-24 14:52:25)
+#
+---
+production:
+  settings:
+    id: sted
+    caption: A Small Tribute to Essi Daven
+    menuvisibile: true
+    enabled: true
+    storesdata: true
+    strings-idspace: 5984
+    strings-idstart: 0
+    version: 609
+    mounters:
+      - ".type": CR4ResourceDefinitionsDLCMounter
+        resourceDefinitionXmlFilePath: "dlc\\dlcsted\\data\\gameplay\\globals\\resources\\gameplay.xml"
+      - ".type": CR4DefinitionsDLCMounter
+        definitionXmlFilePath: "dlc\\dlcsted\\data\\gameplay\\abilities\\"
+      - ".type": CR4DefinitionsNGPlusDLCMounter
+        definitionXmlFilePath: "dlc\\dlcsted\\data\\gameplay\\abilities_plus\\"
+      - ".type": CR4ScaleformContentDLCMounter
+        scaleformDirectoryPath: "dlc\\dlcsted\\data\\gameplay\\gui_new\\"

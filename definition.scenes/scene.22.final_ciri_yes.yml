@@ -1,0 +1,693 @@
+repository:
+  actors:
+    geralt:
+      template: "gameplay\\templates\\characters\\player\\player.w2ent"
+
+    ciri:
+      template: "quests\\main_npcs\\cirilla.w2ent"
+      #TESTtemplate: CStedCiriHood:ciri_hood
+      appearance: [ "ciri" ]
+
+    mirror_man:
+      template: "dlc\\ep1\\data\\characters\\npc_entities\\main_npc\\mirror_man.w2ent"
+      appearance: [ "mirror_man_satan" ]
+      #template: "quests\\secondary_npcs\\mr_mirror.w2ent"
+      #appearance:
+        #- mirror_man_satan
+
+  animations:
+    anim_8302_man_sitting_badly_wounded_loop_01:
+      animation: "man_sitting_badly_wounded_loop_01"
+      frames: 320
+
+    anim_290_geralt_after_combat_idle_sheathe_silver_sword_to_high_standing_determined:
+      animation: "geralt_after_combat_idle_sheathe_silver_sword_to_high_standing_determined"
+      frames: 230
+
+    anim_12885_combat_hide_sword_to_high_standing_determined:
+      animation: "combat_hide_sword_to_high_standing_determined"
+      frames: 134
+
+    anim_7106_high_standing_determined_to_high_kneeling_bored:
+      animation: "high_standing_determined_to_high_kneeling_bored"
+      frames: 198
+
+    anim_12943_high_standing_determined_exit_rightside:
+      animation: "high_standing_determined_exit_rightside"
+      frames: 130
+
+    anim_12431_add_gesture_explain_01:
+      animation: "add_gesture_explain_01"
+      frames: 108
+
+    anim_12659_high_standing_determined_gesture_looking_for_me:
+      animation: "high_standing_determined_gesture_looking_for_me"
+      frames: 115
+
+    anim_7056_high_standing_determined_gesture_question_hand_flick_02:
+      animation: "high_standing_determined_gesture_question_hand_flick_02"
+      frames: 64
+
+    anim_12460_add_idle_weight_shift_03:
+      animation: "add_idle_weight_shift_03"
+      frames: 231
+
+  animations.mimic:
+    mimicsanim_22_afraid_eyes_face:
+      animation: "afraid_eyes_face"
+      frames: 700
+
+    mimicsanim_116_geralt_neutral_gesture_brows_down_face_lcl:
+      animation: "geralt_neutral_gesture_brows_down_face_lcl"
+      frames: 90
+
+    mimicsanim_146_geralt_neutral_yes_ok_face:
+      animation: "geralt_neutral_yes_ok_face"
+      frames: 60
+
+    mimicsanim_280_constant_closed_eyes_face:
+      animation: "constant_closed_eyes_face"
+      frames: 21
+
+    mimicsanim_122_geralt_neutral_gesture_death_longer_face:
+      animation: "geralt_neutral_gesture_death_longer_face"
+      frames: 300
+
+    mimicsanim_248_geralt_neutral_yes_long_face:
+      animation: "geralt_neutral_yes_long_face"
+      frames: 130
+
+  actor.poses:
+    pose_2125_High_Standing_Relaxed_Combat:
+      name: "Standing Relaxed"
+      emotional_state: "Combat"
+      status: "High"
+      idle_anim: "dialogue_witcher_combat_pose_relaxed"
+
+    pose_0_high_standing_determined_idle:
+      idle_anim: "high_standing_determined_idle"
+
+    pose_2211_Low_Standing_Happy:
+      name: "Standing"
+      emotional_state: "Happy"
+      status: "Low"
+      idle_anim: "low_standing_happy_idle"
+
+    pose_2138_High_Standing_Happy:
+      name: "Standing"
+      emotional_state: "Happy"
+      status: "High"
+      idle_anim: "high_standing_happy_idle"
+
+    pose_2090_High_Kneeling_Bored:
+      name: "Kneeling"
+      emotional_state: "Bored"
+      status: "High"
+      idle_anim: "high_kneeling_bored_idle"
+
+  cameras:
+    cam_1_vue_du_sol:
+      fov: 40.0
+      transform:
+        pos: [ 0.2487642169, -1.3406963348, 0.1999940872 ]
+        rot: [ 0.0, 12.0, 14.8000488281 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_2_mirror_sol_proche:
+      fov: 40.0
+      transform:
+        pos: [ 0.2456648350, 1.0962948799, 0.7999963760 ]
+        rot: [ 0.0, 338.2000122070, 184.6001586914 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_3_mirror_sol_ots_geralt:
+      fov: 40.0
+      transform:
+        pos: [ -0.4461191893, 3.2826333046, 1.8000001907 ]
+        rot: [ 0.0, 342.3000183105, 185.6001586914 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_4_ciri_proche:
+      fov: 40.0
+      transform:
+        pos: [ -1.6652077436, 1.9580295086, 1.6999998093 ]
+        rot: [ 0.0, 351.3999938965, 49.9000244141 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_5_geralt_ots_ciri:
+      fov: 40.0
+      transform:
+        pos: [ -3.2755603790, 1.7832608223, 1.5999994278 ]
+        rot: [ 0.0, 357.6999816895, 290.5002441406 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_6_grave_ots_geralt:
+      fov: 40.0
+      transform:
+        pos: [ -1.5312299728, 3.1223998070, 1.8000001907 ]
+        rot: [ 0.0, 348.7999877930, 219.0998535156 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_7_ciri_ots_geralt:
+      fov: 40.0
+      transform:
+        pos: [ 0.1674028635, 1.4852179289, 1.8000001907 ]
+        rot: [ 0.0, 347.2000122070, 52.5998535156 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_8_pre_final:
+      fov: 40.0
+      transform:
+        pos: [ -0.9631740451, 0.6912937760, 0.3999948502 ]
+        rot: [ 0.0, 16.8000297546, 351.6997680664 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_9_final:
+      fov: 40.0
+      transform:
+        pos: [ -0.8360299468, 1.5823079348, 0.5999956131 ]
+        rot: [ 0.0, 29.1000347137, 352.5998229980 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_10_geralt_final:
+      fov: 40.0
+      transform:
+        pos: [ -9.2154636383, 7.9646334648, 3.9700069427 ]
+        rot: [ 0.0, 357.3000183105, 238.4999694824 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 9.1732883453, 12.1732883453 ]
+        focus: [ 9.6732883453, 10.6732883453 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+
+
+production:
+  settings:
+    sceneid: 22
+    strings-idspace: 5984
+    strings-idstart: 220
+
+  placement: "sted_prologue_mirror_on_grave_sp"
+    # INFO: world coordinates of used origin:
+      #pos: [ -348.0362854004, -188.3012084961, 8.4170827866 ]
+      #rot: [ 0.0, 506.8161315918, 0.0 ]
+
+  assets:
+    actors:
+      geralt:
+        repo: "geralt"
+        by_voicetag: true
+        tags: [ "PLAYER" ]
+
+      ciri:
+        repo: "ciri"
+        #by_voicetag: true
+        appearance: "ciri"
+        tags: [ "ciri" ]
+
+      mirror_man:
+        repo: "mirror_man"
+        #by_voicetag: true
+        appearance: "mirror_man_satan"
+        tags: [ "sted_mirror_man" ]
+
+    cameras:
+      cam_1_vue_du_sol:
+        repo: "cam_1_vue_du_sol"
+
+      cam_2_mirror_sol_proche:
+        repo: "cam_2_mirror_sol_proche"
+
+      cam_3_mirror_sol_ots_geralt:
+        repo: "cam_3_mirror_sol_ots_geralt"
+
+      cam_4_ciri_proche:
+        repo: "cam_4_ciri_proche"
+
+      cam_5_geralt_ots_ciri:
+        repo: "cam_5_geralt_ots_ciri"
+
+      cam_6_grave_ots_geralt:
+        repo: "cam_6_grave_ots_geralt"
+
+      cam_7_ciri_ots_geralt:
+        repo: "cam_7_ciri_ots_geralt"
+
+      cam_8_pre_final:
+        repo: "cam_8_pre_final"
+
+      cam_9_final:
+        repo: "cam_9_final"
+
+      cam_10_geralt_final:
+        repo: "cam_10_geralt_final"
+
+    animations:
+      mirror_man_man_sitting_badly_wounded_loop_01:
+        actor: "mirror_man"
+        repo: "anim_8302_man_sitting_badly_wounded_loop_01"
+        #duration: 10.6666669846
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_geralt_after_combat_idle_sheathe_silver_sword_to_high_standing_determined:
+        actor: "geralt"
+        repo: "anim_290_geralt_after_combat_idle_sheathe_silver_sword_to_high_standing_determined"
+        #duration: 7.6666665077
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      ciri_combat_hide_sword_to_high_standing_determined:
+        actor: "ciri"
+        repo: "anim_12885_combat_hide_sword_to_high_standing_determined"
+        #duration: 4.4666666985
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_determined_to_high_kneeling_bored:
+        actor: "geralt"
+        repo: "anim_7106_high_standing_determined_to_high_kneeling_bored"
+        #duration: 6.5999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      ciri_high_standing_determined_exit_rightside:
+        actor: "ciri"
+        repo: "anim_12943_high_standing_determined_exit_rightside"
+        #duration: 4.3333334923
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      ciri_add_gesture_explain_01:
+        actor: "ciri"
+        repo: "anim_12431_add_gesture_explain_01"
+        #duration: 3.5999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.4
+        blendin: 0.0
+        blendout: 0.5
+
+      ciri_high_standing_determined_gesture_looking_for_me:
+        actor: "ciri"
+        repo: "anim_12659_high_standing_determined_gesture_looking_for_me"
+        #duration: 3.8333332539
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.5
+
+      geralt_high_standing_determined_gesture_question_hand_flick_02:
+        actor: "geralt"
+        repo: "anim_7056_high_standing_determined_gesture_question_hand_flick_02"
+        #duration: 2.1333334446
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 1.2
+        blendin: 0.5
+        blendout: 0.5
+
+      ciri_add_idle_weight_shift_03:
+        actor: "ciri"
+        repo: "anim_12460_add_idle_weight_shift_03"
+        #duration: 7.6999998093
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 1.0
+
+    animations.mimic:
+      mirror_man_afraid_eyes_face:
+        actor: "mirror_man"
+        repo: "mimicsanim_22_afraid_eyes_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      mirror_man_geralt_neutral_gesture_brows_down_face_lcl:
+        actor: "mirror_man"
+        repo: "mimicsanim_116_geralt_neutral_gesture_brows_down_face_lcl"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_yes_ok_face:
+        actor: "geralt"
+        repo: "mimicsanim_146_geralt_neutral_yes_ok_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_constant_closed_eyes_face:
+        actor: "geralt"
+        repo: "mimicsanim_280_constant_closed_eyes_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        stretch: 20.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      mirror_man_geralt_neutral_gesture_death_longer_face:
+        actor: "mirror_man"
+        repo: "mimicsanim_122_geralt_neutral_gesture_death_longer_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      ciri_geralt_neutral_yes_long_face:
+        actor: "ciri"
+        repo: "mimicsanim_248_geralt_neutral_yes_long_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        clipend: 3.5
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.3
+
+    actor.poses:
+      geralt_High_Standing_Relaxed_Combat:
+        actor: "geralt"
+        repo: "pose_2125_High_Standing_Relaxed_Combat"
+
+      mirror_man_high_standing_determined_idle:
+        actor: "mirror_man"
+        repo: "pose_0_high_standing_determined_idle"
+
+      ciri_High_Standing_Relaxed_Combat:
+        actor: "ciri"
+        repo: "pose_2125_High_Standing_Relaxed_Combat"
+
+      geralt_high_standing_determined_idle:
+        actor: "geralt"
+        repo: "pose_0_high_standing_determined_idle"
+
+      ciri_high_standing_determined_idle:
+        actor: "ciri"
+        repo: "pose_0_high_standing_determined_idle"
+
+      geralt_Low_Standing_Happy:
+        actor: "geralt"
+        repo: "pose_2211_Low_Standing_Happy"
+
+      ciri_High_Standing_Happy:
+        actor: "ciri"
+        repo: "pose_2138_High_Standing_Happy"
+
+      geralt_High_Kneeling_Bored:
+        actor: "geralt"
+        repo: "pose_2090_High_Kneeling_Bored"
+
+    soundbanks:
+      - music_toussaint
+
+
+storyboard:
+  #defaults:
+    #placement:
+      #geralt: [[ -0.7149082422, 2.4508051872, 0.0 ], [ 0.0, 0.0, 196.1001281738 ]]
+      #mirror_man: [[ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      #ciri: [[ -2.4581251144, 2.3873107433, 0.0 ], [ 0.0, 0.0, 239.0999450684 ]]
+
+    #actor.pose:
+      #geralt: geralt_High_Standing_Relaxed_Combat
+      #mirror_man: mirror_man_high_standing_determined_idle
+      #ciri: ciri_High_Standing_Relaxed_Combat
+
+  section_start:
+    shot_0: 
+      - fade.in: [0.0, 3.0] # pour le fade in/out c'est en secondes
+      - actor.placement: [0.0, geralt, [ -0.7149082422, 2.4508051872, 0.0 ], [ 0.0, 0.0, 157.4000244141 ]]
+      - actor.placement: [0.0, mirror_man, [ 0.2457700968, -0.1189884469, -1.4700040817 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.placement: [0.0, ciri, [ -2.4581251144, 2.3873107433, 0.0 ], [ 0.0, 0.0, 239.0999450684 ]]
+      - actor.pose: [0.0, geralt_Low_Standing_Happy]
+      - actor.pose: [0.0, ciri_High_Standing_Happy]
+      - actor.pose: [0.0, mirror_man_high_standing_determined_idle]
+      - cam: [0.0, cam_6_grave_ots_geralt]
+      - actor.lookat: [0.0, geralt, ciri]
+      - actor.lookat: [0.0, ciri, geralt]
+      - actor.hide: [0.0, mirror_man]
+
+  section_storyboard_ui:
+    shot_01: # PAUSE
+      - fade.in: [0.0, 1.0] # pour le fade in/out c'est en secondes
+      - actor.placement: [0.0, geralt, [ -0.7149082422, 2.4508051872, 0.0 ], [ 0.0, 0.0, 157.4000244141 ]]
+      - actor.placement: [0.0, mirror_man, [ 0.2457700968, -0.1189884469, -1.4700040817 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.placement: [0.0, ciri, [ -2.4581251144, 2.3873107433, 0.0 ], [ 0.0, 0.0, 239.0999450684 ]]
+      - actor.pose: [0.0, geralt_Low_Standing_Happy]
+      - actor.pose: [0.0, ciri_High_Standing_Happy]
+      - actor.pose: [0.0, mirror_man_high_standing_determined_idle]
+      - cam: [0.0, cam_6_grave_ots_geralt]
+      - actor.lookat: [0.0, geralt, mirror_man]
+      - actor.lookat: [0.0, ciri, geralt]
+      - actor.hide: [0.0, mirror_man]
+
+    shot_1: #Now Poppet,
+      #- fade.in: [0.0, 1.0] # pour le fade in/out c'est en secondes
+      #- actor.placement: [0.0, geralt, [ -0.7149082422, 2.4508051872, 0.0 ], [ 0.0, 0.0, 157.4000244141 ]]
+      #- actor.placement: [0.0, mirror_man, [ 0.2457700968, -0.1189884469, -1.4700040817 ], [ 0.0, 0.0, 0.0 ]]
+      #- actor.placement: [0.0, ciri, [ -2.4581251144, 2.3873107433, 0.0 ], [ 0.0, 0.0, 239.0999450684 ]]
+      #- actor.pose: [0.0, geralt_Low_Standing_Happy]
+      #- actor.pose: [0.0, ciri_High_Standing_Happy]
+      #- actor.pose: [0.0, mirror_man_high_standing_determined_idle]
+      - cam: [0.0, cam_6_grave_ots_geralt]
+      #- actor.lookat: [0.0, geralt, mirror_man]
+      #- actor.lookat: [0.0, ciri, geralt]
+      #- actor.hide: [0.0, mirror_man]
+      #- actor.anim: [0.0, ciri_add_idle_weight_shift_03]
+
+    shot_2: #I hope you rest in peace.
+      - cam: [0.0, cam_7_ciri_ots_geralt]
+      - actor.anim: [0.0, geralt_high_standing_determined_gesture_question_hand_flick_02]
+
+    shot_3: #It's certain Geralt.
+      - cam: [0.0, cam_4_ciri_proche]
+      - actor.anim.mimic: [0.0, ciri_geralt_neutral_yes_long_face]
+      - actor.lookat: [0.0, geralt, ciri]
+
+    shot_4: #She knows now that she was important to you too.
+      - cam: [0.0, cam_7_ciri_ots_geralt]
+      - actor.anim: [0.0, ciri_add_gesture_explain_01]
+
+    shot_5: #geralt acquiesse
+      - cam: [0.0, cam_6_grave_ots_geralt] #plutôt un gros plan de face sur geralt? avec un mimic d'acquiessement ?
+      - actor.lookat: [0.0, geralt, mirror_man]
+
+    shot_6: #I return to my path.
+      - cam: [0.0, cam_4_ciri_proche]
+      - actor.anim: [0.0, ciri_high_standing_determined_gesture_looking_for_me]
+      #- actor.anim.mimic: [0.0, ciri_geralt_neutral_yes_long_face]
+      #- actor.lookat: [0.0, geralt, ciri]
+      - actor.lookat: [0.0, ciri, geralt]
+    
+    shot_7: #See you soon.
+      - cam: [0.0, cam_6_grave_ots_geralt]
+      #- actor.anim.mimic: [0.0, geralt_geralt_neutral_yes_ok_face]
+      - actor.lookat: [0.0, geralt, ciri]
+
+    shot_8: #See you soon Ciri.
+      - cam: [0.0, cam_7_ciri_ots_geralt]
+      #- cam: [0.0, cam_5_geralt_ots_ciri]
+      - actor.anim: [0.0, ciri_high_standing_determined_exit_rightside]
+      - actor.lookat: [0.9, geralt, mirror_man]
+
+    shot_81: 
+      - actor.hide: [0.9, ciri]
+
+    shot_9: #geralt s'agenouille
+      - actor.anim: [0.0, geralt_high_standing_determined_to_high_kneeling_bored]
+      - actor.pose: [0.2, geralt_High_Kneeling_Bored]
+      - cam.blend.start: [0.2, cam_7_ciri_ots_geralt, smooth] 
+      - cam.blend.end: [0.8, cam_8_pre_final, smooth] 
+      
+    shot_10: #final
+      - cam: [0.0, cam_9_final]
+      - actor.anim.mimic: [0.35, geralt_constant_closed_eyes_face]
+
+    shot_11: #blend
+      - cam.blend.start: [0.0, cam_9_final, smooth]
+      - cam.blend.end: [0.8, cam_10_geralt_final, smooth]
+
+    shot_12: #fade out
+      - fade.out: [0.0, 3.0]
+
+
+
+dialogscript:
+  player: "geralt"
+  actors: [ "geralt", "ciri", "mirror_man" ]  
+
+  section_start:
+    - CUE: shot_0
+    - PAUSE: 0.0
+    - NEXT: script_music
+
+  script_music:
+    - SCRIPT:
+        function: STED_PlayMusicScene
+        parameter:
+          - areaName: "toussaint"
+          - eventName: "mus_bob_dialog_sad_harp"
+          - saveType: "SESB_ClearSaved"
+    - NEXT: section_storyboard_ui
+
+  section_storyboard_ui:
+    - CUE: shot_01
+    - PAUSE: 2.0
+    - CUE: shot_1
+    - geralt: Now Poppet,
+    - PAUSE: 0.5
+    - CUE: shot_2
+    - geralt: I hope you rest in peace.
+    - PAUSE: 0.5
+    - CUE: shot_3
+    - ciri: It's certain Geralt.
+    - PAUSE: 0.5
+    - CUE: shot_4    
+    - ciri: She knows now that she was important to you too.
+    - CUE: shot_5 
+    - PAUSE: 2.0 #geralt acquiesse
+    - CUE: shot_6 
+    - ciri: I return to my Path.
+    - PAUSE: 0.5
+    - CUE: shot_7
+    - ciri: See you soon.
+    - PAUSE: 0.8
+    - CUE: shot_8
+    - geralt: See you soon, Ciri.
+    - CUE: shot_81
+    - PAUSE: 2.0
+    - CUE: shot_9 #geralt s'agenouille
+    - PAUSE: 5.0
+    - CUE: shot_10 #final
+    - PAUSE: 6.0
+    - CUE: shot_11 #blend
+    - PAUSE: 10.0
+    - CUE: shot_12 #fade out
+    - PAUSE: 5.0
+    - NEXT: section_exit
+
+  section_exit:
+    - CAMERA_BLEND: 5.0
+    - EXIT

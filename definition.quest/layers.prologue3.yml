@@ -1,0 +1,14 @@
+layers: 
+
+  layer_prologue3: 
+    world: "prologue"
+    #context: ""
+
+
+    statics: 
+      static_pearl: 
+        template: "CEntity:dlc/dlcsted/data/entities/pearl_fx.w2ent"
+        pos: [ -348.0219726563, -187.6188049316, 7.4343357086 ] #initial pos: [ -348.0219726563, -187.6188049316, 8.4343357086 ]
+        rot: [ 0.0, 0.0, 0.0 ] 
+
+

@@ -1,0 +1,20 @@
+#
+# definition of entities
+#
+entities:
+  shell_blue_pearl:
+    includes:
+      - gameplay\containers\new_locations\underwater\average\underwater_shell_average.w2ent  # required instead of interaction component, so "loot" action is removed after looting
+    entityObject:
+      .type: W3AnimatedContainer
+      focusModeHighlight: FMV_Clue
+      streamingDistance: 0
+
+    templateParams:
+      - .type: CR4LootParam
+        containers:
+          shell_loot:
+            chance: 100.0
+            respawnTime: 0
+
+

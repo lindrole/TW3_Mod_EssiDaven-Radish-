@@ -1,0 +1,1844 @@
+#
+# quest structure root segment
+# 
+# (version: 609, saved: 2022-12-24 14:52:25)
+#
+---
+structure:
+  quest:
+    blocks:
+      start:
+        ".editor": [ -2050.0, 300.0 ]
+        next:
+          - changelayers.show_prologue_near_grave
+          - changelayers.hide_prologue3
+          - changelayers.hide_prologue4
+          - changelayers.hide_prologue2
+      
+      scene.1_dandelion_crossroad:
+        ".editor":
+          pos: [ -950.0, 300.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 1.at_the_crossroads.yml
+        placement: prologue/crossroads_scene
+        interruptable: true
+        _fadein: false
+        next.Output:
+          - journal.after_dandelion_meet: Activate
+          - script.new_disable_npc_interactivness
+      
+      scene.21_mirror_final_ciri:
+        ".editor":
+          pos: [ 12250.0, 175.0 ]
+          in: [ Input ]
+          out: [ BlackScreen ]
+        scene: 21.mirror_final_ciri.yml
+        placement: prologue/mirror_on_grave
+        interruptable: true
+        _fadein: false
+        next.BlackScreen:
+          - changelayers.hide_pearl_fx
+          - waituntil.blackscreen_1_second
+      
+      scene.22_final_ciri_yes:
+        ".editor":
+          pos: [ 12850.0, 250.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 22.final_ciri_yes.yml
+        placement: prologue/mirror_on_grave
+        interruptable: true
+        _fadein: true
+        next.Output:
+          - journal.final_ciri: Activate
+      
+      scene.23_final_ciri_no:
+        ".editor":
+          pos: [ 12850.0, 100.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 23.final_ciri_no.yml
+        placement: prologue/mirror_on_grave
+        interruptable: true
+        _fadein: true
+        next.Output:
+          - journal.final_ciri: Activate
+      
+      scene.2_dandelion_on_the_road:
+        ".editor":
+          pos: [ -350.0, 300.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 2.on_the_way.yml
+        placement: prologue/gameplay
+        interruptable: true
+        _fadein: false
+        next.Output:
+          - waituntil.inside_area_grave
+      
+      scene.3_at_the_grave:
+        ".editor":
+          pos: [ 100.0, 300.0 ]
+          in: [ Input ]
+          out: [ BlackScreen ]
+        scene: 3.at_the_grave.yml
+        placement: prologue/grave_scene
+        interruptable: true
+        _fadein: false
+        next.BlackScreen:
+          - settime.time_adj_sunset
+          - script.new_enable_npc_interactivness
+          - script.hud_some_time_later
+          - despawn.despawn_dandelion_3
+      
+      scene.4_sunset:
+        ".editor":
+          pos: [ 400.0, 300.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 4.sunset.yml
+        placement: prologue/sunset
+        interruptable: true
+        _fadein: false
+        next.Output:
+          - journal.essi_after_grave: Activate
+          - waituntil.outside_mirror_meat_area
+      
+      scene.5_mirror_meet:
+        ".editor":
+          pos: [ 700.0, 300.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 5.mirror_meet.yml
+        placement: prologue/mirror_meet
+        interruptable: true
+        _fadein: false
+        next.Output:
+          - changelayers.hide_prologue_near_grave_bis
+      
+      scene.6_ask_yen_bis:
+        ".editor":
+          pos: [ 2900.0, 300.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 6.ask_yen.yml
+        placement: skellige/ask_yen_scene
+        interruptable: true
+        _fadein: false
+        next.Output:
+          - unpausetime.new_unpause_time
+      
+      scene.77_epilogue_yen:
+        ".editor":
+          pos: [ 13600.0, 275.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 77.epilogue_yen.yml
+        placement: ~geralt
+        interruptable: true
+        _fadein: false
+        next: ".done"
+      
+      scene.9_ciri_grave:
+        ".editor":
+          pos: [ 10600.0, 175.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 9.ciri_grave.yml
+        placement: prologue/ciri_at_grave
+        interruptable: true
+        _fadein: false
+        next.Output:
+          - script.auto_savegame
+      
+      scene.ciri_and_yen:
+        ".editor":
+          pos: [ 9400.0, 175.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 8.ciri_and_yen.yml
+        placement: skellige/ciriyen
+        interruptable: true
+        _fadein: false
+        next.Output:
+          - journal.back_to_yen: Activate
+      
+      scene.gameplay_yen_dors:
+        ".editor":
+          pos: [ 2500.0, 825.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 58.yen_dors.yml
+        placement: ~geralt
+        interruptable: true
+        _fadein: false
+        next: ".done"
+      
+      scene.gp_celadon_haired:
+        ".editor":
+          pos: [ 5700.0, 675.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 69.novigrad_day.yml
+        placement: ~geralt
+        interruptable: true
+        _fadein: false
+        next.Output:
+          - waituntil.realtime_elapsed_2
+      
+      scene.gp_go_to_yen:
+        ".editor":
+          pos: [ 1000.0, 300.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 59.go_to_yen.yml
+        placement: ~geralt
+        interruptable: true
+        _fadein: false
+        next.Output:
+          - changelayers.show_skellige1
+      
+      scene.gp_its_too_late:
+        ".editor":
+          pos: [ 5700.0, 600.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 68.novigrad_night.yml
+        placement: ~geralt
+        interruptable: true
+        _fadein: false
+        next.Output:
+          - waituntil.realtime_elapsed
+      
+      scene.gp_return_to_yen:
+        ".editor":
+          pos: [ 8200.0, 275.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 79.return_to_yen.yml
+        placement: ~geralt
+        interruptable: true
+        _fadein: false
+        next: ".done"
+      
+      scene.gp_yen_partie:
+        ".editor":
+          pos: [ 4800.0, 400.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 67.yen_partie.yml
+        placement: ~geralt
+        interruptable: true
+        _fadein: false
+        next: ".done"
+      
+      interaction.7_sheenaz_or_agloval:
+        ".editor":
+          pos: [ 5700.0, 175.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 7.agloval_sheenaz.yml
+        interruptable: true
+        actor: [ sted_sheenaz, sted_agloval ]
+        next.Output:
+          - script.new_sted_savegame2
+      
+      interaction.gameplay_agloval:
+        ".editor":
+          pos: [ 6350.0, 500.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 76.gameplay_agloval.yml
+        interruptable: true
+        actor: [ sted_agloval ]
+        next.Output:
+          - waituntil.yet_meet
+      
+      interaction.gameplay_sheenaz:
+        ".editor":
+          pos: [ 6350.0, 400.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 75.gameplay_sheenaz.yml
+        interruptable: true
+        actor: [ sted_sheenaz ]
+        next.Output:
+          - waituntil.yet_meet
+      
+      interaction.yen_annoyed:
+        ".editor":
+          pos: [ 3450.0, 725.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 55.yen_agacee.yml
+        interruptable: true
+        actor: [ sted_yennefer ]
+        next.Output:
+          - waituntil.inside_yen_location_bis
+      
+      interaction.yen_give_me_a_minute:
+        ".editor":
+          pos: [ 2450.0, 300.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 57.yen_shabille.yml
+        interruptable: true
+        actor: [ sted_yennefer ]
+        next.Output:
+          - spawn.spawn_yen_jour
+      
+      interaction.yen_go_get_pearl:
+        ".editor":
+          pos: [ 3300.0, 650.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 56.yen_perle.yml
+        interruptable: true
+        actor: [ sted_yennefer ]
+        next.Output:
+          - waituntil.inside_yen_location_bis
+      
+      waituntil.all_any_condition_nuit3:
+        any:
+          - after: "20:50"
+          - before: "04:59"
+        ".editor":
+          pos: [ 5400.0, 650.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - waituntil.fact_sted_havemet_sheenaz
+      
+      waituntil.any_condition_nuit:
+        any:
+          - after: "20:00"
+          - before: "06:00"
+        ".editor":
+          pos: [ 2150.0, 700.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - despawn.despawn_yen_soir
+      
+      waituntil.any_condition_nuit2:
+        any:
+          - after: "20:45"
+          - before: "05:00"
+        ".editor":
+          pos: [ 5200.0, 200.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - despawn.sheenaz_nuit
+          - despawn.agloval_nuit
+      
+      waituntil.blackscreen_1_second:
+        elapsed: "00:00:02"
+        ".editor":
+          pos: [ 12400.0, 175.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - settime.new_set_time
+      
+      waituntil.day:
+        time: [ "06:00", "20:00" ]
+        ".editor":
+          pos: [ 2150.0, 300.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - interaction.yen_give_me_a_minute: Input
+          - despawn.despawn_yen_nuit
+      
+      waituntil.day_animal:
+        time: [ "06:00", "20:00" ]
+        ".editor":
+          pos: [ 2300.0, 1150.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - despawn.despawn_animal_bis
+      
+      waituntil.day_fact_far_from_yen:
+        ".editor":
+          pos: [ 2450.0, 450.0 ]
+          hint: named
+          in: [ In ]
+          out: [ continue, stop ]
+        conditions:
+          stop:
+            factdb: [ far_from_yen, ">=", 1 ]
+          continue:
+            factdb: [ far_from_yen, "=", 0 ]
+        next.continue:
+          - spawn.yen_carpet
+      
+      waituntil.day_period:
+        time: [ "05:00", "20:30" ]
+        ".editor":
+          pos: [ 5400.0, 725.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - waituntil.fact_sted_havemet_sheenaz_2
+      
+      waituntil.fact_0_animal:
+        ".editor":
+          pos: [ 4500.0, 450.0 ]
+          hint: named
+          in: [ In ]
+          out: [ continue, stop ]
+        conditions:
+          continue:
+            factdb: [ skellige_animal2, "=", 1 ]
+          stop:
+            factdb: [ skellige_animal2, "=", 0 ]
+        next.continue:
+          - waituntil.inside_yen_location
+      
+      waituntil.fact_1_animal:
+        factdb: [ skellige_animal2, "=", 1 ]
+        ".editor":
+          pos: [ 4350.0, 450.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - waituntil.fact_0_animal
+      
+      waituntil.fact_first_meet:
+        ".editor":
+          pos: [ 5500.0, 400.0 ]
+          hint: named
+          in: [ In ]
+          out: [ first_meet, yet_meet ]
+        conditions:
+          yet_meet:
+            factdb: [ sted_havemet_sheenaz, "=", 1 ]
+          first_meet:
+            factdb: [ sted_havemet_sheenaz, "=", 0 ]
+        next.first_meet:
+          - interaction.7_sheenaz_or_agloval: Input
+        next.yet_meet:
+          - waituntil.yet_meet
+      
+      waituntil.fact_mirror_killed:
+        factdb: [ mirror_devil_fighter, "=", 0 ]
+        ".editor":
+          pos: [ 11650.0, 175.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - script.hide_bossfight_indicator
+      
+      waituntil.fact_mirror_spawned:
+        factdb: [ mirror_devil_fighter, "=", 1 ]
+        ".editor":
+          pos: [ 11500.0, 175.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - waituntil.fact_mirror_killed
+          - waituntil.facts_mirror_still_alive
+      
+      waituntil.fact_remember_or_not:
+        ".editor":
+          pos: [ 12700.0, 175.0 ]
+          hint: named
+          in: [ In ]
+          out: [ no_remember, yes_remember ]
+        conditions:
+          yes_remember:
+            factdb: [ sted_yes_remember, ">=", 1 ]
+          no_remember:
+            factdb: [ sted_no_remember, ">=", 1 ]
+        next.no_remember:
+          - scene.23_final_ciri_no: Input
+        next.yes_remember:
+          - scene.22_final_ciri_yes: Input
+      
+      waituntil.fact_sted_havemet_sheenaz:
+        ".editor":
+          pos: [ 5550.0, 650.0 ]
+          hint: named
+          in: [ In ]
+          out: [ reattach, stop ]
+        conditions:
+          stop:
+            factdb: [ sted_havemet_sheenaz, ">=", 1 ]
+          reattach:
+            factdb: [ sted_havemet_sheenaz, "=", 0 ]
+        next.reattach:
+          - scene.gp_its_too_late: Input
+      
+      waituntil.fact_sted_havemet_sheenaz_2:
+        ".editor":
+          pos: [ 5550.0, 725.0 ]
+          hint: named
+          in: [ In ]
+          out: [ reattach, stop ]
+        conditions:
+          reattach:
+            factdb: [ sted_havemet_sheenaz, "=", 0 ]
+          stop:
+            factdb: [ sted_havemet_sheenaz, ">=", 1 ]
+        next.reattach:
+          - scene.gp_celadon_haired: Input
+      
+      waituntil.facts_mirror_still_alive:
+        ".editor":
+          pos: [ 11650.0, 325.0 ]
+          hint: named
+          in: [ In ]
+          out: [ alive, dead ]
+        conditions:
+          alive:
+            factdb: [ mirror_devil_fighter, "=", 1 ]
+          dead:
+            factdb: [ mirror_devil_fighter, "=", 0 ]
+        next.alive:
+          - script.new_start_cam_shake
+      
+      waituntil.inside_area_croisement:
+        inside: [ prologue/area_croisement, PLAYER ]
+        ".editor":
+          pos: [ -1250.0, 300.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - script.Disable_Quest_Marker
+      
+      waituntil.inside_area_grave:
+        inside: [ prologue/area_tombe, PLAYER ]
+        ".editor":
+          pos: [ -200.0, 300.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - despawn.despawn_dandelion
+          - objective.follow_dandelion: Success
+      
+      waituntil.inside_ciri_yen_area:
+        inside: [ skellige/yen_ciri_location_area, PLAYER ]
+        ".editor":
+          pos: [ 9200.0, 175.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - scene.ciri_and_yen: Input
+          - objective.go_back_to_yen: Success
+      
+      waituntil.inside_pearl_area:
+        inside: [ novigrad/pearl_area, PLAYER ]
+        ".editor":
+          pos: [ 7550.0, 175.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - objective.find_pearl: Deactivate
+          - objective.find_pearl_near: Activate
+          - waituntil.looted_pearl
+      
+      waituntil.inside_skellige_yen_area:
+        inside: [ skellige/ending_yen_area, PLAYER ]
+        ".editor":
+          pos: [ 13450.0, 275.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - scene.77_epilogue_yen: Input
+      
+      waituntil.inside_temple_isle:
+        inside: [ novigrad/temple_isle_area, PLAYER ]
+        ".editor":
+          pos: [ 5050.0, 300.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - waituntil.time_range_jour2
+          - waituntil.any_condition_nuit2
+          - waituntil.inside_temple_isle_2
+      
+      waituntil.inside_temple_isle_2:
+        inside: [ novigrad/temple_isle_area, PLAYER ]
+        ".editor":
+          pos: [ 5200.0, 650.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - waituntil.all_any_condition_nuit3
+          - waituntil.day_period
+      
+      waituntil.inside_temple_isle_area:
+        inside: [ novigrad/temple_isle_area, PLAYER ]
+        ".editor":
+          pos: [ 3300.0, 400.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - addfact.add_fact_far_from_yen
+      
+      waituntil.inside_yen_location:
+        inside: [ skellige/yen_location_area2, PLAYER ]
+        ".editor":
+          pos: [ 4650.0, 400.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - scene.gp_yen_partie: Input
+      
+      waituntil.inside_yen_location_bis:
+        inside: [ skellige/yen_location_area, PLAYER ]
+        ".editor":
+          pos: [ 3450.0, 650.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - interaction.yen_annoyed: Input
+      
+      waituntil.looted_pearl:
+        looted: novigrad/sky_blue_pearl_shell
+        ".editor":
+          pos: [ 7900.0, 175.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - objective.find_pearl_near: Success
+          - waituntil.outside_area_sirens
+          - changelayers.show_skellige2
+          - objective.go_back_to_yen: Activate
+      
+      waituntil.night:
+        any:
+          - after: "20:00"
+          - before: "06:00"
+        ".editor":
+          pos: [ 2150.0, 825.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - waituntil.night_and_near_yen_bed
+      
+      waituntil.night_and_near_yen_bed:
+        all:
+          - factdb: [ skellige_animal, "=", 1 ]
+          - entered: [ skellige/near_bed_area, PLAYER ]
+        ".editor":
+          pos: [ 2300.0, 825.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - scene.gameplay_yen_dors: Input
+          - waituntil.night_fact_far_from_yen
+      
+      waituntil.night_animal:
+        any:
+          - before: "06:00"
+          - after: "20:00"
+        ".editor":
+          pos: [ 2300.0, 1050.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - spawn.spawn_animal_bis
+      
+      waituntil.night_fact_far_from_yen:
+        ".editor":
+          pos: [ 2500.0, 725.0 ]
+          hint: named
+          in: [ In ]
+          out: [ continue, stop ]
+        conditions:
+          continue:
+            factdb: [ far_from_yen, "=", 0 ]
+          stop:
+            factdb: [ far_from_yen, ">=", 1 ]
+        next.continue:
+          - spawn.yen_night
+      
+      waituntil.outside_area_sirens:
+        outside: [ novigrad/guard_area, PLAYER ]
+        ".editor":
+          pos: [ 8050.0, 275.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - scene.gp_return_to_yen: Input
+      
+      waituntil.outside_area_skellige_large:
+        outside: [ skellige/skallige_large_area, PLAYER ]
+        ".editor":
+          pos: [ 3300.0, 500.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - addfact.add_fact_far_from_yen
+      
+      waituntil.outside_mirror_meat_area:
+        outside: [ prologue/mirror_meet_area, PLAYER ]
+        ".editor":
+          pos: [ 550.0, 300.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - scene.5_mirror_meet: Input
+          - objective.leave_grave: Success
+      
+      waituntil.outside_temple_isle:
+        outside: [ novigrad/temple_isle_area, PLAYER ]
+        ".editor":
+          pos: [ 6300.0, 275.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - changelayers.hide_novigrad_bis
+      
+      waituntil.realtime_elapsed:
+        elapsed: "00:00:30"
+        ".editor":
+          pos: [ 5550.0, 500.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - waituntil.inside_temple_isle_2
+      
+      waituntil.realtime_elapsed_2:
+        elapsed: "00:02:00"
+        ".editor":
+          pos: [ 5450.0, 850.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - waituntil.inside_temple_isle_2
+      
+      waituntil.realtime_elapsed_x_seconds:
+        elapsed: "00:00:03"
+        ".editor":
+          pos: [ 11650.0, 450.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - waituntil.facts_mirror_still_alive
+      
+      waituntil.soir_fact_far_from_yen:
+        ".editor":
+          pos: [ 2450.0, 600.0 ]
+          hint: named
+          in: [ In ]
+          out: [ continue, stop ]
+        conditions:
+          continue:
+            factdb: [ far_from_yen, "=", 0 ]
+          stop:
+            factdb: [ far_from_yen, ">=", 1 ]
+        next.continue:
+          - spawn.yen_brushing
+      
+      waituntil.some_real_time_xx_seconds:
+        elapsed: "00:00:10"
+        ".editor":
+          pos: [ -500.0, 300.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - scene.2_dandelion_on_the_road: Input
+      
+      waituntil.time_range_jour:
+        time: [ "06:00", "18:00" ]
+        ".editor":
+          pos: [ 2150.0, 450.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - despawn.despawn_yen_nuit
+      
+      waituntil.time_range_jour2:
+        time: [ "05:00", "20:45" ]
+        ".editor":
+          pos: [ 5200.0, 400.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - spawn.agloval_phase_1
+          - spawn.sheenaz_phase_1
+      
+      waituntil.time_range_soir:
+        time: [ "18:00", "20:00" ]
+        ".editor":
+          pos: [ 2150.0, 600.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - despawn.despawn_yen_jour
+      
+      waituntil.wait_10s:
+        elapsed: "00:00:10"
+        ".editor":
+          pos: [ 6600.0, 275.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - despawn.sheenaz
+          - despawn.agloval
+      
+      waituntil.wait_xx_seconds:
+        elapsed: "00:00:22"
+        ".editor":
+          pos: [ 10600.0, 325.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - changelayers.show_pearl_fx
+      
+      waituntil.yet_meet:
+        factdb: [ sted_havemet_sheenaz, "=", 1 ]
+        ".editor":
+          pos: [ 6200.0, 450.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - interaction.gameplay_sheenaz: Input
+          - interaction.gameplay_agloval: Input
+      
+      script.Disable_Quest_Marker:
+        ".editor":
+          pos: [ -1100.0, 300.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: EnableDynamicMappin
+        parameter:
+          - tag: cname_sted_dandelion
+          - enable: false
+        next:
+          - scene.1_dandelion_crossroad: Input
+      
+      script.Enable_Quest_Marker:
+        ".editor":
+          pos: [ -1400.0, 300.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: EnableDynamicMappin
+        parameter:
+          - tag: cname_sted_dandelion
+          - enable: true
+        next:
+          - waituntil.inside_area_croisement
+      
+      script.auto_savegame:
+        ".editor":
+          pos: [ 10750.0, 175.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: STED_SaveGame2
+        parameter:
+          - type: SGT_ForcedCheckPoint
+          - slot: -1
+        next:
+          - changelayers.show_prologue_4
+      
+      script.hide_bossfight_indicator:
+        ".editor":
+          pos: [ 11800.0, 175.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: ShowBossFightIndicator
+        parameter:
+          - enable: false
+          - bossTag: cname_sted_mirror_man
+        next:
+          - despawn.despawn_shadow_a
+      
+      script.hud_some_time_later:
+        ".editor":
+          pos: [ 250.0, 75.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: ShowTimeLapse
+        parameter:
+          - showTime: 3.0
+          - timeLapseMessageKey: cinematic_text_some_time_later
+          - timeLapseAdditionalMessageKey: ""
+        next: ".done"
+      
+      script.new_disable_npc_interactivness:
+        ".editor":
+          pos: [ -800.0, 300.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: DisableNPCInteractivness
+        parameter:
+          - npcTag: cname_sted_dandelion
+          - disableTalking: true
+          - disableOnliners: true
+          - disableLookats: true
+        next:
+          - spawn.dandelion_grave
+      
+      script.new_enable_npc_interactivness:
+        ".editor":
+          pos: [ 250.0, 150.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: DisableNPCInteractivness
+        parameter:
+          - npcTag: cname_sted_dandelion
+          - disableTalking: false
+          - disableOnliners: false
+          - disableLookats: false
+        next: ".done"
+      
+      script.new_start_cam_shake:
+        ".editor":
+          pos: [ 11800.0, 300.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: CameraShake
+        parameter:
+          - strength: 1.0
+        next:
+          - waituntil.realtime_elapsed_x_seconds
+      
+      script.new_sted_savegame2:
+        ".editor":
+          pos: [ 5850.0, 175.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: STED_SaveGame2
+        parameter:
+          - type: SGT_AutoSave
+          - slot: -1
+        next:
+          - unpausetime.new_unpause_time_1
+      
+      script.show_bossfight_indicator:
+        ".editor":
+          pos: [ 11200.0, 175.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: ShowBossFightIndicator
+        parameter:
+          - enable: true
+          - bossTag: cname_sted_mirror_man
+        next:
+          - spawn.shadow_a
+      
+      changelayers.hide_novigrad:
+        ".editor":
+          pos: [ -1800.0, 75.0 ]
+          hint: hide-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: novigrad
+        hide:
+          - layer_coast
+          - layer_novigrad
+        next:
+          - spawn.dandelion_croisement
+      
+      changelayers.hide_novigrad_bis:
+        ".editor":
+          pos: [ 6450.0, 275.0 ]
+          hint: hide-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: novigrad
+        hide:
+          - layer_novigrad
+        next:
+          - waituntil.wait_10s
+      
+      changelayers.hide_pearl_fx:
+        ".editor":
+          pos: [ 12400.0, 250.0 ]
+          hint: hide-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: prologue
+        hide:
+          - layer_prologue3
+        next: ".done"
+      
+      changelayers.hide_prologue2:
+        ".editor":
+          pos: [ -1800.0, 300.0 ]
+          hint: hide-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: prologue
+        hide:
+          - layer_prologue2
+        next:
+          - spawn.dandelion_croisement
+      
+      changelayers.hide_prologue3:
+        ".editor":
+          pos: [ -1800.0, 375.0 ]
+          hint: hide-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: prologue
+        hide:
+          - layer_prologue3
+        next:
+          - spawn.dandelion_croisement
+      
+      changelayers.hide_prologue4:
+        ".editor":
+          pos: [ -1800.0, 450.0 ]
+          hint: hide-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: prologue
+        hide:
+          - layer_prologue4
+        next:
+          - spawn.dandelion_croisement
+      
+      changelayers.hide_prologue_near_grave_bis:
+        ".editor":
+          pos: [ 850.0, 300.0 ]
+          hint: hide-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: prologue
+        hide:
+          - layer_near_grave
+        next:
+          - scene.gp_go_to_yen: Input
+          - journal.after_meet_mirror: Activate
+      
+      changelayers.hide_skellige1:
+        ".editor":
+          pos: [ -1800.0, 0.0 ]
+          hint: hide-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: skellige
+        hide:
+          - layer_dynamic_work_yen
+          - layer_skellige1
+        next:
+          - spawn.dandelion_croisement
+      
+      changelayers.hide_skellige1_bis:
+        ".editor":
+          pos: [ 3600.0, 450.0 ]
+          hint: hide-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: skellige
+        hide:
+          - layer_skellige1
+        next:
+          - despawn.yen_completely
+      
+      changelayers.hide_skellige2:
+        ".editor":
+          pos: [ -1800.0, 150.0 ]
+          hint: hide-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: skellige
+        hide:
+          - layer_skellige2
+        next:
+          - spawn.dandelion_croisement
+      
+      changelayers.hide_skellige2_bis:
+        ".editor":
+          pos: [ 9700.0, 175.0 ]
+          hint: hide-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: skellige
+        hide:
+          - layer_skellige2
+        next:
+          - changelayers.show_prologue2
+      
+      changelayers.hide_skellige_1:
+        ".editor":
+          pos: [ 8600.0, 175.0 ]
+          hint: hide-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: skellige
+        hide:
+          - layer_skellige1
+        next:
+          - despawn.despawn_skellige1
+      
+      changelayers.show_coast:
+        ".editor":
+          pos: [ 7250.0, 175.0 ]
+          hint: show-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: novigrad
+        show:
+          - layer_coast
+        next:
+          - spawn.sirens
+      
+      changelayers.show_novigrad:
+        ".editor":
+          pos: [ 4750.0, 300.0 ]
+          hint: show-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: novigrad
+        show:
+          - layer_novigrad
+        next:
+          - waituntil.inside_temple_isle
+          - journal.choice_pearl: Activate
+      
+      changelayers.show_pearl_fx:
+        ".editor":
+          pos: [ 10750.0, 325.0 ]
+          hint: show-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: prologue
+        show:
+          - layer_prologue3
+        next: ".done"
+      
+      changelayers.show_prologue2:
+        ".editor":
+          pos: [ 9850.0, 175.0 ]
+          hint: show-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: prologue
+        show:
+          - layer_prologue2
+        next:
+          - changeworld.world_prologue
+      
+      changelayers.show_prologue_4:
+        ".editor":
+          pos: [ 10900.0, 175.0 ]
+          hint: show-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: prologue
+        show:
+          - layer_prologue4
+        next:
+          - objective.kill_mirror_man: Activate
+          - spawn.spawn_ciri_and_mirror
+      
+      changelayers.show_prologue_near_grave:
+        ".editor":
+          pos: [ -1800.0, 225.0 ]
+          hint: show-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: prologue
+        show:
+          - layer_near_grave
+        next:
+          - spawn.dandelion_croisement
+      
+      changelayers.show_skellige1:
+        ".editor":
+          pos: [ 1850.0, 300.0 ]
+          hint: show-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: skellige
+        show:
+          - layer_skellige1
+        next:
+          - waituntil.day
+          - changelayers.show_skellige_4bis
+          - waituntil.night
+      
+      changelayers.show_skellige2:
+        ".editor":
+          pos: [ 8450.0, 175.0 ]
+          hint: show-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: skellige
+        show:
+          - layer_skellige2
+        next:
+          - changelayers.hide_skellige_1
+      
+      changelayers.show_skellige3:
+        ".editor":
+          pos: [ 3900.0, 450.0 ]
+          hint: show-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: skellige
+        show:
+          - layer_skellige3
+        next:
+          - changelayers.show_skellige_5
+      
+      changelayers.show_skellige_4bis:
+        ".editor":
+          pos: [ 2150.0, 1100.0 ]
+          hint: show-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: skellige
+        show:
+          - layer_skellige4
+        next:
+          - waituntil.night_animal
+          - waituntil.day_animal
+      
+      changelayers.show_skellige_5:
+        ".editor":
+          pos: [ 4050.0, 450.0 ]
+          hint: show-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: skellige
+        show:
+          - layer_skellige5
+        next:
+          - spawn.spawn_animal_2
+      
+      changelayers.show_skellige_6:
+        ".editor":
+          pos: [ 13300.0, 275.0 ]
+          hint: show-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: skellige
+        show:
+          - layer_skellige6
+        next:
+          - waituntil.inside_skellige_yen_area
+      
+      spawn.agloval_phase_1:
+        ".editor":
+          pos: [ 5350.0, 350.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: phase_agloval_1
+        spawnsets:
+          - community_novigrad1
+        next:
+          - waituntil.any_condition_nuit2
+          - waituntil.fact_first_meet
+      
+      spawn.ciri_and_yen:
+        ".editor":
+          pos: [ 9050.0, 175.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: phase_after
+        spawnsets:
+          - community_skellige_after
+        next:
+          - waituntil.inside_ciri_yen_area
+      
+      spawn.dandelion_croisement:
+        ".editor":
+          pos: [ -1550.0, 300.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: phase1
+        spawnsets:
+          - community_prologue1
+        next:
+          - script.Enable_Quest_Marker
+      
+      spawn.dandelion_grave:
+        ".editor":
+          pos: [ -650.0, 300.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: phase3
+        spawnsets:
+          - community_prologue1
+        next:
+          - waituntil.some_real_time_xx_seconds
+      
+      spawn.shadow_a:
+        ".editor":
+          pos: [ 11350.0, 175.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: shadow_a_guarding
+        spawnsets:
+          - community_shadow_a
+        next:
+          - waituntil.fact_mirror_spawned
+      
+      spawn.sheenaz_phase_1:
+        ".editor":
+          pos: [ 5350.0, 450.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: phase_sheenaz_1
+        spawnsets:
+          - community_novigrad2
+        next:
+          - waituntil.any_condition_nuit2
+          - waituntil.fact_first_meet
+      
+      spawn.sirens:
+        ".editor":
+          pos: [ 7400.0, 175.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: sirens_guarding
+        spawnsets:
+          - community_sirens
+        next:
+          - waituntil.inside_pearl_area
+      
+      spawn.spawn_animal_2:
+        ".editor":
+          pos: [ 4200.0, 450.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: animal_wandering2
+        spawnsets:
+          - community_animal2
+        next:
+          - waituntil.fact_1_animal
+      
+      spawn.spawn_animal_bis:
+        ".editor":
+          pos: [ 2450.0, 1050.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: animal_wandering
+        spawnsets:
+          - community_animal
+        next:
+          - waituntil.day_animal
+      
+      spawn.spawn_ciri_and_mirror:
+        ".editor":
+          pos: [ 11050.0, 175.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: phase_fight
+        spawnsets:
+          - community_prologue_fight
+        next:
+          - script.show_bossfight_indicator
+      
+      spawn.spawn_yen_jour:
+        ".editor":
+          pos: [ 2600.0, 300.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: phase_yen_work
+        spawnsets:
+          - community_skellige1
+        next:
+          - pausetime.new_pause_time
+      
+      spawn.yen_brushing:
+        ".editor":
+          pos: [ 2750.0, 575.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: phase5_yen_brushing
+        spawnsets:
+          - community_skellige1
+        next:
+          - waituntil.any_condition_nuit
+      
+      spawn.yen_carpet:
+        ".editor":
+          pos: [ 2600.0, 400.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: phase_yen_carpet
+        spawnsets:
+          - community_skellige1
+        next:
+          - spawn.yen_jour
+      
+      spawn.yen_jour:
+        ".editor":
+          pos: [ 2750.0, 400.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: phase_yen_work
+        spawnsets:
+          - community_skellige1
+        next:
+          - waituntil.time_range_soir
+      
+      spawn.yen_night:
+        ".editor":
+          pos: [ 2750.0, 700.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: phase5_yen_night
+        spawnsets:
+          - community_skellige1
+        next:
+          - waituntil.time_range_jour
+      
+      despawn.agloval:
+        ".editor":
+          pos: [ 6750.0, 325.0 ]
+          hint: despawn-only
+          in: []
+          out: []
+        spawnsets:
+          - community_novigrad1
+        next: ".done"
+      
+      despawn.agloval_nuit:
+        ".editor":
+          pos: [ 5350.0, 150.0 ]
+          hint: despawn-only
+          in: []
+          out: []
+        spawnsets:
+          - community_novigrad1
+        next:
+          - waituntil.time_range_jour2
+      
+      despawn.despawn_animal_2:
+        ".editor":
+          pos: [ 8900.0, 175.0 ]
+          hint: despawn-only
+          in: []
+          out: []
+        spawnsets:
+          - community_animal2
+        next:
+          - spawn.ciri_and_yen
+      
+      despawn.despawn_animal_bis:
+        ".editor":
+          pos: [ 2450.0, 1150.0 ]
+          hint: despawn-only
+          in: []
+          out: []
+        spawnsets:
+          - community_animal
+        next:
+          - waituntil.night_animal
+      
+      despawn.despawn_animal_ter:
+        ".editor":
+          pos: [ 3250.0, 225.0 ]
+          hint: despawn-only
+          in: []
+          out: []
+        spawnsets:
+          - community_animal
+        next:
+          - journal.sheenaz_after_yen: Activate
+      
+      despawn.despawn_ciri_mirror:
+        ".editor":
+          pos: [ 12100.0, 175.0 ]
+          hint: despawn-only
+          in: []
+          out: []
+        spawnsets:
+          - community_prologue_fight
+        next:
+          - scene.21_mirror_final_ciri: Input
+      
+      despawn.despawn_dandelion:
+        ".editor":
+          pos: [ -50.0, 300.0 ]
+          hint: despawn-only
+          in: []
+          out: []
+        spawnsets:
+          - community_prologue1
+        next:
+          - scene.3_at_the_grave: Input
+      
+      despawn.despawn_dandelion_2:
+        ".editor":
+          pos: [ 10300.0, 175.0 ]
+          hint: despawn-only
+          in: []
+          out: []
+        spawnsets:
+          - community_prologue1
+        next:
+          - settime.set_end_of_the_night
+      
+      despawn.despawn_dandelion_3:
+        ".editor":
+          pos: [ 250.0, 225.0 ]
+          hint: despawn-only
+          in: []
+          out: []
+        spawnsets:
+          - community_prologue1
+        next: ".done"
+      
+      despawn.despawn_shadow_a:
+        ".editor":
+          pos: [ 11950.0, 175.0 ]
+          hint: despawn-only
+          in: []
+          out: []
+        spawnsets:
+          - community_shadow_a
+        next:
+          - despawn.despawn_ciri_mirror
+      
+      despawn.despawn_skellige1:
+        ".editor":
+          pos: [ 8750.0, 175.0 ]
+          hint: despawn-only
+          in: []
+          out: []
+        spawnsets:
+          - community_skellige1
+        next:
+          - despawn.despawn_animal_2
+      
+      despawn.despawn_yen_and_ciri:
+        ".editor":
+          pos: [ 10150.0, 175.0 ]
+          hint: despawn-only
+          in: []
+          out: []
+        spawnsets:
+          - community_skellige_after
+        next:
+          - despawn.despawn_dandelion_2
+      
+      despawn.despawn_yen_jour:
+        ".editor":
+          pos: [ 2300.0, 600.0 ]
+          hint: despawn-only
+          in: []
+          out: []
+        spawnsets:
+          - community_skellige1
+        next:
+          - waituntil.soir_fact_far_from_yen
+      
+      despawn.despawn_yen_nuit:
+        ".editor":
+          pos: [ 2300.0, 450.0 ]
+          hint: despawn-only
+          in: []
+          out: []
+        spawnsets:
+          - community_skellige1
+        next:
+          - waituntil.day_fact_far_from_yen
+      
+      despawn.despawn_yen_soir:
+        ".editor":
+          pos: [ 2300.0, 700.0 ]
+          hint: despawn-only
+          in: []
+          out: []
+        spawnsets:
+          - community_skellige1
+        next:
+          - waituntil.night_fact_far_from_yen
+      
+      despawn.sheenaz:
+        ".editor":
+          pos: [ 6750.0, 225.0 ]
+          hint: despawn-only
+          in: []
+          out: []
+        spawnsets:
+          - community_novigrad2
+        next: ".done"
+      
+      despawn.sheenaz_nuit:
+        ".editor":
+          pos: [ 5350.0, 250.0 ]
+          hint: despawn-only
+          in: []
+          out: []
+        spawnsets:
+          - community_novigrad2
+        next:
+          - waituntil.time_range_jour2
+      
+      despawn.yen_completely:
+        ".editor":
+          pos: [ 3750.0, 450.0 ]
+          hint: despawn-only
+          in: []
+          out: []
+        spawnsets:
+          - community_skellige1
+        next:
+          - changelayers.show_skellige3
+      
+      journal.after_dandelion_meet:
+        ".editor": [ -800.0, 125.0 ]
+        entry: quests/essi_daven/dandelion_found
+        notify: true
+        next:
+          - objective.follow_dandelion: Activate
+      
+      journal.after_meet_mirror:
+        ".editor": [ 1000.0, 125.0 ]
+        entry: quests/essi_daven/after_grave
+        notify: true
+        next:
+          - journal.essi_after_mirror: Activate
+      
+      journal.back_to_yen:
+        ".editor": [ 9550.0, 175.0 ]
+        entry: quests/essi_daven/back_to_yen
+        notify: true
+        next:
+          - changelayers.hide_skellige2_bis
+      
+      journal.choice_pearl:
+        ".editor": [ 5050.0, -125.0 ]
+        entry: quests/essi_daven/choice_pearl_yen
+        notify: true
+        next:
+          - objective.find_agloval_sheenaz: Activate
+      
+      journal.essi_after_grave:
+        ".editor": [ 550.0, 125.0 ]
+        entry: characters/essi/after_grave
+        notify: true
+        next:
+          - objective.leave_grave: Activate
+      
+      journal.essi_after_mirror:
+        ".editor": [ 1150.0, 125.0 ]
+        entry: characters/essi/after_mirror_meet
+        notify: true
+        next:
+          - objective.go_to_yennefer: Activate
+      
+      journal.essi_end:
+        ".editor": [ 13150.0, 175.0 ]
+        entry: characters/essi/after_end
+        notify: true
+        next:
+          - questoutcome.new_quest_outcome: Success
+          - objective.kill_mirror_man: Success
+          - changelayers.show_skellige_6
+      
+      journal.final_ciri:
+        ".editor": [ 13000.0, 175.0 ]
+        entry: quests/essi_daven/final_ciri
+        notify: true
+        next:
+          - journal.essi_end: Activate
+      
+      journal.sheenaz_after_meet:
+        ".editor": [ 6350.0, -100.0 ]
+        entry: characters/sheenaz/after_sheenaz_meet
+        notify: true
+        next:
+          - journal.sheenaz_agloval_found: Activate
+      
+      journal.sheenaz_after_yen:
+        ".editor": [ 3400.0, 225.0 ]
+        entry: characters/sheenaz/after_yen_entry
+        notify: true
+        next:
+          - objective.go_to_yennefer: Success
+      
+      journal.sheenaz_agloval_found:
+        ".editor": [ 6600.0, -100.0 ]
+        entry: quests/essi_daven/sheenaz_agloval_found
+        notify: true
+        next:
+          - objective.find_pearl: Activate
+      
+      objective.find_agloval_sheenaz:
+        ".editor": [ 6050.0, -100.0 ]
+        objective: essi_daven/quest/search agloval sheenaz
+        notify: true
+        track: true
+        next: ".done"
+      
+      objective.find_pearl:
+        ".editor": [ 7700.0, -75.0 ]
+        objective: essi_daven/quest/find pearl
+        notify: true
+        track: true
+        next: ".done"
+      
+      objective.find_pearl_near:
+        ".editor": [ 8100.0, -75.0 ]
+        objective: essi_daven/quest/find pearl near
+        notify: true
+        track: true
+        next: ".done"
+      
+      objective.follow_dandelion:
+        ".editor": [ -50.0, 125.0 ]
+        objective: essi_daven/quest/follow dandelion
+        notify: true
+        track: true
+        next: ".done"
+      
+      objective.go_back_to_yen:
+        ".editor": [ 9400.0, -75.0 ]
+        objective: essi_daven/quest/go back to yennefer
+        notify: true
+        track: true
+        next: ".done"
+      
+      objective.go_to_yennefer:
+        ".editor": [ 3600.0, 125.0 ]
+        objective: essi_daven/quest/go to yennefer
+        notify: true
+        track: true
+        next: ".done"
+      
+      objective.kill_mirror_man:
+        ".editor": [ 13350.0, -25.0 ]
+        objective: essi_daven/quest/kill mirror man
+        notify: true
+        track: true
+        next: ".done"
+      
+      objective.leave_grave:
+        ".editor": [ 700.0, 125.0 ]
+        objective: essi_daven/quest/leave grave
+        notify: true
+        track: true
+        next: ".done"
+      
+      questoutcome.new_quest_outcome:
+        ".editor": [ 14150.0, 175.0 ]
+        quest: essi_daven
+        notify: true
+        next:
+          - end
+      
+      pausetime.new_pause_time:
+        ".editor": [ 2750.0, 300.0 ]
+        next:
+          - scene.6_ask_yen_bis: Input
+      
+      unpausetime.new_unpause_time:
+        ".editor": [ 3050.0, 300.0 ]
+        next:
+          - despawn.despawn_animal_ter
+          - waituntil.outside_area_skellige_large
+          - interaction.yen_go_get_pearl: Input
+          - changelayers.show_novigrad
+          - waituntil.inside_temple_isle_area
+      
+      unpausetime.new_unpause_time_1:
+        ".editor": [ 6000.0, 175.0 ]
+        next:
+          - objective.find_agloval_sheenaz: Success
+          - journal.sheenaz_after_meet: Activate
+          - waituntil.outside_temple_isle
+          - waituntil.yet_meet
+          - changelayers.show_coast
+      
+      settime.new_set_time:
+        ".editor": [ 12550.0, 175.0 ]
+        time: "04:30"
+        next:
+          - waituntil.fact_remember_or_not
+      
+      settime.set_end_of_the_night:
+        ".editor": [ 10450.0, 175.0 ]
+        time: "03:30"
+        next:
+          - scene.9_ciri_grave: Input
+          - waituntil.wait_xx_seconds
+      
+      settime.time_adj_sunset:
+        ".editor": [ 250.0, 300.0 ]
+        time: "18:00"
+        next:
+          - scene.4_sunset: Input
+      
+      addfact.add_fact_far_from_yen:
+        ".editor": [ 3450.0, 450.0 ]
+        value: [ far_from_yen, 1 ]
+        next:
+          - changelayers.hide_skellige1_bis
+      
+      changeworld.world_prologue:
+        ".editor": [ 10000.0, 175.0 ]
+        destination: prologue/grave_spawn
+        next:
+          - despawn.despawn_yen_and_ciri
+      
+      end:
+        ".editor": [ 14350.0, 175.0 ]
+        next: ".done"
+      

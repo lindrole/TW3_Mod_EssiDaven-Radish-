@@ -1,0 +1,18 @@
+journals:
+  characters:
+    sheenaz:
+      name: "Sh'eenaz and Agloval"
+      image: "journal_sheenaz.png"
+      group: secondary
+      description:
+        - after_yen_entry: A few years ago, Geralt had been hired by Duke Agloval to convince his beloved mermaid Sh'eenaz to make "a little sacrifice", and change her mermaid tail for human legs.<br/>After a few adventures, and the meeting of my dear Essi Daven, also nicknamed "Little-Eye", or more personally "Poppet", Sh'eenaz finally agreed to join definitively on dry land, her beloved Agloval.<br/>
+        - after_sheenaz_meet: Following their exchange in Novigrad, Sh'eenaz told Geralt where he could find one of those Sky Blue Pearls he needed.<br/>
+
+    essi:
+      name: "Essi Daven"
+      image: "journal_essi.png"
+      group: secondary
+      description:
+        - after_grave: Geralt and Essi met in Bremervoord.<br/>Despite Geralt's clumsiness and lack of tact, Essi fell under the witcher's spell, but it wasn't reciprocated.<br/>Geralt, Essi and I went a little way together, then we separated.<br/>A few years later, Poppet died of smallpox.<br/><br/>Recent events have made me feel the need to visit Poppet's grave.<br/>I take this opportunity to inform Geralt of Essi's doom, and show him her burial place.<br/>
+        - after_mirror_meet: It turned out that the fate of Poppet was not the fruit of chance, but had been caused by this devil of Master Mirror.<br/>
+        - after_end: Geralt finally succeeds in overcoming Gaunter O'Dimm.<br/>I hope this news eases Essi's spirit where she is, even if it doesn't bring her back to us.<br/>

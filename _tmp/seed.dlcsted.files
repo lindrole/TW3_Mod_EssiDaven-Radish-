@@ -1,0 +1,410 @@
+{
+    "files": [
+        {
+            "path": "dlc\\dlcsted\\data\\entities\\agloval_actor.w2ent",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\entities\\coast_sirens.w2ent",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\entities\\enemy_succubus_edited.w2ent",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\entities\\mirror_devil_fighter.w2ent",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\entities\\pearl_fx.w2ent",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\entities\\shadow_a.w2ent",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\entities\\shadow_b.w2ent",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\entities\\shadow_c.w2ent",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\entities\\shadow_d.w2ent",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\entities\\sheenaz_actor.w2ent",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\entities\\shell_blue_pearl.w2ent",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\entities\\skellige_animal.w2ent",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\entities\\skellige_animal2.w2ent",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\gameplay\\gui_new\\icons\\characters\\journal_essi.png",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\gameplay\\gui_new\\icons\\characters\\journal_sheenaz.png",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\gameplay\\gui_new\\icons\\inventory\\sted_pearl_64x64_skyblue.png",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\gameplay\\gui_new\\textures\\journal\\characters\\journal_essi.png",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\gameplay\\gui_new\\textures\\journal\\characters\\journal_sheenaz.png",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\gameplay\\items\\def_item_quest.xml",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\gameplay\\items\\def_loot_quest.xml",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\quest_levels.csv",
+            "bundle": "blob",
+            "chunks": [
+                "dlc"
+            ]
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\1.at_the_crossroads.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\2.on_the_way.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\21.mirror_final_ciri.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\22.final_ciri_yes.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\23.final_ciri_no.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\3.at_the_grave.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\4.sunset.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\5.mirror_meet.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\55.yen_agacee.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\56.yen_perle.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\57.yen_shabille.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\58.yen_dors.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\59.go_to_yen.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\6.ask_yen.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\67.yen_partie.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\68.novigrad_night.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\69.novigrad_day.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\7.agloval_sheenaz.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\75.gameplay_sheenaz.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\76.gameplay_agloval.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\77.epilogue_yen.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\79.return_to_yen.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\8.ciri_and_yen.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\scenes\\9.ciri_grave.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\spawnsets\\community_animal.w2comm",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\spawnsets\\community_animal2.w2comm",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\spawnsets\\community_novigrad1.w2comm",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\spawnsets\\community_novigrad2.w2comm",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\spawnsets\\community_prologue1.w2comm",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\spawnsets\\community_prologue_fight.w2comm",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\spawnsets\\community_shadow_a.w2comm",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\spawnsets\\community_shadow_b.w2comm",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\spawnsets\\community_shadow_c.w2comm",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\spawnsets\\community_shadow_d.w2comm",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\spawnsets\\community_sirens.w2comm",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\spawnsets\\community_skellige1.w2comm",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\data\\spawnsets\\community_skellige_after.w2comm",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\dlcsted.reddlc",
+            "bundle": "blob",
+            "chunks": [
+                "dlc"
+            ]
+        },
+        {
+            "path": "dlc\\dlcsted\\journal\\characters\\essi.journal",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\journal\\characters\\sheenaz.journal",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\journal\\quests\\essi_daven.journal",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\journal\\quests\\questgroup_sted.journal",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\novigrad\\sted\\layer_coast\\areas.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\novigrad\\sted\\layer_coast\\interactive_entities.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\novigrad\\sted\\layer_coast\\mappins.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\novigrad\\sted\\layer_coast\\static.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\novigrad\\sted\\layer_coast\\waypoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\novigrad\\sted\\layer_novigrad\\actionpoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\novigrad\\sted\\layer_novigrad\\areas.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\novigrad\\sted\\layer_novigrad\\mappins.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\novigrad\\sted\\radish_dbg\\radish_dbginfo.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\prolog_village\\sted\\layer_near_grave\\actionpoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\prolog_village\\sted\\layer_near_grave\\areas.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\prolog_village\\sted\\layer_near_grave\\mappins.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\prolog_village\\sted\\layer_near_grave\\scenepoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\prolog_village\\sted\\layer_prologue2\\scenepoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\prolog_village\\sted\\layer_prologue2\\waypoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\prolog_village\\sted\\layer_prologue3\\static.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\prolog_village\\sted\\layer_prologue4\\actionpoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\prolog_village\\sted\\layer_prologue4\\areas.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\prolog_village\\sted\\layer_prologue4\\waypoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\prolog_village\\sted\\radish_dbg\\radish_dbginfo.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\skellige\\sted\\layer_dynamic_work_yen\\actionpoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\skellige\\sted\\layer_dynamic_work_yen\\waypoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\skellige\\sted\\layer_skellige1\\actionpoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\skellige\\sted\\layer_skellige1\\areas.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\skellige\\sted\\layer_skellige1\\mappins.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\skellige\\sted\\layer_skellige1\\scenepoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\skellige\\sted\\layer_skellige2\\actionpoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\skellige\\sted\\layer_skellige2\\areas.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\skellige\\sted\\layer_skellige2\\mappins.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\skellige\\sted\\layer_skellige2\\scenepoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\skellige\\sted\\layer_skellige3\\areas.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\skellige\\sted\\layer_skellige4\\areas.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\skellige\\sted\\layer_skellige4\\waypoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\skellige\\sted\\layer_skellige5\\areas.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\skellige\\sted\\layer_skellige5\\waypoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\skellige\\sted\\layer_skellige6\\areas.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlcsted\\levels\\skellige\\sted\\radish_dbg\\radish_dbginfo.w2l",
+            "bundle": "blob"
+        }
+    ]
+}

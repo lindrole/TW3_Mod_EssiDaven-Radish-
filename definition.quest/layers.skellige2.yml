@@ -1,0 +1,39 @@
+layers: 
+
+  layer_skellige2: 
+    world: "skellige"
+    #context: ""
+
+    actionpoints: 
+      actionpoint_ciri_listen: [ -55.5740127563, 610.0767211914, 2.5196912289, -99.4000167847, "work_woman/stand_mwc_listening_jt" ]
+      #OLDactionpoint_ciri_listen: [ -55.5740127563, 610.0767211914, 2.5196912289, 201.2080688477, "work_woman/stand_mwc_listening_jt" ]
+      
+      actionpoint_yen_discuss: [ -54.2598037720, 609.8641967773, 2.5196912289, 80.9999847412, "work_woman/stand_mw_discussing_jt" ]
+      #KOactionpoint_yen_discuss: [ -56.480962634, 610.8487669229, 2.5196912289, 292.0, "work_woman/stand_mw_discussing_jt" ]
+      #OLDactionpoint_yen_discuss: [ -55.0245285034, 597.4776000977, 2.5197067261, 80.6000366211, "work_woman/stand_mw_discussing_jt" ]
+
+
+    mappins: 
+      yen_ciri_location_mappin: [ -55.5740127563, 610.0767211914, 2.5196912289 ]
+      #OLDyen_ciri_location_mappin: [ -55.3610153198, 596.8872680664, 2.5196914673 ]
+
+
+    areas: 
+      yen_ciri_location_area: 
+        #height: 2.0
+        borderpoints: 
+          - [ -51.6977691650, 607.4752807617, 2.5179519653 ]
+          - [ -53.9197463989, 611.4475097656, 2.5179519653 ]
+          - [ -58.6457939148, 612.4904174805, 2.5179519653 ]
+          - [ -58.4658126831, 610.0196533203, 2.5179519653 ]
+          - [ -56.8897171021, 605.7530517578, 2.5179519653 ]
+
+
+    scenepoints:
+      #ciri_and_yen:
+        #pos: [ -58.4663391113, 602.9179077148, 2.5196914673 ]
+        #rot: [ 0.0, 0.0, 0.0 ]  
+
+      ciriyen:
+        pos: [ -55.5740127563, 610.0767211914, 2.5196912289 ]
+        rot: [ 0.0, 0.0, 201.2080688477 ]
