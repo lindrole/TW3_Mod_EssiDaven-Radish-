@@ -1,0 +1,18 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=It's late.]
+;meta[translation=ɪts lˈeɪt]
+;meta[audio-hypothesis=SIL IH D SH AH L EY D T AE SIL]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+ɪ       |  290|  365|  1.00|  2.00| ok         | ɪ  ~  IH [  290 -  365]
+t       |  365|  405|  1.00|  1.70| ok         | t  ~  D  [  365 -  405]
+s       |  405|  465|  1.00|  0.50| ok         | s  ~  SH [  405 -  465]
+------------------------------------------------------------------------
+l       |  465|  625|  1.00|  1.00| ok         | l  ~> AH [  465 -  515] + L  [  515 -  625]
+eɪ      |  625|  745|  1.10|  2.00| ok         | eɪ ~  EY [  625 -  745]
+t       |  745|  865|  1.00|  1.85| ok         | t  ~> D  [  745 -  795] + T  [  795 -  865]
+;_       |  865|  930|  1.00| -1.00| <- VERIFY! | _  d  AE [  865 -  930]
