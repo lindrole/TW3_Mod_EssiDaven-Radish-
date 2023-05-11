@@ -1,0 +1,25 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=Indeed, Geralt.]
+;meta[translation=ˌɪndˈiːd dʒˈɛɹɒlt]
+;meta[audio-hypothesis=SIL D EY IH NG D IY D K EH R ER L F P SIL]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+;_       |  260|  305|  1.00| -1.00| <- VERIFY! | _  d  D  [  260 -  305]
+;_       |  305|  385|  1.00| -1.00| <- VERIFY! | _  d  EY [  305 -  385]
+------------------------------------------------------------------------
+ɪ       |  385|  415|  1.05|  2.00| ok         | ɪ  ~  IH [  385 -  415]
+n       |  415|  555|  1.00|  0.50| ok         | n  ~  NG [  415 -  555]
+d       |  555|  605|  1.00|  2.00| ok         | d  ~  D  [  555 -  605]
+i       |  605|  765|  1.10|  2.00| ok         | i  ~  IY [  605 -  765]
+d       |  765|  835|  1.00|  2.00| ok         | d  ~  D  [  765 -  835]
+------------------------------------------------------------------------
+dʒ      |  835|  905|  1.00| -1.00| <- VERIFY! | dʒ ~  K  [  835 -  905]
+ɛ       |  905|  935|  1.10|  2.00| ok         | ɛ  ~  EH [  905 -  935]
+ɹ       |  935|  995|  1.00|  2.00| ok         | ɹ  ~  R  [  935 -  995]
+ɒ       |  995| 1105|  1.00|  0.50| ok         | ɒ  ~  ER [  995 - 1105]
+l       | 1105| 1175|  1.00|  2.00| ok         | l  ~  L  [ 1105 - 1175]
+;_       | 1175| 1335|  1.00| -1.00| <- VERIFY! | _  d  F  [ 1175 - 1335]
+t       | 1335| 1380|  1.00| -1.00| <- VERIFY! | t  ~  P  [ 1335 - 1380]

@@ -1,0 +1,21 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=Hello, Geralt.]
+;meta[translation=həlˈəʊ dʒˈɛɹɒlt]
+;meta[audio-hypothesis=SIL P AE L OW G EH ER L T SIL]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+h       |  230|  305|  1.00| -1.00| <- VERIFY! | h  ~  P  [  230 -  305]
+ə       |  305|  395|  1.00|  1.70| ok         | ə  ~  AE [  305 -  395]
+l       |  395|  505|  1.00|  2.00| ok         | l  ~  L  [  395 -  505]
+əʊ      |  505|  645|  1.10|  2.00| ok         | əʊ ~  OW [  505 -  645]
+------------------------------------------------------------------------
+dʒ      |  645|  735|  1.00|  1.70| ok         | dʒ ~  G  [  645 -  735]
+ɛ       |  735|  825|  1.10|  2.00| ok         | ɛ  ~  EH [  735 -  825]
+ɹ       |  825|  880|  1.00|  0.50| ok         | ɹ  ~  ER [  825 -  935]
+ɒ       |  880|  935|  1.00|  0.49| ok         | ɒ  \  ER [  825 -  935]
+l       |  935| 1015|  1.00|  2.00| ok         | l  ~  L  [  935 - 1015]
+t       | 1015| 1140|  1.00|  2.00| ok         | t  ~  T  [ 1015 - 1140]

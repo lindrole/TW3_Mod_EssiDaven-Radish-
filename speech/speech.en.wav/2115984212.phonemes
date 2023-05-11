@@ -1,0 +1,20 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=Absolutely.]
+;meta[translation=ˌabsəlˈuːtli]
+;meta[audio-hypothesis=SIL P AE N D S AH W IH D L IY IH]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+a       |  240|  395|  1.05|  0.85| ok         | a  ~> P  [  240 -  305] + AE [  305 -  395]
+;_       |  395|  425|  1.00| -1.00| <- VERIFY! | _  d  N  [  395 -  425]
+b       |  425|  465|  1.00|  0.01| ok         | b  ~  D  [  425 -  465]
+s       |  465|  535|  1.00|  2.00| ok         | s  ~  S  [  465 -  535]
+ə       |  535|  575|  1.00|  2.00| ok         | ə  ~  AH [  535 -  575]
+l       |  575|  665|  1.00| -1.00| <- VERIFY! | l  ~  W  [  575 -  665]
+u       |  665|  725|  1.10|  0.01| ok         | u  ~  IH [  665 -  725]
+t       |  725|  785|  1.00|  1.70| ok         | t  ~  D  [  725 -  785]
+l       |  785|  855|  1.00|  2.00| ok         | l  ~  L  [  785 -  855]
+i       |  855| 1080|  1.00|  1.85| ok         | i  ~> IY [  855 -  955] + IH [  955 - 1080]

@@ -1,0 +1,23 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=Not really…]
+;meta[translation=nˌɒt ɹˈiəlɪ]
+;meta[audio-hypothesis=SIL P F N AE L R IY L EY HH EH T SIL]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+;_       |  250|  535|  1.00| -1.00| <- VERIFY! | _  d  P  [  250 -  535]
+;_       |  535|  575|  1.00| -1.00| <- VERIFY! | _  d  F  [  535 -  575]
+------------------------------------------------------------------------
+n       |  575|  675|  1.00|  2.00| ok         | n  ~  N  [  575 -  675]
+ɒ       |  675|  745|  1.05|  0.25| ok         | ɒ  ~  AE [  675 -  745]
+t       |  745|  805|  1.00| -1.00| <- VERIFY! | t  ~  L  [  745 -  805]
+------------------------------------------------------------------------
+ɹ       |  805|  945|  1.00|  2.00| ok         | ɹ  ~  R  [  805 -  945]
+iə      |  945|  995|  1.10|  0.50| ok         | iə ~  IY [  945 -  995]
+l       |  995| 1095|  1.00|  2.00| ok         | l  ~  L  [  995 - 1095]
+;_       | 1095| 1135|  1.00| -1.00| <- VERIFY! | _  d  EY [ 1095 - 1135]
+;_       | 1135| 1225|  1.00| -1.00| <- VERIFY! | _  d  HH [ 1135 - 1225]
+;_       | 1225| 1265|  1.00| -1.00| <- VERIFY! | _  d  EH [ 1225 - 1265]
+ɪ       | 1265| 1330|  1.00| -1.00| <- VERIFY! | ɪ  ~  T  [ 1265 - 1330]

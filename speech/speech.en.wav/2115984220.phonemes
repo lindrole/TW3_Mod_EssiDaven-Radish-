@@ -1,0 +1,19 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=Now Poppet,]
+;meta[translation=nˈaʊ pˈɒpɪt]
+;meta[audio-hypothesis=SIL N AE L B P AA B IH T SIL]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+n       |  260|  345|  1.00|  2.00| ok         | n  ~  N  [  260 -  345]
+;_       |  345|  445|  1.00| -1.00| <- VERIFY! | _  d  AE [  345 -  445]
+aʊ      |  445|  535|  1.10| -1.00| <- VERIFY! | aʊ ~  L  [  445 -  535]
+------------------------------------------------------------------------
+p       |  535|  625|  1.00|  1.85| ok         | p  ~> B  [  535 -  565] + P  [  565 -  625]
+ɒ       |  625|  755|  1.10|  2.00| ok         | ɒ  ~  AA [  625 -  755]
+p       |  755|  815|  1.00|  1.70| ok         | p  ~  B  [  755 -  815]
+ɪ       |  815|  915|  1.00|  2.00| ok         | ɪ  ~  IH [  815 -  915]
+t       |  915| 1030|  1.00|  2.00| ok         | t  ~  T  [  915 - 1030]
