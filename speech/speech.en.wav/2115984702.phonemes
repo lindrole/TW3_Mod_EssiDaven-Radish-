@@ -1,0 +1,19 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=Sh'eenaz.]
+;meta[translation=ˌɛsˈeɪtʃˈiːnaz]
+;meta[audio-hypothesis=SIL SH UW N AH S TH SIL]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+;ɛ       |    0|    0|  1.05| -1.00| <- VERIFY! | ɛ  i
+s       |  290|  445|  1.00|  0.50| ok         | s  ~  SH [  290 -  445]
+;eɪ      |  445|  445|  1.10| -1.00| <- VERIFY! | eɪ i
+;tʃ      |  445|  445|  1.00| -1.00| <- VERIFY! | tʃ i
+i       |  445|  555|  1.10| -1.00| <- VERIFY! | i  ~  UW [  445 -  555]
+n       |  555|  595|  1.00|  2.00| ok         | n  ~  N  [  555 -  595]
+a       |  595|  765|  1.00|  0.01| ok         | a  ~  AH [  595 -  765]
+z       |  765|  895|  1.00|  1.70| ok         | z  ~  S  [  765 -  895]
+;_       |  895| 1030|  1.00| -1.00| <- VERIFY! | _  d  TH [  895 - 1030]

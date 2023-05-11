@@ -1,0 +1,22 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=See you soon.]
+;meta[translation=sˈiː juː sˈuːn]
+;meta[audio-hypothesis=SIL S IY S EH R AO N AH]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+s       |  280|  435|  1.00|  2.00| ok         | s  ~  S  [  280 -  435]
+i       |  435|  505|  1.10|  2.00| ok         | i  ~  IY [  435 -  575]
+------------------------------------------------------------------------
+j       |  505|  575|  1.00|  0.49| ok         | j  \  IY [  435 -  575]
+;u       |  575|  575|  1.00| -1.00| <- VERIFY! | u  i
+------------------------------------------------------------------------
+s       |  575|  685|  1.00|  2.00| ok         | s  ~  S  [  575 -  685]
+;_       |  685|  745|  1.00| -1.00| <- VERIFY! | _  d  EH [  685 -  745]
+;_       |  745|  775|  1.00| -1.00| <- VERIFY! | _  d  R  [  745 -  775]
+u       |  775|  815|  1.10| -1.00| <- VERIFY! | u  ~  AO [  775 -  815]
+n       |  815|  925|  1.00|  2.00| ok         | n  ~  N  [  815 -  925]
+;_       |  925| 1040|  1.00| -1.00| <- VERIFY! | _  d  AH [  925 - 1040]

@@ -1,0 +1,18 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=Geralt!]
+;meta[translation=dʒˈɛɹɒlt]
+;meta[audio-hypothesis=SIL D UW R OW D K S K]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+dʒ      |  280|  375|  1.00| -1.00| <- VERIFY! | dʒ ~  D  [  280 -  375]
+ɛ       |  375|  495|  1.10| -1.00| <- VERIFY! | ɛ  ~  UW [  375 -  495]
+ɹ       |  495|  585|  1.00|  2.00| ok         | ɹ  ~  R  [  495 -  585]
+ɒ       |  585|  755|  1.00|  0.01| ok         | ɒ  ~  OW [  585 -  755]
+;l       |  755|  755|  1.00| -1.00| <- VERIFY! | l  i
+t       |  755|  895|  1.00|  0.85| ok         | t  ~> D  [  755 -  845] + K  [  845 -  895]
+;_       |  895|  995|  1.00| -1.00| <- VERIFY! | _  d  S  [  895 -  995]
+;_       |  995| 1070|  1.00| -1.00| <- VERIFY! | _  d  K  [  995 - 1070]

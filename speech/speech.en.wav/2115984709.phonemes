@@ -1,0 +1,18 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=Poor child…]
+;meta[translation=pˈʊə tʃˈaɪld]
+;meta[audio-hypothesis=SIL P UH CH SH EH L V TH]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+p       |  290|  335|  1.00|  2.00| ok         | p  ~  P  [  290 -  335]
+ʊə      |  335|  465|  1.10|  1.70| ok         | ʊə ~  UH [  335 -  465]
+------------------------------------------------------------------------
+tʃ      |  465|  535|  1.00|  2.00| ok         | tʃ ~  CH [  465 -  535]
+aɪ      |  535|  695|  1.10| -1.00| <- VERIFY! | aɪ ~  SH [  535 -  695]
+l       |  695|  945|  1.00|  1.00| ok         | l  ~> EH [  695 -  835] + L  [  835 -  945]
+;_       |  945|  985|  1.00| -1.00| <- VERIFY! | _  d  V  [  945 -  985]
+d       |  985| 1120|  1.00|  0.01| ok         | d  ~  TH [  985 - 1120]

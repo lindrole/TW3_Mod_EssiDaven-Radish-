@@ -1,0 +1,19 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=It's awful!]
+;meta[translation=ɪts ˈɔːfəl]
+;meta[audio-hypothesis=SIL P EY V S AO L F AH L +SPN+]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+;_       |  250|  315|  1.00| -1.00| <- VERIFY! | _  d  P  [  250 -  315]
+------------------------------------------------------------------------
+ɪ       |  315|  405|  1.00| -1.00| <- VERIFY! | ɪ  ~  EY [  315 -  405]
+t       |  405|  455|  1.00| -1.00| <- VERIFY! | t  ~  V  [  405 -  455]
+s       |  455|  575|  1.00|  2.00| ok         | s  ~  S  [  455 -  575]
+------------------------------------------------------------------------
+ɔ       |  575|  675|  1.10|  2.00| ok         | ɔ  ~  AO [  575 -  675]
+;_       |  675|  715|  1.00| -1.00| <- VERIFY! | _  d  L  [  675 -  715]
+f       |  715|  855|  1.00|  1.00| ok         | f  ~> F  [  715 -  825] + AH [  825 -  855]
+əl      |  855|  915|  1.00| -1.00| <- VERIFY! | əl ~  L  [  855 -  915]
