@@ -1,0 +1,18 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=As I feared,]
+;meta[translation=az aɪ fˈiəd]
+;meta[audio-hypothesis=SIL AH S AY F IY IH D T SIL]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+a       |  100|  175|  1.00|  0.01| ok         | a  ~  AH [  100 -  175]
+z       |  175|  275|  1.00|  1.70| ok         | z  ~  S  [  175 -  275]
+------------------------------------------------------------------------
+aɪ      |  275|  415|  1.00|  2.00| ok         | aɪ ~  AY [  275 -  415]
+------------------------------------------------------------------------
+f       |  415|  575|  1.00|  2.00| ok         | f  ~  F  [  415 -  575]
+iə      |  575|  845|  1.10|  0.50| ok         | iə ~> IY [  575 -  685] + IH [  685 -  845]
+d       |  845|  960|  1.00|  1.85| ok         | d  ~> D  [  845 -  885] + T  [  885 -  960]

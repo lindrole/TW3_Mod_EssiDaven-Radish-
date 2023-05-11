@@ -1,0 +1,15 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=Ciri?]
+;meta[translation=sˈiəɹi]
+;meta[audio-hypothesis=SIL S IY R IH NG SIL]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+s       |  100|  305|  1.00|  2.00| ok         | s  ~  S  [  100 -  305]
+iə      |  305|  455|  1.10|  0.50| ok         | iə ~  IY [  305 -  455]
+ɹ       |  455|  565|  1.00|  2.00| ok         | ɹ  ~  R  [  455 -  565]
+i       |  565|  595|  1.00|  1.70| ok         | i  ~  IH [  565 -  595]
+;_       |  595|  650|  1.00| -1.00| <- VERIFY! | _  d  NG [  595 -  650]

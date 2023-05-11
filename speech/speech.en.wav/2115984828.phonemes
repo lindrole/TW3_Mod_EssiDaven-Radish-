@@ -1,0 +1,21 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=Even weakened,]
+;meta[translation=ˈiːvən wˈiːkənd]
+;meta[audio-hypothesis=SIL IY V EH N W IY K IH N Z SIL]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+i       |  100|  215|  1.10|  2.00| ok         | i  ~  IY [  100 -  215]
+v       |  215|  265|  1.00|  2.00| ok         | v  ~  V  [  215 -  265]
+ə       |  265|  305|  1.00|  0.25| ok         | ə  ~  EH [  265 -  305]
+n       |  305|  395|  1.00|  2.00| ok         | n  ~  N  [  305 -  395]
+------------------------------------------------------------------------
+w       |  395|  455|  1.00|  2.00| ok         | w  ~  W  [  395 -  455]
+i       |  455|  525|  1.10|  2.00| ok         | i  ~  IY [  455 -  525]
+k       |  525|  645|  1.00|  2.00| ok         | k  ~  K  [  525 -  645]
+ə       |  645|  695|  1.00|  0.01| ok         | ə  ~  IH [  645 -  695]
+n       |  695|  805|  1.00|  2.00| ok         | n  ~  N  [  695 -  805]
+d       |  805|  870|  1.00| -1.00| <- VERIFY! | d  ~  Z  [  805 -  870]

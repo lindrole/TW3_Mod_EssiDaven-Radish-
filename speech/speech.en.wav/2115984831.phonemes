@@ -1,0 +1,19 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=Exactly.]
+;meta[translation=ɛɡzˈaktli]
+;meta[audio-hypothesis=SIL EY K S AE K T AH M IY SIL]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+ɛ       |  100|  185|  1.00|  0.01| ok         | ɛ  ~  EY [  100 -  185]
+ɡ       |  185|  245|  1.00|  1.70| ok         | ɡ  ~  K  [  185 -  245]
+z       |  245|  335|  1.00|  1.70| ok         | z  ~  S  [  245 -  335]
+a       |  335|  405|  1.10|  1.70| ok         | a  ~  AE [  335 -  405]
+k       |  405|  485|  1.00|  2.00| ok         | k  ~  K  [  405 -  485]
+t       |  485|  565|  1.00|  2.00| ok         | t  ~  T  [  485 -  565]
+l       |  565|  595|  1.00|  0.01| ok         | l  ~  AH [  565 -  595]
+;_       |  595|  625|  1.00| -1.00| <- VERIFY! | _  d  M  [  595 -  625]
+i       |  625|  720|  1.00|  2.00| ok         | i  ~  IY [  625 -  720]

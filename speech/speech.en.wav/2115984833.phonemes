@@ -1,0 +1,20 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=Are you ready?]
+;meta[translation=ɑː juː ɹˈɛdi]
+;meta[audio-hypothesis=SIL AY L Y UW R EH D IY SIL]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+ɑ       |  100|  205|  1.00|  0.25| ok         | ɑ  ~  AY [  100 -  205]
+;_       |  205|  265|  1.00| -1.00| <- VERIFY! | _  d  L  [  205 -  265]
+------------------------------------------------------------------------
+j       |  265|  385|  1.00|  2.00| ok         | j  ~  Y  [  265 -  385]
+u       |  385|  435|  1.00|  2.00| ok         | u  ~  UW [  385 -  435]
+------------------------------------------------------------------------
+ɹ       |  435|  525|  1.00|  2.00| ok         | ɹ  ~  R  [  435 -  525]
+ɛ       |  525|  565|  1.10|  2.00| ok         | ɛ  ~  EH [  525 -  565]
+d       |  565|  605|  1.00|  2.00| ok         | d  ~  D  [  565 -  605]
+i       |  605|  820|  1.00|  2.00| ok         | i  ~  IY [  605 -  820]
