@@ -1,0 +1,15 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=Shame…]
+;meta[translation=ʃˈeɪm]
+;meta[audio-hypothesis=SIL T SH IY M N ER]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+;_       |  280|  325|  1.00| -1.00| <- VERIFY! | _  d  T  [  280 -  325]
+------------------------------------------------------------------------
+ʃ       |  325|  515|  1.00|  2.00| ok         | ʃ  ~  SH [  325 -  515]
+eɪ      |  515|  755|  1.10| -1.00| <- VERIFY! | eɪ ~  IY [  515 -  755]
+m       |  755|  905|  1.00|  1.00| ok         | m  ~> M  [  755 -  845] + N  [  845 -  905]
+;_       |  905| 1110|  1.00| -1.00| <- VERIFY! | _  d  ER [  905 - 1110]

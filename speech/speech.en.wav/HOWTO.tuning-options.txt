@@ -1,0 +1,224 @@
+Tuning the results - some options
+---------------------------------
+
+Before you try you probably should take a look at the steps for generating the
+animations, first. Just to see at which point you tweak stuff. It's out of scope
+to describe the individual parts and how they work in more detail - search the web
+or wikipedia for more info on phonemes, IPA, pocketsphinx and eSpeak for starters.
+
+Here it's more about the "big" picture.
+
+The whole workflow is organized like this:
+
+                44khz audio                                       text string
+
+                     |                                                 |
+                     v                                                 |
+                                                                       |
+            duration extraction                                        |
+                                                                       |
+                     |                                                 |
+                     v                                                 |
+                                                   manual              |
+          <stringid>[<duration>].wav  <------  stringid to wav  <------|
+                                                 assignment            |
+                     |                                                 |
+                     |                                                 |
+           --------------------                                        |
+           |                  |                                        v
+           |                  v
+           |                                                     translation to
+           |              16khz audio                       IPA phonemes with eSpeak
+           |
+           |                  |                                        |
+           |                  v                                        |
+           |                                                           |
+           |          phoneme recognition                              |
+           |           with pocketsphinx                               |
+           |                                                           |
+           |                  |                                        |
+           |                  v                                        v
+           |
+           |                 (1)                                      (2)
+           |             pocketsphinx                            IPA phonemes
+           |          phonemes + timings                        without timings
+           |
+           |                  |                                        |
+           |                  |               automatic                |
+           |                  |        matching of pocketsphinx        |
+           |                  ------>  phonemes to IPA phonemes  <------
+           |                            with similarity matrix
+           |
+           |                                      |
+           |                                      v
+           |
+           |                                     (3)
+           |                               manual adjustment
+           |                           of phoneme timings in GUI
+           |
+           |                                      |
+           |                                      v
+           v
+                                                 (4)
+   conversion to wem                 IPA phonemes with timings as
+       with wwise                        <stringid>.phonemes
+
+           |                                      |
+           |                                      v
+           |
+           |                                     (5)                                (6)
+           |                           matching by IPA phoneme             repo.lipsync mapping
+           |                        and its context and generating  <---- IPA phoneme / posecurve
+           |                            weight for every frame                    weights
+           |                              of every pose used
+           |
+           |                                      |
+           |                                      v
+           |
+           |                                     (7)
+           |                         smoothing of generated curves
+           |
+           |                                      |
+           |                                      v
+           |
+           |                                     (8)
+           |                          <stringid>.lipsyncanim.csv
+           |
+           |                                      |
+           |                                      v
+           |
+           v                            encoding of weights csv
+                                                into
+<stringid>[<duration>].wem           <stringid>.lipsyncanim.cr2w
+
+           |                                      |
+           |                                      |
+           --------->   packaging files   <--------
+                          as w3speech
+
+                               |
+                               v
+
+                          en.w3speech
+
+Now you know.
+
+
+
+1. Tuning of (3) phoneme files (timings and weights)
+----------------------------------------------------
+
+This is the most "easy" and also most promising tuning option. It's also the
+option you'll most probably be forced to do if you want somewhat usable results.
+
+Phonemes of result (1) are not very accurate but they do have valueable timing
+information. Phonemes of result (2) are a very accurate translation (sometimes
+even too accurate) but lack any timings. The matching of (1) and (2) is not
+trivial and most of the time the result (3) is full of gaps and/or mismatchings.
+
+You can see the waveform of the used audio in the phoneme extractor gui and spot
+the silent parts and various changes in the curve on a timeline. Directly below
+is a bar with differently stretched blocks displayed. Every block represents one
+phoneme and is positioned and sized according to the extracted information from
+(1). Its label is the match from (2). The bar is aligned and in sync with the
+audio waveform display so the phoneme and timing information can be directly
+compared (they don't have to match exactly just more or less!).
+
+In addition to timings it's also possible to adjust weights of specific phonemes
+(increase for more emphasize or decrease to compensate overemphasised phonemes).
+
+Please remember: the lipsync animation is 30fps. Meaning ~30ms delta for a phoneme
+timing moves the generated weight by only one frame. Lower deltas affect the
+smoothed curve, though. Just don't think timing adjustments of <15ms will have
+much impact on the animation.
+
+
+Remove gaps
+-----------
+Lowest hanging fruit: try to resolve all gaps (as in unmatched phonemes) in a
+sane way, for example by extending predecessor and successor phoneme durations.
+Phoneme durations *may* overlap (the generator does not generate such timings but
+it's sometimes usefull) but there should not be an >= 10ms gap between subsequent
+phonemes as it's considered as a begginning of a "silence".
+
+There is an automatic option to remove all gaps that can be triggered by pressing
+the "gap close" button. It will remove all the "unknown" unmatched phonemes and
+close the gaps by extending the neighboring phoneme blocks. However this does not
+work correctly in every case - so be sure to check the results!
+
+
+Setup forced word gaps
+-----------------------
+Even if timings <15ms do not have much visible effect on "normal" lipsync
+animations *gaps* of > 10ms will be treated slightly different and "force"
+something like a "break-up" of an otherwise too long animation, e.g. open mouth
+spanning two words. You'll have to experiment.
+
+
+Verify phonemes positions
+-------------------------
+Sometimes the matching produces a gap at the wrong position and a phoneme sequence
+is moved before or after the "real" gap. Adjust the timings by comparing with the
+audio waveform.
+
+
+Setup aliases
+-------------
+Some phoneme mappings are not available in the repo.lipsync mappings. It may be
+necessary to change a "translated" IPA phoneme to a "similar" phoneme to get data
+or even break up some diphones (multilette phonemes).
+
+In this case the extraction has to be redone. Delete the generated *.phoneme file(s)
+and start the phoneme extractor gui again. It will automatically try to extract
+phonemes for all audio files that do not have a matching phoneme file.
+
+
+Adjust weights
+--------------
+The IPA translation of eSpeak produces some emphasis on specific phonemes
+according to some encoded pronounciation rules. These may not necessary match the
+spoken audio -> change the weight slider to emphasize or compensate.
+
+
+
+2. Tuning of curve generation (pose weights and smoothing)
+----------------------------------------------------------
+These settings are located in the repo.lipsync/lipsync_settings.yml file and
+affect *ALL* generation (4) + (6).
+
+It may help to tune the weights for some posetracks to emphasize or compensate
+some over emphasized generation. It may also create a unique animation trait for
+a specific character.
+
+The smoothing kernels can also be adjusted - but you should probably not touch
+that.
+
+
+
+3. Tuning of phoneme curve snippet mapping
+------------------------------------------
+This is basically the hardcore stuff in (5). Changes also affect ALL generation.
+
+These mappings were extracted from the game files lipsync animations automatically:
+Based on the timings the phoneme extractor deduced from a (big) set of the game
+audio files and a heuristic scoring function which hopefully picked the better
+curve snippet sets (or not...). The src of the snippet is recorded as comment.
+They are by far not optimal but seem to work adequately most of the time (at least
+for the examples I tested).
+
+However there are certain phoneme mappings/contexts which seem to be off. Those
+can be tuned by hand. A couple were already adjusted by hand (see the comments).
+It's difficult but feel free to adjust weights, remove some or define additional
+posetracks snippets for a specific context.
+
+The standard downloaded package contains a stripped down version of (exactly the
+same) repo.lipsync files which contain a couple of more "alternatives" to the
+curve snippets. Some of them could be a better choice - or not. If you want to
+tune the mappings you should take a look at the extended repo package, first.
+
+
+
+4. Tuning of specific weights for a specific frame of a specific posetrack of a specific audio
+----------------------------------------------------------------------------------------------
+Yeah.. you can do that, too. Directly in the generated (7) lipsyncanim.csv. But
+you won't.

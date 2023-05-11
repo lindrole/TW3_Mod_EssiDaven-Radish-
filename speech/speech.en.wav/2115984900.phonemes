@@ -1,0 +1,23 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=Essi rests here.]
+;meta[translation=ˈɛsi ɹˈɛsts hˈiə]
+;meta[audio-hypothesis=SIL EH S IH R EH S T UW Y AE N SIL]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+ɛ       |  300|  425|  1.10|  2.00| ok         | ɛ  ~  EH [  300 -  425]
+s       |  425|  515|  1.00|  2.00| ok         | s  ~  S  [  425 -  515]
+i       |  515|  565|  1.00|  1.70| ok         | i  ~  IH [  515 -  565]
+------------------------------------------------------------------------
+ɹ       |  565|  715|  1.00|  2.00| ok         | ɹ  ~  R  [  565 -  715]
+ɛ       |  715|  795|  1.10|  2.00| ok         | ɛ  ~  EH [  715 -  795]
+s       |  795|  895|  1.00|  2.00| ok         | s  ~  S  [  795 -  895]
+t       |  895| 1015|  1.00|  2.00| ok         | t  ~  T  [  895 - 1015]
+;_       | 1015| 1075|  1.00| -1.00| <- VERIFY! | _  d  UW [ 1015 - 1075]
+s       | 1075| 1135|  1.00| -1.00| <- VERIFY! | s  ~  Y  [ 1075 - 1135]
+------------------------------------------------------------------------
+h       | 1135| 1335|  1.00| -1.00| <- VERIFY! | h  ~  AE [ 1135 - 1335]
+iə      | 1335| 1360|  1.10| -1.00| <- VERIFY! | iə ~  N  [ 1335 - 1360]

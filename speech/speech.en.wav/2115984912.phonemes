@@ -1,0 +1,16 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=We'll see…]
+;meta[translation=wiːl sˈiː]
+;meta[audio-hypothesis=SIL W ER L F IH IY SIL]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+w       |  100|  145|  1.00|  2.00| ok         | w  ~  W  [  100 -  145]
+i       |  145|  175|  1.00| -1.00| <- VERIFY! | i  ~  ER [  145 -  175]
+l       |  175|  225|  1.00|  2.00| ok         | l  ~  L  [  175 -  225]
+------------------------------------------------------------------------
+s       |  225|  365|  1.00| -1.00| <- VERIFY! | s  ~  F  [  225 -  365]
+i       |  365|  590|  1.10|  1.85| ok         | i  ~> IH [  365 -  405] + IY [  405 -  590]

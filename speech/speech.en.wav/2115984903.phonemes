@@ -1,0 +1,19 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=It works!]
+;meta[translation=ɪt wˈɜːks]
+;meta[audio-hypothesis=SIL DH IH W EH R G TH AY SIL]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+;_       |  310|  355|  1.00| -1.00| <- VERIFY! | _  d  DH [  310 -  355]
+------------------------------------------------------------------------
+ɪ       |  355|  405|  1.00|  2.00| ok         | ɪ  ~  IH [  355 -  405]
+;t       |  405|  405|  1.00| -1.00| <- VERIFY! | t  i
+------------------------------------------------------------------------
+w       |  405|  535|  1.00|  2.00| ok         | w  ~  W  [  405 -  535]
+ɜ       |  535|  655|  1.10|  0.25| ok         | ɜ  ~> EH [  535 -  615] + R  [  615 -  655]
+k       |  655|  715|  1.00|  1.70| ok         | k  ~  G  [  655 -  715]
+;_       |  715|  765|  1.00| -1.00| <- VERIFY! | _  d  TH [  715 -  765]
+s       |  765|  970|  1.00| -1.00| <- VERIFY! | s  ~  AY [  765 -  970]

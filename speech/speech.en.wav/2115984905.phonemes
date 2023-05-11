@@ -1,0 +1,21 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=But what the…]
+;meta[translation=bˌʌt wˈɒt ðə]
+;meta[audio-hypothesis=SIL B AH W UH G AH V]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+b       |  240|  335|  1.00|  2.00| ok         | b  ~  B  [  240 -  335]
+ʌ       |  335|  415|  1.05|  2.00| ok         | ʌ  ~  AH [  335 -  415]
+;t       |  415|  415|  1.00| -1.00| <- VERIFY! | t  i
+------------------------------------------------------------------------
+w       |  415|  545|  1.00|  2.00| ok         | w  ~  W  [  415 -  545]
+ɒ       |  545|  595|  1.10|  0.50| ok         | ɒ  ~  UH [  545 -  595]
+;t       |  595|  595|  1.00| -1.00| <- VERIFY! | t  i
+------------------------------------------------------------------------
+ð       |  595|  655|  1.00|  0.50| ok         | ð  ~  G  [  595 -  655]
+ə       |  655|  695|  1.00|  2.00| ok         | ə  ~  AH [  655 -  695]
+;_       |  695|  750|  1.00| -1.00| <- VERIFY! | _  d  V  [  695 -  750]
